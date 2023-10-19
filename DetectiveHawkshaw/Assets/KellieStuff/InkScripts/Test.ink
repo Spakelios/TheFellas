@@ -11,9 +11,16 @@ Dad! help im so low quality ahh
 
 {Name("Emil")}
 
+.....
+
+
 * [ oh no! :( ] -> one
 
-* [ Don't be silly! ] -> two
+
+
+* [ Don't be silly! ] -> two 
+
+
 
 == one == 
 
