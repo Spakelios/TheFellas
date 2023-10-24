@@ -9,7 +9,7 @@ public class Keypad : MonoBehaviour
     public string correctKey;
     public string currentKey;
     public TextMeshProUGUI text;
-    private bool keyGot;
+    public bool keyGot;
 
     private void Start()
     {

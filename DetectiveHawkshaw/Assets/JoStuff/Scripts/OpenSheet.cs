@@ -14,7 +14,13 @@ public class OpenSheet : MonoBehaviour
     public GameObject panel;
     public GameObject sheet;
     public GameObject keypad;
+    public GameObject safeDoor;
+    private Keypad keypadScript;
 
+    private void Start()
+    {
+        keypadScript = FindObjectOfType<Keypad>();
+    }
     private void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -41,16 +47,22 @@ public class OpenSheet : MonoBehaviour
         if (!Input.GetMouseButtonDown(0)) return;
         
         OnMouseExit();
-        panel.SetActive(true);
 
         if (gameObject.CompareTag("Sheet"))
         {
+            panel.SetActive(true);
             sheet.SetActive(true);
         }
             
         else if (gameObject.CompareTag("Keypad"))
         {
+            panel.SetActive(true);
             keypad.SetActive(true);
+        }
+        
+        else if (gameObject.CompareTag("Knob") && keypadScript.keyGot)
+        {
+            safeDoor.SetActive(false);
         }
     }
 
