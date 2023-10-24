@@ -11,6 +11,9 @@ public class OpenSheet : MonoBehaviour
     public GameObject eyePrefab;
     private GameObject eye;
     private bool eyeSpawned;
+    public GameObject panel;
+    public GameObject sheet;
+    public GameObject keypad;
 
     private void Update()
     {
@@ -24,10 +27,31 @@ public class OpenSheet : MonoBehaviour
     
     private void OnMouseEnter()
     {
+        if (panel.activeInHierarchy) return;
+        
         Cursor.visible = false;
         eye = Instantiate(eyePrefab);
         eyeSpawned = true;
-        Debug.Log("Mouse on");
+    }
+
+    private void OnMouseOver()
+    {
+        if (panel.activeInHierarchy) return;
+        
+        if (!Input.GetMouseButtonDown(0)) return;
+        
+        OnMouseExit();
+        panel.SetActive(true);
+
+        if (gameObject.CompareTag("Sheet"))
+        {
+            sheet.SetActive(true);
+        }
+            
+        else if (gameObject.CompareTag("Keypad"))
+        {
+            keypad.SetActive(true);
+        }
     }
 
     private void OnMouseExit()
@@ -35,6 +59,6 @@ public class OpenSheet : MonoBehaviour
         Cursor.visible = true;
         Destroy(eye);
         eyeSpawned = false;
-        Debug.Log("Mouse off");
+        
     }
 }
