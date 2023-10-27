@@ -2,23 +2,24 @@ EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 EXTERNAL MC(charName)
 
-{Icon("Detective")}
+{Icon("LeilaHappy")}
 {MC("Katya")}
 {Name("Katya")}
 
-Dad! help im so low quality ahh
+Mam! I can't wait till we crack this case! 
+They don't stand a chance against a pair of ace dectectives like us! 
 
 
-{Name("Emil")}
+{Name("Leila")}
 
-.....
-
-
-* [ oh no! :( ] -> one
+(I can't help but smile at her enthusiasm.)
 
 
+* [ Oh, but of course! ] -> one
 
-* [ Don't be silly! ] -> two 
+
+
+* [ Don't get too ahead of yourself just yet. ] -> two 
 
 
 
@@ -26,12 +27,14 @@ Dad! help im so low quality ahh
 
 {Name("Katya")} 
 
-:( dad that isnt helping at all
+Yeah! lets get down to buisness!
 
 -> END
 
 == two == 
 
- I'm not being silly ! >:0 !
+{Icon("LeilaSad")}
+
+But maaaaam! You're the best of the best!
 
     -> END
