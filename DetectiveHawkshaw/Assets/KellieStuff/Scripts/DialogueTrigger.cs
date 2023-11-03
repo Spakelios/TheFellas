@@ -23,6 +23,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private Button choiceButtonPrefab;
     public GameObject butt;
     public Image backgroundIcon;
+    public GameObject button2;
 
 
     void Start()
@@ -66,7 +67,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             // dialogueBox.text = ".....";
             // SceneManager.LoadScene("UI BONUS ROUND");
-            butt.SetActive(true);
+            button2.SetActive(true);
         }
     }
 

@@ -1,7 +1,9 @@
 EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 EXTERNAL MC(charName)
+EXTERNAL Back(charName)
 
+{Back("Office")}
 {Icon("LeilaHappy")}
 {MC("Katya")}
 {Name("Katya")}

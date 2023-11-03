@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KellieStuff/Scenes/DemoTest1.unity
     guid: 8ecd974200287054c8355718ccd62f4b
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/PuzzleExample.unity
+    guid: 453c0860f3b2e3747bd0bc3a294e763e
   m_configObjects: {}
