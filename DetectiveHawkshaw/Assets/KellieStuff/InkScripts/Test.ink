@@ -8,35 +8,31 @@ EXTERNAL Back(charName)
 {MC("Katya")}
 {Name("Katya")}
 
-Mam! I can't wait till we crack this case! 
-They don't stand a chance against a pair of ace dectectives like us! 
-
+"Mam! I may have crafted the most unsolvable mystery for you yet!"
 
 {Name("Leila")}
 
-(I can't help but smile at her enthusiasm.)
+Enthusiastic as always and grinning from ear to ear. 
+Katya snuggles up beside me attempting to commandeer my office chair. 
+I make some space and pat her head as she slaps her notebook onto the table.
 
+{Name("Katya")}
 
-* [ Oh, but of course! ] -> one
+"You ready? I bet even Mama would have a hard time with this one!" 
 
-
-
-* [ Don't get too ahead of yourself just yet. ] -> two 
-
-
-
-== one == 
-
-{Name("Katya")} 
-
-Yeah! lets get down to buisness!
-
--> END
-
-== two == 
-
+{Name("Leila")}
 {Icon("LeilaSad")}
 
-But maaaaam! You're the best of the best!
+
+"oh? even something your mama couldn't solve? then it really must be impossible"
+
+I try not to sound too sarcastic with that one. 
+My issues with Svetlana was something not for the ears of our daughter. 
+I clear my throat and regain myself as she opens the notebook. 
+
+{Name("Katya")}
+{Icon("LeilaHappy")}
+
+"Lets start with your Brief!"
 
     -> END
