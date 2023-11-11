@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JoStuff/Scenes/PuzzleExample.unity
     guid: 453c0860f3b2e3747bd0bc3a294e763e
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Prototype Case/Lobby.unity
+    guid: da738c92bb4fb8e448f94ef1afd8dd75
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Prototype Case/Kitchen.unity
+    guid: e8177190cf57fad4cb0a6bf253e195cd
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Prototype Case/Office.unity
+    guid: af22e2e225e319744944e26a79df3438
   m_configObjects: {}
