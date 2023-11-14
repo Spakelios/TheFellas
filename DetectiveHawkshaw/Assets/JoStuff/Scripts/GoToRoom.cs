@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GoToRoom : MonoBehaviour
 {
@@ -14,9 +15,15 @@ public class GoToRoom : MonoBehaviour
 
     public GameObject dialogueBox;
     public string sceneName;
+    
+    public TextMeshProUGUI examineTagBox;
 
     // Update is called once per frame
 
+    private void Start()
+    {
+        examineTagBox.text = "";
+    }
     private void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -26,19 +33,19 @@ public class GoToRoom : MonoBehaviour
             eye.transform.position = mousePos;
         }
     }
-    
-    private void OnMouseEnter()
-    {
-        if(dialogueBox.activeInHierarchy) return;
-        
-        Cursor.visible = false;
-        eye = Instantiate(eyePrefab);
-        eyeSpawned = true;
-    }
 
     public void OnMouseOver()
     {
         if (dialogueBox.activeInHierarchy) return;
+        
+        if (!eyeSpawned)
+        {
+            Cursor.visible = false;
+            eye = Instantiate(eyePrefab);
+            eyeSpawned = true;
+        }
+
+        examineTagBox.text = sceneName;
         
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
@@ -52,5 +59,7 @@ public class GoToRoom : MonoBehaviour
         Cursor.visible = true;
         Destroy(eye);
         eyeSpawned = false;
+
+        examineTagBox.text = "";
     }
 }

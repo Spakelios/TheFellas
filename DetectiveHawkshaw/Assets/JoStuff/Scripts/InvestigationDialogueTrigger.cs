@@ -14,9 +14,11 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public DialogueManager dialogueManager;
 
     public TextMeshProUGUI examineTagBox;
-    public string examineTag;
-    
 
+    private static List<int> isExamined = new List<int>();
+    public string examineTag;
+    public string newExamineTag;
+    public int referenceID;
 
     private void Start()
     {
@@ -37,10 +39,12 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     private void OnMouseEnter()
     {
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
+
+        if (isExamined.Contains(referenceID))
+        {
+            examineTag = newExamineTag;
+        }
         
-        Cursor.visible = false;
-        eye = Instantiate(eyePrefab);
-        eyeSpawned = true;
         examineTagBox.text = examineTag;
     }
     
@@ -48,11 +52,22 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     {
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
         
+        if (!eyeSpawned)
+        {
+            Cursor.visible = false;
+            eye = Instantiate(eyePrefab);
+            eyeSpawned = true;
+        }
+
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
         dialogueManager.StartDialogue(dialogue);
         examineTagBox.text = "";
-        
+
+        if (!isExamined.Contains(referenceID))
+        {
+            isExamined.Add(referenceID);
+        }
     }
     
     private void OnMouseExit()
