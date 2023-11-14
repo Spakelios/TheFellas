@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,15 +11,12 @@ public class GoToRoom : MonoBehaviour
     public GameObject eyePrefab;
     private GameObject eye;
     private bool eyeSpawned;
+
+    public GameObject dialogueBox;
     public string sceneName;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
+
     private void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -31,6 +29,8 @@ public class GoToRoom : MonoBehaviour
     
     private void OnMouseEnter()
     {
+        if(dialogueBox.activeInHierarchy) return;
+        
         Cursor.visible = false;
         eye = Instantiate(eyePrefab);
         eyeSpawned = true;
@@ -38,11 +38,11 @@ public class GoToRoom : MonoBehaviour
 
     public void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            OnMouseExit();
-            SceneManager.LoadScene(sceneName);
-        }
+        if (dialogueBox.activeInHierarchy) return;
+        
+        if (!Input.GetMouseButtonDown(0)) return;
+        OnMouseExit();
+        SceneManager.LoadScene(sceneName);
     }
     
     
@@ -52,6 +52,5 @@ public class GoToRoom : MonoBehaviour
         Cursor.visible = true;
         Destroy(eye);
         eyeSpawned = false;
-        
     }
 }
