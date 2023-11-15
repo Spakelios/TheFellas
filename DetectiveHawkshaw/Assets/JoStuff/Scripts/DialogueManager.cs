@@ -9,13 +9,16 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public GameObject dialogueBox;
-    
+
+    public bool puzzleDialogue;
+
 
     public Queue<string> sentences;
 
     // Use this for initialization
     private void Start()
     {
+        puzzleDialogue = false;
         sentences = new Queue<string>();
     }
 
@@ -44,7 +47,7 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public void DisplayNextSentence()
+    private void DisplayNextSentence()
     {
         if (sentences.Count == 0)
         {
@@ -67,8 +70,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    private void EndDialogue()
     {
         dialogueBox.SetActive(false);
+
+        if (puzzleDialogue)
+        {
+            FindObjectOfType<PuzzleTrigger>().LoadPuzzleScene();
+        }
     }
 }

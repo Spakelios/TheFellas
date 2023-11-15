@@ -33,6 +33,7 @@ public class NumberLock : MonoBehaviour
         
         locked.SetActive(false);
         unlocked.SetActive(true);
+        PuzzleTrigger.puzzleSolved = true;
 
         foreach (Numbers no in numbers)
         {

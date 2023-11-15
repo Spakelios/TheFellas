@@ -1036,6 +1036,7 @@ MonoBehaviour:
   nameText: {fileID: 2055059026}
   dialogueText: {fileID: 1737621389}
   dialogueBox: {fileID: 398077075}
+  puzzleDialogue: 0
 --- !u!1 &1263800979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,6 +1365,7 @@ GameObject:
   - component: {fileID: 1556332973}
   - component: {fileID: 1556332972}
   - component: {fileID: 1556332974}
+  - component: {fileID: 1556332975}
   m_Layer: 0
   m_Name: BathroomDoor
   m_TagString: Untagged
@@ -1468,7 +1470,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.015056491, y: -0.21334434}
@@ -1484,6 +1486,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5674942, y: 4.0188365}
   m_EdgeRadius: 0
+--- !u!114 &1556332975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556332971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd41daf3f0aceba4789f63c5c772783d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  dialogue:
+    name: Emil
+    sentences:
+    - That's... odd.
+    - The bathroom door won't budge, and the culprit is this pesky padlock!
+    - There must be something hidden in there, time to crack the code!
+  dialogueManager: {fileID: 994476578}
+  sceneName: Bathroom
+  examineTagBox: {fileID: 2101913413}
 --- !u!1 &1680200197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,7 +1960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2101913412
 RectTransform:
   m_ObjectHideFlags: 0

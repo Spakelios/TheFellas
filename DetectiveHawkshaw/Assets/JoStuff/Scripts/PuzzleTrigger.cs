@@ -1,18 +1,79 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PuzzleTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Vector2 mousePos;
+    public GameObject eyePrefab;
+    private GameObject eye;
+    private bool eyeSpawned;
+    public Dialogue dialogue;
+    public DialogueManager dialogueManager;
+    public string sceneName;
+    
+    public TextMeshProUGUI examineTagBox;
+
+    public static bool puzzleSolved;
+
+    private void Start()
     {
+        dialogueManager = FindObjectOfType<DialogueManager>();
+        examineTagBox.text = "";
+    }
+    private void Update()
+    {
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (eyeSpawned)
+        {
+            eye.transform.position = mousePos;
+        }
+    }
+    
+    public void OnMouseOver()
+    {
+        if (dialogueManager.dialogueBox.activeInHierarchy) return;
         
+        if (!eyeSpawned)
+        {
+            Cursor.visible = false;
+            eye = Instantiate(eyePrefab);
+            eyeSpawned = true;
+        }
+
+        examineTagBox.text = sceneName;
+        
+        if (!Input.GetMouseButtonDown(0)) return;
+        OnMouseExit();
+
+        if (puzzleSolved)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+
+        else
+        {
+            dialogueManager.puzzleDialogue = true;
+            dialogueManager.StartDialogue(dialogue);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnMouseExit()
     {
-        
+        Cursor.visible = true;
+        Destroy(eye);
+        eyeSpawned = false;
+        examineTagBox.text = "";
     }
+
+    public void LoadPuzzleScene()
+    {
+        SceneManager.LoadScene("NumberLockPuzzle");
+    }
+    
 }

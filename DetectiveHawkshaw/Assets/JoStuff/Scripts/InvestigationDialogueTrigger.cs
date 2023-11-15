@@ -62,7 +62,6 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
         dialogueManager.StartDialogue(dialogue);
-        examineTagBox.text = "";
 
         if (!isExamined.Contains(referenceID))
         {
