@@ -15,7 +15,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
     public TextMeshProUGUI examineTagBox;
 
-    private static List<int> isExamined = new List<int>();
+    public static List<int> isExamined = new List<int>();
     public string examineTag;
     public string newExamineTag;
     public int referenceID;

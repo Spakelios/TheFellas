@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JoStuff/Scenes/Prototype Case/Bathroom.unity
     guid: 32db5ae6f8e7d1141a304b3b62144488
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/InterrogationScene.unity
+    guid: 71d16b00e245e88448f453807ee188d4
   m_configObjects: {}

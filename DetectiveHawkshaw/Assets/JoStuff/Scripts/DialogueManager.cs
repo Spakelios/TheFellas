@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject evidence2;
 
     public Queue<string> sentences;
+    private InterrogationCheck interrogationCheck;
     
     
 
@@ -31,6 +32,7 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
         evidenceWindow = GameObject.FindWithTag("EvidencePortrait");
         evidenceWindow.SetActive(false);
+        interrogationCheck = FindObjectOfType<InterrogationCheck>();
 
         /*
         if (sandwichDialogue)
@@ -132,5 +134,7 @@ public class DialogueManager : MonoBehaviour
             evidenceWindow.SetActive(false);
             evidenceDialogue = false;
         }
+        
+        interrogationCheck.CheckEvidence();
     }
 }
