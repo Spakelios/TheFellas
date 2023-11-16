@@ -9,6 +9,7 @@ TagManager:
   - Knob
   - DialogueBox
   - Toilet
+  - EvidencePortrait
   layers:
   - Default
   - TransparentFX

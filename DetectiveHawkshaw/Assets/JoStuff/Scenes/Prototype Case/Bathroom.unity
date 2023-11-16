@@ -241,7 +241,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1909325576}
   puzzleDialogue: 0
   sandwichDialogue: 1
-  sandwichWindow: {fileID: 0}
+  evidenceDialogue: 0
 --- !u!4 &757933885
 Transform:
   m_ObjectHideFlags: 0
@@ -829,6 +829,7 @@ MonoBehaviour:
   examineTag: ???
   newExamineTag: Toilet
   referenceID: 4
+  evidence: 0
 --- !u!61 &1595143406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -887,7 +888,7 @@ GameObject:
   - component: {fileID: 1635223054}
   m_Layer: 5
   m_Name: SandwichPortrait
-  m_TagString: Untagged
+  m_TagString: EvidencePortrait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -909,7 +910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -132.2, y: 64.3}
+  m_AnchoredPosition: {x: -150, y: 64.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1635223054

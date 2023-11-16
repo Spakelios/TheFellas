@@ -20,6 +20,9 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public string newExamineTag;
     public int referenceID;
 
+    public bool evidence;
+    public bool calendar;
+
     private void Start()
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
@@ -61,6 +64,16 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
+
+        if (evidence)
+        {
+            dialogueManager.evidenceDialogue = true;
+        }
+
+        if (calendar)
+        {
+            dialogueManager.calendarDialogue = true;
+        }
 
         dialogueManager.StartDialogue(dialogue);
 

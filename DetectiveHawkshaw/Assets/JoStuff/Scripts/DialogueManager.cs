@@ -12,17 +12,27 @@ public class DialogueManager : MonoBehaviour
 
     public bool puzzleDialogue;
     public bool sandwichDialogue;
+    public bool calendarDialogue;
 
-    public GameObject sandwichWindow;
+    
+    public bool evidenceDialogue;
+    public GameObject evidenceWindow;
+    public GameObject evidence1;
+    public GameObject evidence2;
 
     public Queue<string> sentences;
+    
+    
 
     // Use this for initialization
     private void Start()
     {
         puzzleDialogue = false;
         sentences = new Queue<string>();
+        evidenceWindow = GameObject.FindWithTag("EvidencePortrait");
+        evidenceWindow.SetActive(false);
 
+        /*
         if (sandwichDialogue)
         {
             sandwichWindow = GameObject.Find("SandwichPortrait");
@@ -33,8 +43,7 @@ public class DialogueManager : MonoBehaviour
         {
             sandwichWindow = null;
         }
-        
-        
+        */
     }
 
     private void Update()
@@ -60,6 +69,11 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
+        if (evidenceDialogue)
+        {
+            evidenceWindow.SetActive(true);
+        }
+
     }
 
     private void DisplayNextSentence()
@@ -72,7 +86,14 @@ public class DialogueManager : MonoBehaviour
 
         if (sandwichDialogue && sentences.Count == 3)
         {
-            sandwichWindow.SetActive(true);
+            //sandwichWindow.SetActive(true);
+            evidenceWindow.SetActive(true);
+        }
+
+        if (calendarDialogue && sentences.Count == 2)
+        {
+            evidence1.SetActive(false);
+            evidence2.SetActive(true);
         }
 
         string sentence = sentences.Dequeue();
@@ -99,9 +120,17 @@ public class DialogueManager : MonoBehaviour
             FindObjectOfType<PuzzleTrigger>().LoadPuzzleScene();
         }
 
-        if (sandwichDialogue)
+        else if (evidenceDialogue || sandwichDialogue)
         {
-            sandwichWindow.SetActive(false);
+            if (calendarDialogue)
+            {
+                evidence1.SetActive(true);
+                evidence2.SetActive(false);
+                calendarDialogue = false;
+            }
+            
+            evidenceWindow.SetActive(false);
+            evidenceDialogue = false;
         }
     }
 }
