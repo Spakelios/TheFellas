@@ -469,7 +469,7 @@ MonoBehaviour:
   examineTagBox: {fileID: 425038887}
   examineTag: Katya
   newExamineTag: Katya
-  referenceID: 4
+  referenceID: 6
 --- !u!70 &362061135
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -828,12 +828,13 @@ MonoBehaviour:
     - Y'know, you're putting in a whole lotta effort just to find out where your
       lunch's gone...
     - It's kinda funny, actually!
-    - Good luck finding it, I guess?
+    - Good luck finding it, I guess? Don't go getting anymore grey hairs stressing
+      over it, alright?
   dialogueManager: {fileID: 1223913006}
   examineTagBox: {fileID: 1830070312}
   examineTag: Nicolai
   newExamineTag: Nicolai
-  referenceID: 5
+  referenceID: 7
 --- !u!70 &860282539
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1272,6 +1273,8 @@ MonoBehaviour:
   dialogueText: {fileID: 196730555}
   dialogueBox: {fileID: 196730557}
   puzzleDialogue: 0
+  sandwichDialogue: 0
+  sandwichWindow: {fileID: 0}
 --- !u!4 &1223913007
 Transform:
   m_ObjectHideFlags: 0

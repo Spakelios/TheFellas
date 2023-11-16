@@ -654,7 +654,7 @@ MonoBehaviour:
   examineTagBox: {fileID: 500266454}
   examineTag: ???
   newExamineTag: Breadcrumbs
-  referenceID: 1
+  referenceID: 2
 --- !u!212 &607960267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1037,6 +1037,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1737621389}
   dialogueBox: {fileID: 398077075}
   puzzleDialogue: 0
+  sandwichDialogue: 0
+  sandwichWindow: {fileID: 0}
 --- !u!1 &1263800979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,7 +1771,7 @@ MonoBehaviour:
   examineTagBox: {fileID: 2045946406}
   examineTag: Secretary
   newExamineTag: Secretary
-  referenceID: 0
+  referenceID: 5
 --- !u!58 &1925514437
 CircleCollider2D:
   m_ObjectHideFlags: 0

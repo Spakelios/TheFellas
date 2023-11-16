@@ -11,7 +11,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueBox;
 
     public bool puzzleDialogue;
+    public bool sandwichDialogue;
 
+    public GameObject sandwichWindow;
 
     public Queue<string> sentences;
 
@@ -20,6 +22,19 @@ public class DialogueManager : MonoBehaviour
     {
         puzzleDialogue = false;
         sentences = new Queue<string>();
+
+        if (sandwichDialogue)
+        {
+            sandwichWindow = GameObject.Find("SandwichPortrait");
+            sandwichWindow.SetActive(false);
+        }
+
+        else
+        {
+            sandwichWindow = null;
+        }
+        
+        
     }
 
     private void Update()
@@ -55,6 +70,11 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        if (sandwichDialogue && sentences.Count == 3)
+        {
+            sandwichWindow.SetActive(true);
+        }
+
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -77,6 +97,11 @@ public class DialogueManager : MonoBehaviour
         if (puzzleDialogue)
         {
             FindObjectOfType<PuzzleTrigger>().LoadPuzzleScene();
+        }
+
+        if (sandwichDialogue)
+        {
+            sandwichWindow.SetActive(false);
         }
     }
 }
