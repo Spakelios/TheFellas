@@ -28,6 +28,7 @@ public class InterrogationCheck : MonoBehaviour
             InvestigationDialogueTrigger.isExamined.Contains(4))
         {
             SceneManager.LoadScene("InterrogationScene");
+            GameObject.FindWithTag("Music").GetComponent<AudioSource>().Stop();
         }
     }
 

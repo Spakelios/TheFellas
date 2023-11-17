@@ -8,7 +8,7 @@ public class NextScene : MonoBehaviour
     // Start is called before the first frame update
     public void next()
     {
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("Initial_Lobby");
     }
     
     public void endScreen()
