@@ -9,15 +9,20 @@ public class Numbers : MonoBehaviour
 {
     private NumberLock numberLock;
     public TextMeshProUGUI number;
+
+    public Image dial;
     private int index;
-    private Button button;
+    public Button button;
     public int currentNumber;
     public List<int> possibleNumbers;
-    public int passwordDigit; 
+    public int passwordDigit;
+
+    public List<Sprite> pictures;
     
     private void Start()
     {
         button = GetComponent<Button>();
+        dial = GetComponent<Image>();
         numberLock = FindObjectOfType<NumberLock>();
         
         index = 0;
@@ -34,7 +39,9 @@ public class Numbers : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        number.text = currentNumber.ToString();
+        //number.text = currentNumber.ToString();
+        dial.sprite = pictures[index];
+
     }
 
     private void TaskOnClick()

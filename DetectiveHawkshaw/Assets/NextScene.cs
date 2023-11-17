@@ -10,10 +10,9 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene("Lobby");
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void endScreen()
     {
-        
+        SceneManager.LoadScene("End Screen");
     }
 }

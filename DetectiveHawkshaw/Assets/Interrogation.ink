@@ -7,17 +7,14 @@ EXTERNAL Back(charName)
 {Icon("EmilNeutral")}
 {Name("Emil")}
 
-“Who will it be first?” 
+After looking at all the evidence, I think it's time to start interrogating the suspects.
+“Let's start with him...”
 
 *[ Interrogate Nicolai ] -> two 
 
 == one == 
  
- {Name("Emil")}
-{Icon("EmilNeutral")}
-{MC("Katya")}
- 
-“Miss Hawkshaw, as you're aware my sandwich was found in the toilet today.”
+{Name("Emil")} {Icon("EmilNeutral")} {MC("Katya")} “Miss Hawkshaw, as you're aware my sandwich was found in the toilet today.”
 
 “I would like to ask you some questions about this incident.”
 
@@ -35,13 +32,13 @@ She sits down in my office chair and spins around to face me. She seems a little
 
 == twenty == 
 
-{Name("Emil")} She puts her hand to her chin, thinking deeply about what she got up to that day. 
+{Name("Emil")} She puts her hand to her chin, thinking deeply about what she got up to today. 
 I try to remain stern without upsetting her.
 
 {Name("Katya")}
 
-“Hmm… I was drawing In the lobby!
-I showed it too miss secretary and she said
+“Hmm… I was drawing in the lobby!
+I showed it too Miss Secretary and she said
 I did a really good job! 
 Wanna see it?”
 
@@ -55,15 +52,13 @@ She looks up at me, pleading with her puppy dog eyes.
 
 == three == 
 
-She pouts, a frown appearing on her face. 
-I try not to laugh at her reaction as she holds 
-the paper in her hands.
+She pouts, a frown appearing on her face.
+{Icon("EmilHappy")}
+I try not to laugh at her reaction as she holds the paper in her hands.
 
 {Name("Katya")}
 
-“Aww, don't be silly! Here looooook!”
-
-(Insert way to show picture here)
+“Aww, don't be silly! Here, looooook!”
 
 {Name("Emil")}
 
@@ -71,8 +66,8 @@ She holds it up, waving it in front of my face.
 It's a crayon drawing of myself, Katya and Nicolai.
 It's very sweet. 
 
-“Oh! Good job Katya, it's wonderful!
-I’ll have your Uncle Nikki put it up on the fridge later.”
+“Oh! Good job Katya, it's wonderful!”
+“I’ll have your Uncle Nikki put it up on the fridge later.”
 
 I take the picture off her and pat her head, taking note of the small stains on the side of it. -> seven
 
@@ -88,9 +83,9 @@ I take the picture off her and pat her head, taking note of the small stains on 
 
 == four == 
  
-{Name("Emil")} Her face lights up with joy as she holds up her
-drawing. 
+Her face lights up with joy as she holds up her drawing. 
 I carefully take it and move it a bit away from my face to see it better. 
+{Icon("EmilHappy")}
 I look down at her and smile.
 
 “It's wonderful darling, now who do we have here?” 
@@ -102,8 +97,7 @@ It appears to be of myself, Katya and Nicolai.
 “Mhmm! This is you Dad, Uncle Nikki and me! The best detectives ever!”
 
 {Name("Emil")}
-I pat her head looking over the drawing. 
-I take note of the small stains on the side of it. -> seven
+I pat her head as I look over the drawing, taking note of the small stains on the side of it. -> seven
 
 == five ==
 
@@ -120,7 +114,7 @@ The question seems to have made her fidget a bit. -> seven
 
 == six ==
 
-{Name("Katya")} “Oh! I know! I know! Today's the 14th of June!”
+{Name("Katya")} “Oh! I know! I know! Today's the 17th of June!”
 
 {Name("Emil")}
 I try not to appear shocked when she says it, that day is quite a bittersweet memory now.
@@ -152,14 +146,14 @@ She must have read the date off the calendar and assumed it was today. -> seven
 *[ Final Deduction ] -> ten 
 
 == ten ==
-Who did it? 
+{Name("Emil")} {Icon("EmilNeutral")} {MC("transparent")} Who did it? 
 
 *[  Katya ] -> eighteen
 *[ Nicolai ] -> nineteen
 
 == two ==
 
-{Name("Emil")} “Mr. Kozlov...” 
+{Name("Emil")} {Icon("EmilNeutral")} “Mr. Kozlov...” 
 
 {MC("Nicolai")}
 
@@ -205,7 +199,7 @@ He shakes his head with a disgusted look on his face.
 
 He looks a little confused about why this would be relevant.
 
-“Since you hate my sandwiches so much, explain why I found this on the kitchen floor!”
+“Since you hate my sandwiches so much, explain why I found these on the kitchen floor!”
 
 {Name("Nicolai")}
 
@@ -256,14 +250,14 @@ the consequences.
 
 {Name("Emil")}
 
-“Well… it's standard protocol. Now moving on…”
+“Well... it's standard protocol. Now moving on...”
 
 I take note of his sudden agitation. 
 I push him back into his chair, halting his attempt to scamper away and check the toilet. -> Nicolai
 
 == thirteen ==
 
-{Name("Emil")} He looks at me as though I have ten heads, clearly perplexed by my line of questioning. 
+{Name("Emil")} He looks at me, as though I have ten heads. He's clearly perplexed by my line of questioning. 
 
 {Name("Nicolai")}
 
@@ -315,7 +309,7 @@ I clear my throat and continue with my questions.
 
 == eighteen ==
 
-{Name("Emil")} I turn to Katya and shake my head in disappointment. 
+{Name("Emil")} {Icon("EmilUpset")}I turn to Katya and shake my head in disappointment. 
 Her eyes well up with tears. She looks ashamed.
 She rushes over and hugs me tight without saying a word.
 I sigh and pat her head. 
@@ -367,7 +361,7 @@ The Case of the Swiped Sandwich was closed.
 -> END
 == nineteen ==
 
-{Name("Emil")} I turn to Nicolai with a stern and cold expression.
+{Name("Emil")} {Icon("EmilAngry")} I turn to Nicolai with a stern and cold expression.
 Surely he didn't believe I wouldn't catch him in the act.
 He looks befuddled, it clearly wasn't the answer he was expecting.
 
@@ -422,6 +416,7 @@ As though I was about to shoot him.
 
 {MC("Katya")}
 {Name("Katya")}
+{Icon("EmilUpset")}
 
 “NO! WAIT! IT WAS ME, DON'T PUT UNCLE NIKKI IN THE SLAMMER!”
 “HE'D NEVER SURVIVE!”
