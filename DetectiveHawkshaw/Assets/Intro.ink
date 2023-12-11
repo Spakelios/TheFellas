@@ -68,18 +68,22 @@ She stares blankly, her gaze is quite piercing.
  I feel as though I'm poking a small, angry bear. 
 
 {Name("Secretary")}
+{Icon("transparent")}
 
 "No." 
 
 {Name("Emil")}
+{Icon("EmilHappy")}
 
 "No one at all?"
 
 {Name("Secretary")}
+{Icon("transparent")}
 
 "..."
 
 {Name("Emil")}
+{Icon("EmilHappy")}
 
 The atmosphere is quite uncomfortable. I try my best to remain composed. 
 
@@ -103,6 +107,7 @@ Just hearing the pair of them would make anyone think I'd left two children here
 
 {MC("Katya")}
 {Name("Katya")}
+{Icon("transparent")}
 
 "DAD! You're back!" 
 
@@ -114,15 +119,18 @@ Katya wastes no time in running over to greet me. A wide grin decorates her face
 
 {MC("Nicolai")}
 {Name("Nicolai")}
+{Icon("transparent")}
 
 "Listen here pal, I'm not taking that from someone who leaves me with his kid outta nowhere for 30 min-" 
 
 {Name("Emil")}
+{Icon("EmilHappy")}
 
 "Oh, that's enough outta you, buddy!
 I've got work to do, unlike a certain someone who likes to waste his time idling and then blames his lack of productivity on little children!"
 
  {Name("Nicolai")}
+ {Icon("transparent")}
 
 "...Why I oughta-"
 
@@ -134,6 +142,7 @@ Before I can tell him to get back to work, I feel Katya tug on my jacket.
 
 {MC("Katya")}
 {Name("Katya")}
+{Icon("transparent")}
 
 "I'm not little! I'm 9 and 3 quarters! 
 Don't call me little!
@@ -154,14 +163,14 @@ Although if he did he'd finally be blaming himself.
 
 {MC("Katya")}
 {Name("Katya")}
+{Icon("transparent")}
  
 "Yeah! Don't you forget it!"
 
 {Name("Emil")}
+{Icon("EmilNeutral")}
 
 She seems pleased with my response and nods her head. I give her head another pat before getting back to business. 
-
-{Icon("EmilNeutral")}
 
 "Now, another matter has been brought to my attention."
 
@@ -169,6 +178,7 @@ I take the newspaper and slam it down on Nicolai's desk to get his attention.
 
 {MC("Nicolai")}
 {Name("Nicolai")}
+{Icon("transparent")}
 
 "Jesus Christ!"
 
@@ -179,6 +189,7 @@ He looks at me confused, almost a little rattled as I begin to explain my predic
 "My lunch has mysteriously disappeared." 
 
 {MC("transparent")}
+{Icon("EmilNeutral")}
 
 My eyes dart between the two of them.
 Neither reacts very strongly. 

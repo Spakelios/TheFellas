@@ -7,7 +7,7 @@ using System;
        using TMPro;
        using UnityEngine.SceneManagement;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger: MonoBehaviour
 {
     private int num;
     [SerializeField] private TextAsset _InkJsonFile;
