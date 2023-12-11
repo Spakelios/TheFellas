@@ -15,6 +15,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
+    
+    // private Text text;
 
 
     public Image characterIcon;
@@ -24,8 +26,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject butt;
     public Image backgroundIcon;
     public GameObject button2;
-
-
+    
     void Start()
     {
         LoadStory();
@@ -33,7 +34,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             DisplayNextLine();
         }
@@ -53,24 +54,25 @@ public class DialogueTrigger : MonoBehaviour
 
     public void DisplayNextLine()
     {
+
         if (_StoryScript.canContinue) // Checking if there is content to go through
         {
-            string text = _StoryScript.Continue(); //Gets Next Line
+
+            string text = _StoryScript.Continue();
             text = text?.Trim(); //Removes White space from the text
             dialogueBox.text = text; //Displays new text
+
         }
-        else if (_StoryScript.currentChoices.Count > 0)
-        {
-            DisplayChoices();
+        else if (_StoryScript.currentChoices.Count > 0) 
+        { 
+            DisplayChoices(); 
         }
-        else
-        {
-            // dialogueBox.text = ".....";
-            // SceneManager.LoadScene("UI BONUS ROUND");
-            button2.SetActive(true);
+        else 
+        { 
+            button2.SetActive(true); 
         }
     }
-
+  
     public void DisplayChoices()
     {
         if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return;
@@ -139,4 +141,6 @@ public class DialogueTrigger : MonoBehaviour
         var WaterIcon = Resources.Load<Sprite>("characterIcons/" + name);
         Icon.sprite = WaterIcon;
     }
+
+    
 }
