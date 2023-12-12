@@ -8,64 +8,64 @@ EXTERNAL Back(charName)
 {Name("Emil")}
 {MC("transparent")}
 
-I stumble into the office as usual. The slam of the door shakes the very foundations of the old building. 
+<I> I stumble into the office as usual. The slam of the door shakes the very foundations of the old building. </I>
 
-It's quiet today, almost suspiciously so. I think nothing of it as I nod politely to our secretary.
+<I>It's quiet today, almost suspiciously so. I think nothing of it as I nod politely to our secretary</I>
 
-I quickly head into the kitchen, checking the clock on the wall.
+<I>I quickly head into the kitchen, checking the clock on the wall. </I>
 
 {Back("Kitchen")}
 
 "12 already? Jesus, it took half an hour…"
 
-I suddenly feel an almost childlike glee as I remember my hardwork from the night before.
+<I> I suddenly feel an almost childlike glee as I remember my hardwork from the night before.</I>
 
-For the first time since the divorce, I had a packed lunch.
+<I>For the first time since the divorce, I had a packed lunch.</I>
  
-I saunter over to the fridge in anticipation, practically giddy as I grab the handle and pull back the door.  
+<I>I saunter over to the fridge in anticipation, practically giddy as I grab the handle and pull back the door.  </I>
 
 {Icon("EmilUpset")}
 
 "..."
 
-I stare in horror. 
+<I> I stare in horror. </I>
 
-It's gone. 
+<I> It's gone. 
 
-The sandwich I spent 2 whole hours making last night. 
+<I> The sandwich I spent 2 whole hours making last night. 
 
-First, all I felt was shock.
+<I> First, all I felt was shock.
 
-Followed soon after by pain akin to that of a grieving widow. 
+<I>  soon after by pain akin to that of a grieving widow. </I>
 
 "My sandwich..." 
 
-I closed the door, taking a moment to process the torrent of emotions. 
-Who would commit such a heinous crime? In my own place of work!
+<I>  I close the door, taking a moment to process the torrent of emotions. </I>
+<I>Who would commit such a heinous crime? In my own place of work! </I>
 
 {Back("Lobby")}
-I step out of the kitchen and review the situation thus far. 
+<I> I step out of the kitchen and review the situation thus far. </I>
 
-My lunch disappeared from the fridge between 11.30am and 12.00pm, just as I was away on business. 
+<I>My lunch disappeared from the fridge between 11.30am and 12.00pm, just as I was away on business. </I>
 
-The only people in the building while I was away should have been...
-Katya, Nicolai, and the secretary.
+<I>The only people in the building while I was away should have been...</I>
+<I>Katya, Nicolai, and the secretary. </I>
 
-I doubt the secretary has anything to do with it, but it may be worth asking her.
+<I>I doubt the secretary has anything to do with it, but it may be worth asking her.</I>
 
 *[ Speak with the secretary ] -> one 
 *[ Check the office ] -> two
 
 == one == 
-{Icon("EmilNeutral")} {MC("Secretary")} I reluctantly approach the secretary's desk. Her usual scowl appears as soon as she sees me.
- I clear my throat to get her attention. 
+{Icon("EmilNeutral")} {MC("Secretary")} <I>I reluctantly approach the secretary's desk. Her usual scowl appears as soon as she sees me.</I>
+<I> I clear my throat to get her attention. </I>
 
 {Icon("EmilHappy")}
 
 "Excuse me, You wouldn't have happened to spot anyone going in and out of the kitchen while I was out, would you?" 
 
-She stares blankly, her gaze is quite piercing.
- I feel as though I'm poking a small, angry bear. 
+<I> She stares blankly, her gaze is quite piercing. </I>
+<I> I feel as though I'm poking a small, angry bear. </I>
 
 {Name("Secretary")}
 {Icon("transparent")}
@@ -85,9 +85,9 @@ She stares blankly, her gaze is quite piercing.
 {Name("Emil")}
 {Icon("EmilHappy")}
 
-The atmosphere is quite uncomfortable. I try my best to remain composed. 
+<I>The atmosphere is quite uncomfortable. I try my best to remain composed. </I>
 
-I nod and tap the desk lightly with my hand, turning to walk away.
+<I>I nod and tap the desk lightly with my hand, turning to walk away.</I>
 
 "...Right, thank you." 
 
@@ -99,9 +99,9 @@ I need better staff.
 
 == two == 
 
-{MC("transparent")} {Back("Office")} I slowly open the door and the chattering voices of my daughter and co-worker fill my ears. 
+{MC("transparent")} {Back("Office")} <I>I slowly open the door and the chattering voices of my daughter and co-worker fill my ears. </I>
 
-Just hearing the pair of them would make anyone think I'd left two children here while I was out instead of one. 
+<I>Just hearing the pair of them would make anyone think I'd left two children here while I was out instead of one.</I>
 
 "Losing an argument to a child again, Nico?" 
 
@@ -114,8 +114,8 @@ Just hearing the pair of them would make anyone think I'd left two children here
 {Name("Emil")}
 {Icon("EmilHappy")}
 
-Katya wastes no time in running over to greet me. A wide grin decorates her face as she clings to my leg.
- I give her a pat on the head as I look up to see Nicolai is quite the unhappy camper.
+<I>Katya wastes no time in running over to greet me. A wide grin decorates her face as she clings to my leg.
+ I give her a pat on the head as I look up to see Nicolai is quite the unhappy camper. </I>
 
 {MC("Nicolai")}
 {Name("Nicolai")}
@@ -137,8 +137,8 @@ I've got work to do, unlike a certain someone who likes to waste his time idling
 {Icon("EmilNeutral")}
 {Name("Emil")}
 
-I take the newspaper that he had been reading off his desk, roll it up and put it under my arm. 
-Before I can tell him to get back to work, I feel Katya tug on my jacket.
+<I> I take the newspaper that he had been reading off his desk, roll it up and put it under my arm. </I>
+<I>Before I can tell him to get back to work, I feel Katya tug on my coat.</I>
 
 {MC("Katya")}
 {Name("Katya")}
@@ -150,16 +150,16 @@ I'm a big girl!"
 
 {Icon("EmilHappy")}
 {Name("Emil")}
-As always, Katya never fails to make me forget what I'm supposed to be doing. 
+<I>As always, Katya never fails to make me forget what I'm supposed to be doing. </I>
 
-She's pouting up at me, determined to scold me for my ignorance. 
+<I>She's pouting up at me, determined to scold me for my ignorance. </I>
 
-She's adorable as ever.
+<I>She's adorable as ever.</I>
 
 "Ahh yes! Of course, my darling! 
 Nicolai likes to blame it on big children, my mistake."
 
-Although if he did he'd finally be blaming himself.
+<I>Although if he did he'd finally be blaming himself.</I>
 
 {MC("Katya")}
 {Name("Katya")}
@@ -170,11 +170,11 @@ Although if he did he'd finally be blaming himself.
 {Name("Emil")}
 {Icon("EmilNeutral")}
 
-She seems pleased with my response and nods her head. I give her head another pat before getting back to business. 
+<I>She seems pleased with my response and nods her head. I give her head another pat before getting back to business. </I>
 
 "Now, another matter has been brought to my attention."
 
-I take the newspaper and slam it down on Nicolai's desk to get his attention. 
+<I>I take the newspaper and slam it down on Nicolai's desk to get his attention. </I>
 
 {MC("Nicolai")}
 {Name("Nicolai")}
@@ -184,16 +184,16 @@ I take the newspaper and slam it down on Nicolai's desk to get his attention.
 
 {Name("Emil")}
 
-He looks at me confused, almost a little rattled as I begin to explain my predicament.
+<I>He looks at me confused, almost a little rattled as I begin to explain my predicament.</I>
 
 "My lunch has mysteriously disappeared." 
 
 {MC("transparent")}
 {Icon("EmilNeutral")}
 
-My eyes dart between the two of them.
-Neither reacts very strongly. 
-It appears our perpetrator isn't so easily intimidated. 
+<I>My eyes dart between the two of them.</I>
+<I>Neither reacts very strongly. </I>
+<I>It appears our perpetrator isn't so easily intimidated. </I>
 
 "...and I will find out one way or another who is responsible. "
 
