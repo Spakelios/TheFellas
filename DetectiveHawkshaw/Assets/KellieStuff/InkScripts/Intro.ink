@@ -14,7 +14,7 @@ EXTERNAL Back(charName)
 
 <I>I quickly head into the kitchen, checking the clock on the wall. </I>
 
-{Back("Kitchen")}
+{Back("Kitchens")}
 
 "12 already? Jesus, it took half an hour…"
 
