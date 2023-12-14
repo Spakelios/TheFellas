@@ -63,13 +63,14 @@ EXTERNAL Evi(charName)
 {Icon("transparent")}“Aww, don't be silly! Here, looooook!”
 
 {Name("Emil")}
-{Icon("EmilHappy")}<i>She holds it up, waving it in front of my face.</i>
+{Icon("EmilHappy")}
+{Evi("KatyaDraws")}<i>She holds it up, waving it in front of my face.</i>
 <i>It's a crayon drawing of myself, Katya and Nicolai.</i>
 <i>It's very sweet.</i> 
 
 “Oh! Good job Katya, it's wonderful!”
 “I’ll have your Uncle Nikki put it up on the fridge later.”
-
+{Evi("transparent")}
 <i>I take the picture off her and pat her head, taking note of the small stains on the side of it.</i> -> seven
 
 == seven == 
@@ -87,7 +88,7 @@ EXTERNAL Evi(charName)
 <i>Her face lights up with joy as she holds up her drawing. </i> 
 <i>I carefully take it and move it a bit away from my face to see it better. </i>
 {Icon("EmilHappy")}<i>I look down at her and smile.</i>
-
+{Evi("KatyaDraws")}
 “It's wonderful darling, now who do we have here?” 
 
 <i>She beams with pride, pointing at the group of people she had drawn. </i>
@@ -96,9 +97,10 @@ EXTERNAL Evi(charName)
 {Name("Katya")} 
 {Icon("transparent")}“Mhmm! This is you Dad, Uncle Nikki and me! The best detectives ever!”
 
+{Evi("transparent")}
 {Name("Emil")} 
 {Icon("EmilHappy")}
-<i>I pat her head as I look over the drawing, taking note of the small stains on the side of it. -> seven
+<i>I pat her head as I look over the drawing, taking note of the stains on the on it. -> seven
 </i>
 == five ==
 
@@ -152,7 +154,7 @@ EXTERNAL Evi(charName)
 
 *[ What day is it today? ] -> six
 
-*[ Final Deduction ] -> ten 
+*[ I know who did it ] -> ten 
 
 == ten ==
 {Name("Emil")} 
