@@ -126,8 +126,8 @@ I need better staff.
 {Name("Emil")}
 {Icon("EmilHappy")}
 
-"Oh, that's enough outta you, buddy!
-I've got work to do, unlike a certain someone who likes to waste his time idling and then blames his lack of productivity on little children!"
+"Oh, that's enough outta you, buddy!"
+"I've got work to do, unlike a certain someone who likes to waste his time idling and then blames his lack of productivity on little children!"
 
  {Name("Nicolai")}
  {Icon("transparent")}
@@ -144,9 +144,9 @@ I've got work to do, unlike a certain someone who likes to waste his time idling
 {Name("Katya")}
 {Icon("transparent")}
 
-"I'm not little! I'm 9 and 3 quarters! 
-Don't call me little!
-I'm a big girl!" 
+"I'm not little! I'm 9 and 3 quarters!" 
+"Don't call me little!"
+"I'm a big girl!" 
 
 {Icon("EmilHappy")}
 {Name("Emil")}
@@ -156,8 +156,8 @@ I'm a big girl!"
 
 <I>She's adorable as ever.</I>
 
-"Ahh yes! Of course, my darling! 
-Nicolai likes to blame it on big children, my mistake."
+"Ahh yes! Of course, my darling!" 
+"Nicolai likes to blame it on big children, my mistake."
 
 <I>Although if he did he'd finally be blaming himself.</I>
 

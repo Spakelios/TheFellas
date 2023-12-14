@@ -2010,7 +2010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7002b804ddb8d984aa092cf1c1dd5252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InkJsonFile: {fileID: 4900000, guid: a10ebe38124082c42955403eadf5acb3, type: 3}
+  _InkJsonFile: {fileID: 4900000, guid: bc96c48fa60051f438c90442a8b0a104, type: 3}
   dialogueBox: {fileID: 1497742013}
   nameTag: {fileID: 1016981683}
   characterIcon: {fileID: 89634927}
