@@ -1263,7 +1263,7 @@ GameObject:
   - component: {fileID: 1075406536}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2595,6 +2595,38 @@ PrefabInstance:
     - target: {fileID: 1372878711730605748, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775045630480571626, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d66179db46d3d645a486c3ecba7a9b7, type: 3}
+    - target: {fileID: 2255419476863758438, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255419476863758438, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255419476863758438, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255419476863758438, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255419476863758438, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255419476863758438, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255419476863758438, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4348242388186886269, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
       propertyPath: m_Name

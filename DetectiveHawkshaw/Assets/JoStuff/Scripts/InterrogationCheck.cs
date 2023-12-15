@@ -9,8 +9,12 @@ public class InterrogationCheck : MonoBehaviour
     private List<int> evidenceCheck;
     public static List<int> newEvidence;
 
+    private AudioSource music;
+
     private void Start()
     {
+        music = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
+        
         evidenceCheck = new List<int>()
         {
             1, 2, 3, 4
@@ -28,7 +32,7 @@ public class InterrogationCheck : MonoBehaviour
             InvestigationDialogueTrigger.isExamined.Contains(4))
         {
             SceneManager.LoadScene("InterrogationScene");
-            GameObject.FindWithTag("Music").GetComponent<AudioSource>().Stop();
+            music.Stop();
         }
     }
 

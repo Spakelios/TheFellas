@@ -13,6 +13,8 @@ public class NumberLock : MonoBehaviour
     public GameObject unlocked;
     public Object[] numbers;
 
+    public AudioSource unlockLock;
+
     private void Start()
     {
         currentCombo = new List<int>
@@ -31,6 +33,7 @@ public class NumberLock : MonoBehaviour
     {
         if (!currentCombo.SequenceEqual(correctCombo)) return;
         
+        unlockLock.Play();
         locked.SetActive(false);
         unlocked.SetActive(true);
         PuzzleTrigger.puzzleSolved = true;
