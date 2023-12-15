@@ -26,6 +26,7 @@ public class DialogueTrigger: MonoBehaviour
     public GameObject butt;
     public Image backgroundIcon;
     public GameObject button2;
+    public Image Evi;
     
     void Start()
     {
@@ -48,6 +49,7 @@ public class DialogueTrigger: MonoBehaviour
         _StoryScript.BindExternalFunction("Icon", (string charName) => CharacterIcon(charName));
         _StoryScript.BindExternalFunction("Back", (string charName) => BackIcon(charName));
         _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
+        _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
         DisplayNextLine();
 
     }
@@ -140,6 +142,11 @@ public class DialogueTrigger: MonoBehaviour
     {
         var WaterIcon = Resources.Load<Sprite>("characterIcons/" + name);
         Icon.sprite = WaterIcon;
+    }
+    public void EviIcon(string name)
+    {
+        var EviIcon = Resources.Load<Sprite>("characterIcons/" + name);
+        Evi.sprite = EviIcon;
     }
 
     
