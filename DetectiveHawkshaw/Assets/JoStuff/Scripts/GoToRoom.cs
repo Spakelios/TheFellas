@@ -17,12 +17,16 @@ public class GoToRoom : MonoBehaviour
     public string sceneName;
     
     public TextMeshProUGUI examineTagBox;
+    //public AudioSource doorOpen;
 
     // Update is called once per frame
 
     private void Start()
     {
         examineTagBox.text = "";
+        //doorOpen = GameObject.Find("Open Door").GetComponent<AudioSource>();
+        OnMouseExit();
+
     }
     private void Update()
     {
@@ -49,7 +53,9 @@ public class GoToRoom : MonoBehaviour
         
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
-        SceneManager.LoadScene(sceneName);
+        //doorOpen.Play();
+        //SceneManager.LoadScene(sceneName);
+        RoomLoader.instance.LoadLevel(sceneName);
     }
     
     

@@ -19,11 +19,13 @@ public class PuzzleTrigger : MonoBehaviour
     public TextMeshProUGUI examineTagBox;
 
     public static bool puzzleSolved;
+    //private AudioSource doorOpen;
 
     private void Start()
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
         examineTagBox.text = "";
+        //doorOpen = GameObject.Find("Open Door").GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -53,7 +55,9 @@ public class PuzzleTrigger : MonoBehaviour
 
         if (puzzleSolved)
         {
-            SceneManager.LoadScene(sceneName);
+            //doorOpen.Play();
+            //SceneManager.LoadScene(sceneName);
+            RoomLoader.instance.LoadLevel(sceneName);
         }
 
         else
