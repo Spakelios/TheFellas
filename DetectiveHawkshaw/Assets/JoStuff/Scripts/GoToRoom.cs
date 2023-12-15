@@ -19,6 +19,8 @@ public class GoToRoom : MonoBehaviour
     public TextMeshProUGUI examineTagBox;
     //public AudioSource doorOpen;
 
+    public AudioSource doorKnock;
+
     // Update is called once per frame
 
     private void Start()
@@ -36,6 +38,11 @@ public class GoToRoom : MonoBehaviour
         {
             eye.transform.position = mousePos;
         }
+    }
+
+    private void OnMouseEnter()
+    {
+        doorKnock.Play();
     }
 
     public void OnMouseOver()

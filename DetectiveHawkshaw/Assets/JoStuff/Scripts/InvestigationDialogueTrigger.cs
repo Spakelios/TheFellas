@@ -23,6 +23,8 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public bool evidence;
     public bool calendar;
 
+    public AudioSource evidenceSound;
+
     private void Start()
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
@@ -67,12 +69,19 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
         if (evidence)
         {
+            evidenceSound.Play();
             dialogueManager.evidenceDialogue = true;
         }
 
         if (calendar)
         {
+            evidenceSound.Play();
             dialogueManager.calendarDialogue = true;
+        }
+
+        if (dialogueManager.sandwichDialogue)
+        {
+            evidenceSound.Play();
         }
 
         dialogueManager.StartDialogue(dialogue);

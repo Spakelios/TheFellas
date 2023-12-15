@@ -19,6 +19,7 @@ public class PuzzleTrigger : MonoBehaviour
     public TextMeshProUGUI examineTagBox;
 
     public static bool puzzleSolved;
+    public AudioSource doorKnock;
     //private AudioSource doorOpen;
 
     private void Start()
@@ -36,7 +37,12 @@ public class PuzzleTrigger : MonoBehaviour
             eye.transform.position = mousePos;
         }
     }
-    
+
+    private void OnMouseEnter()
+    {
+        doorKnock.Play();
+    }
+
     public void OnMouseOver()
     {
         if (dialogueManager.dialogueBox.activeInHierarchy) return;

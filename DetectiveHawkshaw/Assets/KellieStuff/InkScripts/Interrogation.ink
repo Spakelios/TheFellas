@@ -12,17 +12,16 @@ EXTERNAL Evi(charName)
 “Let's start with...”  -> Choose
 
 == Choose ==
+{MC("transparent")}
 * {not two } [ Interrogate Nicolai ] -> two 
 
 * {not one} [ Interrogate Katya ] -> one
 
 * [ I know who did it ] -> ten
 
-
 == one == 
  
-{Name("Emil")}
-{Icon("EmilNeutral")} {MC("Katya")} “Miss Hawkshaw, as you're aware my sandwich was found in the toilet today.”
+{Name("Emil")}{Icon("EmilNeutral")} {MC("Katya")} “Miss Hawkshaw, as you're aware my sandwich was found in the toilet today.”
 “I would like to ask you some questions about this incident.”
 <i> She sits down in my office chair and spins around to face me. She seems a little nervous, but nods. </i>
 
@@ -37,8 +36,7 @@ EXTERNAL Evi(charName)
 
 == twenty == 
 
-{Name("Emil")} 
-{Icon("EmilNeutral")}<i> She puts her hand to her chin, thinking deeply about what she got up to today. </i>
+{Name("Emil")} {Icon("EmilNeutral")}<i> She puts her hand to her chin, thinking deeply about what she got up to today. </i>
 <i> I try to remain stern without upsetting her. </i>
 
 {Name("Katya")}
@@ -81,7 +79,7 @@ EXTERNAL Evi(charName)
 
 * {not six} [ What day is it today? ] -> six
 
-* {twenty && five && six} [ Final Deduction ] -> ten
+* {twenty && five && six} [ Move on ] -> Choose
 
 == four == 
  
@@ -104,8 +102,7 @@ EXTERNAL Evi(charName)
 </i>
 == five ==
 
-{Name("Emil")} 
-{Icon("EmilNeutral")} <i>She tilts her head as though confused by the question. 
+{Name("Emil")} {Icon("EmilNeutral")} <i>She tilts her head as though confused by the question. 
 <i>She stares back at me with an innocent expression.</i>
 
 {Name("Katya")}
@@ -118,8 +115,7 @@ EXTERNAL Evi(charName)
 
 == six ==
 
-{Name("Katya")}
-{Icon("transparent")} “Oh! I know! I know! Today's the 17th of June!”
+{Name("Katya")}{Icon("transparent")} “Oh! I know! I know! Today's the 17th of June!”
 
 {Name("Emil")}
 {Icon("EmilUpset")}
@@ -157,8 +153,7 @@ EXTERNAL Evi(charName)
 *[ I know who did it ] -> ten 
 
 == ten ==
-{Name("Emil")} 
-{Icon("EmilNeutral")} {MC("transparent")} Who did it? 
+{Name("Emil")} {Icon("EmilNeutral")} {MC("transparent")} Who did it? 
 
 *[  Katya ] -> eighteen
 *[ Nicolai ] -> nineteen
