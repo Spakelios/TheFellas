@@ -31,7 +31,8 @@ public class InterrogationCheck : MonoBehaviour
             InvestigationDialogueTrigger.isExamined.Contains(3) && 
             InvestigationDialogueTrigger.isExamined.Contains(4))
         {
-            SceneManager.LoadScene("InterrogationScene");
+            //SceneManager.LoadScene("InterrogationScene");
+            VNToInvestLoader.instance.LoadLevel("InterrogationScene");
             music.Stop();
         }
     }

@@ -41,7 +41,7 @@ EXTERNAL Evi(charName)
 
 {Name("Katya")}
 {Icon("transparent")}“Hmm… I was drawing in the lobby!"
-"I showed it too Miss Secretary and she said"
+"I showed it to Miss Secretary and she said..."
 "I did a really good job!" 
 "Wanna see it?”
 

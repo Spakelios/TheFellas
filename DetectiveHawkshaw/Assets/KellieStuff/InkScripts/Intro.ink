@@ -10,7 +10,7 @@ EXTERNAL Back(charName)
 
 <I> I stumble into the office as usual. The slam of the door shakes the very foundations of the old building. </I>
 
-<I>It's quiet today, almost suspiciously so. I think nothing of it as I nod politely to our secretary</I>
+<I>It's quiet today, almost suspiciously so. I think nothing of it as I nod politely to our secretary.</I>
 
 <I>I quickly head into the kitchen, checking the clock on the wall. </I>
 
@@ -36,7 +36,7 @@ EXTERNAL Back(charName)
 
 <I> First, all I felt was shock.
 
-<I>  soon after by pain akin to that of a grieving widow. </I>
+<I> Soon after by pain akin to that of a grieving widow. </I>
 
 "My sandwich..." 
 
