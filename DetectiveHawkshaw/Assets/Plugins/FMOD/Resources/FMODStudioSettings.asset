@@ -654,6 +654,8 @@ MonoBehaviour:
   - Master
   Banks:
   - Investigation Portion
+  - Main Theme
+  - Puzzle Section
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
