@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638403628873434532
+  lastModified: 638404610794183364
   FileSizes:
   - Name: Desktop
-    Value: 712
+    Value: 874
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -35,13 +35,15 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -958728248735940064}
   - {fileID: 477190992083690590}
-  EditorEvents: []
+  - {fileID: 6166722098111538648}
+  EditorEvents:
+  - {fileID: 9091232154351290269}
   EditorParameters: []
   MasterBanks:
   - {fileID: 477190992083690590}
   StringsBanks:
   - {fileID: -958728248735940064}
-  cacheTime: 638403628873434532
+  cacheTime: 638404610794542403
   cacheVersion: 131609
 --- !u!114 &477190992083690590
 MonoBehaviour:
@@ -58,8 +60,84 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638403628873385258
+  lastModified: 638404610794143473
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &1429159569583171381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2576045405
+    data2: 796590669
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Door Knocking
+  - Door Open
+  - Door Close
+  Exists: 1
+--- !u!114 &6166722098111538648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Investigation Portion.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Investigation
+    Portion.bank
+  Name: Investigation Portion
+  StudioPath: bank:/Investigation Portion
+  lastModified: 638404610794542403
+  FileSizes:
+  - Name: Desktop
+    Value: 35840
+  Exists: 1
+--- !u!114 &9091232154351290269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Door
+  Guid:
+    Data1: 691107651
+    Data2: 1112173112
+    Data3: -2020716397
+    Data4: -1786344780
+  Banks:
+  - {fileID: 6166722098111538648}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1429159569583171381}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
