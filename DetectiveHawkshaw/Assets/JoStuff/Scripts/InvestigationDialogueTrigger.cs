@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using FMOD;
 
 public class InvestigationDialogueTrigger : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
     public bool evidence;
     public bool calendar;
+
+    public bool wasChecked;
+
+    private static int plus = 0;
 
     //public AudioSource evidenceSound;
 
@@ -69,19 +74,34 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
         if (evidence)
         {
-            //evidenceSound.Play();
             dialogueManager.evidenceDialogue = true;
+            if (!wasChecked)
+            {
+                plus++;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+                wasChecked = true;
+            }
         }
 
         if (calendar)
         {
-            //evidenceSound.Play();
             dialogueManager.calendarDialogue = true;
+            if (!wasChecked)
+            {
+                plus++;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+                wasChecked = true;
+            }
         }
 
         if (dialogueManager.sandwichDialogue)
         {
-            //evidenceSound.Play();
+            if (!wasChecked)
+            {
+                plus++;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+                wasChecked = true;
+            }
         }
 
         dialogueManager.StartDialogue(dialogue);
