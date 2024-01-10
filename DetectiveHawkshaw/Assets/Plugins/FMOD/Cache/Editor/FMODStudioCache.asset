@@ -1,5 +1,106 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7663862873757883704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VFX/Nicolai
+  m_EditorClassIdentifier: 
+  Path: event:/VFX/Nicolai
+  Guid:
+    Data1: -1249488614
+    Data2: 1163465541
+    Data3: 410656687
+    Data4: -1865991237
+  Banks:
+  - {fileID: -6205895707333486101}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6205895707333486101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/VFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/VFX.bank
+  Name: VFX
+  StudioPath: bank:/VFX
+  lastModified: 638405129717659594
+  FileSizes:
+  - Name: Desktop
+    Value: 41536
+  Exists: 1
+--- !u!114 &-5888422272051667345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VFX/Katya
+  m_EditorClassIdentifier: 
+  Path: event:/VFX/Katya
+  Guid:
+    Data1: -857138081
+    Data2: 1189707338
+    Data3: 706302390
+    Data4: 1718820039
+  Banks:
+  - {fileID: -6205895707333486101}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4399873253934588947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Examining Evidence (Reverb)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Examining Evidence (Reverb)
+  Guid:
+    Data1: 1844661689
+    Data2: 1144114695
+    Data3: -520501884
+    Data4: 918864982
+  Banks:
+  - {fileID: 6166722098111538648}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3697723781668460471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +143,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Main Theme.bank
   Name: Main Theme
   StudioPath: bank:/Main Theme
-  lastModified: 638405062295703315
+  lastModified: 638405138087627687
   FileSizes:
   - Name: Desktop
-    Value: 2196224
+    Value: 2196352
   Exists: 1
 --- !u!114 &-2557855671386148029
 MonoBehaviour:
@@ -136,10 +237,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638405062294879152
+  lastModified: 638405131561279488
   FileSizes:
   - Name: Desktop
-    Value: 1228
+    Value: 1446
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -159,19 +260,23 @@ MonoBehaviour:
   - {fileID: 6166722098111538648}
   - {fileID: -3619272232104239770}
   - {fileID: -1904368167446261967}
+  - {fileID: -6205895707333486101}
   EditorEvents:
   - {fileID: 1839682642645351069}
   - {fileID: 7830455796000203165}
   - {fileID: -3697723781668460471}
   - {fileID: 9055998636107302041}
   - {fileID: -1029681647738804137}
+  - {fileID: -7663862873757883704}
+  - {fileID: -5888422272051667345}
+  - {fileID: -4399873253934588947}
   EditorParameters:
   - {fileID: 9215188164717851246}
   MasterBanks:
   - {fileID: 477190992083690590}
   StringsBanks:
   - {fileID: -958728248735940064}
-  cacheTime: 638405062295703315
+  cacheTime: 638405138087627687
   cacheVersion: 131609
 --- !u!114 &477190992083690590
 MonoBehaviour:
@@ -188,7 +293,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638405062294849223
+  lastModified: 638405131561249152
   FileSizes:
   - Name: Desktop
     Value: 1222
@@ -237,10 +342,10 @@ MonoBehaviour:
     Portion.bank
   Name: Investigation Portion
   StudioPath: bank:/Investigation Portion
-  lastModified: 638405062294729552
+  lastModified: 638405131561129450
   FileSizes:
   - Name: Desktop
-    Value: 45664
+    Value: 46816
   Exists: 1
 --- !u!114 &7830455796000203165
 MonoBehaviour:

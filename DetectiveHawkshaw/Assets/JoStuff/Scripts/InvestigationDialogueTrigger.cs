@@ -28,12 +28,15 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
     private static int plus = 0;
 
+    private Collider2D collider;
+
     //public AudioSource evidenceSound;
 
     private void Start()
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
         examineTagBox.text = "";
+        collider = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -44,6 +47,10 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         {
             eye.transform.position = mousePos;
         }
+
+        collider.enabled = !dialogueManager.dialogueBox.activeInHierarchy;
+        
+        
     }
     
     private void OnMouseEnter()

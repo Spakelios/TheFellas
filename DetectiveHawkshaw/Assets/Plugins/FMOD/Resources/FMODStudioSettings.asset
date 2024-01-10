@@ -656,6 +656,7 @@ MonoBehaviour:
   - Investigation Portion
   - Main Theme
   - Puzzle Section
+  - VFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
