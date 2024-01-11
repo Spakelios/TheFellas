@@ -36,6 +36,15 @@ public class RoomLoader : MonoBehaviour
         
         transition.SetTrigger("End");
         //doorClose.Play();
+        if(levelName == "Bathroom" || levelName == "Kitchen")
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Music Type", 1);
+        }
+
+        else if (levelName == "Lobby" || levelName == "Office")
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Music Type", 0);
+        }
 
     }
 }

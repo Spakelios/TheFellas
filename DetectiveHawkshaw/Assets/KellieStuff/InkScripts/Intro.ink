@@ -2,6 +2,7 @@ EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 EXTERNAL MC(charName)
 EXTERNAL Back(charName)
+EXTERNAL Sound (soundName)
 
 {Back("Lobby")}
 {Icon("EmilHappy")}
@@ -26,7 +27,10 @@ EXTERNAL Back(charName)
 
 {Icon("EmilUpset")}
 
+~Sound("Reverb")
+
 "..."
+
 
 <I> I stare in horror. </I>
 

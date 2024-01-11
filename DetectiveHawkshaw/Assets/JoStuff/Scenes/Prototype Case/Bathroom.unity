@@ -1040,11 +1040,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1615065623
-      Data2: 1331779748
-      Data3: -752702799
-      Data4: 688867849
-    Path: event:/SFX/Examining Evidence
+      Data1: 1844661689
+      Data2: 1144114695
+      Data3: -520501884
+      Data4: 918864982
+    Path: event:/SFX/Examining Evidence (Reverb)
   Event: 
   PlayEvent: 11
   StopEvent: 12

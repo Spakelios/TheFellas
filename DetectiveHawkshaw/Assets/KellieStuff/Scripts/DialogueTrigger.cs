@@ -6,6 +6,7 @@ using System;
        using Ink.Runtime;
        using TMPro;
        using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class DialogueTrigger: MonoBehaviour
 {
@@ -27,7 +28,8 @@ public class DialogueTrigger: MonoBehaviour
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
-    
+    public GameObject fmod;
+
     void Start()
     {
         LoadStory();
@@ -50,6 +52,7 @@ public class DialogueTrigger: MonoBehaviour
         _StoryScript.BindExternalFunction("Back", (string charName) => BackIcon(charName));
         _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
         _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
+        _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
         DisplayNextLine();
 
     }
@@ -149,5 +152,10 @@ public class DialogueTrigger: MonoBehaviour
         Evi.sprite = EviIcon;
     }
 
-    
+    public void FModShenanigans(string name)
+    {
+        fmod.SetActive(true);
+    }
+
+
 }

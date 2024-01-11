@@ -1004,11 +1004,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1586835608
-      Data2: 1153303513
-      Data3: -1500064368
-      Data4: 908343336
-    Path: event:/Music/Main Theme
+      Data1: -1538303614
+      Data2: 1140543309
+      Data3: -2014431570
+      Data4: -1836356855
+    Path: event:/Music/Hawkshaw
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -1016,9 +1016,7 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params:
-  - Name: Intensity
-    Value: 0
+  Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20

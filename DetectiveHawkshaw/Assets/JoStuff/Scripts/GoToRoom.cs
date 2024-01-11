@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using FMOD;
 
 public class GoToRoom : MonoBehaviour
 {
