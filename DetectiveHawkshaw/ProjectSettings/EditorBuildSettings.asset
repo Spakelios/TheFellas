@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KellieStuff/Scenes/Coming soon.unity
     guid: 67aba5d04d479494196eba718d422441
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/StartScreen.unity
+    guid: 9f69d0ff65dee014e8f9c8ff07fb0633
   m_configObjects: {}

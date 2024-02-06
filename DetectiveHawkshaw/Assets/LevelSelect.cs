@@ -8,6 +8,7 @@ public class LevelSelect : MonoBehaviour
     public void newlevel ()
     {
         SceneManager.LoadScene("DemoTest1");
+        Debug.Log("Clicked!");
     }
     
     public void newlevel2 ()
@@ -18,5 +19,10 @@ public class LevelSelect : MonoBehaviour
     public void newlevel3()
     {
         SceneManager.LoadScene("Coming soon");
+    }
+
+    public void quitGame()
+    {
+        Application.Quit();
     }
 }
