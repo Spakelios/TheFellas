@@ -20,6 +20,9 @@ public class GoToRoom : MonoBehaviour
     //public AudioSource doorOpen;
 
     public AudioSource doorKnock;
+    
+    
+    
 
     // Update is called once per frame
 
@@ -27,7 +30,9 @@ public class GoToRoom : MonoBehaviour
     {
         examineTagBox.text = "";
         //doorOpen = GameObject.Find("Open Door").GetComponent<AudioSource>();
+        JournalInitialiser.journal.SetActive(true);
         OnMouseExit();
+
 
     }
     private void Update()
@@ -42,11 +47,13 @@ public class GoToRoom : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (PauseGame.isPaused) return;
         doorKnock.Play();
     }
 
     public void OnMouseOver()
     {
+        if (PauseGame.isPaused) return;
         if (dialogueBox.activeInHierarchy) return;
         
         if (!eyeSpawned)
@@ -62,6 +69,7 @@ public class GoToRoom : MonoBehaviour
         OnMouseExit();
         //doorOpen.Play();
         //SceneManager.LoadScene(sceneName);
+        JournalInitialiser.journal.SetActive(false);
         RoomLoader.instance.LoadLevel(sceneName);
     }
     
@@ -69,6 +77,7 @@ public class GoToRoom : MonoBehaviour
     
     private void OnMouseExit()
     {
+        if (PauseGame.isPaused) return;
         Cursor.visible = true;
         Destroy(eye);
         eyeSpawned = false;

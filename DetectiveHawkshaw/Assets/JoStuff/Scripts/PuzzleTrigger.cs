@@ -40,11 +40,13 @@ public class PuzzleTrigger : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (PauseGame.isPaused) return;
         doorKnock.Play();
     }
 
     public void OnMouseOver()
     {
+        if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
         
         if (!eyeSpawned)
@@ -75,6 +77,7 @@ public class PuzzleTrigger : MonoBehaviour
 
     public void OnMouseExit()
     {
+        if (PauseGame.isPaused) return;
         Cursor.visible = true;
         Destroy(eye);
         eyeSpawned = false;

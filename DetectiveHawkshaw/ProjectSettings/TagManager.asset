@@ -11,6 +11,7 @@ TagManager:
   - Toilet
   - EvidencePortrait
   - Music
+  - Journal
   layers:
   - Default
   - TransparentFX

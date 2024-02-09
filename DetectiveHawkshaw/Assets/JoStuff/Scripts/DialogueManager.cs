@@ -50,6 +50,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
+        if (PauseGame.isPaused) return;
         if (!dialogueBox.activeInHierarchy) return;
 
         if (Input.GetMouseButtonDown(0))

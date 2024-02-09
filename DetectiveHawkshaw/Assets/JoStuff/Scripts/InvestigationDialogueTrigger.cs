@@ -43,6 +43,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     
     private void OnMouseEnter()
     {
+        if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
 
         if (isExamined.Contains(referenceID))
@@ -55,6 +56,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     
     public void OnMouseOver()
     {
+        if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
         
         if (!eyeSpawned)
@@ -94,6 +96,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     
     private void OnMouseExit()
     {
+        if (PauseGame.isPaused) return;
         Cursor.visible = true;
         Destroy(eye);
         eyeSpawned = false;
