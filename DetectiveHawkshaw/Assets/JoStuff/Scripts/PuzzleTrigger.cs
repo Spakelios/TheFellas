@@ -65,6 +65,7 @@ public class PuzzleTrigger : MonoBehaviour
         {
             //doorOpen.Play();
             //SceneManager.LoadScene(sceneName);
+            JournalInitialiser.journal.SetActive(false);
             RoomLoader.instance.LoadLevel(sceneName);
         }
 
