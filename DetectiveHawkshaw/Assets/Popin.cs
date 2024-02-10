@@ -13,7 +13,7 @@ public class Popin : MonoBehaviour
 
   private IEnumerator startDialogue()
   {
-    yield return new WaitForSeconds(8);
+    yield return new WaitForSeconds(5);
     dialogueBox.SetActive(true);
     
   }
