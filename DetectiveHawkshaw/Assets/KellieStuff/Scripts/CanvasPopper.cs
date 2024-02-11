@@ -11,6 +11,7 @@ public class CanvasPopper : MonoBehaviour
   {
     StartCoroutine("Invest");
   }
+  
 
   IEnumerator Invest()
   {

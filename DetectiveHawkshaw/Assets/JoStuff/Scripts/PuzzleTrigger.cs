@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+
 public class PuzzleTrigger : MonoBehaviour
 {
     private Vector2 mousePos;

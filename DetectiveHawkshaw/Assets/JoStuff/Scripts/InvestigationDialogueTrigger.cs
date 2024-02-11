@@ -1,11 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using Ink.Parsed;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
-public class InvestigationDialogueTrigger : MonoBehaviour
+  public class InvestigationDialogueTrigger : MonoBehaviour, IDataPersistence
 {
+    
     private Vector2 mousePos;
     public GameObject eyePrefab;
     private GameObject eye;
@@ -40,7 +44,28 @@ public class InvestigationDialogueTrigger : MonoBehaviour
             eye.transform.position = mousePos;
         }
     }
-    
+
+    public void LoadData(GameData data)
+    {
+        data.EvidenceCollected.TryGetValue(referenceID, out evidence);  
+        data.EvidenceCollected.TryGetValue(referenceID, out calendar);
+    }
+
+    public void SaveData(GameData data)
+    {
+        if (data.EvidenceCollected.ContainsKey(referenceID))
+        {
+            if (data.EvidenceCollected.ContainsKey(referenceID))
+            {
+                Debug.Log("balls");
+            }
+        }
+        
+        data.EvidenceCollected.Add(referenceID, evidence);  
+        data.EvidenceCollected.Add(referenceID, calendar);
+
+    }
+
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
