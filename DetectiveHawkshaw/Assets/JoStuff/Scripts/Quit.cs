@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Quit : MonoBehaviour
 {
 
-    public void QuitGame()
+    public void ReturnGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("StartScreen");
+    }
+
+    public void ChapSelect()
+    {
+        SceneManager.LoadScene("Level Select");
     }
 }
