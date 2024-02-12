@@ -7,7 +7,7 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-  public class InvestigationDialogueTrigger : MonoBehaviour, IDataPersistence
+  public class InvestigationDialogueTrigger : MonoBehaviour
 {
     
     private Vector2 mousePos;
@@ -45,26 +45,26 @@ using Unity.VisualScripting;
         }
     }
 
-    public void LoadData(GameData data)
-    {
-        data.EvidenceCollected.TryGetValue(referenceID, out evidence);  
-        data.EvidenceCollected.TryGetValue(referenceID, out calendar);
-    }
+    // public void LoadData(GameData data)
+    // {
+    //     data.IsExamined.TryGetValue(referenceID, out evidence);  
+    //     data.IsExamined.TryGetValue(referenceID, out calendar);
+    // }
+    //
+    // public void SaveData(GameData data)
+    // {
+    //     if (data.IsExamined.ContainsKey(referenceID))
+    //     {
+    //         if (data.IsExamined.ContainsKey(referenceID))
+    //         {
+    //             Debug.Log("balls");
+    //         }
+    //     }
+    //     
+    //     data.IsExamined.Add(referenceID, evidence);  
+    //     data.IsExamined.Add(referenceID, calendar);
 
-    public void SaveData(GameData data)
-    {
-        if (data.EvidenceCollected.ContainsKey(referenceID))
-        {
-            if (data.EvidenceCollected.ContainsKey(referenceID))
-            {
-                Debug.Log("balls");
-            }
-        }
-        
-        data.EvidenceCollected.Add(referenceID, evidence);  
-        data.EvidenceCollected.Add(referenceID, calendar);
-
-    }
+    // }
 
     private void OnMouseEnter()
     {
