@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using Unity.VisualScripting;
 
 public class FileDataHandler
 {
@@ -18,10 +19,10 @@ public class FileDataHandler
         this.useEncryption = useEncryption;
     }
 
-    public GameData Load() 
+    public GameData Load(string ProfileId) 
     {
         // use Path.Combine to account for different OS's having different path separators
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        string fullPath = Path.Combine(dataDirPath, ProfileId, dataFileName);
         GameData loadedData = null;
         if (File.Exists(fullPath)) 
         {
@@ -54,10 +55,10 @@ public class FileDataHandler
         return loadedData;
     }
 
-    public void Save(GameData data) 
+    public void Save(GameData data, string profileID) 
     {
         // use Path.Combine to account for different OS's having different path separators
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        string fullPath = Path.Combine(dataDirPath, profileID, dataFileName);
         try 
         {
             // create the directory the file will be written to if it doesn't already exist
@@ -85,6 +86,36 @@ public class FileDataHandler
         {
             Debug.LogError("Error occured when trying to save data to file: " + fullPath + "\n" + e);
         }
+    }
+
+    public Dictionary<string, GameData> LoadAllProfiles()
+    {
+        Dictionary<string, GameData> profileDictionary = new Dictionary<string, GameData>();
+
+        IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(dataDirPath).EnumerateDirectories();
+        foreach (DirectoryInfo dirInfo in dirInfos)
+        {
+            string profileID = dirInfo.Name;
+
+            string fullPath = Path.Combine(dataDirPath, profileID, dataFileName);
+            if (!File.Exists(fullPath))
+            {
+                Debug.LogWarning("Skipping directory when loading all profiles because as it does not contain data: " + profileID);
+                continue;
+            }
+
+            GameData profileData = Load(profileID);
+            if (profileData != null)
+            {
+                profileDictionary.Add(profileID, profileData);
+            }
+            else
+            {
+                Debug.LogError("Tried to load profile but something went wrong. ProfileID: " + profileID);
+            }
+        }
+        
+        return profileDictionary;
     }
 
     // the below is a simple implementation of XOR encryption
