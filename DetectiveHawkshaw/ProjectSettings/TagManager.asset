@@ -46,6 +46,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UIMEnu
+    uniqueID: 3219915255
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

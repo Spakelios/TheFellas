@@ -12,6 +12,9 @@ public class SaveSlotsMenu : Menu
     [Header("Menu Buttons")]
     [SerializeField] private Button backButton;
 
+    [Header("Confirmation Popup")]
+    [SerializeField] private ConfirmationPopupMenu confirmationPopupMenu;
+
     private SaveSlot[] saveSlots;
 
     private bool isLoadingGame = false;
@@ -21,23 +24,67 @@ public class SaveSlotsMenu : Menu
         saveSlots = this.GetComponentsInChildren<SaveSlot>();
     }
 
-    public void OnSaveSlotClicked(SaveSlot saveSlot)
+    public void OnSaveSlotClicked(SaveSlot saveSlot) 
     {
         // disable all buttons
         DisableMenuButtons();
 
-        // update the selected profile id to be used for data persistence
-        DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
-
-        if (!isLoadingGame)
+        // case - loading game
+        if (isLoadingGame) 
         {
-            // create a new game - which will initialize our data to a clean slate
-            DataPersistenceManager.instance.NewGame();
+            DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
+            SaveGameAndLoadScene();
         }
+        // case - new game, but the save slot has data
+        else if (saveSlot.hasData) 
+        {
+            confirmationPopupMenu.ActivateMenu(
+                "Starting a New Game with this slot will override the currently saved data. Are you sure?",
+                // function to execute if we select 'yes'
+                () => {
+                    DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
+                    DataPersistenceManager.instance.NewGame();
+                    SaveGameAndLoadScene();
+                },
+                // function to execute if we select 'cancel'
+                () => {
+                    this.ActivateMenu(isLoadingGame);
+                }
+            );
+        }
+        // case - new game, and the save slot has no data
+        else 
+        {
+            DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
+            DataPersistenceManager.instance.NewGame();
+            SaveGameAndLoadScene();
+        }
+    }
 
-        // load the scene - which will in turn save the game because of OnSceneUnloaded() in the DataPersistenceManager
+    private void SaveGameAndLoadScene() 
+    {
+        // save the game anytime before loading a new scene
+        DataPersistenceManager.instance.SaveGame();
+        // load the scene
         SceneManager.LoadSceneAsync(DataPersistenceManager.instance.GetSavedSceneName());
-        
+    }
+
+    public void OnClearClicked(SaveSlot saveSlot) 
+    {
+        DisableMenuButtons();
+
+        confirmationPopupMenu.ActivateMenu(
+            "Are you sure you want to delete this saved data?",
+            // function to execute if we select 'yes'
+            () => {
+                DataPersistenceManager.instance.DeleteProfileData(saveSlot.GetProfileId());
+                ActivateMenu(isLoadingGame);
+            },
+            // function to execute if we select 'cancel'
+            () => {
+                ActivateMenu(isLoadingGame);
+            }
+        );
     }
 
     public void OnBackClicked() 
@@ -56,6 +103,9 @@ public class SaveSlotsMenu : Menu
 
         // load all of the profiles that exist
         Dictionary<string, GameData> profilesGameData = DataPersistenceManager.instance.GetAllProfilesGameData();
+
+        // ensure the back button is enabled when we activate the menu
+        backButton.interactable = true;
 
         // loop through each save slot in the UI and set the content appropriately
         GameObject firstSelected = backButton.gameObject;
@@ -79,7 +129,8 @@ public class SaveSlotsMenu : Menu
         }
 
         // set the first selected button
-        StartCoroutine(this.SetFirstSelected(firstSelected));
+        Button firstSelectedButton = firstSelected.GetComponent<Button>();
+        this.SetFirstSelected(firstSelectedButton);
     }
 
     public void DeactivateMenu() 
