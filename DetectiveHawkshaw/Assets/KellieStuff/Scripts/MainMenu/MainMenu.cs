@@ -27,6 +27,7 @@ public class MainMenu : Menu
     {
         saveSlotsMenu.ActivateMenu(false);
         this.DeactivateMenu();
+        
     }
 
     public void OnLoadGameClicked() 
@@ -35,13 +36,12 @@ public class MainMenu : Menu
         this.DeactivateMenu();
     }
 
-    public void OnContinueGameClicked() 
+    public void OnContinueGameClicked()
     {
         DisableMenuButtons();
-        // save the game anytime before loading a new scene
-        // load the next scene - which will in turn load the game because of 
-        // OnSceneLoaded() in the DataPersistenceManager
-        SceneManager.LoadSceneAsync("DemoTest1");
+        DataPersistenceManager.instance.SaveGame();
+        
+        SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("SavedScene"));
     }
 
     private void DisableMenuButtons() 

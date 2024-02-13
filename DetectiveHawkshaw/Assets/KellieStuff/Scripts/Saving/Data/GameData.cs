@@ -9,6 +9,7 @@ public class GameData
 {
     public int x;
     public long lastUpdated;
+    public static PlayerPrefs PlayerPrefs;
 
 
     // the values defined in this constructor will be the default values

@@ -84,6 +84,7 @@ public class DataPersistenceManager : MonoBehaviour
     public void NewGame() 
     {
         this.gameData = new GameData();
+
     }
 
     public void LoadGame()
@@ -148,7 +149,11 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void OnApplicationQuit() 
     {
-        SaveGame();
+        if (PlayerPrefs.GetInt("SavedScene") >= 1)
+        {
+         PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+         SaveGame();
+        }
     }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects() 
