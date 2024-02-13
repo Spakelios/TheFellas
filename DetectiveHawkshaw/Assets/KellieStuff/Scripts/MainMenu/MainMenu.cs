@@ -40,8 +40,7 @@ public class MainMenu : Menu
     {
         DisableMenuButtons();
         DataPersistenceManager.instance.SaveGame();
-        
-        SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("SavedScene"));
+     
     }
 
     private void DisableMenuButtons() 

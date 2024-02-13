@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -24,23 +23,21 @@ public class SaveSlotsMenu : Menu
 
     public void OnSaveSlotClicked(SaveSlot saveSlot)
     {
-        DisableMenuButtons();      
-        
-        DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());    
-        if(!isLoadingGame)
+        // disable all buttons
+        DisableMenuButtons();
+
+        // update the selected profile id to be used for data persistence
+        DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
+
+        if (!isLoadingGame)
         {
+            // create a new game - which will initialize our data to a clean slate
             DataPersistenceManager.instance.NewGame();
         }
 
-        if (PlayerPrefs.GetInt("SavedScene") == 0)
-        {
-            SceneManager.LoadSceneAsync("DemoTest1");
-        }
+        // load the scene - which will in turn save the game because of OnSceneUnloaded() in the DataPersistenceManager
+        SceneManager.LoadSceneAsync(DataPersistenceManager.instance.GetSavedSceneName());
         
-        if (PlayerPrefs.GetInt("SavedScene") >= 1)
-        {
-            SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("SavedScene"));
-        }
     }
 
     public void OnBackClicked() 

@@ -1,0 +1,31 @@
+{
+  "name": "com.popcron.scene-staging",
+  "version": "1.2.2",
+  "displayName": "Popcron Scene Staging",
+  "description": "Utility for working with Unity Scenes as JSON objects.",
+  "unity": "2018.3",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "2.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Converting all on Play",
+      "description": "Converts all scenes to Stage assets when hitting the play button",
+      "path": "Samples~/ConvertAllScenes"
+    },
+    {
+      "displayName": "Converter examples",
+      "description": "A collection of custom converters for some Unity component types",
+      "path": "Samples~/ConverterExamples"
+    }
+  ],
+  "keywords": [
+    "scene",
+    "json"
+  ],
+  "author": {
+    "name": "popcron",
+    "url": "https://github.com/popcron"
+  },
+  "type": "tool"
+}

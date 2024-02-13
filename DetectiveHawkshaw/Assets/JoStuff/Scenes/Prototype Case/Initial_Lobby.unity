@@ -2153,8 +2153,8 @@ GameObject:
   - component: {fileID: 334942148}
   - component: {fileID: 334942147}
   - component: {fileID: 334942151}
-  - component: {fileID: 334942152}
   - component: {fileID: 334942153}
+  - component: {fileID: 334942154}
   m_Layer: 5
   m_Name: JournalCanvas
   m_TagString: Journal
@@ -2258,18 +2258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16cc87f01ebdc8645a2ded69d908c0ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &334942152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334942146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 965c6798a525e7045887a133aab076a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &334942153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,6 +2274,18 @@ MonoBehaviour:
   cucumbers: {fileID: 1023679032}
   calendar: {fileID: 1790658828}
   toilet: {fileID: 1314617550}
+--- !u!114 &334942154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334942146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965c6798a525e7045887a133aab076a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &345466864
 GameObject:
   m_ObjectHideFlags: 0
@@ -12472,7 +12472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SAVE
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e92b8b6af916030408d54d8db21cd5d5, type: 2}
   m_sharedMaterial: {fileID: -2940249126032113151, guid: e92b8b6af916030408d54d8db21cd5d5, type: 2}
@@ -12506,7 +12506,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -15598,7 +15598,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081507947}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

@@ -37,7 +37,7 @@ public class SaveSlot : MonoBehaviour
             noDataContent.SetActive(false);
             hasDataContent.SetActive(true);
 
-            Save.text = "Save " + one++;
+            Save.text = "Save " + 1;
         }
     }
 

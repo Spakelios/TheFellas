@@ -9,14 +9,12 @@ public class GameData
 {
     public int x;
     public long lastUpdated;
-    public static PlayerPrefs PlayerPrefs;
+    public string currentSceneName;
 
-
-    // the values defined in this constructor will be the default values
-    // the game starts with when there's no data to load
-    public GameData()
+    public GameData() 
     {
-        
+        // default for starting a new game
+        currentSceneName = "DemoTest1";
     }
     
 }
