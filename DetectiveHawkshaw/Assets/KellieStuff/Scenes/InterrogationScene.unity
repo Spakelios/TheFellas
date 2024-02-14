@@ -11685,7 +11685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 146192723483918052, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: next1
+      value: ChOneInvest
       objectReference: {fileID: 0}
     - target: {fileID: 146192723483918052, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName

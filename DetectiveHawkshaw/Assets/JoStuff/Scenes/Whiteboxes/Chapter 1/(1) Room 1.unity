@@ -4137,9 +4137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
   dialogueBox: {fileID: 398077075}
-  sceneName: (1) Start
+  sceneName: (1) Room 2
   examineTagBox: {fileID: 1713627230}
-  doorKnock: {fileID: 976198595}
 --- !u!61 &592534864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4711,8 +4710,7 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - Broken glass
-    - A bit strange, considering there doesn't seem to be anything broken
+    - '".."'
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
@@ -4720,7 +4718,7 @@ MonoBehaviour:
   referenceID: 2
   evidence: 1
   calendar: 0
-  evidenceSound: {fileID: 1888943456}
+  wasChecked: 0
 --- !u!212 &607960267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12673,6 +12671,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780466295}
   m_CullTransparentMesh: 1
+--- !u!1001 &1788711361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5658474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.2335522
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859703833382033954, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472486975141918042, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
+      propertyPath: m_Name
+      value: Secretary Variant 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbdef181e4b7fba45b65f0395f91016e, type: 3}
 --- !u!1 &1790658828
 GameObject:
   m_ObjectHideFlags: 0
@@ -13644,6 +13699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  sceneName: InterrogationScene
 --- !u!4 &1926965768
 Transform:
   m_ObjectHideFlags: 0
@@ -14681,6 +14737,10 @@ PrefabInstance:
     - target: {fileID: 5068733818755790109, guid: 3efa3204440e94a49a8f79cd99a2c657, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5068733818755790109, guid: 3efa3204440e94a49a8f79cd99a2c657, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5464770480583237214, guid: 3efa3204440e94a49a8f79cd99a2c657, type: 3}
       propertyPath: m_Pivot.x
@@ -15988,7 +16048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2119350938900001486, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3082787284233241894, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       propertyPath: m_Enabled
@@ -16002,6 +16062,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 994476578}
+    - target: {fileID: 4678456158199663440, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: '"'
+      objectReference: {fileID: 0}
     - target: {fileID: 5716652681966411190, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.17
@@ -16400,11 +16464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6671980978933839839, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 90
+      value: -253.3
       objectReference: {fileID: 0}
     - target: {fileID: 6671980978933839839, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 63
+      value: 48.3
       objectReference: {fileID: 0}
     - target: {fileID: 6955463298741727191, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_fontAsset
@@ -16546,6 +16610,7 @@ SceneRoots:
   - {fileID: 1075406535}
   - {fileID: 1741334326}
   - {fileID: 171932070}
+  - {fileID: 1788711361}
   - {fileID: 882427480952907752}
   - {fileID: 1263800980}
   - {fileID: 607960268}

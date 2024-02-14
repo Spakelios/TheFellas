@@ -367,7 +367,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 30858940}
         m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: ChOneInvest
+        m_MethodName: next1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2080,6 +2080,7 @@ MonoBehaviour:
   backgroundIcon: {fileID: 1275741386}
   button2: {fileID: 30858938}
   Evi: {fileID: 0}
+  fmod: {fileID: 0}
 --- !u!4 &339121684
 Transform:
   m_ObjectHideFlags: 0
@@ -5345,7 +5346,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 883669775}
         m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: ChOneInvest
+        m_MethodName: next1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

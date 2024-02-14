@@ -1526,8 +1526,8 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - Broken glass
-    - A bit strange, considering there doesn't seem to be anything broken
+    - '"..."'
+    - '"..."'
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
@@ -4857,8 +4857,8 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - Broken glass
-    - A bit strange, considering there doesn't seem to be anything broken
+    - '"..."'
+    - '"..."'
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
@@ -8105,8 +8105,8 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - Broken glass
-    - A bit strange, considering there doesn't seem to be anything broken
+    - '"..."'
+    - '"..."'
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
@@ -10530,8 +10530,8 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - Broken glass
-    - A bit strange, considering there doesn't seem to be anything broken
+    - '"..."'
+    - '"..."'
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
@@ -14378,7 +14378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
-  sceneName: 
+  sceneName: InterrogationScene 4
 --- !u!4 &1926965768
 Transform:
   m_ObjectHideFlags: 0
