@@ -1389,7 +1389,7 @@ MonoBehaviour:
   referenceID: 4
   evidence: 1
   calendar: 0
-  wasChecked: 0
+  evidenceSound: {fileID: 1888943456}
 --- !u!212 &219352291
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4794,6 +4794,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: Chapter 2 Room
   examineTagBox: {fileID: 2045946406}
+  doorKnock: {fileID: 976198595}
 --- !u!61 &677930288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7402,8 +7403,8 @@ MonoBehaviour:
   calendarDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
-  evidence1: {fileID: 2027137130}
-  evidence2: {fileID: 219352288}
+  evidence1: {fileID: 0}
+  evidence2: {fileID: 0}
 --- !u!1 &1017521395
 GameObject:
   m_ObjectHideFlags: 0
@@ -13806,7 +13807,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
-  sceneName: InterrogationScene1
 --- !u!4 &1926965768
 Transform:
   m_ObjectHideFlags: 0

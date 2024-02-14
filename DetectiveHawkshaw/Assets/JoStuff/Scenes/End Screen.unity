@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Thus, The Case draws to a close...
+  m_text: Thus, The Case of The Swiped Sandwich draws to a close...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e92b8b6af916030408d54d8db21cd5d5, type: 2}
   m_sharedMaterial: {fileID: -2940249126032113151, guid: e92b8b6af916030408d54d8db21cd5d5, type: 2}
