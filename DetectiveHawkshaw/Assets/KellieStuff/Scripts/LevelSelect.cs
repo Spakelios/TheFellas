@@ -7,7 +7,7 @@ public class LevelSelect : MonoBehaviour
 {
     public void newlevel ()
     {
-        StartCoroutine("playLevel");
+        SceneManager.LoadScene("DemoTest1");
     }
     
     public void newlevel2 ()
