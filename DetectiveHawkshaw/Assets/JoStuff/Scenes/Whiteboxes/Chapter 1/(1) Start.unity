@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence
+  m_text: Breadcrumbs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -1624,7 +1624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence in this case
+  m_text: A trail of breadcrumbs found in the lobby that lead towards the bathroom.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -1892,7 +1892,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence
+  m_text: Cucumber Slices
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -2498,7 +2498,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence
+  m_text: Calendar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -2969,7 +2969,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: e47a3718363e087449897b66e6e1b1fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3692,7 +3692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 749630563c5573147b53952fcbc6dae6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4368,7 +4368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence used in this case
+  m_text: A calendar. June 17th is circled with red ink.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -4709,10 +4709,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
   dialogue:
-    name: 
+    name: Emil
     sentences:
-    - A piece of evidence you'll find that may point towards where the painting thief
-      went
+    - Broken glass
+    - A bit strange, considering there doesn't seem to be anything broken
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
@@ -5365,7 +5365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence used in this case
+  m_text: UTTERLY SHAMEFUL.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -7461,7 +7461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7668,7 +7668,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 749630563c5573147b53952fcbc6dae6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8451,7 +8451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9005,7 +9005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9214,7 +9214,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence
+  m_text: Sandwich in Toilet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -9657,7 +9657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 5e4550be8d24b3244ac6f5c054e163d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10448,7 +10448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11810,7 +11810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: e47a3718363e087449897b66e6e1b1fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12951,7 +12951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13027,7 +13027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: f537fcdbd016a2745ad1227a114aa841, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14169,7 +14169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14725,7 +14725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evidence in this case
+  m_text: Slices of cucumbers found in the kitchen.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
   m_sharedMaterial: {fileID: 1887744370259689873, guid: 99ff4a8ffa8755749983b2cefb839193, type: 2}
@@ -15692,7 +15692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

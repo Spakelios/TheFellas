@@ -3,12 +3,12 @@ EXTERNAL Icon(charName)
 EXTERNAL MC(charName)
 EXTERNAL Back(charName)
 
-{Back("Lobby")}
+{Back("Antique-placeholder")}
 {Icon("transparent")}
 {Name("")}
 {MC("transparent")}
 
-This chapter takes place about 1 week after the tutorial case.
+This chapter takes place about 1 week after the tutorial/prologue case.
 
 In this chapter, Hawkshaw & Co. have gotten their first actual case since establishing themselves as an agency.
 

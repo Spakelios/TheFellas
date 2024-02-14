@@ -367,7 +367,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 30858940}
         m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: next
+        m_MethodName: ChOneInvest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3934,7 +3934,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &657270286
 GameObject:
@@ -5270,7 +5270,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 883669775}
         m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: next
+        m_MethodName: ChOneInvest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6510,6 +6510,18 @@ PrefabInstance:
     - target: {fileID: 7111243580170498282, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
       propertyPath: m_Name
       value: Loading Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616573274697387073, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
+      propertyPath: m_text
+      value: 'Location: Antique Shop'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616573274697387073, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001808032349922913, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 456877668898044426, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
