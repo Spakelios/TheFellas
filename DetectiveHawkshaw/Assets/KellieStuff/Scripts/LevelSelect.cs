@@ -7,8 +7,7 @@ public class LevelSelect : MonoBehaviour
 {
     public void newlevel ()
     {
-        SceneManager.LoadScene("DemoTest1");
-        
+        StartCoroutine("playLevel");
     }
     
     public void newlevel2 ()
@@ -20,19 +19,15 @@ public class LevelSelect : MonoBehaviour
     {
         SceneManager.LoadScene("Coming soon");
     }
-   
-    public void Back()
-    {
-        SceneManager.LoadScene("StartScreen");
-    }  
-    
-    public void Level()
-    {
-        SceneManager.LoadScene("Level Select");
-    }
 
     public void quitGame()
     {
         Application.Quit();
+    }
+
+    IEnumerator playLevel()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("DemoTest1");
     }
 }

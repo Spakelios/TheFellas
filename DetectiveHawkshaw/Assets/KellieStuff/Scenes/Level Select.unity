@@ -273,6 +273,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123897971}
   m_CullTransparentMesh: 1
+--- !u!95 &149583634 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1985327545582265893, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
+  m_PrefabInstance: {fileID: 426947306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &178368215
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +449,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 218649210}
   m_OnClick:
     m_PersistentCalls:
@@ -689,10 +694,6 @@ PrefabInstance:
     - target: {fileID: 7111243580170498282, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
       propertyPath: m_Name
       value: Loading Screen
-      objectReference: {fileID: 0}
-    - target: {fileID: 7111243580170498282, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1061,7 +1062,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 729965254}
   m_OnClick:
     m_PersistentCalls:
@@ -1128,63 +1129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5aeccc288f1b1c4b847eb20732d2b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1203324246
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1676070900717263952, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_Name
-      value: DataManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.217
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5116471814661196385, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9ce3fa38e5e5190479075acd4d74263c, type: 3}
 --- !u!1 &1206910035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1255,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1216863187}
   m_OnClick:
     m_PersistentCalls:
@@ -1548,6 +1492,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972856029}
+        m_TargetAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+        m_MethodName: set_alpha
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 149583634}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Loading Screen
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1363395359
@@ -1993,6 +1961,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777285265}
   m_CullTransparentMesh: 1
+--- !u!225 &1972856029 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 2661289431746189424, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
+  m_PrefabInstance: {fileID: 426947306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2066200446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,4 +2325,3 @@ SceneRoots:
   - {fileID: 551597633}
   - {fileID: 1206910037}
   - {fileID: 426947306}
-  - {fileID: 1203324246}

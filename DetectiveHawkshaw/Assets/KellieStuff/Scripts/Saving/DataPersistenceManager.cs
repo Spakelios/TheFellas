@@ -161,13 +161,13 @@ public class DataPersistenceManager : MonoBehaviour
         // timestamp the data so we know when it was last saved
         gameData.lastUpdated = System.DateTime.Now.ToBinary();
         
-        Scene scene = SceneManager.GetActiveScene(); 
-        
+        Scene scene = SceneManager.GetActiveScene();
         // DON'T save this for certain scenes, like our main menu scene
         if (!scene.name.Equals("StartScreen"))
         {
             gameData.currentSceneName = scene.name;
         }
+        
         // save that data to a file using the data handler
         dataHandler.Save(gameData, selectedProfileId);
     }
