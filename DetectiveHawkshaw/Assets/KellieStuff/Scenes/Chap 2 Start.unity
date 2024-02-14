@@ -4711,13 +4711,13 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - Broken glass
-    - A bit strange, considering there doesn't seem to be anything broken
+    - .....
+    - ...
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
   newExamineTag: Evidence
-  referenceID: 2
+  referenceID: 3
   evidence: 1
   calendar: 0
   evidenceSound: {fileID: 1888943456}
@@ -16404,6 +16404,14 @@ PrefabInstance:
     - target: {fileID: 8376725462266739304, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933045067942096014, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
+      propertyPath: evidence
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933045067942096014, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
+      propertyPath: referenceID
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8933045067942096014, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
       propertyPath: examineTagBox

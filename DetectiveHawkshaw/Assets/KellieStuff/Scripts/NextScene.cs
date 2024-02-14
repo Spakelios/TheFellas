@@ -9,6 +9,22 @@ public class NextScene : MonoBehaviour
     public void next()
     {
         VNToInvestLoader.instance.LoadLevel("Initial_Lobby");
+    }  
+    public void next1()
+    {
+        VNToInvestLoader.instance.LoadLevel("(1) Start");
+    }  
+    public void next2()
+    {
+        VNToInvestLoader.instance.LoadLevel("Chap 2 Start");
+    }   
+    public void next3()
+    {
+             VNToInvestLoader.instance.LoadLevel("Chap 3 Start"); 
+    }  
+    public void next4()
+    {
+             VNToInvestLoader.instance.LoadLevel("Chap 3.5"); 
     }
     
     public void endScreen()
