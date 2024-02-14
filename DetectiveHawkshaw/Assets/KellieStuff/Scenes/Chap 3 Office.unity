@@ -923,6 +923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  sceneName: InterrogationScene 2
 --- !u!4 &510135538
 Transform:
   m_ObjectHideFlags: 0
@@ -1160,7 +1161,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: a2b687ddb17a87345a85c3cd389371a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c45b6aa6636e7247bd0bc07eb165d42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1180,8 +1181,8 @@ Transform:
   m_GameObject: {fileID: 860282535}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.83, y: -1.54, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.16, z: 0.15}
+  m_LocalPosition: {x: -4.66, y: -1.21, z: 0}
+  m_LocalScale: {x: 0.22417502, y: 0.217376, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1214,7 +1215,7 @@ MonoBehaviour:
   referenceID: 7
   evidence: 0
   calendar: 0
-  evidenceSound: {fileID: 0}
+  wasChecked: 0
 --- !u!70 &860282539
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1352,7 +1353,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 196730557}
   sceneName: Chap 3 Lobby
   examineTagBox: {fileID: 1893485507}
-  doorKnock: {fileID: 158099339}
 --- !u!61 &904172759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1617,7 +1617,7 @@ MonoBehaviour:
   referenceID: 3
   evidence: 0
   calendar: 0
-  evidenceSound: {fileID: 1936744164}
+  wasChecked: 0
 --- !u!61 &1212709018
 BoxCollider2D:
   m_ObjectHideFlags: 0
