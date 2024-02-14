@@ -53,4 +53,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JoStuff/Scenes/Whiteboxes/Chapter 1/Initial Scene Ch. 1.unity
     guid: d467c3e412089b6488a02d18896917e7
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Chapter 2 Room.unity
+    guid: bf6a2a1464142ee48b5688a8934fa10b
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Chapter 2 Room 2.unity
+    guid: 9e4c342d76a000943a651a2e18723588
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Chap 2 Start.unity
+    guid: c356547f08a484541b260af09f6ed91c
   m_configObjects: {}
