@@ -2080,6 +2080,7 @@ MonoBehaviour:
   backgroundIcon: {fileID: 1275741386}
   button2: {fileID: 30858938}
   Evi: {fileID: 0}
+  fmod: {fileID: 0}
 --- !u!4 &339121684
 Transform:
   m_ObjectHideFlags: 0
@@ -6510,6 +6511,10 @@ PrefabInstance:
     - target: {fileID: 7111243580170498282, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
       propertyPath: m_Name
       value: Loading Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111243580170498282, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8616573274697387073, guid: dd40d465f09756d458fd0277640e2df3, type: 3}
       propertyPath: m_text

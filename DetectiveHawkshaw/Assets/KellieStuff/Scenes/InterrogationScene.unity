@@ -1738,6 +1738,7 @@ MonoBehaviour:
   backgroundIcon: {fileID: 1275741386}
   button2: {fileID: 30858938}
   Evi: {fileID: 1047898399}
+  fmod: {fileID: 0}
 --- !u!4 &339121684
 Transform:
   m_ObjectHideFlags: 0
@@ -11681,6 +11682,10 @@ PrefabInstance:
     - target: {fileID: 146192723483918052, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 146192723483918052, guid: f112359840062924a9ebd0e07a55271c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: next1
       objectReference: {fileID: 0}
     - target: {fileID: 146192723483918052, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
