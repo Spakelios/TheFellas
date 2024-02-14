@@ -18,7 +18,7 @@ public class Numbers : MonoBehaviour
     public int passwordDigit;
 
     public List<Sprite> pictures;
-    //public AudioSource numberClick;
+    public AudioSource numberClick;
     
     private void Start()
     {
@@ -60,7 +60,7 @@ public class Numbers : MonoBehaviour
             
         }
         
-        //numberClick.Play();
+        numberClick.Play();
         numberLock.currentCombo.RemoveAt(passwordDigit);
         numberLock.currentCombo.Insert(passwordDigit, currentNumber);
         numberLock.CheckCombo();
