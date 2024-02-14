@@ -163,7 +163,7 @@ EXTERNAL Evi(charName)
 
 {Name("Emil")} {Icon("EmilNeutral")} “Mr. Kozlov...” 
 
-{MC("Nicolai")} 
+{MC("Nicolai_Think")} 
 {Icon("transparent")} <i>Nicolai looks up from the papers he was reading at his desk. 
 <i>He raises an eyebrow, clearly amused by my investigation.</i> 
 
@@ -178,7 +178,7 @@ EXTERNAL Evi(charName)
 
 == eleven ==
 
-{Name("Emil")}{Icon("EmilNeutral")} <i>He takes a moment to think about it, crossing his arms.</i> 
+{Name("Emil")}{Icon("EmilNeutral")} {MC("Nicolai_Think")}  <i>He takes a moment to think about it, crossing his arms.</i> 
 
 {Name("Nicolai")} 
 {Icon("transparent")}
@@ -188,6 +188,7 @@ EXTERNAL Evi(charName)
 {Icon("EmilNeutral")}
 <i>He hesitates for a moment before attempting to explain himself.</i> 
 
+{MC("Nicolai_Shocked")} 
 {Name("Nicolai")}
 {Icon("transparent")}
 “...I realise how that sounds, but, c’mon Emil!”
@@ -231,7 +232,7 @@ EXTERNAL Evi(charName)
 
 == twelve ==
 
-{Name("Emil")}{Icon("EmilNeutral")} <i>It seems to take him a moment to realise what I had said to him. 
+{Name("Emil")}{Icon("EmilNeutral")} {MC("Nicolai_Basic")}  <i>It seems to take him a moment to realise what I had said to him. 
 <i>He stares at me blankly. </i>
 
 *[Show him the picture] -> fifteen
@@ -239,7 +240,7 @@ EXTERNAL Evi(charName)
 == fifteen == 
 {Evi("toilet")}"..."
 
-{Name("Nicolai")}{Icon("transparent")} “You... you took a picture and left it in there?! Emil!”
+{Name("Nicolai")}{Icon("transparent")} {MC("Nicolai_Annoyed")}  “You... you took a picture and left it in there?! Emil!”
 “What in God's name were you thinking?”
 
 {Name("Emil")} 
@@ -265,9 +266,10 @@ EXTERNAL Evi(charName)
 
 == thirteen ==
 
-{Name("Emil")} {Icon("EmilNeutral")} <i>He looks at me, as though I have ten heads. He's clearly perplexed by my line of questioning.</i> 
+{Name("Emil")} {Icon("EmilNeutral")} {MC("Nicolai_Think")}  <i>He looks at me, as though I have ten heads. He's clearly perplexed by my line of questioning.</i> 
 
 {Name("Nicolai")} {Icon("transparent")}“Today's date? You've forgotten already? Jesus!"
+{MC("Nicolai_Happy")} 
 "Finally lost it, Emil? I thought we had a bit longer before you went senile!”
 
 {Name("Emil")} {Icon("EmilNeutral")} “Just answer the bloody question already.”
@@ -278,7 +280,7 @@ EXTERNAL Evi(charName)
 
 <i>He leans back in his chair and takes a moment to think.</i> 
 
-{Name("Nicolai")} {Icon("transparent")}“...it should be... what?  The... 17th of November?”
+{Name("Nicolai")} {Icon("transparent")} {MC("Nicolai_Think")} “...it should be... what?  The... 17th of November?”
 
 {Name("Emil")} {Icon("EmilNeutral")}<i>He looks up casually as I move away from his desk. </i>
 <i>I give an approving nod. </i>
@@ -287,7 +289,8 @@ EXTERNAL Evi(charName)
 
 == sixteen ==
 {Evi("calendar")} "..."
-{Name("Nicolai")}{Icon("transparent")} “Hmm? Oh that old thing... You stopped marking the days on it after the...”
+{Name("Nicolai")}{Icon("transparent")} {MC("Nicolai_Think")} “Hmm? Oh that old thing... You stopped marking the days on it after the...”
+{MC("Nicolai_Annoyed")}
 “The divorce, right? We... should really replace that thing.”
 
 {Name("Emil")} 
@@ -364,9 +367,9 @@ EXTERNAL Evi(charName)
 
 {Name("Emil")} {Icon("EmilAngry")} <i>I turn to Nicolai with a stern and cold expression.
 <i>Surely he didn't believe I wouldn't catch him in the act.
+{MC("Nicolai_Shocked")}
 <i>He looks befuddled, it clearly wasn't the answer he was expecting.</i>
 
- {MC("Nicolai")}
 {Name("Nicolai")}
 {Icon("transparent")}
 “Ah here-! You can't be serious, Emil!" 
@@ -389,9 +392,9 @@ EXTERNAL Evi(charName)
 "You stop to look at Katya’s drawing, getting your grubby hands all over it!
 "That would explain the stains.”
 
-{MC("Nicolai")}
 {Name("Nicolai")}
 {Icon("transparent")}
+{MC("Nicolai_Annoyed")}
 “He’s lost his bloody mind...”
 
 {Name("Emil")}
@@ -403,6 +406,7 @@ EXTERNAL Evi(charName)
  
 {Name("Nicolai")}
 {Icon("transparent")}
+{MC("Nicolai_Shocked")}
 “Have you considered how you're acting?!”
 
 {Name("Emil")} {Icon("EmilAngry")}
@@ -422,15 +426,18 @@ EXTERNAL Evi(charName)
 “NO! WAIT! IT WAS ME, DON'T PUT UNCLE NIKKI IN THE SLAMMER!”
 “HE'D NEVER SURVIVE!”
 
-{MC("Nicolai")}
+
 {Name("Nicolai")}
+{MC("Nicolai_Basic")}
 “Always knew she was a good girl who wouldn't allow her Uncle to suffer...!”
+{MC("Nicolai_Shocked")}
 “...Wait, what did you say-?”
 
 {Name("Emil")}
 {Icon("EmilUpset")}
 {MC("Katya_Sad")}
 <i>Katya began sobbing, frantically explaining how it was all her fault. 
+{MC("Nicolai_Annoyed")}
 <i>I see Nicolai in the distance replace my “World's Greatest Detective” mug with a plunger. 
 <i>I sigh in defeat.</i>
 

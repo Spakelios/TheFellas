@@ -1,5 +1,287 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9186310351176568061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Lock Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Lock Open
+  Guid:
+    Data1: -379825968
+    Data2: 1183654833
+    Data3: 1198511026
+    Data4: -1700087930
+  Banks:
+  - {fileID: -605378829472524536}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8992193415616262583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2576045405
+    data2: 796590669
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Door Knocking
+  - Door Open
+  - Door Close
+  Exists: 1
+--- !u!114 &-8188354005512971461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicState
+  m_EditorClassIdentifier: 
+  Name: MusicState
+  StudioPath: parameter:/MusicState
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 468555444
+    data2: 4056936413
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Regular
+  - Reverb
+  Exists: 1
+--- !u!114 &-6733672567206183585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hawkshaw/Music Type
+  m_EditorClassIdentifier: 
+  Name: Music Type
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2056819608
+    data2: 3015950865
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-4422102344229584850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Parameter 4
+  m_EditorClassIdentifier: 
+  Name: Parameter 4
+  StudioPath: parameter:/Parameter 4
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2481829582
+    data2: 783035751
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Regular
+  - Reverb
+  Exists: 1
+--- !u!114 &-3670116732617442085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VFX/Nicolai
+  m_EditorClassIdentifier: 
+  Path: event:/VFX/Nicolai
+  Guid:
+    Data1: -1249488614
+    Data2: 1163465541
+    Data3: 410656687
+    Data4: -1865991237
+  Banks:
+  - {fileID: 8653868148023825174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3278667835987895555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Scrolling Lock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Scrolling Lock
+  Guid:
+    Data1: -1342448742
+    Data2: 1249753672
+    Data3: 1336563845
+    Data4: 1653008641
+  Banks:
+  - {fileID: -605378829472524536}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-990517631269458255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Examining Evidence
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Examining Evidence
+  Guid:
+    Data1: -1615065623
+    Data2: 1331779748
+    Data3: -752702799
+    Data4: 688867849
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-941862681676062451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VFX/Katya
+  m_EditorClassIdentifier: 
+  Path: event:/VFX/Katya
+  Guid:
+    Data1: -857138081
+    Data2: 1189707338
+    Data3: 706302390
+    Data4: 1718820039
+  Banks:
+  - {fileID: 8653868148023825174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-605378829472524536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Puzzle Section.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Puzzle Section.bank
+  Name: Puzzle Section
+  StudioPath: bank:/Puzzle Section
+  lastModified: 638405272157994303
+  FileSizes:
+  - Name: Desktop
+    Value: 8160
+  Exists: 1
+--- !u!114 &-433139021900996646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: parameter:/Intensity
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 2869575253
+    data2: 2623523987
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +294,420 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  EditorBanks:
+  - {fileID: 3607472290051113618}
+  - {fileID: 6498244219364827859}
+  - {fileID: 2706340728466102012}
+  - {fileID: 4481593516728349603}
+  - {fileID: -605378829472524536}
+  - {fileID: 8653868148023825174}
+  - {fileID: 748880558791156802}
+  EditorEvents:
+  - {fileID: 3566765552034538561}
+  - {fileID: 6676937886049046890}
+  - {fileID: 4896895885178369064}
+  - {fileID: 1550319116226577722}
+  - {fileID: -990517631269458255}
+  - {fileID: -3278667835987895555}
+  - {fileID: -9186310351176568061}
+  - {fileID: -3670116732617442085}
+  - {fileID: -941862681676062451}
+  - {fileID: 6681910827489844667}
+  EditorParameters:
+  - {fileID: 19813913119169695}
+  - {fileID: -8188354005512971461}
+  - {fileID: 5070169421881388489}
+  - {fileID: -4422102344229584850}
+  - {fileID: -433139021900996646}
+  MasterBanks:
+  - {fileID: 4481593516728349603}
+  StringsBanks:
+  - {fileID: 3607472290051113618}
+  cacheTime: 638405303911320144
   cacheVersion: 131616
+--- !u!114 &19813913119169695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Location
+  m_EditorClassIdentifier: 
+  Name: Location
+  StudioPath: parameter:/Location
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2853885855
+    data2: 1887277914
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Regular
+  - Reverb
+  Exists: 1
+--- !u!114 &748880558791156802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/VN Portion.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/VN Portion.bank
+  Name: VN Portion
+  StudioPath: bank:/VN Portion
+  lastModified: 638405236552842790
+  FileSizes:
+  - Name: Desktop
+    Value: 218912
+  Exists: 1
+--- !u!114 &1550319116226577722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Examining Evidence (Reverb)
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Examining Evidence (Reverb)
+  Guid:
+    Data1: 1844661689
+    Data2: 1144114695
+    Data3: -520501884
+    Data4: 918864982
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2137744298211113154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hawkshaw/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 2869575253
+    data2: 2623523987
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2706340728466102012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Main Theme.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Main Theme.bank
+  Name: Main Theme
+  StudioPath: bank:/Main Theme
+  lastModified: 638405293879672709
+  FileSizes:
+  - Name: Desktop
+    Value: 2196576
+  Exists: 1
+--- !u!114 &3566765552034538561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Door
+  Guid:
+    Data1: 691107651
+    Data2: 1112173112
+    Data3: -2020716397
+    Data4: -1786344780
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8992193415616262583}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3607472290051113618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638405303911320144
+  FileSizes:
+  - Name: Desktop
+    Value: 1784
+  Exists: 1
+--- !u!114 &4481593516728349603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638405303911290215
+  FileSizes:
+  - Name: Desktop
+    Value: 1934
+  Exists: 1
+--- !u!114 &4896895885178369064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Hawkshaw
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Hawkshaw
+  Guid:
+    Data1: -1538303614
+    Data2: 1140543309
+    Data3: -2014431570
+    Data4: -1836356855
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2137744298211113154}
+  - {fileID: -6733672567206183585}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42666
+--- !u!114 &5070169421881388489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Type
+  m_EditorClassIdentifier: 
+  Name: Music Type
+  StudioPath: parameter:/Music Type
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2056819608
+    data2: 3015950865
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6498244219364827859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Investigation Portion.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Investigation
+    Portion.bank
+  Name: Investigation Portion
+  StudioPath: bank:/Investigation Portion
+  lastModified: 638405303911150571
+  FileSizes:
+  - Name: Desktop
+    Value: 2244704
+  Exists: 1
+--- !u!114 &6676937886049046890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Hawkshaw Motif Instruments
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Hawkshaw Motif Instruments
+  Guid:
+    Data1: -1586835608
+    Data2: 1153303513
+    Data3: -1500064368
+    Data4: 908343336
+  Banks:
+  - {fileID: 6498244219364827859}
+  - {fileID: 2706340728466102012}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8473787588230798683}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42666
+--- !u!114 &6681910827489844667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/VN Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/VN Music
+  Guid:
+    Data1: 1270502646
+    Data2: 1144286751
+    Data3: 1199795858
+    Data4: 1076883712
+  Banks:
+  - {fileID: 748880558791156802}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7543925157299599174}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15071
+--- !u!114 &7543925157299599174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VN Music/Music Change
+  m_EditorClassIdentifier: 
+  Name: Music Change
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3028992554
+    data2: 2747810771
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - No Crime
+  - Crime
+  Exists: 1
+--- !u!114 &8473787588230798683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hawkshaw Motif Instruments/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 2869575253
+    data2: 2623523987
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8653868148023825174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/VFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/VFX.bank
+  Name: VFX
+  StudioPath: bank:/VFX
+  lastModified: 638405272158773857
+  FileSizes:
+  - Name: Desktop
+    Value: 41536
+  Exists: 1

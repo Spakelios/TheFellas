@@ -117,7 +117,7 @@ I need better staff.
 <I>Katya wastes no time in running over to greet me. A wide grin decorates her face as she clings to my leg.
  I give her a pat on the head as I look up to see Nicolai is quite the unhappy camper. </I>
 
-{MC("Nicolai")}
+{MC("Nicolai_Shocked")}
 {Name("Nicolai")}
 {Icon("transparent")}
 
@@ -130,6 +130,7 @@ I need better staff.
 "I've got work to do, unlike a certain someone who likes to waste his time idling and then blames his lack of productivity on little children!"
 
  {Name("Nicolai")}
+ {MC("Nicolai_Annoyed")}
  {Icon("transparent")}
 
 "...Why I oughta-"
@@ -176,7 +177,7 @@ I need better staff.
 
 <I>I take the newspaper and slam it down on Nicolai's desk to get his attention. </I>
 
-{MC("Nicolai")}
+{MC("Nicolai_Shocked")}
 {Name("Nicolai")}
 {Icon("transparent")}
 
