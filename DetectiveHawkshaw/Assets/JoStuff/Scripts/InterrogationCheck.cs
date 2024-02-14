@@ -11,7 +11,7 @@ public class InterrogationCheck : MonoBehaviour
     
     public string sceneName;
 
-    private AudioSource music;
+    //private AudioSource music;
 
     private void Start()
     {

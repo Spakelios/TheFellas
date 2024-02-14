@@ -3967,6 +3967,8 @@ GameObject:
   - component: {fileID: 592534861}
   - component: {fileID: 592534864}
   - component: {fileID: 592534863}
+  - component: {fileID: 592534866}
+  - component: {fileID: 592534865}
   m_Layer: 0
   m_Name: KitchenDoor
   m_TagString: Untagged
@@ -4102,6 +4104,72 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.991581, y: 35.5453}
   m_EdgeRadius: 0
+--- !u!114 &592534865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592534860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 691107651
+      Data2: 1112173112
+      Data3: -2020716397
+      Data4: -1786344780
+    Path: event:/SFX/Door
+  Event: 
+  PlayEvent: 15
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &592534866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592534860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 691107651
+      Data2: 1112173112
+      Data3: -2020716397
+      Data4: -1786344780
+    Path: event:/SFX/Door
+  Event: 
+  PlayEvent: 13
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &593289970
 GameObject:
   m_ObjectHideFlags: 0
@@ -4605,6 +4673,7 @@ GameObject:
   - component: {fileID: 607960267}
   - component: {fileID: 607960266}
   - component: {fileID: 607960269}
+  - component: {fileID: 607960270}
   m_Layer: 0
   m_Name: Breadcrumbs
   m_TagString: Untagged
@@ -4740,6 +4809,37 @@ CircleCollider2D:
   m_Offset: {x: -5, y: 0}
   serializedVersion: 2
   m_Radius: 20
+--- !u!114 &607960270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607960265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1615065623
+      Data2: 1331779748
+      Data3: -752702799
+      Data4: 688867849
+    Path: event:/SFX/Examining Evidence
+  Event: 
+  PlayEvent: 15
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &608411118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4752,6 +4852,8 @@ GameObject:
   - component: {fileID: 608411119}
   - component: {fileID: 608411122}
   - component: {fileID: 608411121}
+  - component: {fileID: 608411124}
+  - component: {fileID: 608411123}
   m_Layer: 0
   m_Name: OfficeDoor
   m_TagString: Untagged
@@ -4887,6 +4989,72 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.962666, y: 65.33741}
   m_EdgeRadius: 0
+--- !u!114 &608411123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608411118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 691107651
+      Data2: 1112173112
+      Data3: -2020716397
+      Data4: -1786344780
+    Path: event:/SFX/Door
+  Event: 
+  PlayEvent: 15
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &608411124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608411118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 691107651
+      Data2: 1112173112
+      Data3: -2020716397
+      Data4: -1786344780
+    Path: event:/SFX/Door
+  Event: 
+  PlayEvent: 13
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &687403676
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,6 +10477,8 @@ GameObject:
   - component: {fileID: 1556332972}
   - component: {fileID: 1556332974}
   - component: {fileID: 1556332975}
+  - component: {fileID: 1556332977}
+  - component: {fileID: 1556332976}
   m_Layer: 0
   m_Name: BathroomDoor
   m_TagString: Untagged
@@ -10451,6 +10621,72 @@ MonoBehaviour:
   sceneName: Bathroom
   examineTagBox: {fileID: 2101913413}
   doorKnock: {fileID: 0}
+--- !u!114 &1556332976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556332971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 691107651
+      Data2: 1112173112
+      Data3: -2020716397
+      Data4: -1786344780
+    Path: event:/SFX/Door
+  Event: 
+  PlayEvent: 15
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1556332977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556332971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 691107651
+      Data2: 1112173112
+      Data3: -2020716397
+      Data4: -1786344780
+    Path: event:/SFX/Door
+  Event: 
+  PlayEvent: 13
+  StopEvent: 15
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1557598681
 GameObject:
   m_ObjectHideFlags: 0
@@ -14286,6 +14522,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.48, y: 22.479954}
   m_EdgeRadius: 0
+--- !u!114 &2027137132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027137130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1615065623
+      Data2: 1331779748
+      Data3: -752702799
+      Data4: 688867849
+    Path: event:/SFX/Examining Evidence
+  Event: 
+  PlayEvent: 15
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!224 &2028254864 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1372878711730605748, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
@@ -15915,6 +16182,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2119350938900001486, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2027137131}
+    - targetCorrespondingSourceObject: {fileID: 2119350938900001486, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2027137132}
   m_SourcePrefab: {fileID: 100100000, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
 --- !u!1001 &1126940046556735782
 PrefabInstance:
