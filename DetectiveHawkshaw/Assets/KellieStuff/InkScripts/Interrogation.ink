@@ -21,7 +21,7 @@ EXTERNAL Evi(charName)
 
 == one == 
  
-{Name("Emil")}{Icon("EmilNeutral")} {MC("Katya")} “Miss Hawkshaw, as you're aware my sandwich was found in the toilet today.”
+{Name("Emil")}{Icon("EmilNeutral")} {MC("Katya_Basic")} “Miss Hawkshaw, as you're aware my sandwich was found in the toilet today.”
 “I would like to ask you some questions about this incident.”
 <i> She sits down in my office chair and spins around to face me. She seems a little nervous, but nods. </i>
 
@@ -36,11 +36,11 @@ EXTERNAL Evi(charName)
 
 == twenty == 
 
-{Name("Emil")} {Icon("EmilNeutral")}<i> She puts her hand to her chin, thinking deeply about what she got up to today. </i>
+{Name("Emil")} {Icon("EmilNeutral")} {MC("Katya_Think")} <i> She puts her hand to her chin, thinking deeply about what she got up to today. </i>
 <i> I try to remain stern without upsetting her. </i>
 
 {Name("Katya")}
-{Icon("transparent")}“Hmm… I was drawing in the lobby!"
+{Icon("transparent")} {MC("Katya_Basic")}“Hmm… I was drawing in the lobby!"
 "I showed it to Miss Secretary and she said..."
 "I did a really good job!" 
 "Wanna see it?”
@@ -54,7 +54,7 @@ EXTERNAL Evi(charName)
 
 == three == 
 
-<i> She pouts, a frown appearing on her face. </i>
+ {MC("Katya_Mad")}<i> She pouts, a frown appearing on her face. </i>
 {Icon("EmilHappy")}<i>I try not to laugh at her reaction as she holds the paper in her hands.</i>
 
 {Name("Katya")}
@@ -68,7 +68,7 @@ EXTERNAL Evi(charName)
 
 “Oh! Good job Katya, it's wonderful!”
 “I’ll have your Uncle Nikki put it up on the fridge later.”
-{Evi("transparent")}
+{Evi("transparent")} {MC("Katya_Happy")}
 <i>I take the picture off her and pat her head, taking note of the small stains on the side of it.</i> -> seven
 
 == seven == 
@@ -83,7 +83,7 @@ EXTERNAL Evi(charName)
 
 == four == 
  
-<i>Her face lights up with joy as she holds up her drawing. </i> 
+{MC("Katya_Happy")} <i>Her face lights up with joy as she holds up her drawing. </i> 
 <i>I carefully take it and move it a bit away from my face to see it better. </i>
 {Icon("EmilHappy")}<i>I look down at her and smile.</i>
 {Evi("KatyaDraws")}
@@ -102,7 +102,7 @@ EXTERNAL Evi(charName)
 </i>
 == five ==
 
-{Name("Emil")} {Icon("EmilNeutral")} <i>She tilts her head as though confused by the question. 
+{Name("Emil")} {Icon("EmilNeutral")} {MC("Katya_Shocked")} <i>She tilts her head as though confused by the question. 
 <i>She stares back at me with an innocent expression.</i>
 
 {Name("Katya")}
@@ -115,7 +115,7 @@ EXTERNAL Evi(charName)
 
 == six ==
 
-{Name("Katya")}{Icon("transparent")} “Oh! I know! I know! Today's the 17th of June!”
+{Name("Katya")}{Icon("transparent")} {MC("Katya_Basic")} “Oh! I know! I know! Today's the 17th of June!”
 
 {Name("Emil")}
 {Icon("EmilUpset")}
@@ -133,6 +133,7 @@ EXTERNAL Evi(charName)
 {Name("Katya")} 
 {Icon("transparent")}
 {Evi("transparent")}
+{MC("Katya_Think")}
 “Oh yeah! That was up in the office! The one with the funny pictures on it!” 
 
 {Name("Emil")}
@@ -310,12 +311,12 @@ EXTERNAL Evi(charName)
 
 {Name("Emil")} 
 {Icon("EmilUpset")} <i>I turn to Katya and shake my head in disappointment. 
+{MC("Katya_Sad")}
 <i>Her eyes well up with tears. She looks ashamed.
 <i>She rushes over and hugs me tight without saying a word.
 <i>I sigh and pat her head. 
 <i>I hate to see her upset.</i>
 
-{MC("Katya")}
 {Name("Katya")}
 {Icon("transparent")}
 “I-i’m sorry! I just... you made the sandwiches Mama used to make!”
@@ -415,7 +416,7 @@ EXTERNAL Evi(charName)
 <i>It was at that moment when Katya looked at us with panic in her eyes.
 <i>As though I was about to shoot him.</i>
 
-{MC("Katya")}
+{MC("Katya_Shocked")}
 {Name("Katya")}
 {Icon("transparent")}
 “NO! WAIT! IT WAS ME, DON'T PUT UNCLE NIKKI IN THE SLAMMER!”
@@ -428,6 +429,7 @@ EXTERNAL Evi(charName)
 
 {Name("Emil")}
 {Icon("EmilUpset")}
+{MC("Katya_Sad")}
 <i>Katya began sobbing, frantically explaining how it was all her fault. 
 <i>I see Nicolai in the distance replace my “World's Greatest Detective” mug with a plunger. 
 <i>I sigh in defeat.</i>

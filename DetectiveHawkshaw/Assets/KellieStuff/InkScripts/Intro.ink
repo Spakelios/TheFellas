@@ -105,7 +105,7 @@ I need better staff.
 
 "Losing an argument to a child again, Nico?" 
 
-{MC("Katya")}
+{MC("Katya_Happy")}
 {Name("Katya")}
 {Icon("transparent")}
 
@@ -140,7 +140,7 @@ I need better staff.
 <I> I take the newspaper that he had been reading off his desk, roll it up and put it under my arm. </I>
 <I>Before I can tell him to get back to work, I feel Katya tug on my coat.</I>
 
-{MC("Katya")}
+{MC("Katya_Mad")}
 {Name("Katya")}
 {Icon("transparent")}
 
@@ -161,7 +161,7 @@ I need better staff.
 
 <I>Although if he did he'd finally be blaming himself.</I>
 
-{MC("Katya")}
+{MC("Katya_So_Cool")}
 {Name("Katya")}
 {Icon("transparent")}
  
