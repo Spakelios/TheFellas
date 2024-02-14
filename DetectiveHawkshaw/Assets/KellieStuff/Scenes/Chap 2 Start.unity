@@ -4711,13 +4711,13 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - .....
+    - ...
     - ...
   dialogueManager: {fileID: 994476578}
   examineTagBox: {fileID: 500266454}
   examineTag: ???
   newExamineTag: Evidence
-  referenceID: 3
+  referenceID: 1
   evidence: 1
   calendar: 0
   evidenceSound: {fileID: 1888943456}
@@ -16407,12 +16407,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8933045067942096014, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
       propertyPath: evidence
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8933045067942096014, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
       propertyPath: referenceID
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8933045067942096014, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
+      propertyPath: evidenceSound
+      value: 
+      objectReference: {fileID: 1888943456}
     - target: {fileID: 8933045067942096014, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
       propertyPath: examineTagBox
       value: 
