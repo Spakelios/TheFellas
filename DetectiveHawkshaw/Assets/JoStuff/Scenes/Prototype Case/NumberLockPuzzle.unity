@@ -581,6 +581,7 @@ MonoBehaviour:
   locked: {fileID: 319363695}
   unlocked: {fileID: 1447052082}
   numbers: []
+  unlockLock: {fileID: 989400019}
 --- !u!1 &462794823
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +723,7 @@ MonoBehaviour:
   possibleNumbers: 
   passwordDigit: 3
   pictures: []
+  numberClick: {fileID: 0}
 --- !u!1 &491343280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,7 +1033,6 @@ GameObject:
   - component: {fileID: 767436533}
   - component: {fileID: 767436532}
   - component: {fileID: 767436535}
-  - component: {fileID: 767436536}
   m_Layer: 5
   m_Name: Dial 2
   m_TagString: Untagged
@@ -1169,37 +1170,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1bed16d90d3677e478f2b387d6e8c232, type: 3}
   - {fileID: 21300000, guid: 19d961483f4ca00419ceceecd486863a, type: 3}
   - {fileID: 21300000, guid: bf90f9a6dcffc764c90df93d3bd4bc5b, type: 3}
---- !u!114 &767436536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767436530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1342448742
-      Data2: 1249753672
-      Data3: 1336563845
-      Data4: 1653008641
-    Path: event:/SFX/Scrolling Lock
-  Event: 
-  PlayEvent: 19
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  numberClick: {fileID: 1817480862}
 --- !u!1 &769951912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,6 +1446,7 @@ MonoBehaviour:
   possibleNumbers: 
   passwordDigit: 2
   pictures: []
+  numberClick: {fileID: 0}
 --- !u!1 &916942952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,6 +1619,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924241745}
   m_CullTransparentMesh: 1
+--- !u!1 &989400018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989400020}
+  - component: {fileID: 989400019}
+  m_Layer: 0
+  m_Name: Unclick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &989400019
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989400018}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 27e2fd1943441ec449ea6da9107a7267, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &989400020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989400018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.0825396, y: 0.29774317, z: -0.01690793}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1064578923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,7 +1760,6 @@ GameObject:
   - component: {fileID: 1064578926}
   - component: {fileID: 1064578925}
   - component: {fileID: 1064578928}
-  - component: {fileID: 1064578929}
   m_Layer: 5
   m_Name: Dial 4
   m_TagString: Untagged
@@ -1798,37 +1897,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1bed16d90d3677e478f2b387d6e8c232, type: 3}
   - {fileID: 21300000, guid: 19d961483f4ca00419ceceecd486863a, type: 3}
   - {fileID: 21300000, guid: bf90f9a6dcffc764c90df93d3bd4bc5b, type: 3}
---- !u!114 &1064578929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064578923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1342448742
-      Data2: 1249753672
-      Data3: 1336563845
-      Data4: 1653008641
-    Path: event:/SFX/Scrolling Lock
-  Event: 
-  PlayEvent: 19
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  numberClick: {fileID: 1817480862}
 --- !u!1 &1185345997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,7 +2045,6 @@ GameObject:
   - component: {fileID: 1221665336}
   - component: {fileID: 1221665334}
   - component: {fileID: 1221665338}
-  - component: {fileID: 1221665339}
   m_Layer: 5
   m_Name: Dial 1
   m_TagString: Untagged
@@ -2032,6 +2100,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1bed16d90d3677e478f2b387d6e8c232, type: 3}
   - {fileID: 21300000, guid: 19d961483f4ca00419ceceecd486863a, type: 3}
   - {fileID: 21300000, guid: bf90f9a6dcffc764c90df93d3bd4bc5b, type: 3}
+  numberClick: {fileID: 1817480862}
 --- !u!114 &1221665336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,37 +2183,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1221665339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221665332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1342448742
-      Data2: 1249753672
-      Data3: 1336563845
-      Data4: 1653008641
-    Path: event:/SFX/Scrolling Lock
-  Event: 
-  PlayEvent: 19
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1344116599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2324,7 @@ MonoBehaviour:
   possibleNumbers: 
   passwordDigit: 1
   pictures: []
+  numberClick: {fileID: 0}
 --- !u!1 &1358594475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,7 +2411,6 @@ GameObject:
   - component: {fileID: 1447052083}
   - component: {fileID: 1447052085}
   - component: {fileID: 1447052084}
-  - component: {fileID: 1447052086}
   m_Layer: 5
   m_Name: Unlocked Lock
   m_TagString: Untagged
@@ -2437,37 +2475,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447052082}
   m_CullTransparentMesh: 1
---- !u!114 &1447052086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447052082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -379825968
-      Data2: 1183654833
-      Data3: 1198511026
-      Data4: -1700087930
-    Path: event:/SFX/Lock Open
-  Event: 
-  PlayEvent: 11
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1506992852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,6 +2835,135 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  numberClick: {fileID: 0}
+--- !u!1 &1817480861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817480863}
+  - component: {fileID: 1817480862}
+  m_Layer: 0
+  m_Name: Click
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1817480862
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817480861}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 778dfe79aa3b5054eb2db39e959f51b3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1817480863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817480861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.0825396, y: 0.29774317, z: -0.01690793}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818232191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,7 +3012,6 @@ GameObject:
   - component: {fileID: 1911983949}
   - component: {fileID: 1911983948}
   - component: {fileID: 1911983951}
-  - component: {fileID: 1911983952}
   m_Layer: 5
   m_Name: Dial 3
   m_TagString: Untagged
@@ -3014,37 +3149,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1bed16d90d3677e478f2b387d6e8c232, type: 3}
   - {fileID: 21300000, guid: 19d961483f4ca00419ceceecd486863a, type: 3}
   - {fileID: 21300000, guid: bf90f9a6dcffc764c90df93d3bd4bc5b, type: 3}
---- !u!114 &1911983952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911983946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1342448742
-      Data2: 1249753672
-      Data3: 1336563845
-      Data4: 1653008641
-    Path: event:/SFX/Scrolling Lock
-  Event: 
-  PlayEvent: 19
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  numberClick: {fileID: 1817480862}
 --- !u!1 &2000955929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,3 +3434,5 @@ SceneRoots:
   - {fileID: 916942955}
   - {fileID: 416253256}
   - {fileID: 2021524691}
+  - {fileID: 1817480863}
+  - {fileID: 989400020}

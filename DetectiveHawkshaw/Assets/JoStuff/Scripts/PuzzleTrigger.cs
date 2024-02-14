@@ -20,7 +20,7 @@ public class PuzzleTrigger : MonoBehaviour
     public TextMeshProUGUI examineTagBox;
 
     public static bool puzzleSolved;
-    //public AudioSource doorKnock;
+    public AudioSource doorKnock;
     //private AudioSource doorOpen;
 
     private void Start()
@@ -42,7 +42,7 @@ public class PuzzleTrigger : MonoBehaviour
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
-        //doorKnock.Play();
+        doorKnock.Play();
     }
 
     public void OnMouseOver()

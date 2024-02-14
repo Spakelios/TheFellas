@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 208667687}
   - component: {fileID: 208667686}
   - component: {fileID: 208667685}
-  - component: {fileID: 208667689}
   m_Layer: 0
   m_Name: Cucumber
   m_TagString: Untagged
@@ -271,37 +270,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &208667689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208667684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1615065623
-      Data2: 1331779748
-      Data3: -752702799
-      Data4: 688867849
-    Path: event:/SFX/Examining Evidence
-  Event: 
-  PlayEvent: 15
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &393393001
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,9 +952,6 @@ GameObject:
   - component: {fileID: 1601999859}
   - component: {fileID: 1601999861}
   - component: {fileID: 1601999862}
-  - component: {fileID: 1601999865}
-  - component: {fileID: 1601999864}
-  - component: {fileID: 1601999863}
   m_Layer: 0
   m_Name: LobbyDoor
   m_TagString: Untagged
@@ -1122,105 +1087,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.322306, y: 52.62091}
   m_EdgeRadius: 0
---- !u!114 &1601999863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601999858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 691107651
-      Data2: 1112173112
-      Data3: -2020716397
-      Data4: -1786344780
-    Path: event:/SFX/Door
-  Event: 
-  PlayEvent: 15
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params:
-  - Name: Parameter 1
-    Value: 1
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1601999864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601999858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 691107651
-      Data2: 1112173112
-      Data3: -2020716397
-      Data4: -1786344780
-    Path: event:/SFX/Door
-  Event: 
-  PlayEvent: 13
-  StopEvent: 15
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params:
-  - Name: Parameter 1
-    Value: 0
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &1601999865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601999858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 691107651
-      Data2: 1112173112
-      Data3: -2020716397
-      Data4: -1786344780
-    Path: event:/SFX/Door
-  Event: 
-  PlayEvent: 1
-  StopEvent: 13
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params:
-  - Name: Parameter 1
-    Value: 2
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1605479502
 GameObject:
   m_ObjectHideFlags: 0
