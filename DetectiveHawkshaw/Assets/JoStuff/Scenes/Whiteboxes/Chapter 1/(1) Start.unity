@@ -4139,7 +4139,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: Other Room Ch. 1
   examineTagBox: {fileID: 1713627230}
-  doorKnock: {fileID: 976198595}
 --- !u!61 &592534864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4717,10 +4716,10 @@ MonoBehaviour:
   examineTagBox: {fileID: 500266454}
   examineTag: ???
   newExamineTag: Evidence
-  referenceID: 2
+  referenceID: 1
   evidence: 1
   calendar: 0
-  evidenceSound: {fileID: 1888943456}
+  wasChecked: 0
 --- !u!212 &607960267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4858,7 +4857,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: 
   examineTagBox: {fileID: 1330407934}
-  doorKnock: {fileID: 976198595}
 --- !u!61 &640783303
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5006,7 +5004,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: Kitchen
   examineTagBox: {fileID: 2045946406}
-  doorKnock: {fileID: 976198595}
 --- !u!61 &677930288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13940,6 +13937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  sceneName: InterrogationSceneAntiques
 --- !u!4 &1926965768
 Transform:
   m_ObjectHideFlags: 0
@@ -16289,6 +16287,10 @@ PrefabInstance:
     - target: {fileID: 3082787284233241894, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678456158199663440, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4678456158199663440, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       propertyPath: examineTagBox

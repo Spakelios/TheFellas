@@ -4139,7 +4139,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: Other Room Ch. 1
   examineTagBox: {fileID: 1713627230}
-  doorKnock: {fileID: 976198595}
 --- !u!61 &592534864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4720,7 +4719,7 @@ MonoBehaviour:
   referenceID: 1
   evidence: 1
   calendar: 0
-  evidenceSound: {fileID: 1888943456}
+  wasChecked: 0
 --- !u!212 &607960267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4858,7 +4857,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: 
   examineTagBox: {fileID: 1330407934}
-  doorKnock: {fileID: 976198595}
 --- !u!61 &640783303
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5006,7 +5004,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: Chapter 2 Room 2
   examineTagBox: {fileID: 1330407934}
-  doorKnock: {fileID: 976198595}
 --- !u!61 &677930288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7531,8 +7528,8 @@ MonoBehaviour:
   calendarDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
-  evidence1: {fileID: 0}
-  evidence2: {fileID: 0}
+  evidence1: {fileID: 607960265}
+  evidence2: {fileID: 1649700223172809709}
 --- !u!1 &1017521395
 GameObject:
   m_ObjectHideFlags: 0
@@ -13940,6 +13937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  sceneName: InterrogationScene1
 --- !u!4 &1926965768
 Transform:
   m_ObjectHideFlags: 0
@@ -16430,6 +16428,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
+--- !u!1 &1649700223172809709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2773311704933782800, guid: 6dfc5575fd8069045882b808ce808ecd, type: 3}
+  m_PrefabInstance: {fileID: 1649700223172809708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2427208441871881533
 PrefabInstance:
   m_ObjectHideFlags: 0

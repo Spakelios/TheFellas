@@ -358,7 +358,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 494159611}
         m_TargetAssemblyTypeName: NextChapter, Assembly-CSharp
-        m_MethodName: Ch1Load
+        m_MethodName: Ch2Load
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -31,6 +31,18 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene("End Screen");
     }
+    public void endScreen1()
+    {
+        SceneManager.LoadScene("Ending1");
+    } 
+    public void endScreen2()
+    {
+        SceneManager.LoadScene("End2");
+    } 
+    public void endScreen3()
+    {
+        SceneManager.LoadScene("End3");
+    }
     public void ChOneInvest()
     {
         VNToInvestLoader.instance.LoadLevel("Initial Scene Ch. 1");
