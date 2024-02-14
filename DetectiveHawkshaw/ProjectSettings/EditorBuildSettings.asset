@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/JoStuff/Scenes/Prototype Case/Lobby.unity
     guid: da738c92bb4fb8e448f94ef1afd8dd75
   - enabled: 1
-    path: Assets/JoStuff/Scenes/Prototype Case/Kitchen.unity
+    path: Assets/JoStuff/Scenes/Prototype Case/Chap 3 Kitchen.unity
     guid: e8177190cf57fad4cb0a6bf253e195cd
   - enabled: 1
     path: Assets/JoStuff/Scenes/Prototype Case/Office.unity
@@ -62,4 +62,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KellieStuff/Scenes/Chap 2 Start.unity
     guid: c356547f08a484541b260af09f6ed91c
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Chap 3 Bathroom.unity
+    guid: 2e6ef8e653ec27e4a97e643eba3eee28
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Chap 3 Office.unity
+    guid: 4c83fda75ebe7dc4997f9a7d51c3d7d2
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Chap 3 Lobby.unity
+    guid: b7da62657ec1ddd41a1d2b16bc3c06f3
   m_configObjects: {}
