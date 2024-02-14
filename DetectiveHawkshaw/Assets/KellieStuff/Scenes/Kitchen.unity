@@ -167,7 +167,7 @@ MonoBehaviour:
   referenceID: 1
   evidence: 1
   calendar: 0
-  evidenceSound: {fileID: 1938094862}
+  wasChecked: 0
 --- !u!58 &208667686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1042,7 +1042,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 1937236725}
   sceneName: Lobby
   examineTagBox: {fileID: 1532036260}
-  doorKnock: {fileID: 393393002}
 --- !u!61 &1601999862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1287,6 +1286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  sceneName: InterrogationScene
 --- !u!4 &1772373421
 Transform:
   m_ObjectHideFlags: 0

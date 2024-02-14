@@ -528,7 +528,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: Kitchen
   examineTagBox: {fileID: 1713627230}
-  doorKnock: {fileID: 141085083}
 --- !u!61 &592534864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -618,7 +617,7 @@ MonoBehaviour:
   referenceID: 2
   evidence: 1
   calendar: 0
-  evidenceSound: {fileID: 1318604647}
+  wasChecked: 0
 --- !u!212 &607960267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -823,7 +822,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 398077075}
   sceneName: Office
   examineTagBox: {fileID: 1330407934}
-  doorKnock: {fileID: 141085083}
 --- !u!61 &608411122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1962,6 +1960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  sceneName: InterrogationScene
 --- !u!4 &1926965768
 Transform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class InterrogationCheck : MonoBehaviour
     public InvestigationDialogueTrigger investigation;
     private List<int> evidenceCheck;
     public static List<int> newEvidence;
+    
+    public string sceneName;
 
     private AudioSource music;
 
@@ -32,7 +34,8 @@ public class InterrogationCheck : MonoBehaviour
             InvestigationDialogueTrigger.isExamined.Contains(4))
         {
             //SceneManager.LoadScene("InterrogationScene");
-            VNToInvestLoader.instance.LoadLevel("InterrogationScene");
+            //VNToInvestLoader.instance.LoadLevel("InterrogationScene");
+            RoomLoader.instance.LoadLevel(sceneName);
             //music.Stop();
         }
     }
