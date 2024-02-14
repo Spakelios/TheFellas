@@ -19,7 +19,7 @@ public class GoToRoom : MonoBehaviour
     public TextMeshProUGUI examineTagBox;
     //public AudioSource doorOpen;
 
-    public AudioSource doorKnock;
+    //public AudioSource doorKnock;
     
     
     
@@ -48,7 +48,7 @@ public class GoToRoom : MonoBehaviour
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
-        doorKnock.Play();
+        //doorKnock.Play();
     }
 
     public void OnMouseOver()

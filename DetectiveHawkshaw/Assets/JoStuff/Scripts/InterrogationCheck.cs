@@ -13,7 +13,7 @@ public class InterrogationCheck : MonoBehaviour
 
     private void Start()
     {
-        music = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
+        //music = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
         
         evidenceCheck = new List<int>()
         {
@@ -33,7 +33,7 @@ public class InterrogationCheck : MonoBehaviour
         {
             //SceneManager.LoadScene("InterrogationScene");
             VNToInvestLoader.instance.LoadLevel("InterrogationScene");
-            music.Stop();
+            //music.Stop();
         }
     }
 

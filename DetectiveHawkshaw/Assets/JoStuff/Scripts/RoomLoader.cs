@@ -10,8 +10,8 @@ public class RoomLoader : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
     
-    public AudioSource doorOpen;
-    public AudioSource doorClose;
+    //public AudioSource doorOpen;
+    //public AudioSource doorClose;
     
 
     private void Awake()
@@ -27,7 +27,7 @@ public class RoomLoader : MonoBehaviour
 
     IEnumerator LoadNamedLevel(string levelName)
     {
-        doorOpen.Play();
+        //doorOpen.Play();
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
@@ -35,7 +35,7 @@ public class RoomLoader : MonoBehaviour
         SceneManager.LoadScene(levelName);
         
         transition.SetTrigger("End");
-        doorClose.Play();
+        //doorClose.Play();
 
     }
 }

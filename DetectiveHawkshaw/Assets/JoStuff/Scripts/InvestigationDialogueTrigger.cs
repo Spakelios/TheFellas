@@ -27,7 +27,12 @@ using Unity.VisualScripting;
     public bool evidence;
     public bool calendar;
 
-    public AudioSource evidenceSound;
+    public bool wasChecked;
+    private static int plus = 0;
+
+    private Collider2D collider;
+
+    //public AudioSource evidenceSound;
 
     private void Start()
     {
@@ -96,19 +101,40 @@ using Unity.VisualScripting;
 
         if (evidence)
         {
-            evidenceSound.Play();
+            //evidenceSound.Play();
             dialogueManager.evidenceDialogue = true;
+
+            if (!wasChecked)
+            {
+                plus++;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+                wasChecked = true;
+            }
         }
 
         if (calendar)
         {
-            evidenceSound.Play();
+            //evidenceSound.Play();
             dialogueManager.calendarDialogue = true;
+            
+            if (!wasChecked)
+            {
+                plus++;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+                wasChecked = true;
+            }
         }
 
         if (dialogueManager.sandwichDialogue)
         {
-            evidenceSound.Play();
+            //evidenceSound.Play();
+            
+            if (!wasChecked)
+            {
+                plus++;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+                wasChecked = true;
+            }
         }
 
         dialogueManager.StartDialogue(dialogue);
