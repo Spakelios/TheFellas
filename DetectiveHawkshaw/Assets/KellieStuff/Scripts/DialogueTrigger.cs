@@ -5,7 +5,9 @@ using System;
        using UnityEngine.UI;
        using Ink.Runtime;
        using TMPro;
-       using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger: MonoBehaviour
 {
@@ -15,6 +17,9 @@ public class DialogueTrigger: MonoBehaviour
 
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
+    [SerializeField] private float typingSpeed = 0.04f;
+
+    [SerializeField] private GameObject continueIcon;
     
     // private Text text;
 
@@ -29,6 +34,12 @@ public class DialogueTrigger: MonoBehaviour
     public Image Evi;
     public GameObject fmod;
     
+
+    private Coroutine displayLineCoroutine;
+
+    private bool isAddingRichTextTags = false;
+    
+    private bool canContinueToNextLine = false;
     void Start()
     {
         LoadStory();
@@ -36,7 +47,7 @@ public class DialogueTrigger: MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (canContinueToNextLine && Input.GetMouseButtonDown(0))
         {
             DisplayNextLine();
         }
@@ -61,22 +72,30 @@ public class DialogueTrigger: MonoBehaviour
 
         if (_StoryScript.canContinue) // Checking if there is content to go through
         {
+            if (displayLineCoroutine != null)
+            {
+                StopCoroutine(displayLineCoroutine);
 
-            string text = _StoryScript.Continue();
-            text = text?.Trim(); //Removes White space from the text
-            dialogueBox.text = text; //Displays new text
+            }
 
+            // string text = dialogueBox.text;
+               displayLineCoroutine =  StartCoroutine(DisplayLine(_StoryScript.Continue()));
+               string text = dialogueBox.text;
+                text = text?.Trim(); //Removes White space from the text
+                dialogueBox.text = text; //Displays new text
+
+            }
+            else if (_StoryScript.currentChoices.Count > 0)
+            {
+                DisplayChoices();
+            }
+            else
+            {
+                button2.SetActive(true);
+            }
         }
-        else if (_StoryScript.currentChoices.Count > 0) 
-        { 
-            DisplayChoices(); 
-        }
-        else 
-        { 
-            button2.SetActive(true); 
-        }
-    }
-  
+    
+
     public void DisplayChoices()
     {
         if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return;
@@ -88,9 +107,45 @@ public class DialogueTrigger: MonoBehaviour
 
             button.onClick.AddListener(() => onClickChoiceButton(choice));
         }
-
-
+        
     }
+
+    private IEnumerator DisplayLine(string line)
+    {
+        dialogueBox.text = "";
+        continueIcon.SetActive(false);
+        canContinueToNextLine = false;
+
+        foreach (char letter in line.ToCharArray())
+        {
+            if (canContinueToNextLine && Input.GetMouseButtonDown(0))
+            {
+                dialogueBox.text = line;
+                break;
+            
+            }
+
+            if (letter == '<' || isAddingRichTextTags)
+            {
+                isAddingRichTextTags = true;
+                dialogueBox.text += letter;
+                if (letter == '>')
+                {
+                    isAddingRichTextTags = false;
+                }
+            }
+            else
+            {
+                dialogueBox.text += letter;
+                yield return new WaitForSeconds(typingSpeed);
+            }
+        }
+
+        canContinueToNextLine = true;
+        continueIcon.SetActive(true);
+    }
+    
+
 
     Button CreateChoiceButton(string text)
     {
@@ -105,9 +160,12 @@ public class DialogueTrigger: MonoBehaviour
 
     void onClickChoiceButton(Choice choice)
     {
-        _StoryScript.ChooseChoiceIndex(choice.index);
-        RefreshChoiceView();
-        DisplayNextLine();
+        if (canContinueToNextLine)
+        {
+            _StoryScript.ChooseChoiceIndex(choice.index);
+            RefreshChoiceView();
+            DisplayNextLine();
+        }
     }
 
     void RefreshChoiceView()
