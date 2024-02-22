@@ -4,18 +4,16 @@ using System;
        using UnityEngine;
        using UnityEngine.UI;
        using Ink.Runtime;
-using JetBrains.Annotations;
-using TMPro;
+       using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.SceneManagement;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger1 : MonoBehaviour
 {
     private int num;
     [SerializeField] private TextAsset _InkJsonFile;
     private Story _StoryScript;
-    private Image imageButton;
 
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
@@ -29,16 +27,12 @@ public class DialogueTrigger : MonoBehaviour
     public Image characterIcon;
     public Image Icon;
     [SerializeField] private GridLayoutGroup choiceHolder;
-    [SerializeField] private GridLayoutGroup choiceHolder2;
-    [NotNull] public GameObject c1, c2;
     [SerializeField] private Button choiceButtonPrefab;
     public GameObject butt;
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
     public GameObject fmod;
-    public Image ButtonImage;
-    
 
     public GameObject choiceHold;
 
@@ -120,7 +114,7 @@ public class DialogueTrigger : MonoBehaviour
 
             button.onClick.AddListener(() => onClickChoiceButton(choice));
         }
-
+        
     }
 
     private IEnumerator DisplayLine(string line)
@@ -166,7 +160,6 @@ public class DialogueTrigger : MonoBehaviour
         var choiceButton = Instantiate(choiceButtonPrefab);
         choiceButton.transform.SetParent(choiceHolder.transform, false);
         var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
-        ButtonImage = choiceButton.GetComponentInChildren<Image>();
         buttonText.text = text;
         choiceButton.name = "woah" + num++;
         return choiceButton;
@@ -221,7 +214,6 @@ public class DialogueTrigger : MonoBehaviour
         var EviIcon = Resources.Load<Sprite>("characterIcons/" + name);
         Evi.sprite = EviIcon;
     }
-
 
     public void FModShenanigans(string name)
     {

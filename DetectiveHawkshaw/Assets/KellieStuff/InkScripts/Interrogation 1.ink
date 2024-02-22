@@ -4,6 +4,7 @@ EXTERNAL MC(charName)
 EXTERNAL Back(charName)
 EXTERNAL Evi(charName)
 
+
 {Back("Office")}
 {Icon("EmilNeutral")}
 {Name("Emil")}
@@ -11,8 +12,6 @@ EXTERNAL Evi(charName)
 “Let's start with...”  -> Choose
 
 == Choose ==
-
-
 {MC("transparent")}
 * {not two } [ Interrogate Nicolai ] -> two 
 
@@ -29,13 +28,8 @@ EXTERNAL Evi(charName)
 {Name("Katya")}
 {Icon("transparent")}“O-ok! Sure thing dad!” 
 
-*[ Where were you between 11.30 am and 12.00 pm?] -> twenty
-
-*[ Why is the sandwich in the toilet of all places?] -> five
-
-*[ What day is it today?] -> six
-
-== twenty == 
+{Name("Emil")}{Icon("EmilNeutral")}
+ Where were you between 11.30 am and 12.00 pm?
 
 {Name("Emil")} {Icon("EmilNeutral")} {MC("Katya_Think")} <i> She puts her hand to her chin, thinking deeply about what she got up to today. </i>
 <i> I try to remain stern without upsetting her. </i>
@@ -49,38 +43,14 @@ EXTERNAL Evi(charName)
 {Name("Emil")} 
 {Icon("EmilUpset")}<i> She looks up at me, pleading with her puppy dog eyes. </i>
 
-*[I must stay focused.] -> three
+Oh, Alright. I’d love to see it.-> four.
 
-*[Oh, Alright. I’d love to see it.] -> four.
-
-== three == 
-
- {MC("Katya_Mad")}<i> She pouts, a frown appearing on her face. </i>
-{Icon("EmilHappy")}<i>I try not to laugh at her reaction as she holds the paper in her hands.</i>
-
-{Name("Katya")}
-{Icon("transparent")}“Aww, don't be silly! Here, looooook!”
-
-{Name("Emil")}
-{Icon("EmilHappy")}
-{Evi("KatyaDraws")}<i>She holds it up, waving it in front of my face.</i>
-<i>It's a crayon drawing of myself, Katya and Nicolai.</i>
-<i>It's very sweet.</i> 
-
-“Oh! Good job Katya, it's wonderful!”
-“I’ll have your Uncle Nikki put it up on the fridge later.”
-{Evi("transparent")} {MC("Katya_Happy")}
-<i>I take the picture off her and pat her head, taking note of the small stains on the side of it.</i> -> seven
 
 == seven == 
 
-* {not twenty} [ Where were you between 11.30 am and 12.00 pm?] -> twenty
-
-* {not five} [ Why is the sandwich in the toilet of all places?] -> five
-
-* {not six} [ What day is it today? ] -> six
-
-* {twenty && five && six} [ Move on ] -> Choose
+{Name("Emil")} 
+{Icon("EmilUpset")}
+ Why is the sandwich in the toilet of all places? -> five
 
 == four == 
  
@@ -112,18 +82,29 @@ EXTERNAL Evi(charName)
 {Name("Emil")} 
 {Icon("EmilNeutral")}<i>She says the last part as though repeating a mantra.
 <i>This was something I taught her when she was much younger.
-<i>The question seems to have made her fidget a bit.</i> -> seven
+<i>The question seems to have made her fidget a bit.</i> 
 
-== six ==
+ What day is it today?
 
 {Name("Katya")}{Icon("transparent")} {MC("Katya_Basic")} “Oh! I know! I know! Today's the 17th of June!”
 
 {Name("Emil")}
 {Icon("EmilUpset")}
 <i>I try not to appear shocked when she says it, that day is quite a bittersweet memory now.
-<i>She must've read it off the calendar.</i>
+<i>She must've read it off the calendar.</i> -> evidence
 
+== evidence ==
 *[ Show her the calendar ] -> eight
+* {not evil} [ . ] -> evil
+*  {not evil} [. ] -> evil
+* {not evil} [. ] -> evil
+
+== evil ==
+{Name("Emil")}
+{Icon("EmilUpset")}
+
+"...not this" -> evidence
+
 
 == eight ==
 {Evi("calendar")}"..."
@@ -150,7 +131,6 @@ EXTERNAL Evi(charName)
 
 *[ Why is the sandwich in the toilet of all places?] -> five
 
-*[ What day is it today? ] -> six
 
 *[ I know who did it ] -> ten 
 
