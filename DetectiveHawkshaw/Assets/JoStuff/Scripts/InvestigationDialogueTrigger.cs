@@ -7,7 +7,7 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-  public class InvestigationDialogueTrigger : MonoBehaviour
+public class InvestigationDialogueTrigger : MonoBehaviour
 {
     
     private Vector2 mousePos;
@@ -102,6 +102,7 @@ using Unity.VisualScripting;
         if (evidence)
         {
             //evidenceSound.Play();
+            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
             dialogueManager.evidenceDialogue = true;
 
             if (!wasChecked)

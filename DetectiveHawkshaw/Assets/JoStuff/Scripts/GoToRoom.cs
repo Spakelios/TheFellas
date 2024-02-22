@@ -20,9 +20,10 @@ public class GoToRoom : MonoBehaviour
     //public AudioSource doorOpen;
 
     //public AudioSource doorKnock;
-    
-    
-    
+
+
+
+
 
     // Update is called once per frame
 
@@ -48,7 +49,8 @@ public class GoToRoom : MonoBehaviour
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
-        //doorKnock.Play();
+        
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorKnock, transform.position);
     }
 
     public void OnMouseOver()

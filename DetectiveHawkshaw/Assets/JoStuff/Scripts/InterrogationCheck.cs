@@ -35,7 +35,7 @@ public class InterrogationCheck : MonoBehaviour
         {
             //SceneManager.LoadScene("InterrogationScene");
             //VNToInvestLoader.instance.LoadLevel("InterrogationScene");
-            RoomLoader.instance.LoadLevel(sceneName);
+            //RoomLoader.instance.LoadLevel(sceneName);
             //music.Stop();
         }
     }

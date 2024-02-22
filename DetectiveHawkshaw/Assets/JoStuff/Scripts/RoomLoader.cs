@@ -13,6 +13,7 @@ public class RoomLoader : MonoBehaviour
     //public AudioSource doorOpen;
     //public AudioSource doorClose;
     
+    
 
     private void Awake()
     {
@@ -27,15 +28,17 @@ public class RoomLoader : MonoBehaviour
 
     IEnumerator LoadNamedLevel(string levelName)
     {
-        //doorOpen.Play();
+        
         transition.SetTrigger("Start");
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpen, transform.position);
 
         yield return new WaitForSeconds(transitionTime);
         
         SceneManager.LoadScene(levelName);
         
         transition.SetTrigger("End");
-        //doorClose.Play();
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorClose, transform.position);
+
 
     }
 }

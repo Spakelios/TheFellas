@@ -61,6 +61,7 @@ public class Numbers : MonoBehaviour
         }
         
         //numberClick.Play();
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.lockScroll, transform.position);
         numberLock.currentCombo.RemoveAt(passwordDigit);
         numberLock.currentCombo.Insert(passwordDigit, currentNumber);
         numberLock.CheckCombo();
