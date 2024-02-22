@@ -27,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-8992193415616262583
+--- !u!114 &-8543017447028245081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,24 +36,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Door/Parameter 1
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door Knock
   m_EditorClassIdentifier: 
-  Name: Parameter 1
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2576045405
-    data2: 796590669
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Door Knocking
-  - Door Open
-  - Door Close
-  Exists: 1
+  Path: event:/SFX/Door Knock
+  Guid:
+    Data1: 1728661985
+    Data2: 1131018479
+    Data3: -409052238
+    Data4: -859028330
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8188354005512971461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +80,33 @@ MonoBehaviour:
   - Regular
   - Reverb
   Exists: 1
+--- !u!114 &-7174958112699467597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Journal Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Journal Close
+  Guid:
+    Data1: -2025351156
+    Data2: 1320811867
+    Data3: -1275488113
+    Data4: 955404796
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6733672567206183585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,6 +131,115 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-6424760296227385368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Unused/Door
+  m_EditorClassIdentifier: 
+  Path: event:/Unused/Door
+  Guid:
+    Data1: 691107651
+    Data2: 1112173112
+    Data3: -2020716397
+    Data4: -1786344780
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7870365996865132946}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5023097390691646582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door Close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Door Close
+  Guid:
+    Data1: -1526097346
+    Data2: 1337135878
+    Data3: -1861743190
+    Data4: 225526301
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4580143984478729531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Journal Flick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Journal Flick
+  Guid:
+    Data1: -69968027
+    Data2: 1296825651
+    Data3: 1380350355
+    Data4: 410069769
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4577865214390751162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Unused/Examining Evidence (Reverb)
+  m_EditorClassIdentifier: 
+  Path: event:/Unused/Examining Evidence (Reverb)
+  Guid:
+    Data1: 1844661689
+    Data2: 1144114695
+    Data3: -520501884
+    Data4: 918864982
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4422102344229584850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +320,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1928469582874040555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Door Open
+  Guid:
+    Data1: 839495090
+    Data2: 1304302696
+    Data3: 2098155921
+    Data4: 1739866699
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-990517631269458255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +416,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Puzzle Section.bank
   Name: Puzzle Section
   StudioPath: bank:/Puzzle Section
-  lastModified: 638405272157994303
+  lastModified: 638442313435714154
   FileSizes:
   - Name: Desktop
     Value: 8160
@@ -303,16 +466,22 @@ MonoBehaviour:
   - {fileID: 8653868148023825174}
   - {fileID: 748880558791156802}
   EditorEvents:
-  - {fileID: 3566765552034538561}
   - {fileID: 6676937886049046890}
   - {fileID: 4896895885178369064}
-  - {fileID: 1550319116226577722}
   - {fileID: -990517631269458255}
   - {fileID: -3278667835987895555}
   - {fileID: -9186310351176568061}
   - {fileID: -3670116732617442085}
   - {fileID: -941862681676062451}
   - {fileID: 6681910827489844667}
+  - {fileID: -5023097390691646582}
+  - {fileID: -1928469582874040555}
+  - {fileID: -8543017447028245081}
+  - {fileID: -7174958112699467597}
+  - {fileID: -6424760296227385368}
+  - {fileID: -4580143984478729531}
+  - {fileID: 5988083926627759402}
+  - {fileID: -4577865214390751162}
   EditorParameters:
   - {fileID: 19813913119169695}
   - {fileID: -8188354005512971461}
@@ -323,7 +492,7 @@ MonoBehaviour:
   - {fileID: 4481593516728349603}
   StringsBanks:
   - {fileID: 3607472290051113618}
-  cacheTime: 638405303911320144
+  cacheTime: 638442333460162761
   cacheVersion: 131616
 --- !u!114 &19813913119169695
 MonoBehaviour:
@@ -366,38 +535,11 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/VN Portion.bank
   Name: VN Portion
   StudioPath: bank:/VN Portion
-  lastModified: 638405236552842790
+  lastModified: 638442313439142802
   FileSizes:
   - Name: Desktop
     Value: 218912
   Exists: 1
---- !u!114 &1550319116226577722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Examining Evidence (Reverb)
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Examining Evidence (Reverb)
-  Guid:
-    Data1: 1844661689
-    Data2: 1144114695
-    Data3: -520501884
-    Data4: 918864982
-  Banks:
-  - {fileID: 6498244219364827859}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &2137744298211113154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,39 +579,11 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Main Theme.bank
   Name: Main Theme
   StudioPath: bank:/Main Theme
-  lastModified: 638405293879672709
+  lastModified: 638442313435190430
   FileSizes:
   - Name: Desktop
     Value: 2196576
   Exists: 1
---- !u!114 &3566765552034538561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door
-  Guid:
-    Data1: 691107651
-    Data2: 1112173112
-    Data3: -2020716397
-    Data4: -1786344780
-  Banks:
-  - {fileID: 6498244219364827859}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -8992193415616262583}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &3607472290051113618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,10 +599,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638405303911320144
+  lastModified: 638442333460162761
   FileSizes:
   - Name: Desktop
-    Value: 1784
+    Value: 2062
   Exists: 1
 --- !u!114 &4481593516728349603
 MonoBehaviour:
@@ -505,7 +619,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638405303911290215
+  lastModified: 638442333460132848
   FileSizes:
   - Name: Desktop
     Value: 1934
@@ -563,6 +677,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5988083926627759402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Journal Open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Journal Open
+  Guid:
+    Data1: 615452545
+    Data2: 1258518469
+    Data3: 366543008
+    Data4: 1368307938
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6498244219364827859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,10 +720,10 @@ MonoBehaviour:
     Portion.bank
   Name: Investigation Portion
   StudioPath: bank:/Investigation Portion
-  lastModified: 638405303911150571
+  lastModified: 638442333459952946
   FileSizes:
   - Name: Desktop
-    Value: 2244704
+    Value: 2266112
   Exists: 1
 --- !u!114 &6676937886049046890
 MonoBehaviour:
@@ -603,8 +744,8 @@ MonoBehaviour:
     Data3: -1500064368
     Data4: 908343336
   Banks:
-  - {fileID: 6498244219364827859}
   - {fileID: 2706340728466102012}
+  - {fileID: 6498244219364827859}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -667,6 +808,33 @@ MonoBehaviour:
   - No Crime
   - Crime
   Exists: 1
+--- !u!114 &7870365996865132946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2576045405
+    data2: 796590669
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Door Knocking
+  - Door Open
+  - Door Close
+  Exists: 1
 --- !u!114 &8473787588230798683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,7 +874,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/VFX.bank
   Name: VFX
   StudioPath: bank:/VFX
-  lastModified: 638405272158773857
+  lastModified: 638442313436504263
   FileSizes:
   - Name: Desktop
     Value: 41536

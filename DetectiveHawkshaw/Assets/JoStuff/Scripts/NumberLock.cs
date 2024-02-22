@@ -34,6 +34,7 @@ public class NumberLock : MonoBehaviour
         if (!currentCombo.SequenceEqual(correctCombo)) return;
         
         //unlockLock.Play();
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.lockOpen, transform.position);
         locked.SetActive(false);
         unlocked.SetActive(true);
         PuzzleTrigger.puzzleSolved = true;
