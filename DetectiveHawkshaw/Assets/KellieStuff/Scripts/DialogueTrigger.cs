@@ -1,7 +1,8 @@
 using System;
        using System.Collections;
        using System.Collections.Generic;
-       using UnityEngine;
+using System.Linq;
+using UnityEngine;
        using UnityEngine.UI;
        using Ink.Runtime;
 using JetBrains.Annotations;
@@ -43,6 +44,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject choiceHold;
 
 
+    public List<Button> choiceButtons = new List<Button>();
     private Coroutine displayLineCoroutine;
 
     private bool isAddingRichTextTags = false;
@@ -51,8 +53,11 @@ public class DialogueTrigger : MonoBehaviour
 
     void Start()
     {
+       // CreateButtons();
         LoadStory();
     }
+
+   
 
     void Update()
     {
@@ -108,16 +113,19 @@ public class DialogueTrigger : MonoBehaviour
 
     public void DisplayChoices()
     {
-        if (choiceHolder.GetComponentsInChildren<Button>().Length > 0)
-        {
-            return;
-        }
-
+        //if (choiceHolder.GetComponentsInChildren<Button>().Length > 0)
+        //{
+           // return;
+        //}
+        
         for (int i = 0; i < _StoryScript.currentChoices.Count; i++)
         {
+            
             var choice = _StoryScript.currentChoices[i];
-            var button = CreateChoiceButton(choice.text);
-
+            //var button = CreateChoiceButton(choice.text);
+            var button = choiceButtons[i];
+            button.gameObject.SetActive(true);
+            button.GetComponentInChildren<TextMeshProUGUI>().text = choice.text;
             button.onClick.AddListener(() => onClickChoiceButton(choice));
         }
 
@@ -162,6 +170,8 @@ public class DialogueTrigger : MonoBehaviour
 
     Button CreateChoiceButton(string text)
     {
+        
+        //make this redundant and have it all manual instead
         //instantiate button
         var choiceButton = Instantiate(choiceButtonPrefab);
         choiceButton.transform.SetParent(choiceHolder.transform, false);
@@ -174,22 +184,28 @@ public class DialogueTrigger : MonoBehaviour
 
     void onClickChoiceButton(Choice choice)
     {
-        
-        _StoryScript.ChooseChoiceIndex(choice.index);
+        if (_StoryScript.currentChoices.Count > 0)
+        {
+            _StoryScript.ChooseChoiceIndex(choice.index);
             RefreshChoiceView();
             DisplayNextLine();
-        
+        }
+
     }
 
     void RefreshChoiceView()
     {
-        if (choiceHolder != null)
+        for (int i = 0; i < choiceButtons.Count; i++)
         {
-            foreach (var button in choiceHolder.GetComponentsInChildren<Button>())
-            {
-                Destroy(button.gameObject);
-            }
+            choiceButtons[i].gameObject.SetActive(false);
         }
+       // if (choiceHolder != null)
+        //{
+        //    foreach (var button in choiceHolder.GetComponentsInChildren<Button>())
+         //   {
+         //       Destroy(button.gameObject);
+        //    }
+       // }
     }
 
     public void ChangeName(string name)
