@@ -641,8 +641,8 @@ GameObject:
   m_Component:
   - component: {fileID: 362061133}
   - component: {fileID: 362061132}
-  - component: {fileID: 362061134}
   - component: {fileID: 362061135}
+  - component: {fileID: 362061136}
   m_Layer: 0
   m_Name: Katya
   m_TagString: Untagged
@@ -717,32 +717,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &362061134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362061131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87356a31b230b684f9015bcdefd417a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
-  dialogue:
-    name: Katya
-    sentences:
-    - Don't worry, Dad!
-    - Next time you'll make an even better lunch!
-  dialogueManager: {fileID: 1223913006}
-  examineTagBox: {fileID: 425038887}
-  examineTag: Katya
-  newExamineTag: Katya
-  referenceID: 6
-  evidence: 0
-  calendar: 0
-  wasChecked: 0
 --- !u!70 &362061135
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -778,6 +752,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 21.599998, y: 38.399998}
   m_Direction: 0
+--- !u!114 &362061136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362061131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742ede3d79256d444963323a1685f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  dialogue:
+    name: Katya
+    sentences:
+    - Don't worry, Dad!
+    - Next time you'll make an even better lunch!
+  dialogueManager: {fileID: 1223913006}
+  examineTagBox: {fileID: 425038887}
+  examineTag: Katya
 --- !u!1 &425038885
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  evidenceCount: 0
   sceneName: InterrogationScene
 --- !u!4 &510135538
 Transform:
@@ -1130,8 +1126,8 @@ GameObject:
   m_Component:
   - component: {fileID: 860282537}
   - component: {fileID: 860282536}
-  - component: {fileID: 860282538}
   - component: {fileID: 860282539}
+  - component: {fileID: 860282540}
   m_Layer: 0
   m_Name: Nicolai
   m_TagString: Untagged
@@ -1206,35 +1202,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &860282538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860282535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87356a31b230b684f9015bcdefd417a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
-  dialogue:
-    name: Nicolai
-    sentences:
-    - Y'know, you're putting in a whole lotta effort just to find out where your
-      lunch's gone...
-    - It's kinda funny, actually!
-    - Good luck finding it, I guess? Don't go getting anymore grey hairs stressing
-      over it, alright?
-  dialogueManager: {fileID: 1223913006}
-  examineTagBox: {fileID: 1830070312}
-  examineTag: Nicolai
-  newExamineTag: Nicolai
-  referenceID: 7
-  evidence: 0
-  calendar: 0
-  wasChecked: 0
 --- !u!70 &860282539
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1270,6 +1237,30 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 20, y: 40.96}
   m_Direction: 0
+--- !u!114 &860282540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860282535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742ede3d79256d444963323a1685f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  dialogue:
+    name: Nicolai
+    sentences:
+    - Y'know, you're putting in a whole lotta effort just to find out where your
+      lunch's gone...
+    - It's kinda funny, actually!
+    - Good luck finding it, I guess? Don't go getting anymore grey hairs stressing
+      over it, alright?
+  dialogueManager: {fileID: 1223913006}
+  examineTagBox: {fileID: 1830070312}
+  examineTag: Nicolai
 --- !u!1 &904172755
 GameObject:
   m_ObjectHideFlags: 0

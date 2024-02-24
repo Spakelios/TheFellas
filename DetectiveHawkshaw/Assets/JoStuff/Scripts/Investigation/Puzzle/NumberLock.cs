@@ -11,7 +11,7 @@ public class NumberLock : MonoBehaviour
     public List<int> correctCombo;
     public GameObject locked;
     public GameObject unlocked;
-    public Object[] numbers;
+    //public Object[] numbers;
 
     //public AudioSource unlockLock;
 
@@ -25,7 +25,7 @@ public class NumberLock : MonoBehaviour
         locked.SetActive(true);
         unlocked.SetActive(false);
 
-        numbers = FindObjectsOfTypeAll(typeof(Numbers));
+        //numbers = FindObjectsOfTypeAll(typeof(Numbers));
     }
 
 

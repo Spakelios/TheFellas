@@ -7,6 +7,8 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
+
+//NOTE: USE THIS SCRIPT ON PEOPLE YOU CAN TALK TO IN THE CASE IF WHAT THEY SAY WILL COUNT AS EVIDENCE
 public class InvestigationDialogueTrigger : MonoBehaviour
 {
     
@@ -17,9 +19,10 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
 
+    //public GameObject examineContainer;
     public TextMeshProUGUI examineTagBox;
 
-    public static List<int> isExamined = new List<int>();
+    public static readonly List<int> isExamined = new List<int>();
     public string examineTag;
     public string newExamineTag;
     public int referenceID;
@@ -31,18 +34,20 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     private static int plus = 0;
 
     private Collider2D collider;
+    private Camera camera;
 
     //public AudioSource evidenceSound;
 
     private void Start()
     {
+        camera = Camera.main;
         dialogueManager = FindObjectOfType<DialogueManager>();
         examineTagBox.text = "";
     }
 
     private void Update()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
 
         if (eyeSpawned)
         {
@@ -80,6 +85,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         {
             examineTag = newExamineTag;
         }
+        
         
         examineTagBox.text = examineTag;
     }

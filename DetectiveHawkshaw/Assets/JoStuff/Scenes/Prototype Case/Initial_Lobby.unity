@@ -13423,6 +13423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation: {fileID: 0}
+  evidenceCount: 0
   sceneName: InterrogationScene
 --- !u!4 &1926965768
 Transform:
@@ -14348,6 +14349,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.48, y: 22.479954}
   m_EdgeRadius: 0
+--- !u!114 &2027137135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027137130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742ede3d79256d444963323a1685f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  dialogue:
+    name: Secretary
+    sentences:
+    - '"..."'
+    - '"I saw no one."'
+  dialogueManager: {fileID: 994476578}
+  examineTagBox: {fileID: 2045946406}
+  examineTag: Secretary
 --- !u!224 &2028254864 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1372878711730605748, guid: 60d1e4251422d4b449647f7136b4da11, type: 3}
@@ -16059,6 +16081,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4678456158199663440, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678456158199663440, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       propertyPath: examineTagBox
       value: 
       objectReference: {fileID: 2045946406}
@@ -16108,6 +16134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8543293232888831340, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
+    - {fileID: 4678456158199663440, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
     m_RemovedGameObjects:
     - {fileID: 9199311663197729241, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
     m_AddedGameObjects: []
@@ -16115,6 +16142,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2119350938900001486, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2027137131}
+    - targetCorrespondingSourceObject: {fileID: 2119350938900001486, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2027137135}
   m_SourcePrefab: {fileID: 100100000, guid: 4e4f33e368318b24f972757c74ed57fa, type: 3}
 --- !u!1001 &1126940046556735782
 PrefabInstance:

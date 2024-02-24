@@ -1,13 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using System.Globalization;
+using Ink.Parsed;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
+using Unity.VisualScripting;
 
 
-public class PuzzleTrigger : MonoBehaviour
+//USE THIS IF PEOPLE'S DIALOGUE IN THE INVESTIGATION SCENE ISN'T GONNA COUNT AS EVIDENCE
+//COULD ALSO PROBABLY BE USED AS NON-EVIDENCE DIALOGUE
+public class PeopleInvestigationDialogueTrigger : MonoBehaviour
 {
     private Vector2 mousePos;
     public GameObject eyePrefab;
@@ -15,42 +18,48 @@ public class PuzzleTrigger : MonoBehaviour
     private bool eyeSpawned;
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
-    public string sceneName;
-    
+
+    //public GameObject examineContainer;
     public TextMeshProUGUI examineTagBox;
+    
+    public string examineTag;
 
-    public static bool puzzleSolved;
-    //public AudioSource doorKnock;
-    //private AudioSource doorOpen;
-
+    private Collider2D collider;
+    
+    private Camera camera;
+    
+    //public AudioSource evidenceSound;
+    
+    
     private void Start()
     {
+        camera = Camera.main;
         dialogueManager = FindObjectOfType<DialogueManager>();
         examineTagBox.text = "";
-        //doorOpen = GameObject.Find("Open Door").GetComponent<AudioSource>();
     }
+
     private void Update()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
 
         if (eyeSpawned)
         {
             eye.transform.position = mousePos;
         }
     }
-
+    
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
-
-        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorKnock, transform.position);
+        if (dialogueManager.dialogueBox.activeInHierarchy) return;
+        examineTagBox.text = examineTag;
     }
 
     public void OnMouseOver()
     {
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
-        
+
         if (!eyeSpawned)
         {
             Cursor.visible = false;
@@ -58,27 +67,15 @@ public class PuzzleTrigger : MonoBehaviour
             eyeSpawned = true;
         }
 
-        examineTagBox.text = sceneName;
-        
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
 
-        if (puzzleSolved)
-        {
-            //doorOpen.Play();
-            //SceneManager.LoadScene(sceneName);
-            JournalInitialiser.journal.SetActive(false);
-            RoomLoader.instance.LoadLevel(sceneName);
-        }
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
 
-        else
-        {
-            dialogueManager.puzzleDialogue = true;
-            dialogueManager.StartDialogue(dialogue);
-        }
+        dialogueManager.StartDialogue(dialogue);
     }
-
-    public void OnMouseExit()
+    
+    private void OnMouseExit()
     {
         if (PauseGame.isPaused) return;
         Cursor.visible = true;
@@ -87,9 +84,7 @@ public class PuzzleTrigger : MonoBehaviour
         examineTagBox.text = "";
     }
 
-    public void LoadPuzzleScene()
-    {
-        SceneManager.LoadScene("NumberLockPuzzle");
-    }
-    
+
+
+
 }

@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class InterrogationCheck : MonoBehaviour
 {
     public InvestigationDialogueTrigger investigation;
-    private List<int> evidenceCheck;
-    public static List<int> newEvidence;
+    //[SerializeField] private List<int> chapterEvidence;
+    //public static List<int> newEvidence;
+    [SerializeField] private int evidenceCount;
     
     public string sceneName;
 
@@ -17,15 +18,11 @@ public class InterrogationCheck : MonoBehaviour
     {
         //music = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
         
-        evidenceCheck = new List<int>()
-        {
-            1, 2, 3, 4
-        };
     }
 
     public void CheckEvidence()
     {
-        
+        /*
         print(InvestigationDialogueTrigger.isExamined);
 
         if (InvestigationDialogueTrigger.isExamined.Contains(1) &&
@@ -38,6 +35,19 @@ public class InterrogationCheck : MonoBehaviour
             //RoomLoader.instance.LoadLevel(sceneName);
             //music.Stop();
         }
+        */
+
+        if (InvestigationDialogueTrigger.isExamined.Count != evidenceCount)
+        {
+            Debug.Log("Not all evidence found!");
+        }
+
+        else
+        {
+            Debug.Log("All evidence found!");
+        }
+
+
     }
 
 }
