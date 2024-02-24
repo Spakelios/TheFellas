@@ -27,6 +27,8 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
     private Collider2D collider;
     
     private Camera camera;
+
+    private Vector3 textOffset;
     
     //public AudioSource evidenceSound;
     
@@ -35,12 +37,15 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
     {
         camera = Camera.main;
         dialogueManager = FindObjectOfType<DialogueManager>();
+        textOffset = new Vector3(0, 30, 0);
+        examineTagBox = GameObject.FindWithTag("ExamineTag").GetComponent<TextMeshProUGUI>();
         examineTagBox.text = "";
     }
 
     private void Update()
     {
         mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+        examineTagBox.transform.position = Input.mousePosition + textOffset;
 
         if (eyeSpawned)
         {
@@ -52,7 +57,6 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
     {
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
-        examineTagBox.text = examineTag;
     }
 
     public void OnMouseOver()
@@ -66,6 +70,9 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
             eye = Instantiate(eyePrefab);
             eyeSpawned = true;
         }
+        
+        examineTagBox.text = examineTag;
+        examineTagBox.color = Color.black;
 
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();

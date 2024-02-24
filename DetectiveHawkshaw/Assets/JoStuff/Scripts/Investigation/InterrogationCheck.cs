@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InterrogationCheck : MonoBehaviour
 {
-    public InvestigationDialogueTrigger investigation;
+    //public InvestigationDialogueTrigger investigation;
     //[SerializeField] private List<int> chapterEvidence;
     //public static List<int> newEvidence;
     [SerializeField] private int evidenceCount;
@@ -36,6 +36,8 @@ public class InterrogationCheck : MonoBehaviour
             //music.Stop();
         }
         */
+        
+        print(InvestigationDialogueTrigger.isExamined.Count);
 
         if (InvestigationDialogueTrigger.isExamined.Count != evidenceCount)
         {

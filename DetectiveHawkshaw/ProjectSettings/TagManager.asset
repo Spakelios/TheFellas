@@ -12,6 +12,7 @@ TagManager:
   - EvidencePortrait
   - Music
   - Journal
+  - ExamineTag
   layers:
   - Default
   - TransparentFX

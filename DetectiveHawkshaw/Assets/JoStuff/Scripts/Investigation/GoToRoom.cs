@@ -17,6 +17,11 @@ public class GoToRoom : MonoBehaviour
     public string sceneName;
     
     public TextMeshProUGUI examineTagBox;
+    
+    private Vector3 textOffset;
+    
+    private Camera camera;
+    
     //public AudioSource doorOpen;
 
     //public AudioSource doorKnock;
@@ -29,7 +34,10 @@ public class GoToRoom : MonoBehaviour
 
     private void Start()
     {
+        examineTagBox = GameObject.FindWithTag("ExamineTag").GetComponent<TextMeshProUGUI>();
         examineTagBox.text = "";
+        camera = Camera.main;
+        textOffset = new Vector3(0, 30, 0);
         //doorOpen = GameObject.Find("Open Door").GetComponent<AudioSource>();
         JournalInitialiser.journal.SetActive(true);
         OnMouseExit();
@@ -38,7 +46,8 @@ public class GoToRoom : MonoBehaviour
     }
     private void Update()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+        examineTagBox.transform.position = Input.mousePosition + textOffset;
 
         if (eyeSpawned)
         {
@@ -66,6 +75,7 @@ public class GoToRoom : MonoBehaviour
         }
 
         examineTagBox.text = sceneName;
+        examineTagBox.color = Color.white;
         
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();

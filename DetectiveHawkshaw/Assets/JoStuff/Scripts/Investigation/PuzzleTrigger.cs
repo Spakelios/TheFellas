@@ -22,12 +22,17 @@ public class PuzzleTrigger : MonoBehaviour
     public static bool puzzleSolved;
 
     private Camera camera;
+    
+    private Vector3 textOffset;
     //public AudioSource doorKnock;
     //private AudioSource doorOpen;
 
     private void Start()
     {
         camera = Camera.main;
+        textOffset = new Vector3(0, 30, 0);
+        examineTagBox = GameObject.FindWithTag("ExamineTag").GetComponent<TextMeshProUGUI>();
+        examineTagBox.text = "";
         dialogueManager = FindObjectOfType<DialogueManager>();
         examineTagBox.text = "";
         //doorOpen = GameObject.Find("Open Door").GetComponent<AudioSource>();
@@ -35,6 +40,7 @@ public class PuzzleTrigger : MonoBehaviour
     private void Update()
     {
         mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+        examineTagBox.transform.position = Input.mousePosition + textOffset;
 
         if (eyeSpawned)
         {
@@ -62,6 +68,7 @@ public class PuzzleTrigger : MonoBehaviour
         }
 
         examineTagBox.text = sceneName;
+        examineTagBox.color = Color.white;
         
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
