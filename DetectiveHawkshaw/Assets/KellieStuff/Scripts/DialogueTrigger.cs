@@ -24,23 +24,17 @@ public class DialogueTrigger : MonoBehaviour
 
     [SerializeField] private GameObject continueIcon;
 
-    // private Text text;
-
-
     public Image characterIcon;
     public Image Icon;
     [SerializeField] private GridLayoutGroup choiceHolder;
-    [SerializeField] private GridLayoutGroup choiceHolder2;
-    [NotNull] public GameObject c1, c2;
     [SerializeField] private Button choiceButtonPrefab;
-    public GameObject butt;
+
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
     public GameObject fmod;
-    public Image ButtonImage;
-    
 
+    public Animator anim;
     public GameObject choiceHold;
 
 
@@ -77,6 +71,8 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
         _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
         _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
+        _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});
+        
         DisplayNextLine();
 
     }
@@ -113,10 +109,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public void DisplayChoices()
     {
-        //if (choiceHolder.GetComponentsInChildren<Button>().Length > 0)
-        //{
-           // return;
-        //}
+        if (choiceHolder.GetComponentsInChildren<Button>().Length > 0)
+        {
+            return;
+        }
         
         for (int i = 0; i < _StoryScript.currentChoices.Count; i++)
         {
@@ -176,7 +172,6 @@ public class DialogueTrigger : MonoBehaviour
         var choiceButton = Instantiate(choiceButtonPrefab);
         choiceButton.transform.SetParent(choiceHolder.transform, false);
         var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
-        ButtonImage = choiceButton.GetComponentInChildren<Image>();
         buttonText.text = text;
         choiceButton.name = "woah" + num++;
         return choiceButton;
