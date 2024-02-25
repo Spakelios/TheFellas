@@ -63,14 +63,15 @@ public class DialogueManagerA : MonoBehaviour
         RemoveEvidence();
     }
 
-   
+
 
     void Update()
     {
-        if ( Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             DisplayNextLine();
         }
+        
     }
 
     void LoadStory()
@@ -168,8 +169,6 @@ public class DialogueManagerA : MonoBehaviour
         evidenceButtons[id].gameObject.SetActive(true);
         EviContainer.SetActive(true);
 
-       
-
     }
 
     public void RemoveEvidence()
@@ -193,7 +192,7 @@ public class DialogueManagerA : MonoBehaviour
         {
             var button = choiceButtons[i];
             button.gameObject.SetActive(true);
-            
+
             var choice = _StoryScript.currentChoices[i];
 
             TextMeshProUGUI choiceText = button.GetComponentInChildren<TextMeshProUGUI>();
@@ -355,7 +354,7 @@ public class DialogueManagerA : MonoBehaviour
     {
         fmod.SetActive(true);
     }
-
+    
     [System.Serializable]
     public class PictureClass
     {

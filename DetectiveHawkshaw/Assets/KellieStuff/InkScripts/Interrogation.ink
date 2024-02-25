@@ -6,8 +6,8 @@ EXTERNAL Evi(charName)
 
 VAR canShowEvidence = false
 VAR someEvidence = 0
-VAR count = 0
-VAR showEvidence = 0
+VAR count = 0 
+VAR ShowJournal = 0
 
 {Back("Office")}
 {Icon("EmilNeutral")}
@@ -130,31 +130,63 @@ VAR showEvidence = 0
 
 == showevi ==
 
-* [ Show Calendar]
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
 ~canShowEvidence = true
 
- {someEvidence:
++ [ Show evidence]
+        {someEvidence :
+     -0:
+     Please select some evidence before showing evidence
+    
+     -else:
+     ~canShowEvidence = false
+     <i> Let's see... </i>
+     
+     
+    }
+    
+    {someEvidence:
     
     -1:
-    "Thats not a calendar..."
+  "Thats not it.."
+    ...
     
+    -> showevi
+
     
     -2:
-  "what"
-
+   "This will do"
+    ...
+    -> eight
     
     -3:
-     "This will do"
-      -> eight
-
+    "theres a time and place for everything but not right now"
+    ...
+    -> showevi
+   
+    
     -else:
-    <i>Better check my Journal... </i>
+    ...
+
+    -> showevi
     
     }
     
+    -> DONE
+    
+    
+    
+===showEvidence(evidenceID)===
+
+{canShowEvidence:
+~someEvidence = evidenceID
+
+...
+}
+
+-> DONE
 
 == eight ==
     
@@ -232,9 +264,59 @@ VAR showEvidence = 0
 {Icon("EmilNeutral")}
 <i>He shakes his head with a disgusted look on his face.</i> 
 
-“Oh really... then explain this!”
+“Oh really... then explain this!” -> showCucumber
 
-*[ Show cucumber slices ] ->fourteen
+== showCucumber == 
+#Evidence: 0
+#Evidence: 1
+#Evidence: 2
+#Evidence: 3
+~canShowEvidence = true
+
++ [ Show evidence]
+        {someEvidence :
+     -0:
+     Please select some evidence before showing evidence
+    
+     -else:
+     ~canShowEvidence = false
+     <i> Let's see... </i>
+     
+     
+    }
+    
+    {someEvidence:
+    
+    -1:
+   <i> This will do </I>
+    ...
+    -> fourteen
+
+    
+    -2:
+   <I> No! </I>
+    ...
+    ->showCucumber
+    
+    -3:
+    <I>...I might actually be losing it. </I>
+    ...
+    -> showCucumber
+   
+   -4:
+   <I>...thats not even close.</I>
+   
+   -> showCucumber
+    
+    -else:
+    ...
+
+    -> showCucumber
+    
+    }
+    
+    -> DONE
+    
 
 == fourteen ==
 {Evi("Cucumbers")}"..."
@@ -267,9 +349,62 @@ VAR showEvidence = 0
 == twelve ==
 
 {Name("Emil")}{Icon("EmilNeutral")} {MC("Nicolai_Basic")}  <i>It seems to take him a moment to realise what I had said to him. 
-<i>He stares at me blankly. </i>
+<i>He stares at me blankly. </i> -> showToilet
 
-*[Show him the picture] -> fifteen
+==showToilet==
+#Evidence: 0
+#Evidence: 1
+#Evidence: 2
+#Evidence: 3
+~canShowEvidence = true
+
++ [ Show evidence]
+        {someEvidence :
+     -0:
+     Please select some evidence before showing evidence
+    
+     -else:
+     ~canShowEvidence = false
+     <i> Let's see... </i>
+     
+     
+    }
+    
+    {someEvidence:
+    
+    -1:
+   <i> Not this again. </I>
+    ...
+    -> showToilet
+
+    
+    -2:
+   <I> No! </I>
+    ...
+    ->showToilet
+    
+    -3:
+    <I>...I might actually be losing it. </I>
+    ...
+    -> showToilet
+   
+   -4:
+  <i> This will do </I>
+    ...
+    -> fifteen
+    
+    -else:
+    ...
+
+    -> showToilet
+    
+    }
+    
+    -> DONE
+    
+
+
+
 
 == fifteen == 
 {Evi("toilet")}"..."
@@ -317,9 +452,61 @@ VAR showEvidence = 0
 {Name("Nicolai")} {Icon("transparent")} {MC("Nicolai_Think")} “...it should be... what?  The... 17th of November?”
 
 {Name("Emil")} {Icon("EmilNeutral")}<i>He looks up casually as I move away from his desk. </i>
-<i>I give an approving nod. </i>
+<i>I give an approving nod. </i> -> ShowCalandar
 
-*[Show him the calendar] -> sixteen
+
+==ShowCalandar==
+#Evidence: 0
+#Evidence: 1
+#Evidence: 2
+#Evidence: 3
+~canShowEvidence = true
+
++ [ Show evidence]
+        {someEvidence :
+     -0:
+     Please select some evidence before showing evidence
+    
+     -else:
+     ~canShowEvidence = false
+     <i> Let's see... </i>
+     
+     
+    }
+    
+    {someEvidence:
+    
+    -1:
+   <i> Not this again. </I>
+    ...
+    -> ShowCalandar
+
+    
+    -2:
+   <I> This one </I>
+    ...
+    ->sixteen
+    
+    -3:
+    <I>...I might actually be losing it. </I>
+    ...
+    -> ShowCalandar
+   
+   -4:
+  <i> God no </I>
+    ...
+    -> ShowCalandar
+    
+    -else:
+    ...
+
+    -> showToilet
+    
+    }
+    
+    -> DONE
+    
+-> sixteen
 
 == sixteen ==
 {Evi("calendar")} "..."
