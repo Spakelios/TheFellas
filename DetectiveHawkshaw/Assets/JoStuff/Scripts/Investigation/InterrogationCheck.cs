@@ -9,6 +9,8 @@ public class InterrogationCheck : MonoBehaviour
     //[SerializeField] private List<int> chapterEvidence;
     //public static List<int> newEvidence;
     [SerializeField] private int evidenceCount;
+    public Dialogue dialogue;
+    public DialogueManager dialogueManager;
     
     public string sceneName;
 
@@ -17,6 +19,7 @@ public class InterrogationCheck : MonoBehaviour
     private void Start()
     {
         //music = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
+        dialogueManager = FindObjectOfType<DialogueManager>();
         
     }
 
@@ -39,16 +42,9 @@ public class InterrogationCheck : MonoBehaviour
         
         print(InvestigationDialogueTrigger.isExamined.Count);
 
-        if (InvestigationDialogueTrigger.isExamined.Count != evidenceCount)
-        {
-            Debug.Log("Not all evidence found!");
-        }
-
-        else
-        {
-            Debug.Log("All evidence found!");
-        }
-
+        if (InvestigationDialogueTrigger.isExamined.Count != evidenceCount || DialogueManager.allEvidence) return;
+        dialogueManager.StartDialogue(dialogue);
+        DialogueManager.allEvidence = true;
 
     }
 

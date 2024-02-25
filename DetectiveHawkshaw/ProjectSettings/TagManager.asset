@@ -13,6 +13,7 @@ TagManager:
   - Music
   - Journal
   - ExamineTag
+  - InterrogationButton
   layers:
   - Default
   - TransparentFX

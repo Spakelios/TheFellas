@@ -551,6 +551,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263884784}
   m_CullTransparentMesh: 1
+--- !u!1 &278944143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 278944145}
+  - component: {fileID: 278944144}
+  m_Layer: 0
+  m_Name: InterrogationCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &278944144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278944143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3ed97aabd48a548b305eee83c7acd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidenceCount: 4
+  dialogue:
+    name: Emil
+    sentences:
+    - '"That should be everything I need to bring this case to a close."'
+    - '"Though there''d be no harm in looking around one last time, just in case."'
+  dialogueManager: {fileID: 0}
+  sceneName: InterrogationScene
+--- !u!4 &278944145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278944143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 451.8376, y: 326.41327, z: 0.76044226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &289970408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,15 +1456,16 @@ MonoBehaviour:
     - The 17th of June  is circled in red marker.
     - I remember that day... how bittersweet it is now...
   dialogueManager: {fileID: 1223913006}
-  examineContainer: {fileID: 0}
+  examineContainer: {fileID: 196730557}
   examineTagBox: {fileID: 196730554}
   examineTag: ???
   newExamineTag: Calendar
-  referenceID: 3
+  referenceID: 0
   evidence: 1
   calendar: 1
   wasChecked: 0
   textOffset: {x: 0, y: 0, z: 0}
+  evidenceStats: {fileID: 11400000, guid: 672b32c48ea8b7048ae9ff3596f9259e, type: 2}
 --- !u!61 &1212709018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1562,8 +1615,11 @@ MonoBehaviour:
   calendarDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
+  evidenceSprite: {fileID: 263884786}
   evidence1: {fileID: 263884784}
   evidence2: {fileID: 1155392340}
+  toInterrogation: {fileID: 0}
+  evidenceStats: {fileID: 0}
 --- !u!4 &1223913007
 Transform:
   m_ObjectHideFlags: 0
@@ -1736,3 +1792,4 @@ SceneRoots:
   - {fileID: 142776110}
   - {fileID: 1212709020}
   - {fileID: 251246221}
+  - {fileID: 278944145}
