@@ -2,30 +2,34 @@ EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 EXTERNAL MC(charName)
 EXTERNAL Back(charName)
+EXTERNAL PlayAnimation(PlayAnimation)
+
+
 
 {Back("Antique-placeholder")}
-{Icon("transparent")}
-{Name("")}
-{MC("transparent")}
+{Icon("EmilUpset")}
+{Name("Emil")}
+{MC("Nicolai_Basic")} So you're saying you've been broken into and a painting was stolen?
+I see, well my associate and I would like to conduct our investigation...
 
-This chapter takes place about 1 week after the tutorial/prologue case.
+Lets begin with 
 
-In this chapter, Hawkshaw & Co. have gotten their first actual case since establishing themselves as an agency.
+~PlayAnimation("HOLD IT!")
 
-The client is an elderly woman in her mid 70s who runs an antique shop. A valuable painting has been stolen.
+.....
+...
+...
 
-Initially, she called her grandkid, who is a young cadet in their early 20s that works for the Pinkerton Police Department (P.P.D.) but they were busy.
+{Icon("EmilAngry")}
+{Name("???")}
+{MC("Nicolai_Shocked")} <COLOR=\#FF0000> HOLD IT RIGHT THERE! </COLOR>
 
-The client doesn't care for the P.P.D. or the Hawkshaw Scandal that much, so she tells her grandkid it's ok and that she'll just call Hawkshaw & Co. for help instead.
-
-The cadet, who has learnt about the Hawkshaw Scandal through hearsay at the P.P.D., rushes to the antique shop as fast possible, not trusting Hawkshaw.
-
-However, the client has decided to stick with Hawkshaw & Co., and told her grandkid not to interfere. 
-
-This case takes place in the antique shop.
-
-This case mainly involves: Detective Hawkshaw, Nicolai, Katya, The Client, and The Cadet.
+~PlayAnimation("GO BACK")
 
 -> END
+
+
+
+
 
 
