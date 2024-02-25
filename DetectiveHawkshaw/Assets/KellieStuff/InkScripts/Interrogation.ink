@@ -4,6 +4,11 @@ EXTERNAL MC(charName)
 EXTERNAL Back(charName)
 EXTERNAL Evi(charName)
 
+VAR canShowEvidence = false
+VAR someEvidence = 0
+VAR count = 0
+VAR showEvidence = 0
+
 {Back("Office")}
 {Icon("EmilNeutral")}
 {Name("Emil")}
@@ -121,11 +126,39 @@ EXTERNAL Evi(charName)
 {Name("Emil")}
 {Icon("EmilUpset")}
 <i>I try not to appear shocked when she says it, that day is quite a bittersweet memory now.
-<i>She must've read it off the calendar.</i>
+<i>She must've read it off the calendar.</i> -> showevi
 
-*[ Show her the calendar ] -> eight
+== showevi ==
+
+* [ Show Calendar]
+#Evidence: 0
+#Evidence: 1
+#Evidence: 2
+~canShowEvidence = true
+
+ {someEvidence:
+    
+    -1:
+    "Thats not a calendar..."
+    
+    
+    -2:
+  "what"
+
+    
+    -3:
+     "This will do"
+      -> eight
+
+    -else:
+    <i>Better check my Journal... </i>
+    
+    }
+    
 
 == eight ==
+    
+
 {Evi("calendar")}"..."
 
 {Name("Emil")}

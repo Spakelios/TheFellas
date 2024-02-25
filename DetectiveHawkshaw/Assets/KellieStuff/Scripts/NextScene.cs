@@ -61,4 +61,9 @@ public class NextScene : MonoBehaviour
     {
         VNToInvestLoader.instance.LoadLevel("StartScreen");
     }
+
+    public void booobs()
+    {
+        SceneManager.LoadScene("InterrogationScene");
+    }
 }
