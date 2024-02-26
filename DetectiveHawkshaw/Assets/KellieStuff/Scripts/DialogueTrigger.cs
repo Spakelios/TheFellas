@@ -35,6 +35,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject fmod;
 
     public Animator anim;
+    public Animator anim2;
     public GameObject choiceHold;
 
 
@@ -71,7 +72,9 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
         _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
         _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
-        _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});
+        _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
+        _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);});
+     
         
         DisplayNextLine();
 
