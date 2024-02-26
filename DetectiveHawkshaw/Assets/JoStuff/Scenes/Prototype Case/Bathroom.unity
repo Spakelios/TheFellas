@@ -160,8 +160,11 @@ MonoBehaviour:
   calendarDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
+  evidenceSprite: {fileID: 2038620502}
   evidence1: {fileID: 0}
   evidence2: {fileID: 0}
+  toInterrogation: {fileID: 0}
+  evidenceStats: {fileID: 0}
 --- !u!4 &757933885
 Transform:
   m_ObjectHideFlags: 0
@@ -500,6 +503,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1590192672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1590192674}
+  - component: {fileID: 1590192673}
+  m_Layer: 0
+  m_Name: InterrogationCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1590192673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590192672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3ed97aabd48a548b305eee83c7acd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidenceCount: 4
+  dialogue:
+    name: Emil
+    sentences:
+    - '"That should be everything I need to bring this case to a close."'
+    - '"Though there''d be no harm in looking around one last time, just in case."'
+  dialogueManager: {fileID: 0}
+  sceneName: InterrogationScene
+--- !u!4 &1590192674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590192672}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 451.8376, y: 326.41327, z: 0.76044226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1595143402
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,15 +665,16 @@ MonoBehaviour:
     - They didn't even finish the thing... how insolent!
     - Their crimes cannot go unpunished!
   dialogueManager: {fileID: 757933884}
-  examineContainer: {fileID: 0}
+  examineContainer: {fileID: 1909325576}
   examineTagBox: {fileID: 0}
   examineTag: ???
   newExamineTag: Toilet
-  referenceID: 4
+  referenceID: 0
   evidence: 0
   calendar: 0
   wasChecked: 0
   textOffset: {x: 0, y: 0, z: 0}
+  evidenceStats: {fileID: 11400000, guid: 599e9ccc1be67be4f8b470740f7056f4, type: 2}
 --- !u!61 &1595143406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -808,91 +864,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1807921360
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 760500576645630495, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_Name
-      value: RoomLoader(1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.353181
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.2961526
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.050078154
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6637685496748458980, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 760500576645630495, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1807921363}
-  m_SourcePrefab: {fileID: 100100000, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
---- !u!1 &1807921361 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 760500576645630495, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-  m_PrefabInstance: {fileID: 1807921360}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1807921362 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2177937876355630519, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
-  m_PrefabInstance: {fileID: 1807921360}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1807921363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807921361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78129be2d4b68d1428fbd49f0ef43e27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transition: {fileID: 1807921362}
-  transitionTime: 1
 --- !u!1001 &1909325574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1214,4 +1185,4 @@ SceneRoots:
   - {fileID: 1745380903}
   - {fileID: 2087457435}
   - {fileID: 1595143404}
-  - {fileID: 1807921360}
+  - {fileID: 1590192674}

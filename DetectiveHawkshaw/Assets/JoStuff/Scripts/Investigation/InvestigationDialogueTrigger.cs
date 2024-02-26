@@ -40,6 +40,8 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
     //public AudioSource evidenceSound;
 
+    public Evidence evidenceStats;
+
     private void Start()
     {
         camera = Camera.main;
@@ -47,6 +49,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         textOffset = new Vector3(0, 30, 0);
         examineTagBox = GameObject.FindWithTag("ExamineTag").GetComponent<TextMeshProUGUI>();
         examineTagBox.text = "";
+        referenceID = evidenceStats.evidenceIDNumber;
     }
 
     private void Update()
@@ -156,8 +159,8 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         {
             isExamined.Add(referenceID);
         }
-        
 
+        dialogueManager.evidenceStats = evidenceStats;
         dialogueManager.StartDialogue(dialogue);
         
     }

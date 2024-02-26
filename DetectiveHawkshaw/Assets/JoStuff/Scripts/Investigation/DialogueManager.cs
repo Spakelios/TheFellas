@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,16 +14,21 @@ public class DialogueManager : MonoBehaviour
     public bool puzzleDialogue;
     public bool sandwichDialogue;
     public bool calendarDialogue;
-
     
     public bool evidenceDialogue;
     public GameObject evidenceWindow;
+    public Image evidenceSprite;
     public GameObject evidence1;
     public GameObject evidence2;
 
     public Queue<string> sentences;
     private InterrogationCheck interrogationCheck;
-    
+
+    public static bool allEvidence;
+
+    public GameObject toInterrogation;
+
+    public Evidence evidenceStats;
     
 
     // Use this for initialization
@@ -33,6 +39,14 @@ public class DialogueManager : MonoBehaviour
         evidenceWindow = GameObject.FindWithTag("EvidencePortrait");
         evidenceWindow.SetActive(false);
         interrogationCheck = FindObjectOfType<InterrogationCheck>();
+        toInterrogation = GameObject.FindWithTag("InterrogationButton");
+        toInterrogation.SetActive(true);
+
+        if (!allEvidence)
+        {
+            toInterrogation.GetComponent<Button>().interactable = false;
+        }
+        evidenceStats = null;
 
         /*
         if (sandwichDialogue)
@@ -75,6 +89,7 @@ public class DialogueManager : MonoBehaviour
         if (evidenceDialogue)
         {
             evidenceWindow.SetActive(true);
+            evidenceSprite.sprite = evidenceStats.evidencePic;
         }
 
     }
@@ -91,11 +106,13 @@ public class DialogueManager : MonoBehaviour
         {
             //sandwichWindow.SetActive(true);
             evidenceWindow.SetActive(true);
+            evidenceSprite.sprite = evidenceStats.evidencePic;
         }
 
         if (calendarDialogue && sentences.Count == 2)
         {
             evidence1.SetActive(false);
+            evidenceSprite.sprite = evidenceStats.evidencePic2;
             evidence2.SetActive(true);
         }
 
@@ -131,11 +148,31 @@ public class DialogueManager : MonoBehaviour
                 evidence2.SetActive(false);
                 calendarDialogue = false;
             }
-            
+
             evidenceWindow.SetActive(false);
             evidenceDialogue = false;
+
+            if (toInterrogation.GetComponent<Button>().interactable == false)
+            {
+                EvidenceCheck();
+            }
         }
-        
-        interrogationCheck.CheckEvidence();
+
+    }
+
+
+    private void EvidenceCheck()
+    {
+        if (allEvidence)
+        {
+            toInterrogation.GetComponent<Button>().interactable = true;
+            toInterrogation.GetComponent<TextMeshProUGUI>().text = "Interrogation";
+        }
+
+        else
+        {
+            interrogationCheck.CheckEvidence();
+        }
+
     }
 }
