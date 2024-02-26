@@ -3083,6 +3083,7 @@ RectTransform:
   - {fileID: 2037875437}
   - {fileID: 1091413406}
   - {fileID: 499281267}
+  - {fileID: 2081507948}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6760,7 +6761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &624174071
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12193,7 +12194,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1101333806}
-  - {fileID: 2081507948}
   - {fileID: 289864281}
   - {fileID: 624174071}
   m_Father: {fileID: 129335569}
@@ -21284,13 +21284,14 @@ GameObject:
   - component: {fileID: 2081507950}
   - component: {fileID: 2081507949}
   - component: {fileID: 2081507952}
+  - component: {fileID: 2081507953}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2081507948
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21298,17 +21299,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081507947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1698581965}
-  m_Father: {fileID: 1145723093}
+  m_Father: {fileID: 334942150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.4, y: -129.8}
+  m_AnchoredPosition: {x: -352, y: -201}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081507949
@@ -21417,6 +21418,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae605c31ef8f3f24cb7161fa5c58f5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2081507953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081507947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3b08c833ba8e546858398c58a684db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 97
 --- !u!1 &2102459776
 GameObject:
   m_ObjectHideFlags: 0
@@ -22749,7 +22763,6 @@ SceneRoots:
   - {fileID: 833649593}
   - {fileID: 334942150}
   - {fileID: 4031595519466039700}
-  - {fileID: 1280994326}
   - {fileID: 1945289167}
   - {fileID: 592534862}
   - {fileID: 608411120}
@@ -22765,3 +22778,4 @@ SceneRoots:
   - {fileID: 2427208441871881533}
   - {fileID: 1549021711}
   - {fileID: 377784965}
+  - {fileID: 1280994326}
