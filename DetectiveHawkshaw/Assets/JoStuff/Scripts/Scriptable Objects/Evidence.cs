@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[System.Serializable]
 [CreateAssetMenu(fileName = "EvidenceData", menuName = "ScriptableObjects/Evidence", order = 1)]
 public class Evidence : ScriptableObject
 {

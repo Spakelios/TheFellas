@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 
 public class DataPersistenceManager : MonoBehaviour
@@ -17,7 +18,7 @@ public class DataPersistenceManager : MonoBehaviour
     [SerializeField] private bool useEncryption;
 
     [Header("Auto Saving Configuration")]
-    [SerializeField] private float autoSaveTimeSeconds = 60f;
+    [SerializeField] private float autoSaveTimeSeconds = 30f;
 
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObjects;
@@ -71,6 +72,7 @@ public class DataPersistenceManager : MonoBehaviour
             StopCoroutine(autoSaveCoroutine);
         }
         autoSaveCoroutine = StartCoroutine(AutoSave());
+        SaveGame();
     }
 
     public void ChangeSelectedProfileId(string newProfileId) 
@@ -163,7 +165,8 @@ public class DataPersistenceManager : MonoBehaviour
         
         Scene scene = SceneManager.GetActiveScene();
         // DON'T save this for certain scenes, like our main menu scene
-        if (!scene.name.Equals("StartScreen"))
+        if (!scene.name.Equals("StartScreen") && !scene.name.Equals("Office") && !scene.name.Equals("Kitchen") && !scene.name.Equals("Lobby") 
+            && !scene.name.Equals("Bathroom") && !scene.name.Equals("NumberLockPuzzle"))
         {
             gameData.currentSceneName = scene.name;
         }
@@ -176,6 +179,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         SaveGame();
     }
+    
 
     private List<IDataPersistence> FindAllDataPersistenceObjects() 
     {
