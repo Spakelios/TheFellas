@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &187215113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 516.9793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 308.26797
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.40959027
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554638708621151520, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7596919428184626256, guid: 66793983782336d4b81a13053be12538, type: 3}
+      propertyPath: m_Name
+      value: ObjectInitialiser
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66793983782336d4b81a13053be12538, type: 3}
 --- !u!1 &757933883
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +596,7 @@ MonoBehaviour:
     - '"That should be everything I need to bring this case to a close."'
     - '"Though there''d be no harm in looking around one last time, just in case."'
   dialogueManager: {fileID: 0}
-  sceneName: InterrogationScene
+  initialiser: {fileID: 0}
 --- !u!4 &1590192674
 Transform:
   m_ObjectHideFlags: 0
@@ -1190,3 +1247,4 @@ SceneRoots:
   - {fileID: 2087457435}
   - {fileID: 1595143404}
   - {fileID: 1590192674}
+  - {fileID: 187215113}

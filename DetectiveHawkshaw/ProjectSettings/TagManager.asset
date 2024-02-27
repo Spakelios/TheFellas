@@ -15,6 +15,12 @@ TagManager:
   - ExamineTag
   - InterrogationButton
   - Content
+  - InvestigationCanvas
+  - DialogueManager
+  - RoomLoader
+  - InterrogationCheck
+  - Initialiser
+  - AudioManager
   layers:
   - Default
   - TransparentFX

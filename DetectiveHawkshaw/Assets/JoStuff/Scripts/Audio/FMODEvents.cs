@@ -19,8 +19,9 @@ public class FMODEvents : MonoBehaviour
     
     [field: SerializeField] public EventReference lockOpen { get; private set; }
     
-    [field: Header("Investigation Music")] 
+    [field: Header("Music")] 
     [field: SerializeField] public EventReference investigationMusic { get; private set; }
+    [field: SerializeField] public EventReference HappyMusic { get; private set; }
     
     //field makes it so that this shows up in the editor even though it's a public get and private set
     

@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 6637685496748458980}
   m_Layer: 0
   m_Name: RoomLoader
-  m_TagString: Untagged
+  m_TagString: RoomLoader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,8 +149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 2177937876355630519}
   transitionTime: 1
-  doorOpen: {fileID: 0}
-  doorClose: {fileID: 0}
 --- !u!1 &1966585472125839493
 GameObject:
   m_ObjectHideFlags: 0

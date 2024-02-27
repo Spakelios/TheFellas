@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6486771234950968020}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,3 +159,10 @@ MonoBehaviour:
       Data3: -2014431570
       Data4: -1836356855
     Path: event:/Music/Hawkshaw
+  <HappyMusic>k__BackingField:
+    Guid:
+      Data1: 1270502646
+      Data2: 1144286751
+      Data3: 1199795858
+      Data4: 1076883712
+    Path: event:/Music/VN Music

@@ -9,6 +9,8 @@ public class RoomLoader : MonoBehaviour
 
     public Animator transition;
     public float transitionTime = 1f;
+
+    [SerializeField]private GameObject journal;
     
     //public AudioSource doorOpen;
     //public AudioSource doorClose;
@@ -18,6 +20,8 @@ public class RoomLoader : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        journal = GameObject.FindWithTag("Journal");
+        journal.SetActive(true);
         DontDestroyOnLoad(gameObject);
     }
 
@@ -31,6 +35,7 @@ public class RoomLoader : MonoBehaviour
         
         transition.SetTrigger("Start");
         FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpen, transform.position);
+        journal.SetActive(false);
 
         yield return new WaitForSeconds(transitionTime);
         
@@ -38,6 +43,7 @@ public class RoomLoader : MonoBehaviour
         
         transition.SetTrigger("End");
         FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorClose, transform.position);
+        journal.SetActive(true);
 
 
     }

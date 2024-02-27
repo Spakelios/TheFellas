@@ -24,6 +24,7 @@ public class GoToRoom : MonoBehaviour
 
     public DialogueManager dm;
     
+    
     //public AudioSource doorOpen;
 
     //public AudioSource doorKnock;
@@ -44,7 +45,6 @@ public class GoToRoom : MonoBehaviour
         camera = Camera.main;
         textOffset = new Vector3(0, 30, 0);
         //doorOpen = GameObject.Find("Open Door").GetComponent<AudioSource>();
-        JournalInitialiser.journal.SetActive(true);
         OnMouseExit();
 
 
@@ -86,7 +86,6 @@ public class GoToRoom : MonoBehaviour
         OnMouseExit();
         //doorOpen.Play();
         //SceneManager.LoadScene(sceneName);
-        JournalInitialiser.journal.SetActive(false);
         RoomLoader.instance.LoadLevel(sceneName);
     }
     

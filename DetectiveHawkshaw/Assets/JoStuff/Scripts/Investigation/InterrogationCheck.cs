@@ -8,17 +8,20 @@ public class InterrogationCheck : MonoBehaviour
     //public InvestigationDialogueTrigger investigation;
     //[SerializeField] private List<int> chapterEvidence;
     //public static List<int> newEvidence;
-    [SerializeField] public int evidenceCount;
+    public int evidenceCount;
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
+    public InitialisationScript initialiser;
     
-    public string sceneName;
+    //public string sceneName;
 
     //private AudioSource music;
 
     private void Start()
     {
         //music = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
+        initialiser = GameObject.FindObjectOfType<InitialisationScript>();
+        evidenceCount = initialiser.caseData.caseEvidence.Count;
         dialogueManager = FindObjectOfType<DialogueManager>();
         
     }
