@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &757933884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,19 +152,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f10d62182ff4f4d8a678aae7091051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1909325576}
   nameText: {fileID: 1909325579}
   dialogueText: {fileID: 1909325578}
-  dialogueBox: {fileID: 1909325576}
   puzzleDialogue: 0
   sandwichDialogue: 1
   calendarDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
   evidenceSprite: {fileID: 2038620502}
-  evidence1: {fileID: 0}
-  evidence2: {fileID: 0}
   toInterrogation: {fileID: 0}
   evidenceStats: {fileID: 0}
+  testObject: {fileID: 0}
 --- !u!4 &757933885
 Transform:
   m_ObjectHideFlags: 0
@@ -215,6 +214,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1909325576}
   sceneName: Lobby
   examineTagBox: {fileID: 1909325575}
+  dm: {fileID: 0}
 --- !u!212 &977468732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -519,7 +519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1590192673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,14 +664,14 @@ MonoBehaviour:
     - My sandwich! This dastardly fiend threw it into the toilet!
     - They didn't even finish the thing... how insolent!
     - Their crimes cannot go unpunished!
-  dialogueManager: {fileID: 757933884}
-  examineContainer: {fileID: 1909325576}
+  dialogueManager: {fileID: 0}
   examineTagBox: {fileID: 0}
   examineTag: ???
   newExamineTag: Toilet
   referenceID: 0
   evidence: 0
   calendar: 0
+  sandwich: 1
   wasChecked: 0
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: 599e9ccc1be67be4f8b470740f7056f4, type: 2}
@@ -974,11 +974,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6066465382096441402, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6474863226835546641, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_Name
       value: InvestigationCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474863226835546641, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6671980978933839839, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_AnchorMax.y

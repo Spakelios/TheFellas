@@ -19,7 +19,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
 
-    public GameObject examineContainer;
+    //public GameObject examineContainer;
     public TextMeshProUGUI examineTagBox;
 
     public static readonly List<Evidence> isExamined = new List<Evidence>();
@@ -29,6 +29,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
     public bool evidence;
     public bool calendar;
+    public bool sandwich;
 
     public bool wasChecked;
     private static int plus = 0;
@@ -133,19 +134,25 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         if (calendar)
         {
             //evidenceSound.Play();
+            //FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
             dialogueManager.calendarDialogue = true;
             
+            /*
             if (!wasChecked)
             {
                 plus++;
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
                 wasChecked = true;
             }
+            */
         }
 
-        if (dialogueManager.sandwichDialogue)
+        if (sandwich)
         {
             //evidenceSound.Play();
+            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
+            dialogueManager.sandwichDialogue = true;
+            
             
             if (!wasChecked)
             {
@@ -153,6 +160,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
                 wasChecked = true;
             }
+            
         }
         
         if (!isExamined.Contains(evidenceStats))

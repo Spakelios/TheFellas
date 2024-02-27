@@ -161,7 +161,6 @@ MonoBehaviour:
     - Slices of cucumbers, scattered across the kitchen floor.
     - The remnants of a henious crime...
   dialogueManager: {fileID: 585740182}
-  examineContainer: {fileID: 1937236728}
   examineTagBox: {fileID: 1164103915}
   examineTag: ???
   newExamineTag: Cucumbers
@@ -289,7 +288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &585740182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,19 +301,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f10d62182ff4f4d8a678aae7091051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1937236728}
   nameText: {fileID: 1937236727}
   dialogueText: {fileID: 1937236726}
-  dialogueBox: {fileID: 1937236728}
   puzzleDialogue: 0
   sandwichDialogue: 0
   calendarDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
   evidenceSprite: {fileID: 2099622161}
-  evidence1: {fileID: 0}
-  evidence2: {fileID: 0}
   toInterrogation: {fileID: 0}
   evidenceStats: {fileID: 0}
+  testObject: {fileID: 0}
 --- !u!4 &585740183
 Transform:
   m_ObjectHideFlags: 0
@@ -341,6 +339,10 @@ PrefabInstance:
     - target: {fileID: 760500576645630495, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
       propertyPath: m_Name
       value: RoomLoader (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 760500576645630495, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8073967909552906186, guid: bc83a1ea371250c4199ae5a65e21a2a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -625,7 +627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1368381113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,6 +1183,10 @@ PrefabInstance:
     - target: {fileID: 6474863226835546641, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_Name
       value: InvestigationCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474863226835546641, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6671980978933839839, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_AnchorMax.y

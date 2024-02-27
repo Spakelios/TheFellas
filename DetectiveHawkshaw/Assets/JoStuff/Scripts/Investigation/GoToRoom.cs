@@ -21,6 +21,8 @@ public class GoToRoom : MonoBehaviour
     private Vector3 textOffset;
     
     private Camera camera;
+
+    public DialogueManager dm;
     
     //public AudioSource doorOpen;
 
@@ -34,6 +36,9 @@ public class GoToRoom : MonoBehaviour
 
     private void Start()
     {
+        dm = FindObjectOfType<DialogueManager>();
+        //dialogueBox = GameObject.FindWithTag("DialogueBox");
+        //dialogueBox = dm.dialogueBox.gameObject;
         examineTagBox = GameObject.FindWithTag("ExamineTag").GetComponent<TextMeshProUGUI>();
         examineTagBox.text = "";
         camera = Camera.main;
@@ -65,7 +70,7 @@ public class GoToRoom : MonoBehaviour
     public void OnMouseOver()
     {
         if (PauseGame.isPaused) return;
-        if (dialogueBox.activeInHierarchy) return;
+        if (dm.dialogueBox.activeInHierarchy) return;
         
         if (!eyeSpawned)
         {

@@ -20,8 +20,6 @@ public class EvidenceCheck : MonoBehaviour
     public List<Image> caseEvidencesRightPage;
     public List<TextMeshProUGUI> EvidenceNames;
     public List<TextMeshProUGUI> EvidenceDescriptions;
-
-    public List<string> evidenceNames;
     public List<Evidence> chapterEvidence;
 
     private void Awake()
@@ -38,11 +36,6 @@ public class EvidenceCheck : MonoBehaviour
             evidence.SetActive(false);
         }
 
-        foreach (var t in chapterEvidence)
-        {
-            evidenceNames.Add(t.evidenceName);
-        }
-        
     }
     public void Evidence()
     {

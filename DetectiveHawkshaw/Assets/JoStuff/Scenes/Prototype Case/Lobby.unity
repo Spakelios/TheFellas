@@ -349,7 +349,6 @@ MonoBehaviour:
     - A trail of breadcrumbs... they seem to be leading towards... the bathroom?
     - How peculiar...
   dialogueManager: {fileID: 994476578}
-  examineContainer: {fileID: 398077075}
   examineTagBox: {fileID: 0}
   examineTag: ???
   newExamineTag: Breadcrumbs
@@ -708,7 +707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &994476577
 Transform:
   m_ObjectHideFlags: 0
@@ -736,19 +735,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f10d62182ff4f4d8a678aae7091051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 398077075}
   nameText: {fileID: 2055059026}
   dialogueText: {fileID: 1737621389}
-  dialogueBox: {fileID: 398077075}
   puzzleDialogue: 0
   sandwichDialogue: 0
   calendarDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
   evidenceSprite: {fileID: 1126940046556735783}
-  evidence1: {fileID: 0}
-  evidence2: {fileID: 0}
   toInterrogation: {fileID: 0}
   evidenceStats: {fileID: 0}
+  testObject: {fileID: 0}
 --- !u!1 &1263800979
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1359126690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,6 +1646,10 @@ PrefabInstance:
     - target: {fileID: 6474863226835546641, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_Name
       value: InvestigationCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474863226835546641, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6671980978933839839, guid: e2af4f5293ea30d44bfb4eb6ef51748b, type: 3}
       propertyPath: m_AnchoredPosition.x

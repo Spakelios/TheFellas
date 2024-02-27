@@ -7,9 +7,10 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
+    public GameObject dialogueBox;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
-    public GameObject dialogueBox;
+    
 
     public bool puzzleDialogue;
     public bool sandwichDialogue;
@@ -18,8 +19,8 @@ public class DialogueManager : MonoBehaviour
     public bool evidenceDialogue;
     public GameObject evidenceWindow;
     public Image evidenceSprite;
-    public GameObject evidence1;
-    public GameObject evidence2;
+    //public GameObject evidence1;
+    //public GameObject evidence2;
 
     public Queue<string> sentences;
     private InterrogationCheck interrogationCheck;
@@ -29,6 +30,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject toInterrogation;
 
     public Evidence evidenceStats;
+
+    public GameObject testObject;
     
 
     // Use this for initialization
@@ -36,16 +39,27 @@ public class DialogueManager : MonoBehaviour
     {
         puzzleDialogue = false;
         sentences = new Queue<string>();
+        
+        //preparing dialogue placements
+        dialogueBox = GameObject.FindWithTag("DialogueBox");
+        nameText = dialogueBox.transform.Find("Name").GetComponent<TextMeshProUGUI>();
+        dialogueText = dialogueBox.transform.Find("Dialogue").GetComponent<TextMeshProUGUI>();
+        dialogueBox.SetActive(false);
+        
+        //evidence pop-up stuff
         evidenceWindow = GameObject.FindWithTag("EvidencePortrait");
+        evidenceSprite = evidenceWindow.transform.Find("Evidence").GetComponent<Image>();
         evidenceWindow.SetActive(false);
+        
+        //interrogation button stuff
         interrogationCheck = FindObjectOfType<InterrogationCheck>();
         toInterrogation = GameObject.FindWithTag("InterrogationButton");
-        toInterrogation.SetActive(true);
 
         if (!allEvidence)
         {
             toInterrogation.GetComponent<Button>().interactable = false;
         }
+        
         evidenceStats = null;
 
         /*
@@ -105,15 +119,15 @@ public class DialogueManager : MonoBehaviour
         if (sandwichDialogue && sentences.Count == 3)
         {
             //sandwichWindow.SetActive(true);
-            evidenceWindow.SetActive(true);
             evidenceSprite.sprite = evidenceStats.evidencePic;
+            evidenceWindow.SetActive(true);
         }
 
         if (calendarDialogue && sentences.Count == 2)
         {
-            evidence1.SetActive(false);
+            //evidence1.SetActive(false);
             evidenceSprite.sprite = evidenceStats.evidencePic2;
-            evidence2.SetActive(true);
+            //evidence2.SetActive(true);
         }
 
         string sentence = sentences.Dequeue();
@@ -138,14 +152,15 @@ public class DialogueManager : MonoBehaviour
         if (puzzleDialogue)
         {
             FindObjectOfType<PuzzleTrigger>().LoadPuzzleScene();
+            puzzleDialogue = false;
         }
 
         else if (evidenceDialogue || sandwichDialogue)
         {
             if (calendarDialogue)
             {
-                evidence1.SetActive(true);
-                evidence2.SetActive(false);
+                //evidence1.SetActive(true);
+                //evidence2.SetActive(false);
                 calendarDialogue = false;
             }
 
@@ -166,7 +181,7 @@ public class DialogueManager : MonoBehaviour
         if (allEvidence)
         {
             toInterrogation.GetComponent<Button>().interactable = true;
-            toInterrogation.GetComponent<TextMeshProUGUI>().text = "Interrogation";
+            toInterrogation.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>().text = "Interrogation";
         }
 
         else
