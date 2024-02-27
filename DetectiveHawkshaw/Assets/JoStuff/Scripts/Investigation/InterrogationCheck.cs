@@ -8,7 +8,7 @@ public class InterrogationCheck : MonoBehaviour
     //public InvestigationDialogueTrigger investigation;
     //[SerializeField] private List<int> chapterEvidence;
     //public static List<int> newEvidence;
-    [SerializeField] private int evidenceCount;
+    [SerializeField] public int evidenceCount;
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
     

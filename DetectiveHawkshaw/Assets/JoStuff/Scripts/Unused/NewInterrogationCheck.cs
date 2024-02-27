@@ -22,7 +22,7 @@ public class NewInterrogationCheck : MonoBehaviour
 
     public void CheckEvidence()
     {
-        
+        /*
         print(InvestigationDialogueTrigger.isExamined);
 
         if (InvestigationDialogueTrigger.isExamined.Contains(1) &&
@@ -34,5 +34,6 @@ public class NewInterrogationCheck : MonoBehaviour
             VNToInvestLoader.instance.LoadLevel("InterrogationScene");
             music.Stop();
         }
+        */
     }
 }

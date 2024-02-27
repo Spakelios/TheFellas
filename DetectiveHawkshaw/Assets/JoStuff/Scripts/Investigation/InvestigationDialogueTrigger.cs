@@ -22,7 +22,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public GameObject examineContainer;
     public TextMeshProUGUI examineTagBox;
 
-    public static readonly List<int> isExamined = new List<int>();
+    public static readonly List<Evidence> isExamined = new List<Evidence>();
     public string examineTag;
     public string newExamineTag;
     public int referenceID;
@@ -104,8 +104,8 @@ public class InvestigationDialogueTrigger : MonoBehaviour
             eye = Instantiate(eyePrefab);
             eyeSpawned = true;
         }
-        
-        if (isExamined.Contains(referenceID))
+
+        if (isExamined.Contains(evidenceStats))
         {
             examineTag = newExamineTag;
         }
@@ -155,9 +155,9 @@ public class InvestigationDialogueTrigger : MonoBehaviour
             }
         }
         
-        if (!isExamined.Contains(referenceID))
+        if (!isExamined.Contains(evidenceStats))
         {
-            isExamined.Add(referenceID);
+            isExamined.Add(evidenceStats);
         }
 
         dialogueManager.evidenceStats = evidenceStats;
