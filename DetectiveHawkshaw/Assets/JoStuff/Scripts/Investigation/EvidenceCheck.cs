@@ -15,6 +15,7 @@ public class EvidenceCheck : MonoBehaviour
     public GameObject toilet; //4
     */
 
+    private InitialisationScript initialiser;
     public List<GameObject> caseEvidencesLeftPage;
     public List<Image> caseEvidencesLeftPageImages;
     public List<Image> caseEvidencesRightPage;
@@ -31,10 +32,16 @@ public class EvidenceCheck : MonoBehaviour
         toilet.SetActive(false);
         */
 
+        initialiser = FindObjectOfType<InitialisationScript>();
+
         foreach (var evidence in caseEvidencesLeftPage)
         {
             evidence.SetActive(false);
         }
+
+        chapterEvidence = initialiser.caseData.caseEvidence;
+
+
 
     }
     public void Evidence()

@@ -15410,7 +15410,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe63bb047177c3f4d8d811bd371429ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialiser: {fileID: 0}
   sceneName: InterrogationScene
+  transition: {fileID: 0}
+  transitionTime: 1
 --- !u!1 &6481896827494646305
 GameObject:
   m_ObjectHideFlags: 0
@@ -22385,10 +22388,10 @@ MonoBehaviour:
   - {fileID: 8045555023209031619}
   - {fileID: 5407663208145067039}
   chapterEvidence:
-  - {fileID: 11400000, guid: 10fa9fe7a40114947b228a28b2fdaaf6, type: 2}
-  - {fileID: 11400000, guid: a4aa3b62848c2eb4e8d6b844befe1592, type: 2}
-  - {fileID: 11400000, guid: 672b32c48ea8b7048ae9ff3596f9259e, type: 2}
-  - {fileID: 11400000, guid: 599e9ccc1be67be4f8b470740f7056f4, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7309772847255302777
 MonoBehaviour:
   m_ObjectHideFlags: 0

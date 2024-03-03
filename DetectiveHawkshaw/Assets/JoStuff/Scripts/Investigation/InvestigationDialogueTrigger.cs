@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using Ink.Parsed;
 using UnityEngine;
 using TMPro;
@@ -42,7 +43,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     //public AudioSource evidenceSound;
 
     public Evidence evidenceStats;
-
+    public TextAsset dialogueLines;
     private void Start()
     {
         camera = Camera.main;
@@ -51,6 +52,14 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         examineTagBox = GameObject.FindWithTag("ExamineTag").GetComponent<TextMeshProUGUI>();
         examineTagBox.text = "";
         referenceID = evidenceStats.evidenceIDNumber;
+        
+        /*
+        var d = dialogueLines.text.Split("/n");
+        var di = d.ToList();
+        
+        dialogue.sentences = di;
+        */
+
     }
 
     private void Update()

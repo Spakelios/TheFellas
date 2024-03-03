@@ -10,7 +10,7 @@ public class InitialisationScript : MonoBehaviour
     public GameObject dialogueManager;
     public GameObject interrogationCheck;
     public GameObject roomLoader;
-
+    public GameObject audioManager;
     public GameObject invest;
     public GameObject dia;
     public GameObject inter;
@@ -48,7 +48,7 @@ public class InitialisationScript : MonoBehaviour
         {
             room = Instantiate(roomLoader);
         }
-        
+
     }
 
     private void DestroyObjects()

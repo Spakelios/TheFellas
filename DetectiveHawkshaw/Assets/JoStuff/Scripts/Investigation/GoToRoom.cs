@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEditor;
 
 public class GoToRoom : MonoBehaviour
 {
@@ -15,16 +17,20 @@ public class GoToRoom : MonoBehaviour
 
     public GameObject dialogueBox;
     public string sceneName;
-    
+
     public TextMeshProUGUI examineTagBox;
-    
+
     private Vector3 textOffset;
-    
+
     private Camera camera;
 
     public DialogueManager dm;
-    
-    
+
+    public enumTest navType;
+
+
+
+
     //public AudioSource doorOpen;
 
     //public AudioSource doorKnock;
@@ -34,6 +40,12 @@ public class GoToRoom : MonoBehaviour
 
 
     // Update is called once per frame
+
+    public enum enumTest
+    {
+        Door,
+        NotDoor
+    };
 
     private void Start()
     {
@@ -63,8 +75,11 @@ public class GoToRoom : MonoBehaviour
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
-        
-        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorKnock, transform.position);
+
+        if (navType == enumTest.Door)
+        {
+            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorKnock, transform.position);
+        }
     }
 
     public void OnMouseOver()
@@ -100,4 +115,5 @@ public class GoToRoom : MonoBehaviour
 
         examineTagBox.text = "";
     }
+    
 }

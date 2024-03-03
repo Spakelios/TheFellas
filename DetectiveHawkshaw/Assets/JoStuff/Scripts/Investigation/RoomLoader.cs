@@ -11,7 +11,7 @@ public class RoomLoader : MonoBehaviour
     public float transitionTime = 1f;
 
     [SerializeField]private GameObject journal;
-    
+
     //public AudioSource doorOpen;
     //public AudioSource doorClose;
     
