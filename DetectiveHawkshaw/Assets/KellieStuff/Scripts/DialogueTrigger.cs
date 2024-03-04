@@ -13,29 +13,36 @@ using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    [Header("Ink")]
     private int num;
     [SerializeField] private TextAsset _InkJsonFile;
     private Story _StoryScript;
     private Image imageButton;
 
+    [Header("Dialogue")]
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
     [SerializeField] private float typingSpeed = 0.04f;
-
     [SerializeField] private GameObject continueIcon;
 
+    [Header("Icons")]
     public Image characterIcon;
     public Image Icon;
     [SerializeField] private GridLayoutGroup choiceHolder;
-    [SerializeField] private Button choiceButtonPrefab;
-
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
     public GameObject fmod;
+    public Image Char2; 
+    public Image cha3;
 
+    
+    [Header("Animators")]
     public Animator anim;
-    public Animator anim2;
+    public Animator anim2; 
+    public Animator animChar3;
+    public Animator animChar1;
+    public Animator animChar2;
     public GameObject choiceHold;
 
 
@@ -48,7 +55,6 @@ public class DialogueTrigger : MonoBehaviour
 
     void Start()
     {
-       // CreateButtons();
         LoadStory();
     }
 
@@ -71,9 +77,17 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("Back", (string charName) => BackIcon(charName));
         _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
         _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
+        _StoryScript.BindExternalFunction("Char2", (string charName) => Char(charName)); 
+        _StoryScript.BindExternalFunction("Char3", (string charName) => Char3(charName));
+        
         _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
+        
         _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
         _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);});
+        _StoryScript.BindExternalFunction("PlayAnimation3", (string playAnimation3) => {animChar3.Play(playAnimation3);});
+        _StoryScript.BindExternalFunction("PlayAnimation1", (string playAnimation1) => {animChar1.Play(playAnimation1);});
+        _StoryScript.BindExternalFunction("PlayAnimation4", (string playAnimation4) => {animChar2.Play(playAnimation4);});
+     
      
         
         DisplayNextLine();
@@ -138,12 +152,6 @@ public class DialogueTrigger : MonoBehaviour
 
         foreach (char letter in line.ToCharArray())
         {
-            // if (canContinueToNextLine && Input.GetMouseButtonDown(0))
-            // {
-            //     dialogueBox.text = line;
-            //     break;
-            //
-            // }
 
             if (letter == '<' || isAddingRichTextTags)
             {
@@ -165,21 +173,6 @@ public class DialogueTrigger : MonoBehaviour
         continueIcon.SetActive(true);
     }
     
-
-
-    Button CreateChoiceButton(string text)
-    {
-        
-        //make this redundant and have it all manual instead
-        //instantiate button
-        var choiceButton = Instantiate(choiceButtonPrefab);
-        choiceButton.transform.SetParent(choiceHolder.transform, false);
-        var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
-        buttonText.text = text;
-        choiceButton.name = "woah" + num++;
-        return choiceButton;
-    }
-
     void onClickChoiceButton(Choice choice)
     {
         if (_StoryScript.currentChoices.Count > 0)
@@ -197,13 +190,6 @@ public class DialogueTrigger : MonoBehaviour
         {
             choiceButtons[i].gameObject.SetActive(false);
         }
-       // if (choiceHolder != null)
-        //{
-        //    foreach (var button in choiceHolder.GetComponentsInChildren<Button>())
-         //   {
-         //       Destroy(button.gameObject);
-        //    }
-       // }
     }
 
     public void ChangeName(string name)
@@ -218,13 +204,11 @@ public class DialogueTrigger : MonoBehaviour
         var charIcon = Resources.Load<Sprite>("characterIcons/" + name);
         characterIcon.sprite = charIcon;
     }
-
     public void BackIcon(string name)
     {
         var backIcon = Resources.Load<Sprite>("characterIcons/" + name);
         backgroundIcon.sprite = backIcon;
     }
-
     public void charactersIcon(string name)
     {
         var WaterIcon = Resources.Load<Sprite>("characterIcons/" + name);
@@ -234,6 +218,16 @@ public class DialogueTrigger : MonoBehaviour
     {
         var EviIcon = Resources.Load<Sprite>("characterIcons/" + name);
         Evi.sprite = EviIcon;
+    }
+    public void Char(string name)
+    {
+        var char2 = Resources.Load<Sprite>("characterIcons/" + name);
+        Char2.sprite = char2;
+    }  
+    public void Char3(string name)
+    {
+        var char3 = Resources.Load<Sprite>("characterIcons/" + name);
+        cha3.sprite = char3;
     }
 
 
