@@ -44,6 +44,7 @@ public class DialogueTrigger : MonoBehaviour
     public Animator animChar1;
     public Animator animChar2;
     public GameObject choiceHold;
+    public Animator trans;
 
     [Header("StopAdddingShitKellie")]
     
@@ -92,7 +93,8 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);});
         _StoryScript.BindExternalFunction("PlayAnimation3", (string playAnimation3) => {animChar3.Play(playAnimation3);});
         _StoryScript.BindExternalFunction("PlayAnimation1", (string playAnimation1) => {animChar1.Play(playAnimation1);});
-        _StoryScript.BindExternalFunction("PlayAnimation4", (string playAnimation4) => {animChar2.Play(playAnimation4);});
+        _StoryScript.BindExternalFunction("PlayAnimation4", (string playAnimation4) => {animChar2.Play(playAnimation4);});        
+        _StoryScript.BindExternalFunction("Transition", (string Trans) => {trans.Play(Trans);});
      
      
         
