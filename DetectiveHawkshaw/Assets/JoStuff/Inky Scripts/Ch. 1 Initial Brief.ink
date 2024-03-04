@@ -9,6 +9,8 @@ EXTERNAL PlayAnimation1(PlayAnimation1)
 EXTERNAL PlayAnimation4(PlayAnimation4)
 EXTERNAL PlayAnimation3(PlayAnimation3) 
 EXTERNAL Char3(charName)
+EXTERNAL Particle(parName)
+EXTERNAL PopOut(popName)
 
 
 {Back("Antique-placeholder")}
@@ -18,6 +20,7 @@ EXTERNAL Char3(charName)
 I see, well my associate and I would like to conduct our investigation..."
 
 Lets begin with 
+~PopOut("PopOut")
 ~PlayAnimation("HOLD IT!")
 
 .....
@@ -27,13 +30,16 @@ Lets begin with
 {Icon("EmilAngry")}
 {Name("???")}
 ~PlayAnimation2("plaans")
+~PopOut("PopOut")
 ~PlayAnimation3("HELLO")
 ~PlayAnimation4("MoveRight")
 ~PlayAnimation1("moveLeft")
-{MC("Nicolai_Shocked")} {Char2("Katya_Sad")} {Char3("Charlotte")} <COLOR=\#FF0000> "HOLD IT RIGHT THERE!" </COLOR>
+~Particle("Particles")
+{MC("Nicolai_Shocked")} {Char2("Katya_Sad")} {Char3("Charlotte")}  <COLOR=\#FF0000> "HOLD IT RIGHT THERE!" </COLOR>
 
 ~PlayAnimation("GO BACK")
 ~PlayAnimation2("New State")
+~Particle("Particles")
 {Name("Nicolai")}
 ...!
 "HOLY SHIT SHES SO MAD SHE BECAME PHOTOREALISTIC!"

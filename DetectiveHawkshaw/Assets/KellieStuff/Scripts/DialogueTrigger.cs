@@ -45,6 +45,10 @@ public class DialogueTrigger : MonoBehaviour
     public Animator animChar2;
     public GameObject choiceHold;
 
+    [Header("StopAdddingShitKellie")]
+    
+    public GameObject ParTic;
+    public GameObject PopBox;
 
     public List<Button> choiceButtons = new List<Button>();
     private Coroutine displayLineCoroutine;
@@ -80,7 +84,9 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("Char2", (string charName) => Char(charName)); 
         _StoryScript.BindExternalFunction("Char3", (string charName) => Char3(charName));
         
-        _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
+        _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));  
+        _StoryScript.BindExternalFunction("Particle", (string parName) => Particles(parName));  
+        _StoryScript.BindExternalFunction("PopOut", (string popName) => PopOut(popName));
         
         _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
         _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);});
@@ -234,6 +240,33 @@ public class DialogueTrigger : MonoBehaviour
     public void FModShenanigans(string name)
     {
         fmod.SetActive(true);
+    } 
+   
+    public void Particles(string name)
+    {
+        if (ParTic.activeInHierarchy)
+        {
+            ParTic.SetActive(false);
+        }
+        else
+        {
+            ParTic.SetActive(true);
+        }
+
+     
+    }   
+    public void PopOut(string name)
+    {
+        if (PopBox.activeInHierarchy)
+        {
+            PopBox.SetActive(false);
+        }
+        else
+        {
+            PopBox.SetActive(true);
+        }
+
+     
     }
 
     
