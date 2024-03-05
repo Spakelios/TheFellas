@@ -28,6 +28,8 @@ public class GoToRoom : MonoBehaviour
 
     public enumTest navType;
 
+    public GameObject puzzle;
+
 
 
 
@@ -75,6 +77,8 @@ public class GoToRoom : MonoBehaviour
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
+        if (dm.dialogueBox.activeInHierarchy) return;
+        if (puzzle != null && puzzle.activeInHierarchy) return;
 
         if (navType == enumTest.Door)
         {
@@ -86,6 +90,7 @@ public class GoToRoom : MonoBehaviour
     {
         if (PauseGame.isPaused) return;
         if (dm.dialogueBox.activeInHierarchy) return;
+        if (puzzle != null && puzzle.activeInHierarchy) return;
         
         if (!eyeSpawned)
         {

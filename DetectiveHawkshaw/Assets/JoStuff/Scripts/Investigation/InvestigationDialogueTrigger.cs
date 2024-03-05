@@ -32,7 +32,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public bool calendar;
     public bool sandwich;
 
-    public bool wasChecked;
+    //public bool wasChecked;
     private static int plus = 0;
 
     private Collider2D collider;
@@ -132,12 +132,14 @@ public class InvestigationDialogueTrigger : MonoBehaviour
             FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
             dialogueManager.evidenceDialogue = true;
 
+            /*
             if (!wasChecked)
             {
                 plus++;
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
                 wasChecked = true;
             }
+            */
         }
 
         if (calendar)
@@ -162,6 +164,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
             FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
             dialogueManager.sandwichDialogue = true;
             
+            /*
             
             if (!wasChecked)
             {
@@ -169,11 +172,14 @@ public class InvestigationDialogueTrigger : MonoBehaviour
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
                 wasChecked = true;
             }
+            */
             
         }
         
         if (!isExamined.Contains(evidenceStats))
         {
+            plus++;
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
             isExamined.Add(evidenceStats);
         }
 

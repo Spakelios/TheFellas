@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     public bool puzzleDialogue;
     public bool sandwichDialogue;
     public bool calendarDialogue;
+    public bool otherPuzzleDialogue; //this is just for testing purposes rn & once the tut puzzle is replaced with a pop-up it'll just use the first puzzle bool
     
     public bool evidenceDialogue;
     public GameObject evidenceWindow;
@@ -32,7 +33,7 @@ public class DialogueManager : MonoBehaviour
     public Evidence evidenceStats;
 
     public GameObject testObject;
-    
+
 
     // Use this for initialization
     private void Start()
@@ -89,11 +90,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        sentences.Clear();
+        
         dialogueBox.SetActive(true);
         
         nameText.text = dialogue.name;
-
-        sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -147,6 +148,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        sentences.Clear();
         dialogueBox.SetActive(false);
 
         if (puzzleDialogue)
@@ -171,6 +173,13 @@ public class DialogueManager : MonoBehaviour
             {
                 EvidenceCheck();
             }
+        }
+        
+        else if (otherPuzzleDialogue)
+        {
+            var g = FindObjectOfType<OtherPuzzleTrigger>();
+            g.puzzleScreen.SetActive(true);
+            otherPuzzleDialogue = false;
         }
 
     }
