@@ -180,6 +180,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66793983782336d4b81a13053be12538, type: 3}
+--- !u!1001 &202583680
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1242608613526755266, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_Name
+      value: InterrogationCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 451.8376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 326.41327
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.76044226
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
 --- !u!1 &757933883
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,9 +272,11 @@ MonoBehaviour:
   puzzleDialogue: 0
   sandwichDialogue: 1
   calendarDialogue: 0
+  otherPuzzleDialogue: 0
   evidenceDialogue: 0
   evidenceWindow: {fileID: 0}
   evidenceSprite: {fileID: 2038620502}
+  allEvidence: 0
   toInterrogation: {fileID: 0}
   evidenceStats: {fileID: 0}
   testObject: {fileID: 0}
@@ -272,6 +331,8 @@ MonoBehaviour:
   sceneName: Lobby
   examineTagBox: {fileID: 1909325575}
   dm: {fileID: 0}
+  navType: 0
+  puzzle: {fileID: 0}
 --- !u!212 &977468732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -560,58 +621,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1590192672
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1590192674}
-  - component: {fileID: 1590192673}
-  m_Layer: 0
-  m_Name: InterrogationCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1590192673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590192672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e3ed97aabd48a548b305eee83c7acd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  evidenceCount: 4
-  dialogue:
-    name: Emil
-    sentences:
-    - '"That should be everything I need to bring this case to a close."'
-    - '"Though there''d be no harm in looking around one last time, just in case."'
-  dialogueManager: {fileID: 0}
-  initialiser: {fileID: 0}
---- !u!4 &1590192674
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1590192672}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 451.8376, y: 326.41327, z: 0.76044226}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1595143402
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,9 +738,9 @@ MonoBehaviour:
   evidence: 0
   calendar: 0
   sandwich: 1
-  wasChecked: 0
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: 599e9ccc1be67be4f8b470740f7056f4, type: 2}
+  dialogueLines: {fileID: 0}
 --- !u!61 &1595143406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1246,5 +1255,5 @@ SceneRoots:
   - {fileID: 1745380903}
   - {fileID: 2087457435}
   - {fileID: 1595143404}
-  - {fileID: 1590192674}
   - {fileID: 187215113}
+  - {fileID: 202583680}

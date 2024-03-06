@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
     public Queue<string> sentences;
     private InterrogationCheck interrogationCheck;
 
-    public static bool allEvidence;
+    public bool allEvidence;
 
     public GameObject toInterrogation;
 
@@ -62,6 +62,7 @@ public class DialogueManager : MonoBehaviour
         }
         
         evidenceStats = null;
+        allEvidence = false;
 
         /*
         if (sandwichDialogue)

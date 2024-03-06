@@ -80,8 +80,7 @@ public class OtherPuzzleTrigger : MonoBehaviour
 
         if (!puzzleSolved)
         {
-            var d = unsolvedDialogueFile.text.Split(" /n" +
-                                                    "");
+            var d = unsolvedDialogueFile.text.Split("\n");
             var di = d.ToList();
         
             dialogue.sentences = di;
@@ -91,8 +90,7 @@ public class OtherPuzzleTrigger : MonoBehaviour
         else
         {
             FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
-            var d = solvedDialogueFile.text.Split(" /n" +
-                                                  "");
+            var d = solvedDialogueFile.text.Split("\n");
             var di = d.ToList();
         
             dialogue.sentences = di;
@@ -117,8 +115,7 @@ public class OtherPuzzleTrigger : MonoBehaviour
     {
         puzzleSolved = true;
         
-        var d = solvedDialogueFile.text.Split(" /n" +
-                                              "");
+        var d = solvedDialogueFile.text.Split("\n");
         var di = d.ToList();
         
         dialogue.sentences = di;

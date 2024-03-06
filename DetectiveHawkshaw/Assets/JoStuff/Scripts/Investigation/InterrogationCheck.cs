@@ -45,9 +45,11 @@ public class InterrogationCheck : MonoBehaviour
         
         print(InvestigationDialogueTrigger.isExamined.Count);
 
-        if (InvestigationDialogueTrigger.isExamined.Count != evidenceCount || DialogueManager.allEvidence) return;
+        if (InvestigationDialogueTrigger.isExamined.Count != evidenceCount) return;
+        if (dialogueManager.allEvidence) return;
+        
+        dialogueManager.allEvidence = true;
         dialogueManager.StartDialogue(dialogue);
-        DialogueManager.allEvidence = true;
 
     }
 

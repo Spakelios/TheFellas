@@ -552,6 +552,8 @@ MonoBehaviour:
   sceneName: Kitchen
   examineTagBox: {fileID: 0}
   dm: {fileID: 0}
+  navType: 0
+  puzzle: {fileID: 0}
 --- !u!61 &592534864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -642,9 +644,9 @@ MonoBehaviour:
   evidence: 1
   calendar: 0
   sandwich: 0
-  wasChecked: 0
   textOffset: {x: 0, y: 20, z: 0}
   evidenceStats: {fileID: 11400000, guid: 10fa9fe7a40114947b228a28b2fdaaf6, type: 2}
+  dialogueLines: {fileID: 0}
 --- !u!212 &607960267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -850,6 +852,8 @@ MonoBehaviour:
   sceneName: Office
   examineTagBox: {fileID: 0}
   dm: {fileID: 0}
+  navType: 0
+  puzzle: {fileID: 0}
 --- !u!61 &608411122
 BoxCollider2D:
   m_ObjectHideFlags: 0
