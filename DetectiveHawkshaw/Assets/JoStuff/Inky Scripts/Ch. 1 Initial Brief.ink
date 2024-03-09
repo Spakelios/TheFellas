@@ -156,7 +156,7 @@ EXTERNAL PopOut(popName)
 "That brute! They smashed my window, ruined my pocket watch display and-"
 "Stole my precious painting..!"
 
-{Icon("EmilNeutral")}{Name("Emil")}<I> She began tearing up, clutching the long string of pearls that sat over her neck. </I>
+{Icon("EmilNeutral")}{Name("Emil")}<I> She began tearing up, clutching the small string of pearls that sat over her neck. </I>
  
  {Icon("transparent")}{Name("Margot")}"I could never trust those good for nothings down at the "Police"...not one bit!" 
 "I trust you will do a wonderful job, Detective."

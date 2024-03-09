@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JoStuff/Scenes/Chapter 1/Painting Section.unity
     guid: 67041e55dbff7fa458ba304cb381627f
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Chap 3 Start.unity
+    guid: acef283faf988294ab9ba1081f2a9d6a
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Whiteboxes/Chapter 3/Initial Brief Ch. 3.unity
+    guid: 97292fe350c63b4468683a609b35e171
   m_configObjects: {}

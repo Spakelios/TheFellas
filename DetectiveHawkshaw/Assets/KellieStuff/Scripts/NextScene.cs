@@ -24,8 +24,8 @@ public class NextScene : MonoBehaviour
     }   
     public void next3()
     {
-             // VNToInvestLoader.instance.LoadLevel("Chap 3 Start");
-             SceneManager.LoadScene("Chap 3 Start");
+             VNToInvestLoader.instance.LoadLevel("Chap 3 Start");
+             // SceneManager.LoadScene("Chap 3 Start");
              
     }  
     public void next4()

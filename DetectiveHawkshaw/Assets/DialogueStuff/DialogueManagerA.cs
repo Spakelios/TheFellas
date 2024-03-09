@@ -2,6 +2,7 @@ using System;
        using System.Collections;
        using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using UnityEngine;
        using UnityEngine.UI;
        using Ink.Runtime;
@@ -14,11 +15,11 @@ using UnityEngine.SceneManagement;
 public class DialogueManagerA : MonoBehaviour
 {
     private int num;
+    [Header("Dialogue")]
     [SerializeField] private TextAsset _InkJsonFile;
     private Story _StoryScript;
     private Image imageButton;
     public GameObject EviContainer;
-
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
     [SerializeField] private float typingSpeed = 0.04f;
@@ -27,19 +28,21 @@ public class DialogueManagerA : MonoBehaviour
 
     // private Text text;
 
-
+    [Header("Icons")]
     public Image characterIcon;
     public Image Icon;
-    [SerializeField] private GridLayoutGroup choiceHolder;
-    [SerializeField] private Button choiceButtonPrefab;
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
-    public GameObject fmod;
-    public Image ButtonImage;
-    
+    public Image Char2;
 
+    public GameObject fmod;
+    
     public GameObject choiceHold;
+    
+    [Header("Animators")]
+    public Animator anim;
+    public Animator anim2;
 
 
     public List<Button> choiceButtons = new List<Button>();
@@ -84,8 +87,11 @@ public class DialogueManagerA : MonoBehaviour
         _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
         _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
         _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
+        _StoryScript.BindExternalFunction("Char2", (string charName) => Char(charName)); 
+        
+        _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
+        _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);}); 
         DisplayNextLine();
-
     }
 
     public void DisplayNextLine()
@@ -267,21 +273,6 @@ public class DialogueManagerA : MonoBehaviour
     }
     
 
-
-    Button CreateChoiceButton(string text)
-    {
-        
-        //make this redundant and have it all manual instead
-        //instantiate button
-        var choiceButton = Instantiate(choiceButtonPrefab);
-        choiceButton.transform.SetParent(choiceHolder.transform, false);
-        var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
-        ButtonImage = choiceButton.GetComponentInChildren<Image>();
-        buttonText.text = text;
-        choiceButton.name = "woah" + num++;
-        return choiceButton;
-    }
-
     void onClickChoiceButton(Choice choice)
     {
         if (_StoryScript.currentChoices.Count > 0)
@@ -299,13 +290,6 @@ public class DialogueManagerA : MonoBehaviour
         {
             choiceButtons[i].gameObject.SetActive(false);
         }
-       // if (choiceHolder != null)
-        //{
-        //    foreach (var button in choiceHolder.GetComponentsInChildren<Button>())
-         //   {
-         //       Destroy(button.gameObject);
-        //    }
-       // }
     }
 
 
@@ -354,6 +338,12 @@ public class DialogueManagerA : MonoBehaviour
     {
         fmod.SetActive(true);
     }
+    
+    public void Char(string name)
+    {
+        var char2 = Resources.Load<Sprite>("characterIcons/" + name);
+        Char2.sprite = char2;
+    }  
     
     [System.Serializable]
     public class PictureClass
