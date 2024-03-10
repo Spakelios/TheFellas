@@ -13,13 +13,13 @@ VAR ShowJournal = 0
 
 {Back("DimStorage")}
 {Icon("EmilNeutral")}
-{Name("Emil")}<I> The heavy door opens with a loud creak, I can't help but be surprised
-<I> Mrs Weaver could open it at all. </I>
+{Name("Emil")}<I> The heavy door opens with a loud creak.
+<I> I'm surprised that Mrs. Weaver could open it at all. </I>
 
-"Just a moment, Mrs Weaver we just need to look around."
+"Just a moment, Mrs. Weaver. We just need to look around."
 
-<I> Mrs Weavers expression seems to contort into something more anxious as we enter.
-<I> Her earlier energy seems to drain, she almost looks sickly.</I>
+<I> Mrs. Weaver's expression seems to contort into something more anxious as we enter.
+<I> Her earlier energy seems to drain... she almost looks sickly.</I>
 
 {MC("Nicolai_Think")}
 {Char2("transparent")}
@@ -27,13 +27,13 @@ VAR ShowJournal = 0
 {Name("Nicolai")}"Awful dusty in here, quite dark too."
 
 {Icon("EmilNeutral")}
-{Name("Emil")} "Certainly is... I doubt she comes in here often. Be on the look out for anything suspicious-" 
-"and a light switch i can't see anything in here."
+{Name("Emil")} "Certainly is... I doubt she comes in here often. Be on the look out for anything suspicious..." 
+"And a light switch too. I can't see anything in here."
 
 {MC("Nicolai_Think")}
 {Char2("Charlotte")}
 {Icon("transparent")}
-{Name("Charlotte")} "It hasn't seen much use since Grandad passed..."
+{Name("Charlotte")} "It hasn't seen much use since Granddad passed..."
 "Most things Gran has to sell stay on the shop floor these days."
 
 {Icon("EmilNeutral")}
@@ -41,20 +41,20 @@ VAR ShowJournal = 0
 <I> They'll know what's out of place and what isn't. </I> 
  
  {Back("storageRoom")}
- <I> She runs her hand over the wall and with a click the room lights up again. </I>
+ <I> She runs her hand over the wall and with a click, the room lights up again. </I>
  
 {MC("Nicolai_Shocked")}
 {Char2("Charlotte")}
 {Icon("transparent")}
 {Name("Nicolai")}
  
- "Wait a moment...Isn't that?!"
+ "Wait a moment... isn't that?!"
  
 {Icon("EmilUpset")}
 {Name("Emil")}
 
-<I> The lights reveal our "priceless one of a kind painting" displayed on the wall.
-<I> I glance over at Charlotte, her expression seems to move from conflicted to some semblance of understanding.</I>
+<I> The lights reveal our 'priceless one of a kind painting', displayed on the wall.
+<I> I glance over at Charlotte. Her expression seems to move from conflicted to some semblance of understanding.</I>
 
 "I take it you expected as much, Miss Constable?"
 
@@ -63,10 +63,10 @@ VAR ShowJournal = 0
 {Icon("EmilNeutral")}
 {Name("Emil")}<I> She nods her head and turns to her grandmother, clearly not very impressed with this development.<I> 
 
-{Name("Charlotte")} "I think i understand what happened now but, I believe you have some work to do first, Detective."
+{Name("Charlotte")} "I think I understand what happened now... But I believe you have some work to do first, Detective."
 
 {Icon("EmilNeutral")}
-{Name("Emil")}"Right you are, Mrs Weaver, a word if you would be so kind."
+{Name("Emil")}"Right you are. Mrs. Weaver, a word, if you would be so kind."
 
 ~PlayAnimation("Intro Animation") 
 ~PlayAnimation2("InvestgationText")
@@ -75,11 +75,11 @@ VAR ShowJournal = 0
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("EmilNeutral")}
-{Name("Emil")}"Now, Mrs Weaver, I would like to ask you some questions regarding this investigation."
+{Name("Emil")}"Now, Mrs. Weaver. I would like to ask you some questions regarding this investigation."
 
-<I> Her guilt riddled expression seems to confirm my suspicions immedietly as she refuses to make eye contact for very long. 
-<I> I almost feel bad about putting her through this, I push those feelings aside.
-<I> I have a job to do and must see it through to the end. </I> -> Questions
+<I> Her guilt riddled expression seems to confirm my suspicions immediately as she refuses to make eye contact for very long. 
+<I> I almost feel bad about putting her through this, but I push those feelings aside.
+<I> I have a job to do, and I must see it through to the end. </I> -> Questions
 
 == Questions ==
 
@@ -93,10 +93,10 @@ VAR ShowJournal = 0
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"The window? oh what was it again... my memory is far from what it used to be, Dear."
+{Name("Margot")}"The window? Oh, what was it again... my memory is far from what it used to be, Dear."
 
 {Icon("EmilNeutral")}
-{Name("Emil")}<I> Mrs Weaver shuffles uncomfortably, clearly trying to maintain her earlier facade. </I>
+{Name("Emil")}<I> Mrs. Weaver shuffles uncomfortably, clearly trying to maintain her facade. </I>
 
 "Well then allow me to jog your memory." -> ShowWindow
 
@@ -172,15 +172,15 @@ VAR ShowJournal = 0
 {Name("Margot")}"FAKE!?"
 
 {Icon("EmilUpset")}
-{Name("Emil")}<I>Her demeanor shifts drastically at my accusation, perhaps that wording wasn't the best choice. </I>
+{Name("Emil")}<I>Her demeanour shifts drastically at my accusation. Perhaps that wasn't the best choice of wording. </I>
 
-"Now, Mrs Weaver we have evidence that suggests-"
+"Now, Mrs. Weaver, we have evidence that suggests-"
 
-<I>She becomes increasingly defensive as I try to descalate the situation</I>
+<I>She becomes increasingly defensive as I try to descalate the situation.</I>
 
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"I assure you Detective, nothing you find in "Magpies Nest" is FAKE!"
+{Name("Margot")}"I assure you, Detective, nothing you find in "Magpie's Nest" is FAKE!"
 "We pride ourselves on <B>Authenticity</B> and <B>Quality</B>!
 
 {Icon("EmilAngry")}
@@ -251,18 +251,18 @@ VAR ShowJournal = 0
 == five ==
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"What's this evidence of Detective?"
+{Name("Margot")}"What's this evidence of, Detective?"
 
 {Icon("EmilNeutral")}
-{Name("Emil")}"Well, according to your own grandaughter, and a copy we were able to find online,
-"this isn't the original"
+{Name("Emil")}"Well, according to your own granddaughter, and a copy we were able to find online...
+"This isn't the original!"
 "It's nothing but a pale imitation!"
 
 <I> Surely she would back down and confess by now.</I>
 
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Lottie?! that little...!"
+{Name("Margot")}"Lottie?! That little...!"
 
 {Icon("EmilNeutral")}
 {Name("Emil")}<I> She appears to lose her composure for a moment. Now is my chance!</I>
@@ -273,38 +273,38 @@ VAR ShowJournal = 0
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Oh yes, of course <B>that</B> window was broken. Oh how could i forget?"
-"It was when-when that devilish invader tried to rob me!"
+{Name("Margot")}"Oh yes, of course <B>that</B> window was broken. Oh, how could I forget?"
+"It was wh-when that devilish invader tried to rob me!"
 
 {Icon("EmilNeutral")}
 {Name("Emil")} <I> She seems to be less sure of her story as she continues, looking all around the room as she speaks.
-<I> Her once friendly smile slowly beginning to fall.</I>
+<I> Her once friendly smile slowly begins to fall.</I>
 
 "As you've claimed, and you say you believe they broke <B>in,</B> correct?"
 
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Yes, from outside they threw in a rock or something and damaged my property! oh the nerve!"
+{Name("Margot")}"Yes, from outside! They threw in a rock or something and damaged my property! Oh, the nerve!"
 "Some people have no respect for others! Unlike a gentleman like yourself of course, Dectective."
 
 {Icon("EmilNeutral")}
-{Name("Emil")}"Well you see, Mrs Weaver, as you can see here there is evidence that the window was broken from the inside."
-"This would be of little benefit to potential "Invader" wouldn't you say?"
+{Name("Emil")}"Well as you can see, Mrs. Weaver, there is evidence that the window was broken from the inside."
+"This would be of little benefit to a potential 'Invader', wouldn't you say?"
 
 <I> She slowly nods her head apologetically and waves a hand. </I>
 
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Oh, I see so perhaps it was an unruly patreon? or an accident?"
-"Goodness... I hadn't considered such a thing."
-"They're all good people, my regulars."   
+{Name("Margot")}"Oh, I see... perhaps it was an unruly patreon? Or an accident?"
+"Goodness... I hadn't considered such a thing..."
+"They're all good people, my regulars..."   
 
 {Icon("EmilNeutral")}
-{Name("Emil")}"You also claimed that your "pocket watch display" was damaged"
+{Name("Emil")}"You also claimed that your 'pocket watch display' was damaged?"
 
-<I> She nods firmly</I> -> ShowPocket
+<I> She nods firmly.</I> -> ShowPocket
 
 == ShowPocket ==
 #Evidence: 0
@@ -366,20 +366,20 @@ VAR ShowJournal = 0
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Oh yes, of course I had to clean that up Dear!"
-"It's a hazard! I could be in big trouble if someone was hurt!"
+{Name("Margot")}"Oh yes, of course I had to clean that up, Dear!"
+"It's a hazard! I could be in big trouble if someone got hurt!"
 
 {Icon("EmilAngry")}
-{Name("Emil")}"You...tampered with the crime scene? Mrs Weaver! that's quite serious!"
-"It also greatly effects the validity of your claim!"
+{Name("Emil")}"You...tampered with the crime scene? Mrs. Weaver, that's quite serious!"
+"It also greatly affects the validity of your claim!"
 
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Oh dear...I'm very sorry Detective I had no idea...!"
+{Name("Margot")}"Oh dear... I'm very sorry, Detective... I had no idea...!"
 
 {Icon("EmilNeutral")}
 {Name("Emil")}
-<I> Mrs Weaver doesn't appear quite happy with this revelation. </I>
+<I> Mrs. Weaver doesn't appear quite happy with this revelation. </I>
 <I> I take note of this bizarre turn and move on. </I> -> Questions
 
 == six == 
@@ -388,7 +388,7 @@ VAR ShowJournal = 0
 
 {MC("Charlotte")}
 {Name("Lottie")}"What on earth were you thinking with all of this?" 
-"I should've known you were up to know good when you didn't push for me to help!"
+"I should've known you were up to no good when you didn't push for me to help!"
 
 {MC("transparent")}
 {Char2("Margot")}
@@ -396,8 +396,8 @@ VAR ShowJournal = 0
 {Name("Margot")}"W-What are you suggesting?!"
 
 {Icon("EmilNeutral")}
-{Name("Emil")}<I>Charlotte snatches my journal from me
-<I>I'm left flabbergasted, but I give her the floor</I>
+{Name("Emil")}<I>Charlotte snatches my journal from me.
+<I>I'm left flabbergasted, but I give her the floor.</I>
 
 {Icon("Charlotte")}
 {Name("Lottie")}"You won't be able to talk your way out of this!" -> ShowMissing
@@ -462,20 +462,20 @@ VAR ShowJournal = 0
 
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Oh what is this even about? Let the man do his job Lot-"
+{Name("Margot")}"Oh, what is this even about? Let the man do his job, Lot-"
 
 {Icon("Charlotte")}
-{Name("Lottie")}"You claimed the painting that used to be on display here was taken, correct?"
+{Name("Lottie")}"You claimed that the painting that used to be on display here was taken, correct?"
 "Stolen from you- the entire reason you dragged these men here?"
 
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"...Yes that sounds about right."
+{Name("Margot")}"...Yes, that sounds about right."
 
 {Icon("Charlotte")}
-{Name("Lottie")} "So you reported something missing despite the fact you knew all too well where it was?"
-"but once you realised they were the real deal, you panicked."
-"Hiding the truth from them!" -> ShowPainting
+{Name("Lottie")} "So you reported something missing, despite the fact you knew all too well where it was?"
+"But once you realised they were the real deal, you panicked."
+"And hid the truth from them!" -> ShowPainting
 
 ==ShowPainting == 
 #Evidence: 0
