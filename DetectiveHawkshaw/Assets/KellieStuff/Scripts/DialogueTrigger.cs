@@ -88,6 +88,9 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));  
         _StoryScript.BindExternalFunction("Particle", (string parName) => Particles(parName));  
         _StoryScript.BindExternalFunction("PopOut", (string popName) => PopOut(popName));
+        _StoryScript.BindExternalFunction("MCS", (string GreyName) => IconGrey(GreyName));
+        _StoryScript.BindExternalFunction("Char22", (string GreyName) => Icon2Grey(GreyName));
+        _StoryScript.BindExternalFunction("Char32", (string GreyName) => Icon3Grey(GreyName));
         
         _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
         _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);});
@@ -267,9 +270,40 @@ public class DialogueTrigger : MonoBehaviour
         {
             PopBox.SetActive(true);
         }
-
-     
+    }
+    
+    public void IconGrey(string name)
+    {
+        if (Icon.color == Color.white)
+        {
+            Icon.color = Color.grey;
+        }
+        else
+        {
+            Icon.color = Color.white;
+        }
+    }   
+    public void Icon2Grey(string name)
+    {
+        if (Char2.color == Color.white)
+        {
+            Char2.color = Color.grey;
+        }
+        else
+        {
+            Char2.color = Color.white;
+        }
     }
 
-    
+    public void Icon3Grey(string name)
+    {
+        if (cha3.color == Color.white)
+        {
+            cha3.color = Color.grey;
+        }
+        else
+        {
+            cha3.color = Color.white;
+        }
+    } 
 }

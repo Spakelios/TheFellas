@@ -3,12 +3,14 @@ EXTERNAL Icon(charName)
 EXTERNAL MC(charName)
 EXTERNAL Back(charName)
 EXTERNAL Evi(charName)
+EXTERNAL MCS(GreyName)
 
 VAR canShowEvidence = false
 VAR someEvidence = 0
 VAR count = 0 
 VAR ShowJournal = 0
 
+ ~MCS("IconGrey")
 {Back("Office")}
 {Icon("EmilNeutral")}
 {Name("Emil")}
@@ -26,11 +28,12 @@ VAR ShowJournal = 0
 * [ I know who did it ] -> ten
 
 == one == 
- 
+  ~MCS("IconGrey")
 {Name("Emil")}{Icon("EmilNeutral")} {MC("Katya_Basic")} “Miss Hawkshaw, as you're aware my sandwich was found in the toilet today.”
 “I would like to ask you some questions about this incident.”
 <i> She sits down in my office chair and spins around to face me. She seems a little nervous, but nods. </i>
 
+ ~MCS("IconGrey")
 {Name("Katya")}
 {Icon("transparent")}“O-ok! Sure thing dad!” 
 
@@ -41,16 +44,16 @@ VAR ShowJournal = 0
 *[ What day is it today?] -> six
 
 == twenty == 
-
+ ~MCS("IconGrey")
 {Name("Emil")} {Icon("EmilNeutral")} {MC("Katya_Think")} <i> She puts her hand to her chin, thinking deeply about what she got up to today. </i>
 <i> I try to remain stern without upsetting her. </i>
-
+ ~MCS("IconGrey")
 {Name("Katya")}
 {Icon("transparent")} {MC("Katya_Basic")}“Hmm… I was drawing in the lobby!"
 "I showed it to Miss Secretary and she said..."
 "I did a really good job!" 
 "Wanna see it?”
-
+ ~MCS("IconGrey")
 {Name("Emil")} 
 {Icon("EmilUpset")}<i> She looks up at me, pleading with her puppy dog eyes. </i>
 
@@ -59,13 +62,14 @@ VAR ShowJournal = 0
 *[Oh, Alright. I’d love to see it.] -> four.
 
 == three == 
-
+ ~MCS("IconGrey")
  {MC("Katya_Mad")}<i> She pouts, a frown appearing on her face. </i>
 {Icon("EmilHappy")}<i>I try not to laugh at her reaction as she holds the paper in her hands.</i>
-
+ ~MCS("IconGrey")
 {Name("Katya")}
 {Icon("transparent")}“Aww, don't be silly! Here, looooook!”
 
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilHappy")}
 {Evi("KatyaDraws")}<i>She holds it up, waving it in front of my face.</i>
@@ -97,10 +101,10 @@ VAR ShowJournal = 0
 
 <i>She beams with pride, pointing at the group of people she had drawn. </i>
 <i>It appears to be of myself, Katya and Nicolai.</i>
-
+ ~MCS("IconGrey")
 {Name("Katya")} 
 {Icon("transparent")}“Mhmm! This is you Dad, Uncle Nikki and me! The best detectives ever!”
-
+ ~MCS("IconGrey")
 {Evi("transparent")}
 {Name("Emil")} 
 {Icon("EmilHappy")}
@@ -110,19 +114,19 @@ VAR ShowJournal = 0
 
 {Name("Emil")} {Icon("EmilNeutral")} {MC("Katya_Shocked")} <i>She tilts her head as though confused by the question. 
 <i>She stares back at me with an innocent expression.</i>
-
+ ~MCS("IconGrey")
 {Name("Katya")}
 {Icon("transparent")}“Don't be silly, Dad! Sandwiches don't go in the toilet! We don't eat in there!”
-
+ ~MCS("IconGrey")
 {Name("Emil")} 
 {Icon("EmilNeutral")}<i>She says the last part as though repeating a mantra.
 <i>This was something I taught her when she was much younger.
 <i>The question seems to have made her fidget a bit.</i> -> seven
 
 == six ==
-
+ ~MCS("IconGrey")
 {Name("Katya")}{Icon("transparent")} {MC("Katya_Basic")} “Oh! I know! I know! Today's the 17th of June!”
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilUpset")}
 <i>I try not to appear shocked when she says it, that day is quite a bittersweet memory now.
@@ -192,23 +196,23 @@ VAR ShowJournal = 0
     
 
 {Evi("calendar")}"..."
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilNeutral")} “Be honest with me now Katya, have you seen this today?” 
-
+ ~MCS("IconGrey")
 {Name("Katya")} 
 {Icon("transparent")}
 {Evi("transparent")}
 {MC("Katya_Think")}
 “Oh yeah! That was up in the office! The one with the funny pictures on it!” 
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilHappy")}
 <i>She says this with a grin, as though proud of herself for remembering the date.</i> 
 
 <i>I nod my head and take note of that.</i>
 <i>She must have read the date off the calendar and assumed it was today.</i> -> seven
-
+ ~MCS("IconGrey")
 == nine == 
 
 *[ Where were you between 11.30 am and 12.00 pm?] -> two
@@ -232,7 +236,7 @@ VAR ShowJournal = 0
 {MC("Nicolai_Think")} 
 {Icon("transparent")} <i>Nicolai looks up from the papers he was reading at his desk. 
 <i>He raises an eyebrow, clearly amused by my investigation.</i> 
-
+ ~MCS("IconGrey")
 {Name("Nicolai")}
 “Alright, alright, let's get this over with...”
 
@@ -243,23 +247,23 @@ VAR ShowJournal = 0
 *[ What day is it today?] -> thirteen 
 
 == eleven ==
-
+ ~MCS("IconGrey")
 {Name("Emil")}{Icon("EmilNeutral")} {MC("Nicolai_Think")}  <i>He takes a moment to think about it, crossing his arms.</i> 
-
+ ~MCS("IconGrey")
 {Name("Nicolai")} 
 {Icon("transparent")}
 “I was in the kitchen, making my lunch.”
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilNeutral")}
 <i>He hesitates for a moment before attempting to explain himself.</i> 
-
+ ~MCS("IconGrey")
 {MC("Nicolai_Shocked")} 
 {Name("Nicolai")}
 {Icon("transparent")}
 “...I realise how that sounds, but, c’mon Emil!”
 “You know I hate those nasty sandwiches you eat!” 
-
+ ~MCS("IconGrey")
 {Name("Emil")} 
 {Icon("EmilNeutral")}
 <i>He shakes his head with a disgusted look on his face.</i> 
@@ -323,17 +327,17 @@ VAR ShowJournal = 0
 <i>He looks a little confused about why this would be relevant.</i>
 
 “Since you hate my sandwiches so much, explain why I found these on the kitchen floor!”
-
+ ~MCS("IconGrey")
 {Name("Nicolai")}
 {Icon("transparent")} {Evi("transparent")}“Huh? Oh yeah, sorry! That was my fault. Cucumber was the only bloody thing left in the fridge.”
 
 “I had to improvise, it must've fallen off the table while I was trying to chop the God forsaken thing…” 
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilNeutral")}
 <i>I stare at him for a moment, trying to see if I could catch him lying. 
 <i>Despite my best efforts, he seemed to be sincere.</i> 
-
+ ~MCS("IconGrey")
 -> Nicolai
 
 == Nicolai ==
@@ -347,10 +351,10 @@ VAR ShowJournal = 0
 * {eleven && twelve && thirteen} [ Move on ] -> Choose
 
 == twelve ==
-
+ ~MCS("IconGrey")
 {Name("Emil")}{Icon("EmilNeutral")} {MC("Nicolai_Basic")}  <i>It seems to take him a moment to realise what I had said to him. 
 <i>He stares at me blankly. </i> -> showToilet
-
+ ~MCS("IconGrey")
 ==showToilet==
 #Evidence: 0
 #Evidence: 1
@@ -408,10 +412,11 @@ VAR ShowJournal = 0
 
 == fifteen == 
 {Evi("toilet")}"..."
-
+ ~MCS("IconGrey")
 {Name("Nicolai")}{Icon("transparent")} {MC("Nicolai_Annoyed")}  “You... you took a picture and left it in there?! Emil!”
 “What in God's name were you thinking?”
 
+ ~MCS("IconGrey")
 {Name("Emil")} 
 {Icon("EmilNeutral")}
 {Evi("transparent")}
@@ -420,27 +425,27 @@ VAR ShowJournal = 0
 <i><b>the consequences.</i></b>
 
 “I can't tamper with the scene of the crime!”
-
+ ~MCS("IconGrey")
 {Name("Nicolai")}
 {Icon("transparent")}
 “Emil! We can’t afford another blockage!”
 “Not after last time!” 
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilNeutral")}
 “Well... it's standard protocol. Now moving on...”
 
 <i>I take note of his sudden agitation. </i>
 <i>I push him back into his chair, halting his attempt to scamper away and check the toilet.</i> -> Nicolai
-
+ ~MCS("IconGrey")
 == thirteen ==
-
+ ~MCS("IconGrey")
 {Name("Emil")} {Icon("EmilNeutral")} {MC("Nicolai_Think")}  <i>He looks at me, as though I have ten heads. He's clearly perplexed by my line of questioning.</i> 
-
+ ~MCS("IconGrey")
 {Name("Nicolai")} {Icon("transparent")}“Today's date? You've forgotten already? Jesus!"
 {MC("Nicolai_Happy")} 
 "Finally lost it, Emil? I thought we had a bit longer before you went senile!”
-
+ ~MCS("IconGrey")
 {Name("Emil")} {Icon("EmilNeutral")} “Just answer the bloody question already.”
 
 <i>I speak sternly, placing my hand on his desk and leaning forward.</i> 
@@ -448,12 +453,12 @@ VAR ShowJournal = 0
 “...Or have you gone senile on us yourself, Mr. Kozlov?” 
 
 <i>He leans back in his chair and takes a moment to think.</i> 
-
+ ~MCS("IconGrey")
 {Name("Nicolai")} {Icon("transparent")} {MC("Nicolai_Think")} “...it should be... what?  The... 17th of November?”
-
+ ~MCS("IconGrey")
 {Name("Emil")} {Icon("EmilNeutral")}<i>He looks up casually as I move away from his desk. </i>
 <i>I give an approving nod. </i> -> ShowCalandar
-
+ ~MCS("IconGrey")
 
 ==ShowCalandar==
 #Evidence: 0
@@ -510,10 +515,12 @@ VAR ShowJournal = 0
 
 == sixteen ==
 {Evi("calendar")} "..."
+ ~MCS("IconGrey")
 {Name("Nicolai")}{Icon("transparent")} {MC("Nicolai_Think")} “Hmm? Oh that old thing... You stopped marking the days on it after the...”
 {MC("Nicolai_Annoyed")}
 “The divorce, right? We... should really replace that thing.”
 
+ ~MCS("IconGrey")
 {Name("Emil")} 
 {Icon("EmilNeutral")}
 {Evi("transparent")}
@@ -521,6 +528,7 @@ VAR ShowJournal = 0
 <i>I clear my throat and continue with my questions.</i> 
 
 “Yeah... I suppose we should.” -> Nicolai
+ ~MCS("IconGrey")
 
 == seventeen == 
 
@@ -540,11 +548,11 @@ VAR ShowJournal = 0
 <i>She rushes over and hugs me tight without saying a word.
 <i>I sigh and pat her head. 
 <i>I hate to see her upset.</i>
-
+ ~MCS("IconGrey")
 {Name("Katya")}
 {Icon("transparent")}
 “I-i’m sorry! I just... you made the sandwiches Mama used to make!”
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilUpset")}
 <i>She sniffles and wipes her face, tears streaming down it.
@@ -558,7 +566,7 @@ VAR ShowJournal = 0
 
 <i>She sniffles and nods her head apologetically.
 <i>I feel as though I've kicked a puppy.</i>
-
+ ~MCS("IconGrey")
 {Name("Katya")}
 {Icon("transparent")}
 “Mhmm... Then it didn't taste right!"
@@ -566,16 +574,16 @@ VAR ShowJournal = 0
 "Then... Then... I remembered you’d be home soon... and... and...”
 
 “and be mad at me! So I panicked and put it in the toilet!” 
-
+ ~MCS("IconGrey")
 {Name("Emil")} 
 {Icon("EmilUpset")}
 “The lock too?”
-
+ ~MCS("IconGrey")
 {Name("Katya")}
 {Icon("transparent")}
 “I really didn't want you to see it and be sad...”
 “Cuz... You miss Mama’s sandwiches too... right?”
-
+ ~MCS("IconGrey")
 {Name("Emil")} {Icon("EmilUpset")}
 “...No further questions.” 
 
@@ -590,13 +598,13 @@ VAR ShowJournal = 0
 <i>Surely he didn't believe I wouldn't catch him in the act.
 {MC("Nicolai_Shocked")}
 <i>He looks befuddled, it clearly wasn't the answer he was expecting.</i>
-
+ ~MCS("IconGrey")
 {Name("Nicolai")}
 {Icon("transparent")}
 “Ah here-! You can't be serious, Emil!" 
 "Why would it be me!?" 
 "...Have you actually gone senile?"
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilAngry")}
 <i>I shake my head. I know in my heart my darling Katya would never steal my lunch.</i>
@@ -612,24 +620,24 @@ VAR ShowJournal = 0
 “Next, you make your way through to the lobby."
 "You stop to look at Katya’s drawing, getting your grubby hands all over it!
 "That would explain the stains.”
-
+ ~MCS("IconGrey")
 {Name("Nicolai")}
 {Icon("transparent")}
 {MC("Nicolai_Annoyed")}
 “He’s lost his bloody mind...”
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilAngry")}
 “Then, knowing I was in the driveway, you panicked, throwing the sandwich into the toilet!”
 
 “The dramatics when you saw the picture were quite something..."
 "Have you considered a career in acting, Mr. Kozlov?”
- 
+  ~MCS("IconGrey")
 {Name("Nicolai")}
 {Icon("transparent")}
 {MC("Nicolai_Shocked")}
 “Have you considered how you're acting?!”
-
+ ~MCS("IconGrey")
 {Name("Emil")} {Icon("EmilAngry")}
 “Finally you added your old padlock, and cruelly gave it a date you knew I would"
 "never want to try input...”
@@ -640,20 +648,20 @@ VAR ShowJournal = 0
 
 <i>It was at that moment when Katya looked at us with panic in her eyes.
 <i>As though I was about to shoot him.</i>
-
+ ~MCS("IconGrey")
 {MC("Katya_Shocked")}
 {Name("Katya")}
 {Icon("transparent")}
 “NO! WAIT! IT WAS ME, DON'T PUT UNCLE NIKKI IN THE SLAMMER!”
 “HE'D NEVER SURVIVE!”
 
-
+ ~MCS("IconGrey")
 {Name("Nicolai")}
 {MC("Nicolai_Basic")}
 “Always knew she was a good girl who wouldn't allow her Uncle to suffer...!”
 {MC("Nicolai_Shocked")}
 “...Wait, what did you say-?”
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilUpset")}
 {MC("Katya_Sad")}

@@ -1816,14 +1816,21 @@ MonoBehaviour:
   characterIcon: {fileID: 89634927}
   Icon: {fileID: 181272909}
   choiceHolder: {fileID: 543350537}
-  choiceButtonPrefab: {fileID: 1347742206}
   backgroundIcon: {fileID: 1275741386}
   button2: {fileID: 30858938}
   Evi: {fileID: 1047898399}
   fmod: {fileID: 0}
+  Char2: {fileID: 0}
+  cha3: {fileID: 0}
   anim: {fileID: 0}
   anim2: {fileID: 0}
+  animChar3: {fileID: 0}
+  animChar1: {fileID: 0}
+  animChar2: {fileID: 0}
   choiceHold: {fileID: 878851643}
+  trans: {fileID: 0}
+  ParTic: {fileID: 0}
+  PopBox: {fileID: 0}
   choiceButtons: []
 --- !u!4 &339121684
 Transform:
@@ -1860,14 +1867,14 @@ MonoBehaviour:
   continueIcon: {fileID: 158002084}
   characterIcon: {fileID: 89634927}
   Icon: {fileID: 181272909}
-  choiceHolder: {fileID: 0}
-  choiceButtonPrefab: {fileID: 0}
+  Char2: {fileID: 0}
   backgroundIcon: {fileID: 1275741386}
   button2: {fileID: 632719913}
   Evi: {fileID: 1047898399}
   fmod: {fileID: 276615315}
-  ButtonImage: {fileID: 0}
   choiceHold: {fileID: 526447971}
+  anim: {fileID: 0}
+  anim2: {fileID: 0}
   choiceButtons:
   - {fileID: 2060789550}
   - {fileID: 393684244}

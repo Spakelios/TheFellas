@@ -4,6 +4,7 @@ EXTERNAL MC(charName)
 EXTERNAL Back(charName)
 EXTERNAL Sound (soundName)
 EXTERNAL ButtonImage(charName)
+EXTERNAL MCS(GreyName)
 
 
 {Back("Lobby")}
@@ -56,12 +57,10 @@ EXTERNAL ButtonImage(charName)
 <I>The only people in the building while I was away should have been...</I>
 <I>Katya, Nicolai, and the secretary. </I>
 
-<I>I doubt the secretary has anything to do with it, but it may be worth asking her.</I>
-
-*[ Talk to secretary ] -> one 
-*[ Check the office ] -> two
+<I>I doubt the secretary has anything to do with it, but it may be worth asking her.</I> -> one
 
 == one == 
+ ~MCS("IconGrey")
 {Icon("EmilNeutral")} {MC("Secretary")} <I>I reluctantly approach the secretary's desk. Her usual scowl appears as soon as she sees me.</I>
 <I> I clear my throat to get her attention. </I>
 
@@ -72,21 +71,25 @@ EXTERNAL ButtonImage(charName)
 <I> She stares blankly, her gaze is quite piercing. </I>
 <I> I feel as though I'm poking a small, angry bear. </I>
 
+ ~MCS("IconGrey")
 {Name("Secretary")}
 {Icon("transparent")}
 
 "No." 
 
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilHappy")}
 
 "No one at all?"
 
+ ~MCS("IconGrey")
 {Name("Secretary")}
 {Icon("transparent")}
 
 "..."
 
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilHappy")}
 
@@ -98,54 +101,51 @@ EXTERNAL ButtonImage(charName)
 
 {Icon("EmilNeutral")}
 I can't help but sigh.
-I need better staff. 
-
-*[ Check the office ] -> two 
+I need better staff. -> two
 
 == two == 
-
 {MC("transparent")} {Back("Office")} <I>I slowly open the door and the chattering voices of my daughter and co-worker fill my ears. </I>
 
 <I>Just hearing the pair of them would make anyone think I'd left two children here while I was out instead of one.</I>
 
 "Losing an argument to a child again, Nico?" 
-
+ ~MCS("IconGrey")
 {MC("Katya_Happy")}
 {Name("Katya")}
 {Icon("transparent")}
 
 "DAD! You're back!" 
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilHappy")}
 
 <I>Katya wastes no time in running over to greet me. A wide grin decorates her face as she clings to my leg.
  I give her a pat on the head as I look up to see Nicolai is quite the unhappy camper. </I>
-
+ ~MCS("IconGrey")
 {MC("Nicolai_Shocked")}
 {Name("Nicolai")}
 {Icon("transparent")}
 
 "Listen here pal, I'm not taking that from someone who leaves me with his kid outta nowhere for 30 min-" 
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilHappy")}
 
 "Oh, that's enough outta you, buddy!"
 "I've got work to do, unlike a certain someone who likes to waste his time idling and then blames his lack of productivity on little children!"
-
+ ~MCS("IconGrey")
  {Name("Nicolai")}
  {MC("Nicolai_Annoyed")}
  {Icon("transparent")}
 
 "...Why I oughta-"
-
+ ~MCS("IconGrey")
 {Icon("EmilNeutral")}
 {Name("Emil")}
 
 <I> I take the newspaper that he had been reading off his desk, roll it up and put it under my arm. </I>
 <I>Before I can tell him to get back to work, I feel Katya tug on my coat.</I>
-
+ ~MCS("IconGrey")
 {MC("Katya_Mad")}
 {Name("Katya")}
 {Icon("transparent")}
@@ -153,7 +153,7 @@ I need better staff.
 "I'm not little! I'm 9 and 3 quarters!" 
 "Don't call me little!"
 "I'm a big girl!" 
-
+ ~MCS("IconGrey")
 {Icon("EmilHappy")}
 {Name("Emil")}
 <I>As always, Katya never fails to make me forget what I'm supposed to be doing. </I>
@@ -166,13 +166,13 @@ I need better staff.
 "Nicolai likes to blame it on big children, my mistake."
 
 <I>Although if he did he'd finally be blaming himself.</I>
-
+ ~MCS("IconGrey")
 {MC("Katya_So_Cool")}
 {Name("Katya")}
 {Icon("transparent")}
  
 "Yeah! Don't you forget it!"
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 {Icon("EmilNeutral")}
 
@@ -181,13 +181,13 @@ I need better staff.
 "Now, another matter has been brought to my attention."
 
 <I>I take the newspaper and slam it down on Nicolai's desk to get his attention. </I>
-
+ ~MCS("IconGrey")
 {MC("Nicolai_Shocked")}
 {Name("Nicolai")}
 {Icon("transparent")}
 
 "Jesus Christ!"
-
+ ~MCS("IconGrey")
 {Name("Emil")}
 
 <I>He looks at me confused, almost a little rattled as I begin to explain my predicament.</I>
