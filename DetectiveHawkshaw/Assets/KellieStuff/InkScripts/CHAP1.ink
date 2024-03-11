@@ -1,6 +1,8 @@
 EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 EXTERNAL MC(charName)
+EXTERNAL MCS(GreyName)
+EXTERNAL Char22(GreyName)
 EXTERNAL Back(charName)
 EXTERNAL Char2(charName)
 EXTERNAL PlayAnimation(PlayAnimation)
@@ -26,6 +28,7 @@ VAR ShowJournal = 0
 {Icon("transparent")}
 {Name("Nicolai")}"Awful dusty in here, quite dark too."
 
+ ~MCS("IconGrey")
 {Icon("EmilNeutral")}
 {Name("Emil")} "Certainly is... I doubt she comes in here often. Be on the look out for anything suspicious..." 
 "And a light switch too. I can't see anything in here."
@@ -36,6 +39,7 @@ VAR ShowJournal = 0
 {Name("Charlotte")} "It hasn't seen much use since Granddad passed..."
 "Most things Gran has to sell stay on the shop floor these days."
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")} <I> There's a more solemn air now, so we give Charlotte some room to look around. 
 <I> They'll know what's out of place and what isn't. </I> 
@@ -43,6 +47,7 @@ VAR ShowJournal = 0
  {Back("storageRoom")}
  <I> She runs her hand over the wall and with a click, the room lights up again. </I>
  
+ ~MCS("IconGrey")
 {MC("Nicolai_Shocked")}
 {Char2("Charlotte")}
 {Icon("transparent")}
@@ -50,6 +55,7 @@ VAR ShowJournal = 0
  
  "Wait a moment... isn't that?!"
  
+ ~MCS("IconGrey")
 {Icon("EmilUpset")}
 {Name("Emil")}
 
@@ -58,13 +64,16 @@ VAR ShowJournal = 0
 
 "I take it you expected as much, Miss Constable?"
 
+
 {MC("Nicolai_Think")}
 {Char2("Charlotte")}
 {Icon("EmilNeutral")}
 {Name("Emil")}<I> She nods her head and turns to her grandmother, clearly not very impressed with this development.<I> 
 
+~Char22("Icon2Grey")
 {Name("Charlotte")} "I think I understand what happened now... But I believe you have some work to do first, Detective."
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")}"Right you are. Mrs. Weaver, a word, if you would be so kind."
 
@@ -90,11 +99,13 @@ VAR ShowJournal = 0
 * {one && two} [ Why did you go so far Gran? ] -> six
 
 == one ==
+~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"The window? Oh, what was it again... my memory is far from what it used to be, Dear."
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")}<I> Mrs. Weaver shuffles uncomfortably, clearly trying to maintain her facade. </I>
 
@@ -166,11 +177,13 @@ VAR ShowJournal = 0
 -> DONE
 
 == two ==
+~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"FAKE!?"
 
+~Char22("Icon2Grey")
 {Icon("EmilUpset")}
 {Name("Emil")}<I>Her demeanour shifts drastically at my accusation. Perhaps that wasn't the best choice of wording. </I>
 
@@ -178,11 +191,13 @@ VAR ShowJournal = 0
 
 <I>She becomes increasingly defensive as I try to descalate the situation.</I>
 
+~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"I assure you, Detective, nothing you find in "Magpie's Nest" is FAKE!"
 "We pride ourselves on <B>Authenticity</B> and <B>Quality</B>!
 
+~Char22("Icon2Grey")
 {Icon("EmilAngry")}
 {Name("Emil")}<I>Oh Jesus Christ...</I> -> ShowFake
 
@@ -249,51 +264,59 @@ VAR ShowJournal = 0
 -> END
 
 == five ==
+~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"What's this evidence of, Detective?"
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")}"Well, according to your own granddaughter, and a copy we were able to find online...
 "This isn't the original!"
 "It's nothing but a pale imitation!"
 
 <I> Surely she would back down and confess by now.</I>
-
+~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"Lottie?! That little...!"
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")}<I> She appears to lose her composure for a moment. Now is my chance!</I>
 
 -> Questions
 == three ==
 
+~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"Oh yes, of course <B>that</B> window was broken. Oh, how could I forget?"
 "It was wh-when that devilish invader tried to rob me!"
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")} <I> She seems to be less sure of her story as she continues, looking all around the room as she speaks.
 <I> Her once friendly smile slowly begins to fall.</I>
 
 "As you've claimed, and you say you believe they broke <B>in,</B> correct?"
 
+~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"Yes, from outside! They threw in a rock or something and damaged my property! Oh, the nerve!"
 "Some people have no respect for others! Unlike a gentleman like yourself of course, Dectective."
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")}"Well as you can see, Mrs. Weaver, there is evidence that the window was broken from the inside."
 "This would be of little benefit to a potential 'Invader', wouldn't you say?"
 
 <I> She slowly nods her head apologetically and waves a hand. </I>
 
+~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
@@ -301,6 +324,7 @@ VAR ShowJournal = 0
 "Goodness... I hadn't considered such a thing..."
 "They're all good people, my regulars..."   
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")}"You also claimed that your 'pocket watch display' was damaged?"
 
@@ -363,20 +387,24 @@ VAR ShowJournal = 0
 -> DONE
 
 == four ==
+~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"Oh yes, of course I had to clean that up, Dear!"
 "It's a hazard! I could be in big trouble if someone got hurt!"
 
+~Char22("Icon2Grey")
 {Icon("EmilAngry")}
 {Name("Emil")}"You...tampered with the crime scene? Mrs. Weaver, that's quite serious!"
 "It also greatly affects the validity of your claim!"
 
+~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"Oh dear... I'm very sorry, Detective... I had no idea...!"
 
+~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")}
 <I> Mrs. Weaver doesn't appear quite happy with this revelation. </I>
@@ -386,15 +414,20 @@ VAR ShowJournal = 0
 {Icon("EmilNeutral")}
 {Name("Emil")} <I> Before I could ask another question, a voice pipes up from behind and I'm pushed aside. </I>
 
+ ~MCS("IconGrey")
 {MC("Charlotte")}
 {Name("Lottie")}"What on earth were you thinking with all of this?" 
 "I should've known you were up to no good when you didn't push for me to help!"
 
+~Char22("Icon2Grey")
+ ~MCS("IconGrey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"W-What are you suggesting?!"
+{Name("Gran")}"W-What are you suggesting?!"
 
+~Char22("Icon2Grey")
+ ~MCS("IconGrey")
 {Icon("EmilNeutral")}
 {Name("Emil")}<I>Charlotte snatches my journal from me.
 <I>I'm left flabbergasted, but I give her the floor.</I>
@@ -460,18 +493,22 @@ VAR ShowJournal = 0
 
 == seven == 
 
+~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Oh, what is this even about? Let the man do his job, Lot-"
+{Name("Gran")}"Oh, what is this even about? Let the man do his job, Lot-"
 
+~Char22("Icon2Grey")
 {Icon("Charlotte")}
 {Name("Lottie")}"You claimed that the painting that used to be on display here was taken, correct?"
 "Stolen from you- the entire reason you dragged these men here?"
 
+~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"...Yes, that sounds about right."
+{Name("Gran")}"...Yes, that sounds about right."
 
+~Char22("Icon2Grey")
 {Icon("Charlotte")}
 {Name("Lottie")} "So you reported something missing, despite the fact you knew all too well where it was?"
 "But once you realised they were the real deal, you panicked."

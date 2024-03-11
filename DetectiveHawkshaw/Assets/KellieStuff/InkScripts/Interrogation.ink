@@ -85,7 +85,7 @@ VAR ShowJournal = 0
 
 * {not six} [ What day is it today? ] -> six
 
-* {not twenty && five && six} [ Move on ] -> Choose
+* {twenty && five && six} [ Move on ] -> Choose
 
 == four == 
  

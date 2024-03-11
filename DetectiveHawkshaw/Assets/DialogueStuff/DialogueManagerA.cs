@@ -31,10 +31,11 @@ public class DialogueManagerA : MonoBehaviour
     [Header("Icons")]
     public Image characterIcon;
     public Image Icon;
+    public Image Char2;
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
-    public Image Char2;
+   
 
     public GameObject fmod;
     
@@ -88,6 +89,9 @@ public class DialogueManagerA : MonoBehaviour
         _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
         _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
         _StoryScript.BindExternalFunction("Char2", (string charName) => Char(charName)); 
+        
+        _StoryScript.BindExternalFunction("MCS", (string GreyName) => IconGrey(GreyName));
+        _StoryScript.BindExternalFunction("Char22", (string GreyName) => Icon2Grey(GreyName));
         
         _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
         _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);}); 
@@ -337,6 +341,29 @@ public class DialogueManagerA : MonoBehaviour
     public void FModShenanigans(string name)
     {
         fmod.SetActive(true);
+    }
+    
+    public void IconGrey(string name)
+    {
+        if (Icon.color == Color.white)
+        {
+            Icon.color = Color.grey;
+        }
+        else
+        {
+            Icon.color = Color.white;
+        }
+    }   
+    public void Icon2Grey(string name)
+    {
+        if (Char2.color == Color.white)
+        {
+            Char2.color = Color.grey;
+        }
+        else
+        {
+            Char2.color = Color.white;
+        }
     }
     
     public void Char(string name)
