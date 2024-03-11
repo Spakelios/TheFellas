@@ -96,7 +96,7 @@ VAR ShowJournal = 0
 
 * {not two} {one} [ Care to explain the fake painting you're selling? ] -> two
 
-* {one && two} [ Why did you go so far Gran? ] -> six
+* {one && two} [ Why did you go so far? ] -> six
 
 == one ==
 ~Char22("Icon2Grey")
@@ -311,7 +311,9 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
-{Name("Emil")}"Well as you can see, Mrs. Weaver, there is evidence that the window was broken from the inside."
+{Name("Emil")}"Well as you can see, Mrs. Weaver, there is evidence that the window was broken from the inside. "
+"As you can see here, most of the larger shards of glass ended up inside the building."
+"While several more smaller fragments were found outside."
 "This would be of little benefit to a potential 'Invader', wouldn't you say?"
 
 <I> She slowly nods her head apologetically and waves a hand. </I>
@@ -403,6 +405,17 @@ VAR ShowJournal = 0
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"Oh dear... I'm very sorry, Detective... I had no idea...!"
+
+~Char22("Icon2Grey")
+{Icon("EmilNeutral")}
+{Name("Emil")} "Not to mention if hazards were your concern."
+"What about the glass shards on the floor?"
+
+~Char22("Icon2Grey")
+{Char2("Margot")}
+{Icon("transparent")}
+{Name("Margot")} "Oh well...at my age I shouldn't be messing with glass..."
+"Yes- of course, it wouldn't be safe at all!"
 
 ~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
@@ -571,12 +584,128 @@ VAR ShowJournal = 0
 -> DONE
 
 == eight ==
-+ [ Summary for me when i get back to it! ] 
-(margot breaks down and explains she's been lonely and misses her family.)
-(Charlotte also does and they reconcile)
-(She explains the forgery is due to not being able to fill her husbands role)
-(As he repaired antiques and jewlwerly while she sold them and managed money)
-(They were a team and shes now stuck playing her team sport solo :( )
-(They make peace and Lottie apologises for being rude to Hawkshaw and listens to his side)
-(for his help she promises to assist him however she can going forward)
+~Char22("Icon2Grey")
+{Icon("transparent")}
+{Name("Gran")}"...Listen Lottie I..."
+"I just wanted you to come home..!"
+"It's hard to do this alone you know? I'm old now"
+"...Without Hugo, I can only do so much."
+
+{Icon("transparent")}
+{Name("")} <I> The pair stare eachother down until Margot can no longer maintain it.
+<I> It's uncomfortable, the room seems to grow eerily quiet. 
+<I> Akin to watching the timer tick down on an explosive.
+<I> However, there is no explosion. </I>
+
+~Char22("Icon2Grey")
+{Icon("Charlotte")}
+{Name("Lottie")} "This is not the way you should've done it."
+"Why didn't you just talk to me?"
+"I'd of made time if I knew you were struggling this much!"
+
+{Icon("transparent")}
+{Name("")} <I> The older woman shakes her head. </I>
+
+~Char22("Icon2Grey")
+{Icon("transparent")}
+{Name("Gran")} "You were busy Lottie, your life is just beginning."
+"I understand that more now, seeing you taking yourself so seriously."
+"I hated you joining that infernal police department!"
+"I wanted you to myself just one more time..."
+"Just like when you were little."
+"...But seeing you in your uniform has simply reminded me you aren't little anymore"
+
+{Icon("transparent")}
+{Name("")} <I> The older woman smiles, taking her grandaughter by the hand. </I>
+
+~Char22("Icon2Grey")
+{Icon("Charlotte")}
+{Name("Lottie")} "...I had a hard time being here, after he passed."
+"There were reminders everywhere, too many, I ran away from it."
+"I never even considered how much that would've hurt you."
+"It ends for us when we leave."
+"...but for you, it doesn't go away."
+"...we..I left you alone in that."
+"...I'm so sorry."
+
+~Char22("Icon2Grey")
+{Icon("transparent")}
+{Name("Gran")}"Oh stop that now, I knew the day I married him that I'd have to say goodbye."
+"I've done it many more times than this, Lottie."
+"It's not your job to protect me from that."
+"All I ask for is your time, just remember me now and then."
+"I acted foolishly, because I couldn't bare the thought of losing you too."
+"...My age must be getting to me if I'm acting like such an idiot."
+"I'm sorry for causing everyone so much trouble."
+
+~Char22("Icon2Grey")
+{Icon("transparent")}
+{Icon("EmilUpset")}
+{Name("Emil")} <I> Lottie finally gives me back my journal and we turn to leave. 
+<I> Our investogation had concluded. I was time to go home. </I> 
+
+~Char22("Icon2Grey")
+{MC("transparent")}
+{Char2("Charlotte")}
+{Icon("transparent")}
+{Name("Lottie")} "Wait! Detective Hawkshaw!"
+"Just a moment! Please!"
+
+~Char22("Icon2Grey")
+{Icon("transparent")}
+{Icon("EmilUpset")}
+{Name("Emil")} <I> I turn around as Katya and Nicolai begin to walk towards the car.
+<I> I am surprised to see the young constable no longer looks at me with disgust.
+<I> I nod my head. </I> 
+
+~Char22("Icon2Grey")
+{MC("transparent")}
+{Char2("Charlotte")}
+{Icon("EmilHappy")}
+{Name("Emil")} "...Is there anything else we may help you with?"
+
+<I> They shake their head. </I>
+
+~Char22("Icon2Grey")
+{MC("transparent")}
+{Char2("Charlotte")}
+{Icon("transparent")}
+{Name("Charlotte")} "...Gran isn't the only one I owe an apology"
+"I'm sorry for being so disrespectful."
+"I put too much stock in rumours and gossip I just..."
+
+~Char22("Icon2Grey")
+{MC("transparent")}
+{Char2("Charlotte")}
+{Icon("EmilNeutral")}
+{Name("Emil")} <I> I shake my head. I hadn't expected such a change of heart.
+<I> Admittedly, it's a nice change of pace. </I>
+
+"Don't worry, I've no doubt had it been me in your position, I'd of done the same."
+"I know what they say about me."
+"...but I assure you, my self and Nicolai only want to help."
+
+<I> She begins to ask more prodding questions, so I give her the long and short of it.
+<I> I tell her about what really happened. 
+<I> Her expression becomes solemn as they nod their head. </I>
+
+~Char22("Icon2Grey")
+{MC("transparent")}
+{Char2("Charlotte")}
+{Icon("transparent")}
+{Name("Charlotte")} "...I see, that must've been awful."
+"To think the chief could be so... cruel."
+"Best of luck, Detective Hawkshaw."
+"If there's anything I can do to help, please contact me through Gran."
+"Best of luck, Detective Hawkshaw."
+"...and thank you for everything."
+
+
+~Char22("Icon2Grey")
+{MC("transparent")}
+{Char2("Charlotte")}
+{Icon("EmilHappy")}
+{Name("Emil")} <I> We shake hands and I take my leave, as another case is closed. </I>
+
+
 _-> END
