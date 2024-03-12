@@ -17,5 +17,5 @@ MonoBehaviour:
     wall seems darker than the rest.
   evidencePic: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   evidencePic2: {fileID: 0}
-  evidencePolaroid: {fileID: 21300000, guid: f4682b3879f6a31479b36df45f72570c, type: 3}
+  evidencePolaroid: {fileID: 21300000, guid: 79dea571d16678145a9cad57eb7b7bdf, type: 3}
   evidenceIDNumber: 0

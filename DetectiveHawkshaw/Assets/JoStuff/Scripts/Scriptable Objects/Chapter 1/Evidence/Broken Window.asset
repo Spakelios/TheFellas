@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Broken Window
   m_EditorClassIdentifier: 
   evidenceName: Broken Window
-  evidenceDescription: A smashed in window that the alleged perpetrator used to get
-    in. There are minimal glass shards indoors.
+  evidenceDescription: A broken window the perpetrator used to get in. Most of the
+    bigger pieces ended up inside.
   evidencePic: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   evidencePic2: {fileID: 0}
-  evidencePolaroid: {fileID: 21300000, guid: f4682b3879f6a31479b36df45f72570c, type: 3}
+  evidencePolaroid: {fileID: 21300000, guid: 294932d41f259b54c9489f320d6b21ea, type: 3}
   evidenceIDNumber: 0
