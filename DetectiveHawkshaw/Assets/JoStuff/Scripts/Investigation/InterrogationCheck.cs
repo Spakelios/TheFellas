@@ -20,7 +20,7 @@ public class InterrogationCheck : MonoBehaviour
     private void Start()
     {
         //music = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
-        initialiser = GameObject.FindObjectOfType<InitialisationScript>();
+        initialiser = FindObjectOfType<InitialisationScript>();
         evidenceCount = initialiser.caseData.caseEvidence.Count;
         dialogueManager = FindObjectOfType<DialogueManager>();
         

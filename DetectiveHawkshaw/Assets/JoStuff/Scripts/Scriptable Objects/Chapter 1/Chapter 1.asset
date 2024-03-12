@@ -17,6 +17,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8e9599e5e2e545f478672fa525b8ac64, type: 2}
   - {fileID: 11400000, guid: 520bad4f5686d3c4e97f8fa1e7ceba73, type: 2}
   - {fileID: 11400000, guid: 28e16c7104f1c084fb58595437cb098b, type: 2}
-  - {fileID: 11400000, guid: 7b34661a2c5b88b4dbe70db18a2cbe41, type: 2}
-  - {fileID: 11400000, guid: ffb96c7b9e465e04299a2e0eea957bac, type: 2}
-  interrogationSceneName: 
+  interrogationSceneName: InterrogationScene 1

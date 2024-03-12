@@ -15,6 +15,6 @@ MonoBehaviour:
   evidenceName: Calendar
   evidenceDescription: A calendar. June 17th is circled with red ink.
   evidencePic: {fileID: 21300000, guid: dc9698c886cf80c4eb2de6f46bdbb85d, type: 3}
-  evidencePic2: {fileID: 21300000, guid: a538870dc61d11342ad948091b8ae455, type: 3}
+  evidencePic2: {fileID: 21300000, guid: 8f19316004f67444992c53aaea310333, type: 3}
   evidencePolaroid: {fileID: 21300000, guid: f537fcdbd016a2745ad1227a114aa841, type: 3}
   evidenceIDNumber: 3

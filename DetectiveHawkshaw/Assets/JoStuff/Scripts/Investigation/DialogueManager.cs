@@ -34,6 +34,8 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject testObject;
 
+    public bool interroCh1;
+
 
     // Use this for initialization
     private void Start()
@@ -49,7 +51,7 @@ public class DialogueManager : MonoBehaviour
         
         //evidence pop-up stuff
         evidenceWindow = GameObject.FindWithTag("EvidencePortrait");
-        evidenceSprite = evidenceWindow.transform.Find("Evidence").GetComponent<Image>();
+        evidenceSprite = evidenceWindow.GetComponent<Image>();
         evidenceWindow.SetActive(false);
         
         //interrogation button stuff
@@ -105,7 +107,7 @@ public class DialogueManager : MonoBehaviour
         if (evidenceDialogue)
         {
             evidenceWindow.SetActive(true);
-            evidenceSprite.sprite = evidenceStats.evidencePic;
+            evidenceSprite.sprite = evidenceStats.evidencePolaroid;
         }
 
     }
@@ -121,7 +123,7 @@ public class DialogueManager : MonoBehaviour
         if (sandwichDialogue && sentences.Count == 3)
         {
             //sandwichWindow.SetActive(true);
-            evidenceSprite.sprite = evidenceStats.evidencePic;
+            evidenceSprite.sprite = evidenceStats.evidencePolaroid;
             evidenceWindow.SetActive(true);
         }
 
@@ -170,7 +172,7 @@ public class DialogueManager : MonoBehaviour
             evidenceWindow.SetActive(false);
             evidenceDialogue = false;
 
-            if (toInterrogation.GetComponent<Button>().interactable == false)
+            if (toInterrogation.GetComponent<Button>().interactable == false && interroCh1 == false)
             {
                 EvidenceCheck();
             }
@@ -182,6 +184,12 @@ public class DialogueManager : MonoBehaviour
             g.puzzleScreen.SetActive(true);
             otherPuzzleDialogue = false;
         }
+        
+        else if (interroCh1)
+        {
+            var d = FindObjectOfType<ToInterrogationChOne>();
+            d.ToInterrogation();
+        }
 
     }
 
@@ -191,7 +199,6 @@ public class DialogueManager : MonoBehaviour
         if (allEvidence)
         {
             toInterrogation.GetComponent<Button>().interactable = true;
-            toInterrogation.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>().text = "Interrogation";
         }
 
         else
