@@ -92,6 +92,8 @@ public class DialogueManagerA : MonoBehaviour
         
         _StoryScript.BindExternalFunction("MCS", (string GreyName) => IconGrey(GreyName));
         _StoryScript.BindExternalFunction("Char22", (string GreyName) => Icon2Grey(GreyName));
+        _StoryScript.BindExternalFunction("Greys", (string grey) => Grey(grey));
+        _StoryScript.BindExternalFunction("Whites", (string white) => White(white));
         
         _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
         _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);}); 
@@ -190,14 +192,6 @@ public class DialogueManagerA : MonoBehaviour
     }
     public void DisplayChoices()
     {
-        //if (choiceHolder.GetComponentsInChildren<Button>().Length > 0)
-        //{
-           // return;
-        //}
-        
-        
-       
-        
         for (int i = 0; i < _StoryScript.currentChoices.Count; i++)
         {
             var button = choiceButtons[i];
@@ -366,6 +360,15 @@ public class DialogueManagerA : MonoBehaviour
         }
     }
     
+    public void Grey(string name)
+    {
+     Icon.color = Color.gray;
+    }
+    
+    public void White(string name)
+    {
+        Icon.color = Color.white;
+    }
     public void Char(string name)
     {
         var char2 = Resources.Load<Sprite>("characterIcons/" + name);

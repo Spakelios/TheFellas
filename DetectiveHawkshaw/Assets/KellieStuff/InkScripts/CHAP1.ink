@@ -7,6 +7,7 @@ EXTERNAL Back(charName)
 EXTERNAL Char2(charName)
 EXTERNAL PlayAnimation(PlayAnimation)
 EXTERNAL PlayAnimation2(PlayAnimation2)
+EXTERNAL Evi(charName)
 
 VAR canShowEvidence = false
 VAR someEvidence = 0
@@ -80,7 +81,7 @@ VAR ShowJournal = 0
 ~PlayAnimation("Intro Animation") 
 ~PlayAnimation2("InvestgationText")
 
-{Back("Antique-placeholder")}
+{Back("FrontDesk")}
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("EmilNeutral")}
@@ -99,11 +100,13 @@ VAR ShowJournal = 0
 * {one && two} [ Why did you go so far? ] -> six
 
 == one ==
+
 ~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Margot")}"The window? Oh, what was it again... my memory is far from what it used to be, Dear."
+
 
 ~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
@@ -287,7 +290,7 @@ VAR ShowJournal = 0
 
 -> Questions
 == three ==
-
+{Evi("BrokenWindow")}
 ~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
@@ -295,6 +298,7 @@ VAR ShowJournal = 0
 {Name("Margot")}"Oh yes, of course! <B>That</B> window was broken! Oh, how could I forget?"
 "It was wh-when that devilish invader tried to rob me!"
 
+{Evi("Transparent")}
 ~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
 {Name("Emil")} <I> She seems to be less sure of her story as she continues, looking all around the room as she speaks.
@@ -389,6 +393,7 @@ VAR ShowJournal = 0
 -> DONE
 
 == four ==
+{Evi("PocketWatch")}
 ~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Margot")}
@@ -396,6 +401,7 @@ VAR ShowJournal = 0
 {Name("Margot")}"Oh yes, of course I had to clean that up, Dear!"
 "It's a hazard! I could be in big trouble if someone got hurt!"
 
+{Evi("transparent")}
 ~Char22("Icon2Grey")
 {Icon("EmilAngry")}
 {Name("Emil")}"You...tampered with the crime scene? Mrs. Weaver, that's quite serious!"
@@ -447,7 +453,8 @@ VAR ShowJournal = 0
 <I>I'm left flabbergasted, but I give her the floor.</I>
 
 {Icon("Charlotte")}
-{Name("Lottie")}"You won't be able to talk your way out of this!" -> ShowMissing
+{Name("Lottie")}"You won't be able to talk your way out of this!" 
+-> ShowMissing
 
 == ShowMissing ==
 #Evidence: 0
@@ -506,12 +513,13 @@ VAR ShowJournal = 0
 -> DONE
 
 == seven == 
-
+{Evi("MissingPainting")}
 ~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
 {Name("Gran")}"Oh, what is this even about? Let the man do his job, Lot-"
 
+{Evi("transparent")}
 ~Char22("Icon2Grey")
 {Icon("Charlotte")}
 {Name("Lottie")}"You claimed that the painting that used to be on display here was taken, correct?"
@@ -526,7 +534,8 @@ VAR ShowJournal = 0
 {Icon("Charlotte")}
 {Name("Lottie")} "So you reported something missing, despite the fact you knew all too well where it was?"
 "But once you realised they were the real deal, you panicked."
-"And hid the truth from them!" -> ShowPainting
+"And hid the truth from them!" 
+-> ShowPainting
 
 ==ShowPainting == 
 #Evidence: 0
@@ -585,12 +594,15 @@ VAR ShowJournal = 0
 -> DONE
 
 == eight ==
+{Evi("RealPainting")}
 ~Char22("Icon2Grey")
 {Icon("transparent")}
 {Name("Gran")}"...Listen... Lottie... I..."
+{Evi("transparent")}
 "I just wanted you to come home..!"
 "It's hard to do this alone you know? I'm old now..."
 "...Without Hugo, I can only do so much..."
+
 
 {Icon("transparent")}
 {Name("")} <I> The pair stare each other down until Margot can no longer maintain it.
@@ -604,6 +616,7 @@ VAR ShowJournal = 0
 "Why didn't you just talk to me..?"
 "I'd of made time if I knew you were struggling this much!"
 
+ 
 {Icon("transparent")}
 {Name("")} <I> The older woman shakes her head. </I>
 
@@ -615,6 +628,7 @@ VAR ShowJournal = 0
 "I wanted you to myself just one more time..."
 "Just like when you were little..."
 "...But seeing you in your uniform has reminded me you aren't little anymore."
+
 
 {Icon("transparent")}
 {Name("")} <I> The older woman smiles, taking her grandaughter by the hand. </I>
@@ -639,12 +653,14 @@ VAR ShowJournal = 0
 "...My age must be getting to me if I'm acting like such an idiot."
 "I'm sorry for causing everyone so much trouble."
 
+{Back("FrontRoom")}
 ~Char22("Icon2Grey")
 {Icon("transparent")}
 {Icon("EmilUpset")}
 {Name("Emil")} <I> Lottie finally gives me back my journal and we turn to leave. 
 <I> Our investigation had concluded. It was time to go home. </I> 
 
+{Back("FrontRoom")}
 ~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Charlotte")}
@@ -659,7 +675,7 @@ VAR ShowJournal = 0
 <I> I am surprised to see the young constable no longer looks at me with disgust.
 <I> I nod my head. </I> 
 
-~Char22("Icon2Grey")
+
 {MC("transparent")}
 {Char2("Charlotte")}
 {Icon("EmilHappy")}
