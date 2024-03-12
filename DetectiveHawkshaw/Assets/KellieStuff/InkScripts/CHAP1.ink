@@ -194,7 +194,7 @@ VAR ShowJournal = 0
 ~Char22("Icon2Grey")
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"I assure you, Detective, nothing you find in "Magpie's Nest" is FAKE!"
+{Name("Margot")}"I assure you, Detective, nothing you find in 'Magpie's Nest' is FAKE!"
 "We pride ourselves on <B>Authenticity</B> and <B>Quality</B>!
 
 ~Char22("Icon2Grey")
@@ -292,7 +292,7 @@ VAR ShowJournal = 0
 {MC("transparent")}
 {Char2("Margot")}
 {Icon("transparent")}
-{Name("Margot")}"Oh yes, of course <B>that</B> window was broken. Oh, how could I forget?"
+{Name("Margot")}"Oh yes, of course! <B>That</B> window was broken! Oh, how could I forget?"
 "It was wh-when that devilish invader tried to rob me!"
 
 ~Char22("Icon2Grey")
@@ -311,10 +311,10 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
-{Name("Emil")}"Well as you can see, Mrs. Weaver, there is evidence that the window was broken from the inside. "
+{Name("Emil")}"Well, Mrs. Weaver, there is evidence that the window was broken from the inside. "
 "As you can see here, most of the larger shards of glass ended up inside the building."
 "While several more smaller fragments were found outside."
-"This would be of little benefit to a potential 'Invader', wouldn't you say?"
+"This would be of little benefit to a potential 'invader', wouldn't you say?"
 
 <I> She slowly nods her head apologetically and waves a hand. </I>
 
@@ -408,7 +408,7 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {Icon("EmilNeutral")}
-{Name("Emil")} "Not to mention if hazards were your concern."
+{Name("Emil")} "Not to mention, if hazards were your concern..."
 "What about the glass shards on the floor?"
 
 ~Char22("Icon2Grey")
@@ -429,6 +429,7 @@ VAR ShowJournal = 0
 
  ~MCS("IconGrey")
 {MC("Charlotte")}
+{Icon("transparent")}
 {Name("Lottie")}"What on earth were you thinking with all of this?" 
 "I should've known you were up to no good when you didn't push for me to help!"
 
@@ -477,22 +478,22 @@ VAR ShowJournal = 0
 
     
     -2:
-   <I> Nope! Think!... </I>
+   <I> Nope! Think! </I>
     ...
     ->  ShowMissing
     
     -3:
-     <I>Here it is!. </I>
+     <I>Here it is! </I>
     ...
     -> seven
    
      -4:
-      <I>Of course not that, what was I thinking?. </I>
+      <I>Of course not that, what was I thinking? </I>
     ...
     -> ShowMissing
     
    -5:
-  <i> That won't help. </I>
+  <i> That won't help... </I>
     ...
     -> ShowMissing
     
@@ -555,7 +556,7 @@ VAR ShowJournal = 0
 
     
     -2:
-    Here it is!. </I>
+    Here it is! </I>
     ...
     -> eight
     
@@ -564,12 +565,12 @@ VAR ShowJournal = 0
    -> ShowPainting
    
      -4:
-      Of course not that, what was I thinking?. </I>
+      Of course not that, what was I thinking? </I>
     ...
     -> ShowPainting
     
    -5:
-  <i> That won't help. </I>
+  <i> That won't help... </I>
     ...
     -> ShowPainting
     
@@ -586,21 +587,21 @@ VAR ShowJournal = 0
 == eight ==
 ~Char22("Icon2Grey")
 {Icon("transparent")}
-{Name("Gran")}"...Listen Lottie I..."
+{Name("Gran")}"...Listen... Lottie... I..."
 "I just wanted you to come home..!"
-"It's hard to do this alone you know? I'm old now"
-"...Without Hugo, I can only do so much."
+"It's hard to do this alone you know? I'm old now..."
+"...Without Hugo, I can only do so much..."
 
 {Icon("transparent")}
-{Name("")} <I> The pair stare eachother down until Margot can no longer maintain it.
+{Name("")} <I> The pair stare each other down until Margot can no longer maintain it.
 <I> It's uncomfortable, the room seems to grow eerily quiet. 
-<I> Akin to watching the timer tick down on an explosive.
+<I> It's almost like watching the timer tick down on an explosive.
 <I> However, there is no explosion. </I>
 
 ~Char22("Icon2Grey")
 {Icon("Charlotte")}
-{Name("Lottie")} "This is not the way you should've done it."
-"Why didn't you just talk to me?"
+{Name("Lottie")} "This is not the way you should've done it!"
+"Why didn't you just talk to me..?"
 "I'd of made time if I knew you were struggling this much!"
 
 {Icon("transparent")}
@@ -608,12 +609,12 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {Icon("transparent")}
-{Name("Gran")} "You were busy Lottie, your life is just beginning."
-"I understand that more now, seeing you taking yourself so seriously."
-"I hated you joining that infernal police department!"
+{Name("Gran")} "You were busy, Lottie, your life is just beginning."
+"I understand that more now, seeing you take yourself so seriously."
+"I hated when you joined that infernal police department!"
 "I wanted you to myself just one more time..."
-"Just like when you were little."
-"...But seeing you in your uniform has simply reminded me you aren't little anymore"
+"Just like when you were little..."
+"...But seeing you in your uniform has reminded me you aren't little anymore."
 
 {Icon("transparent")}
 {Name("")} <I> The older woman smiles, taking her grandaughter by the hand. </I>
@@ -621,12 +622,12 @@ VAR ShowJournal = 0
 ~Char22("Icon2Grey")
 {Icon("Charlotte")}
 {Name("Lottie")} "...I had a hard time being here, after he passed."
-"There were reminders everywhere, too many, I ran away from it."
+"There were reminders everywhere, too many... I ran away from it all."
 "I never even considered how much that would've hurt you."
 "It ends for us when we leave."
-"...but for you, it doesn't go away."
-"...we..I left you alone in that."
-"...I'm so sorry."
+"But for you... it doesn't go away."
+"We... no, I... left you alone in that."
+"I'm so sorry..."
 
 ~Char22("Icon2Grey")
 {Icon("transparent")}
@@ -642,7 +643,7 @@ VAR ShowJournal = 0
 {Icon("transparent")}
 {Icon("EmilUpset")}
 {Name("Emil")} <I> Lottie finally gives me back my journal and we turn to leave. 
-<I> Our investogation had concluded. I was time to go home. </I> 
+<I> Our investigation had concluded. It was time to go home. </I> 
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
@@ -670,9 +671,9 @@ VAR ShowJournal = 0
 {MC("transparent")}
 {Char2("Charlotte")}
 {Icon("transparent")}
-{Name("Charlotte")} "...Gran isn't the only one I owe an apology"
+{Name("Charlotte")} "...Gran isn't the only one I owe an apology to."
 "I'm sorry for being so disrespectful."
-"I put too much stock in rumours and gossip I just..."
+"I put too much stock in rumours and gossip and I just..."
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
@@ -682,8 +683,8 @@ VAR ShowJournal = 0
 <I> Admittedly, it's a nice change of pace. </I>
 
 "Don't worry, I've no doubt had it been me in your position, I'd of done the same."
-"I know what they say about me."
-"...but I assure you, my self and Nicolai only want to help."
+"I know what they say about me..."
+"But I assure you, myself and Nicolai only want to help."
 
 <I> She begins to ask more prodding questions, so I give her the long and short of it.
 <I> I tell her about what really happened. 
@@ -693,19 +694,18 @@ VAR ShowJournal = 0
 {MC("transparent")}
 {Char2("Charlotte")}
 {Icon("transparent")}
-{Name("Charlotte")} "...I see, that must've been awful."
+{Name("Charlotte")} "I see... that must've been awful."
 "To think the chief could be so... cruel."
-"Best of luck, Detective Hawkshaw."
 "If there's anything I can do to help, please contact me through Gran."
 "Best of luck, Detective Hawkshaw."
-"...and thank you for everything."
+"...And thank you for everything."
 
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
 {Char2("Charlotte")}
 {Icon("EmilHappy")}
-{Name("Emil")} <I> We shake hands and I take my leave, as another case is closed. </I>
+{Name("Emil")} <I> We shake hands and I take my leave as another case is closed. </I>
 
 
 _-> END
