@@ -31,8 +31,8 @@ EXTERNAL Char32(GreyName)
  ~MCS("IconGrey")
 {Icon("EmilNeutral")}
 {Name("Emil")}<I> I stand by the door of the office. Curiously enough, I can hear what sounds like Nicolai stuggling to end a conversation. 
-<I> Had someone rang? a rare occurance indeed. 
-<I> I slowly push the door open and peak inside to be met by a weary looking face.</I> 
+<I> Had someone rang? A rare occurence, indeed. 
+<I> I slowly push the door open and peek inside. I'm met with a weary looking face.</I> 
 
  ~MCS("IconGrey")
 {Back("Office")}
