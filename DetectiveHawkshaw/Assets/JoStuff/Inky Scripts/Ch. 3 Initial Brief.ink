@@ -16,6 +16,7 @@ EXTERNAL MCS(GreyName) //grey out character 1
 EXTERNAL Char22(GreyName) //grey out character 2
 EXTERNAL Char32(GreyName) //grey out character 3
 
+//---Before going to H & C---
 {Back("Hawkshaw_Kitchen")}
 {Icon("EmilNeutral")}
 {Name("Emil")}
@@ -55,7 +56,7 @@ EXTERNAL Char32(GreyName) //grey out character 3
  {Name("Nicolai")}
 {Icon("transparent")}
  ~MCS("IconGrey")
- "And maybe I will! It could do you and Katya some good to have some variety every once in a while."
+ "And maybe I will! It could do you and Katya some good to have some variety every once in a while!"
  {MC("Nicolai_Think")}
  "Speaking of which, where is she? You haven't dropped her off to school already, have you?"
  
@@ -87,26 +88,106 @@ EXTERNAL Char32(GreyName) //grey out character 3
  
  "Right you are. Now come on, Mr. Kozlov, another day of work is ahead of us!"
  
+ //have Nicolai slide off the screen here instead of just having MC be transparent
  {MC("transparent")}
  <I> With that, we both head out the door and make our way to the office.<I>
  
- {Name("")}
+ {Name("Emil")}
  {Back("Black_BG")}
  {Icon("transparent")}
  <I>Neither of us could've imagined what'd be waiting for us there.<I>
- (I'll continue this tomorrow lemme cook.)
  
+ //---At H & C---
+ {Back("Lobby")}
+ {Name("Emil")}
+ {Icon("EmilUpset")}
+ "..."
  
+ //Nicolai slides in here
+ {Name("Nicolai")}
+ {MC("Nicolai_Basic")}
+ {Icon("transparent")}
+ ~MCS("IconGrey")
+ "What's got you all quiet all of a-"
+ {MC("Nicolai_Shocked")}
+ "Oh."
  
+ {Name("Emil")}
+ {Icon("EmilUpset")}
+ ~MCS("IconGrey")
+ <I> We both stood in silence at the scene before us. <I>
+ {MC("Nicolai_Think")}
+ <I> Footprints. <I>
+ <I> There are footprints on the floor. <I>
+ {MC("Nicolai_Annoyed")}
+ <I> Those weren't here when we left yesterday, I'm sure of it. <I>
+ <I> What happened? Why are they here? Did someone break in? Who? Why? <I>
  
+ {Name("Nicolai")}
+ {Icon("transparent")}
+ ~MCS("IconGrey")
+ "I'll check the office. Stay here."
  
+ //Nicolai slides off here
+ {Name("Emil")}
+ {Icon("EmilUpset")}
+ {MC("transparent")}
+ ~MCS("IconGrey")
+ <I> Before I could say anything, Nicolai barged through the door in a hurry.<I>
+ <I> I haven't seen him look this serious in a while now. <I>
+ "..."
  
+ //Nicolai slides back in here
+ {MC("Nicolai_Annoyed")}
+ <I> It didn't take long for Nicolai to come back. <I>
+ <I> He had a sombre look about him. <I>
  
+ {Name("Nicolai")}
+ {Icon("transparent")}
+ ~MCS("IconGrey")
+ "..."
  
+ {Name("Emil")}
+ {Icon("EmilUpset")}
+ ~MCS("IconGrey")
+ "...Is it bad?"
  
+  {Name("Nicolai")}
+ {Icon("transparent")}
+ ~MCS("IconGrey")
+ "Mhm... it's a mess in there..."
  
+  {Name("Emil")}
+ {Icon("EmilUpset")}
+ ~MCS("IconGrey")
+ "...No time to waste then."
  
-
-
+ {Name("Nicolai")}
+ {MC("Nicolai_Shocked")}
+ {Icon("transparent")}
+ ~MCS("IconGrey")
+ "What?" 
+ "No, no, Emil, come on! Let me handle this one. You've gone through enough."
+ 
+  {Name("Emil")}
+ {Icon("EmilUpset")}
+ ~MCS("IconGrey")
+ <I> While I appreciate the sentiment, I shake my head. <I>
+ {Icon("EmilNeutral")}
+ "I'll be fine. I've gone through worse, after all."
+ "We've come too far to let this put us back, haven't we?"
+ "Now come on, we've got work to do."
+ 
+ {MC("Nicolai_Annoyed")}
+ <I> Although he doesn't seem entirely convinced, he sighs in defeat. <I>
+ 
+ {MC("Nicolai_Basic")}
+ <I> He looks at me with a half-hearted smile on his face. <I>
+ 
+   {Name("Nicolai")}
+ {Icon("transparent")}
+ ~MCS("IconGrey")
+ "As stubborn as usual, I see."
+ "Lead the way, Detective."
 
 -> END
