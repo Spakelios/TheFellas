@@ -43,7 +43,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     //public AudioSource evidenceSound;
 
     public Evidence evidenceStats;
-    public TextAsset dialogueLines;
+    //public TextAsset dialogueLines;
     private void Start()
     {
         camera = Camera.main;

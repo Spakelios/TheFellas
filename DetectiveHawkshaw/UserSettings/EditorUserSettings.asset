@@ -6,21 +6,22 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 570807505c035e085a5b542144775d44434f492f7d717635752d1f60b3b46068
+      value: 5708065051540c0b5c0b0d7711735e44404e1e7c2f2c24677b711f67b5b23539
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 02525100570d5a5d0c08557a48710644171541282d7976687c2f4f32bbe46239
+      value: 5404520303505f0a0e58557413760744444f1c7e7c717f68787e4431e1e3643a
       flags: 0
     RecentlyUsedSceneGuid-2:
-      value: 5b5457025c025d095d5e5e7a47730a44154f4b7f797f77682e2a1965b0e6603a
+      value: 02525100570d5a5d0c08557a48710644171541282d7976687c2f4f32bbe46239
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 540050575357590b085c5877157b0744424f1e7e797b7e607a2c1862bab8306c
+      value: 000603505605500f0b5a0a7048210f444f151a7b742d20642e79446bb7e46d6c
       flags: 0
     RecentlyUsedSceneGuid-4:
-      value: 51090202510459025457592411220e44104e1e7b787b27357a2f1960e4b03769
+      value: 53570d5e5c0058080e5d0e2311755b444515197b7a2d7e667d2b4463bae4673d
       flags: 0
     RecentlyUsedSceneGuid-5:
+<<<<<<< Updated upstream
       value: 5a06065f57530c08585e0f7443210b44404f4e727f297060742b4e66e7b16369
       flags: 0
     RecentlyUsedSceneGuid-6:
@@ -28,6 +29,21 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-7:
       value: 5708065051540c0b5c0b0d7711735e44404e1e7c2f2c24677b711f67b5b23539
+=======
+      value: 5404035055545a0a5d5a5b7a427a074444151e79782d74612f701e63b2b86569
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5a06065f57530c08585e0f7443210b44404f4e727f297060742b4e66e7b16369
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 5004570457035a090e5a5f2149210a441215497a297a72657d2f4f67e0b0606b
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 50090557560d590f5e585a7747740c44434e4973747174697b2d4a32e1b56d61
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 5753500206570c585c575b2148265a444f4f402e7f7172622e7f4531b0e6643e
+>>>>>>> Stashed changes
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 5a0803070407505a595b0a7b477a0d44124f412f787b70682f794937b0b8316d

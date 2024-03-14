@@ -48,12 +48,24 @@ EditorBuildSettings:
     path: Assets/JoStuff/Scenes/Chapter 1/Painting Section.unity
     guid: 67041e55dbff7fa458ba304cb381627f
   - enabled: 1
-    path: Assets/KellieStuff/Scenes/Chap 3 Start.unity
-    guid: acef283faf988294ab9ba1081f2a9d6a
-  - enabled: 1
-    path: Assets/JoStuff/Scenes/Whiteboxes/Chapter 3/Initial Brief Ch. 3.unity
-    guid: 97292fe350c63b4468683a609b35e171
-  - enabled: 1
     path: Assets/KellieStuff/Scenes/InterrogationScene 1.unity
     guid: 854ce27982e6ffb408408a1f489d25db
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Chapter 3/Initial Brief Ch. 3.unity
+    guid: 97292fe350c63b4468683a609b35e171
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Chapter 3/Destroyed Lobby (Initial).unity
+    guid: 4bddcbec197c8ee4988d3942c68b2f0f
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Chapter 3/Destroyed Lobby.unity
+    guid: 3811380436657734591989296d7ac599
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Chapter 3/Destroyed Kitchen.unity
+    guid: 35cb2632c43c9b54db10e2450f24b043
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Chapter 3/Destroyed Office.unity
+    guid: 75760a31047829842bf34e21b9c00811
+  - enabled: 1
+    path: Assets/JoStuff/Scenes/Chapter 3/Destroyed Bathroom.unity
+    guid: 0f989513c3baa6d43ba16e860b908d3e
   m_configObjects: {}
