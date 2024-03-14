@@ -11826,7 +11826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 96, y: 46}
+  m_AnchoredPosition: {x: 101, y: 37}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1542328823
@@ -15757,6 +15757,18 @@ PrefabInstance:
     - target: {fileID: 5521499760816953189, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_Color.r
       value: 0.4433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273310105922706754, guid: f112359840062924a9ebd0e07a55271c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 84725b1a1ba2b76458c8158e8ff7ca98, type: 2}
+    - target: {fileID: 6273310105922706754, guid: f112359840062924a9ebd0e07a55271c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3881369041199764168, guid: 84725b1a1ba2b76458c8158e8ff7ca98, type: 2}
+    - target: {fileID: 6273310105922706754, guid: f112359840062924a9ebd0e07a55271c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6855598365433014304, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

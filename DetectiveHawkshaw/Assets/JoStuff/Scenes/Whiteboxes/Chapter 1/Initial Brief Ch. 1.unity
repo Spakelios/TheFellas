@@ -1149,6 +1149,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1934017596}
+    - target: {fileID: 6193915404292201166, guid: c2529069ce87e6948bd27c5446ec7ed4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 84725b1a1ba2b76458c8158e8ff7ca98, type: 2}
+    - target: {fileID: 6193915404292201166, guid: c2529069ce87e6948bd27c5446ec7ed4, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3881369041199764168, guid: 84725b1a1ba2b76458c8158e8ff7ca98, type: 2}
+    - target: {fileID: 6193915404292201166, guid: c2529069ce87e6948bd27c5446ec7ed4, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

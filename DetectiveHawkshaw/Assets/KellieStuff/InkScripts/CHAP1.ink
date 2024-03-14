@@ -83,7 +83,7 @@ VAR ShowJournal = 0
 
 {Back("FrontDesk")}
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Neutral")}
 {Icon("EmilNeutral")}
 {Name("Emil")}"Now, Mrs. Weaver. I would like to ask you some questions regarding this investigation."
 
@@ -103,7 +103,7 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Margot")}"The window? Oh, what was it again... my memory is far from what it used to be, Dear."
 
@@ -182,7 +182,7 @@ VAR ShowJournal = 0
 == two ==
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Fear")}
 {Icon("transparent")}
 {Name("Margot")}"FAKE!?"
 
@@ -195,7 +195,7 @@ VAR ShowJournal = 0
 <I>She becomes increasingly defensive as I try to descalate the situation.</I>
 
 ~Char22("Icon2Grey")
-{Char2("Margot")}
+{Char2("Margot_Fear")}
 {Icon("transparent")}
 {Name("Margot")}"I assure you, Detective, nothing you find in 'Magpie's Nest' is FAKE!"
 "We pride ourselves on <B>Authenticity</B> and <B>Quality</B>!
@@ -268,7 +268,7 @@ VAR ShowJournal = 0
 
 == five ==
 ~Char22("Icon2Grey")
-{Char2("Margot")}
+{Char2("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Margot")}"What's this evidence of, Detective?"
 
@@ -280,7 +280,7 @@ VAR ShowJournal = 0
 
 <I> Surely she would back down and confess by now.</I>
 ~Char22("Icon2Grey")
-{Char2("Margot")}
+{Char2("Margot_Sad")}
 {Icon("transparent")}
 {Name("Margot")}"Lottie?! That little...!"
 
@@ -293,7 +293,7 @@ VAR ShowJournal = 0
 {Evi("BrokenWindow")}
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Fear")}
 {Icon("transparent")}
 {Name("Margot")}"Oh yes, of course! <B>That</B> window was broken! Oh, how could I forget?"
 "It was wh-when that devilish invader tried to rob me!"
@@ -308,7 +308,7 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Sad")}
 {Icon("transparent")}
 {Name("Margot")}"Yes, from outside! They threw in a rock or something and damaged my property! Oh, the nerve!"
 "Some people have no respect for others! Unlike a gentleman like yourself of course, Dectective."
@@ -324,7 +324,7 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Sad")}
 {Icon("transparent")}
 {Name("Margot")}"Oh, I see... perhaps it was an unruly patreon? Or an accident?"
 "Goodness... I hadn't considered such a thing..."
@@ -396,7 +396,7 @@ VAR ShowJournal = 0
 {Evi("PocketWatch")}
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Happy")}
 {Icon("transparent")}
 {Name("Margot")}"Oh yes, of course I had to clean that up, Dear!"
 "It's a hazard! I could be in big trouble if someone got hurt!"
@@ -408,7 +408,7 @@ VAR ShowJournal = 0
 "It also greatly affects the validity of your claim!"
 
 ~Char22("Icon2Grey")
-{Char2("Margot")}
+{Char2("Margot_Sad")}
 {Icon("transparent")}
 {Name("Margot")}"Oh dear... I'm very sorry, Detective... I had no idea...!"
 
@@ -418,7 +418,7 @@ VAR ShowJournal = 0
 "What about the glass shards on the floor?"
 
 ~Char22("Icon2Grey")
-{Char2("Margot")}
+{Char2("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Margot")} "Oh well...at my age I shouldn't be messing with glass..."
 "Yes- of course, it wouldn't be safe at all!"
@@ -442,7 +442,7 @@ VAR ShowJournal = 0
 ~Char22("Icon2Grey")
  ~MCS("IconGrey")
 {MC("transparent")}
-{Char2("Margot")}
+{Char2("Margot_Fear")}
 {Icon("transparent")}
 {Name("Gran")}"W-What are you suggesting?!"
 
@@ -515,7 +515,7 @@ VAR ShowJournal = 0
 == seven == 
 {Evi("MissingPainting")}
 ~Char22("Icon2Grey")
-{Char2("Margot")}
+{Char2("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Gran")}"Oh, what is this even about? Let the man do his job, Lot-"
 
@@ -526,7 +526,7 @@ VAR ShowJournal = 0
 "Stolen from you- the entire reason you dragged these men here?"
 
 ~Char22("Icon2Grey")
-{Char2("Margot")}
+{Char2("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Gran")}"...Yes, that sounds about right."
 
@@ -596,6 +596,7 @@ VAR ShowJournal = 0
 == eight ==
 {Evi("RealPainting")}
 ~Char22("Icon2Grey")
+{Char2("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Gran")}"...Listen... Lottie... I..."
 {Evi("transparent")}
@@ -621,6 +622,7 @@ VAR ShowJournal = 0
 {Name("")} <I> The older woman shakes her head. </I>
 
 ~Char22("Icon2Grey")
+{Char2("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Gran")} "You were busy, Lottie, your life is just beginning."
 "I understand that more now, seeing you take yourself so seriously."
@@ -644,6 +646,7 @@ VAR ShowJournal = 0
 "I'm so sorry..."
 
 ~Char22("Icon2Grey")
+{Char2("Margot_Happy")}
 {Icon("transparent")}
 {Name("Gran")}"Oh stop that now, I knew the day I married him that I'd have to say goodbye."
 "I've done it many more times than this, Lottie."
@@ -655,7 +658,6 @@ VAR ShowJournal = 0
 
 {Back("FrontRoom")}
 ~Char22("Icon2Grey")
-{Icon("transparent")}
 {Icon("EmilUpset")}
 {Name("Emil")} <I> Lottie finally gives me back my journal and we turn to leave. 
 <I> Our investigation had concluded. It was time to go home. </I> 

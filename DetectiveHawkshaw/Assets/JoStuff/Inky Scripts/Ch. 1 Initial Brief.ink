@@ -112,7 +112,7 @@ EXTERNAL Char32(GreyName)
 ~PlayAnimation3("HELLO")
 ~PlayAnimation4("MoveRight")
 ~PlayAnimation1("moveLeft")
-{MC("Nicolai_Shocked")} {Char2("Katya_Shocked")} {Char3("Margot")}"Like what you see, my dear? It'll cost you!"
+{MC("Nicolai_Shocked")} {Char2("Katya_Shocked")} {Char3("Margot_Happy")}"Like what you see, my dear? It'll cost you!"
 
 
  ~Char32("Icon3Grey")
@@ -127,7 +127,7 @@ EXTERNAL Char32(GreyName)
 
 
   ~MCS("IconGrey")
-{MC("Margot")} {Char2("Katya_Sad")}
+{MC("Margot_Neutral")} {Char2("Katya_Sad")}
 {Icon("transparent")}
 {Name("???")}
 
@@ -136,14 +136,14 @@ EXTERNAL Char32(GreyName)
 "I assumed those youthful ears heard me shuffle over..!"
 
   ~MCS("IconGrey")
-{MC("Margot")} {Char2("Katya_Sad")}
+{MC("Margot_Neutral")} {Char2("Katya_Sad")}
 {Icon("EmilHappy")}
 {Name("Emil")} <I> I breathe a sigh of relief as the woman appears kindly, thankfully. </I>
 
 
   ~Char22("Icon2Grey") 
-{MC("Margot")} {Char2("Nicolai_Think")}
-{Icon("transparent")}
+{MC("Margot_Neutral")} {Char2("Nicolai_Think")}
+{Icon("transparent")} {MC("Margot_Happy")}
 {Name("Nicolai")}"...I take it then that you're Mrs. Weaver?"
 
   ~MCS("IconGrey")
@@ -164,7 +164,7 @@ EXTERNAL Char32(GreyName)
 <I>I try my best to reassure her as we begin to discuss the investigation.</I>
 
   ~MCS("IconGrey")
-{MC("Margot")} {Char2("Nicolai_Basic")}
+{MC("Margot_Sad")} {Char2("Nicolai_Basic")}
 {Icon("transparent")}
 {Name("Margot")}"Oh, it's no problem at all! Just be careful, there might still be glass on the floor..!"
 "I tried my best to clean up, but these old bones aren't what they used to be..."
@@ -173,7 +173,7 @@ EXTERNAL Char32(GreyName)
   ~Char22("Icon2Grey")
 {Icon("transparent")}
 {Name("Nicolai")}
-{MC("Margot")} {Char2("Nicolai_Think")} "So, to get straight to business, Mrs. Weaver."
+{MC("Margot_Neutral")} {Char2("Nicolai_Think")} "So, to get straight to business, Mrs. Weaver."
 "You explained over the phone that there was a break in?"
 
    ~Char22("Icon2Grey")
@@ -183,8 +183,9 @@ EXTERNAL Char32(GreyName)
   ~MCS("IconGrey")
 {Icon("transparent")}
 {Name("Margot")}
-{MC("Margot")} {Char2("Nicolai_Think")}"OH! IT WAS AWFUL, DETECTIVE!" 
+{MC("Margot_Fear")} {Char2("Nicolai_Think")}"OH! IT WAS AWFUL, DETECTIVE!" 
 "That brute! They smashed my window, ruined my pocket watch display and-"
+{MC("Margot_Sad")}
 "Stole my precious painting..!"
 
   ~MCS("IconGrey")
@@ -276,7 +277,7 @@ EXTERNAL Char32(GreyName)
 <I> Wait a moment, 'Constable Weaver' and 'Mrs. Weaver'? </I> 
 
   ~MCS("IconGrey")
-{MC("Margot")}
+{MC("Margot_Sad")}
 {Char3("Charlotte")}
 {Icon("transparent")}
 {Name("Margot")}"LOTTIE,YOU STOP YOUR BARKING RIGHT NOW!"
@@ -284,21 +285,21 @@ EXTERNAL Char32(GreyName)
 
   ~MCS("IconGrey")
  ~Char32("Icon3Grey")
-{MC("Margot")}
+{MC("Margot_Sad")}
 {Icon("transparent")}
 {Name("Charlotte")}"But- Gran! These men can't be trusted! You know this!"
 "Their so called 'Detective Agency' is nothing but a hoax!"
 
  ~Char32("Icon3Grey")
   ~MCS("IconGrey")
-{MC("Margot")}
+{MC("Margot_Neutral")}
 {Char3("Charlotte")}
 {Icon("transparent")}
 {Name("Margot")}"That's quite enough! Please ignore her dear. Work away!"
 
  ~Char32("Icon3Grey")
   ~MCS("IconGrey")
-{MC("Margot")}
+{MC("Margot_Neutral")}
 {Icon("transparent")}
 {Name("Charlotte")} "...But... you can't be serious..."
  
