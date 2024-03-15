@@ -166,7 +166,8 @@ public class DataPersistenceManager : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         // DON'T save this for certain scenes, like our main menu scene
         if (!scene.name.Equals("StartScreen") && !scene.name.Equals("Office") && !scene.name.Equals("Kitchen") && !scene.name.Equals("Lobby") 
-            && !scene.name.Equals("Bathroom") && !scene.name.Equals("NumberLockPuzzle"))
+            && !scene.name.Equals("Bathroom") && !scene.name.Equals("NumberLockPuzzle") && !scene.name.Equals("Demo Credits") 
+            && !scene.name.Equals("Entrance") && !scene.name.Equals("Clock Section") && !scene.name.Equals("Painting Section"))
         {
             gameData.currentSceneName = scene.name;
         }

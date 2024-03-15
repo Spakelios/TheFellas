@@ -66,4 +66,9 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene("InterrogationScene");
     }
+    
+    public void End()
+    {
+        SceneManager.LoadScene("Demo Credits");
+    }
 }

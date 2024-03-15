@@ -35,7 +35,7 @@ VAR ShowJournal = 0
 "And a light switch too. I can't see anything in here."
 
 {MC("Nicolai_Think")}
-{Char2("Charlotte")}
+{Char2("Char_Neutral")}
 {Icon("transparent")}
 {Name("Charlotte")} "It hasn't seen much use since Granddad passed..."
 "Most things Gran has to sell stay on the shop floor these days."
@@ -50,7 +50,7 @@ VAR ShowJournal = 0
  
  ~MCS("IconGrey")
 {MC("Nicolai_Shocked")}
-{Char2("Charlotte")}
+{Char2("Char_Shocked")}
 {Icon("transparent")}
 {Name("Nicolai")}
  
@@ -67,11 +67,12 @@ VAR ShowJournal = 0
 
 
 {MC("Nicolai_Think")}
-{Char2("Charlotte")}
+{Char2("Char_Neutral")}
 {Icon("EmilNeutral")}
 {Name("Emil")}<I> She nods her head and turns to her grandmother, clearly not very impressed with this development.<I> 
 
 ~Char22("Icon2Grey")
+{Char2("Char_Angry")}
 {Name("Charlotte")} "I think I understand what happened now... But I believe you have some work to do first, Detective."
 
 ~Char22("Icon2Grey")
@@ -79,7 +80,6 @@ VAR ShowJournal = 0
 {Name("Emil")}"Right you are. Mrs. Weaver, a word, if you would be so kind."
 
 ~PlayAnimation("Intro Animation") 
-~PlayAnimation2("InvestgationText")
 
 {Back("FrontDesk")}
 {MC("transparent")}
@@ -434,7 +434,7 @@ VAR ShowJournal = 0
 {Name("Emil")} <I> Before I could ask another question, a voice pipes up from behind and I'm pushed aside. </I>
 
  ~MCS("IconGrey")
-{MC("Charlotte")}
+{MC("Char_Angry")}
 {Icon("transparent")}
 {Name("Lottie")}"What on earth were you thinking with all of this?" 
 "I should've known you were up to no good when you didn't push for me to help!"
@@ -452,7 +452,7 @@ VAR ShowJournal = 0
 {Name("Emil")}<I>Charlotte snatches my journal from me.
 <I>I'm left flabbergasted, but I give her the floor.</I>
 
-{Icon("Charlotte")}
+{Icon("Char_Angry")}
 {Name("Lottie")}"You won't be able to talk your way out of this!" 
 -> ShowMissing
 
@@ -521,7 +521,7 @@ VAR ShowJournal = 0
 
 {Evi("transparent")}
 ~Char22("Icon2Grey")
-{Icon("Charlotte")}
+{Icon("Char_Angry")}
 {Name("Lottie")}"You claimed that the painting that used to be on display here was taken, correct?"
 "Stolen from you- the entire reason you dragged these men here?"
 
@@ -531,7 +531,7 @@ VAR ShowJournal = 0
 {Name("Gran")}"...Yes, that sounds about right."
 
 ~Char22("Icon2Grey")
-{Icon("Charlotte")}
+{Icon("Char_Angry")}
 {Name("Lottie")} "So you reported something missing, despite the fact you knew all too well where it was?"
 "But once you realised they were the real deal, you panicked."
 "And hid the truth from them!" 
@@ -612,7 +612,7 @@ VAR ShowJournal = 0
 <I> However, there is no explosion. </I>
 
 ~Char22("Icon2Grey")
-{Icon("Charlotte")}
+{Icon("Char_Angry")}
 {Name("Lottie")} "This is not the way you should've done it!"
 "Why didn't you just talk to me..?"
 "I'd of made time if I knew you were struggling this much!"
@@ -636,7 +636,7 @@ VAR ShowJournal = 0
 {Name("")} <I> The older woman smiles, taking her grandaughter by the hand. </I>
 
 ~Char22("Icon2Grey")
-{Icon("Charlotte")}
+{Icon("Char_Sad")}
 {Name("Lottie")} "...I had a hard time being here, after he passed."
 "There were reminders everywhere, too many... I ran away from it all."
 "I never even considered how much that would've hurt you."
@@ -665,7 +665,7 @@ VAR ShowJournal = 0
 {Back("FrontRoom")}
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Charlotte")}
+{Char2("Char_Happy")}
 {Icon("transparent")}
 {Name("Lottie")} "Wait! Detective Hawkshaw!"
 "Just a moment! Please!"
@@ -679,7 +679,7 @@ VAR ShowJournal = 0
 
 
 {MC("transparent")}
-{Char2("Charlotte")}
+{Char2("Char_Happy")}
 {Icon("EmilHappy")}
 {Name("Emil")} "...Is there anything else we may help you with?"
 
@@ -687,7 +687,7 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Charlotte")}
+{Char2("Char_Neutral")}
 {Icon("transparent")}
 {Name("Charlotte")} "...Gran isn't the only one I owe an apology to."
 "I'm sorry for being so disrespectful to both you and Detective Koslov"
@@ -695,7 +695,7 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Charlotte")}
+{Char2("Char_Shocked")}
 {Icon("EmilNeutral")}
 {Name("Emil")} <I> I shake my head. I hadn't expected such a change of heart.
 <I> Admittedly, it's a nice change of pace. </I>
@@ -706,11 +706,11 @@ VAR ShowJournal = 0
 
 <I> She begins to ask more prodding questions, so I give her the long and short of it.
 <I> I tell her about what really happened. 
-<I> Her expression becomes solemn as they nod their head. </I>
+<I> They seems to tear up as they nods their head. </I>
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Charlotte")}
+{Char2("Char_Sad")}
 {Icon("transparent")}
 {Name("Charlotte")} "I see... that must've been awful."
 "To think the chief could be so... cruel."
@@ -721,9 +721,7 @@ VAR ShowJournal = 0
 
 ~Char22("Icon2Grey")
 {MC("transparent")}
-{Char2("Charlotte")}
+{Char2("transparent")}
 {Icon("EmilHappy")}
 {Name("Emil")} <I> We shake hands and I take my leave as another case is closed. </I>
-
-
-_-> END
+-> END

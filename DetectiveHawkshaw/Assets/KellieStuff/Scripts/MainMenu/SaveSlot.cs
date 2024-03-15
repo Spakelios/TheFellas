@@ -44,7 +44,7 @@ public class SaveSlot : MonoBehaviour
             hasDataContent.SetActive(true);
             clearButton.gameObject.SetActive(true);
 
-          Save.text = data.currentSceneName;
+          Save.text = "Save " + data.Num++;
                 
         }
     }

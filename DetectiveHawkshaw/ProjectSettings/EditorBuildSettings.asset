@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JoStuff/Scenes/Chapter 3/Destroyed Bathroom.unity
     guid: 0f989513c3baa6d43ba16e860b908d3e
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Demo Credits.unity
+    guid: 362816cd9280da94d9f8b86efa57ce2b
   m_configObjects: {}

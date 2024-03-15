@@ -11,11 +11,13 @@ public class GameData
     public long lastUpdated;
 // alternatively, you could use an int sceneIndex
     public string currentSceneName;
+    public int Num;
 
     public GameData() 
     {
         // default for starting a new game
         currentSceneName = "DemoTest1";
+        Num = 1;
     }
 
 }

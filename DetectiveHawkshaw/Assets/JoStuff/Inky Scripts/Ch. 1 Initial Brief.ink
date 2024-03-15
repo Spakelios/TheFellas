@@ -72,7 +72,7 @@ EXTERNAL Char32(GreyName)
 {Icon("EmilHappy")}
 {Name("Emil")}"Right, no time to waste then."
 
-{Back("FrontRoom")}
+{Back("ClockRoom")}
 {MC("transparent")}
 {Char2("transparent")}
 {Icon("EmilNeutral")}
@@ -225,7 +225,7 @@ EXTERNAL Char32(GreyName)
 ~PlayAnimation1("moveLeft")
 ~Particle("Particles")
  ~Char32("Icon3Grey")
-{MC("Nicolai_Shocked")} {Char2("Katya_Sad")} {Char3("Charlotte")}  <COLOR=\#FF0000> "HOLD IT RIGHT THERE!" </COLOR>
+{MC("Nicolai_Shocked")} {Char2("Katya_Sad")} {Char3("Char_Angry")}  <COLOR=\#FF0000> "HOLD IT RIGHT THERE!" </COLOR>
 
   ~Char22("Icon2Grey")
    ~MCS("IconGrey")
@@ -254,7 +254,7 @@ EXTERNAL Char32(GreyName)
 
  ~Char32("Icon3Grey")
 {MC("Nicolai_Think")}
-{Char3("Charlotte")}
+{Char3("Char_Neutral")}
 {Icon("transparent")}
 {Name("???")}"That's Constable Charlotte Weaver to you!"
 "I will not allow known miscreants to take advantage of an elderly woman like this!"
@@ -264,7 +264,7 @@ EXTERNAL Char32(GreyName)
  ~Char32("Icon3Grey")
   ~MCS("IconGrey")
 {MC("Nicolai_Annoyed")}
-{Char3("Charlotte")}
+{Char3("Char_Angry")}
 {Icon("transparent")}
 {Name("Nicolai")}"...Known miscreants?"
 
@@ -278,7 +278,7 @@ EXTERNAL Char32(GreyName)
 
   ~MCS("IconGrey")
 {MC("Margot_Sad")}
-{Char3("Charlotte")}
+{Char3("Char_Shocked")}
 {Icon("transparent")}
 {Name("Margot")}"LOTTIE,YOU STOP YOUR BARKING RIGHT NOW!"
 "YOU'RE MAKING AN ABSOLUTE SHOW OF ME!"
@@ -293,7 +293,7 @@ EXTERNAL Char32(GreyName)
  ~Char32("Icon3Grey")
   ~MCS("IconGrey")
 {MC("Margot_Neutral")}
-{Char3("Charlotte")}
+{Char3("Char_Angry")}
 {Icon("transparent")}
 {Name("Margot")}"That's quite enough! Please ignore her dear. Work away!"
 
