@@ -15,7 +15,7 @@ public class CanvasPopper : MonoBehaviour
 
   IEnumerator Invest()
   {
-    yield return new WaitForSeconds(4);
+    yield return new WaitForSeconds(6);
     
     Destroy(Anim);
   }
