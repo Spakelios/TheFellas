@@ -24,6 +24,7 @@ public class DialogueTrigger : MonoBehaviour
     public TMP_Text nameTag;
     [SerializeField] private float typingSpeed = 0.04f;
     [SerializeField] private GameObject continueIcon;
+    public string NextScene;
 
     [Header("Icons")]
     public Image characterIcon;
@@ -130,8 +131,15 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            button2.SetActive(true);
+            // button2.SetActive(true);
+            StartCoroutine("waitToLoad");
         }
+    }
+
+    IEnumerator waitToLoad()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(NextScene);
     }
 
 
