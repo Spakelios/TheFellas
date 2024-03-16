@@ -15446,6 +15446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intro
       objectReference: {fileID: 0}
+    - target: {fileID: 6395376783778707068, guid: 936b6e4bcb966d8479457184b8427285, type: 3}
+      propertyPath: m_text
+      value: INTERROGATION START!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
