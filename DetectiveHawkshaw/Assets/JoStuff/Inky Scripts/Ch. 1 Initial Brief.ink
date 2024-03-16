@@ -17,7 +17,7 @@ EXTERNAL Char22(GreyName)
 EXTERNAL Char32(GreyName)
 
 
-
+{Char3("transparent")}
 {Back("Office")}
 {MC("Nicolai_Think")}
 {Char2("transparent")}
@@ -120,7 +120,7 @@ EXTERNAL Char32(GreyName)
 ~PlayAnimation1("center")
 ~PlayAnimation4("Move Centre")
 {MC("Nicolai_Annoyed")} {Char2("Katya_Sad")}
-{Icon("EmilAngry")}
+{Icon("EmilAngry")} {Char3("transparent")}
 {Name("Emil")}"What on earth..!? Katya is everything al-" 
 <I> I instinctively step back into that side of the room as I hear Katya in distress.
 <I> Only to be met with a small old woman with what appeared to a prostetic arm, patting her on the head. </I>
