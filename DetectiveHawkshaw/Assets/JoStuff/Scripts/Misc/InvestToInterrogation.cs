@@ -17,12 +17,12 @@ public class InvestToInterrogation : MonoBehaviour
         sceneName = initialiser.caseData.interrogationSceneName;
     }
 
-    /*
+    
     public void GoToInterrogation()
     {
         RoomLoader.instance.LoadLevel(sceneName);
     }
-    */
+    
     
     public void LoadLevel()
     {
