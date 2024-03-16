@@ -29,6 +29,9 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
     private Camera camera;
 
     private Vector3 textOffset;
+
+    public Animator animation;
+    
     
     //public AudioSource evidenceSound;
     
@@ -40,17 +43,30 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
         textOffset = new Vector3(0, 30, 0);
         examineTagBox = GameObject.FindWithTag("ExamineTag").GetComponent<TextMeshProUGUI>();
         examineTagBox.text = "";
+        
+        /*
+        Cursor.visible = false;
+        if (!eyeSpawned)
+        {
+            eye = Instantiate(eyePrefab);
+        }
+        animation = eye.transform.GetComponentInChildren<Animator>();
+        animation.speed = 0f;
+        */
+
+
     }
 
     private void Update()
     {
         mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
         examineTagBox.transform.position = Input.mousePosition + textOffset;
-
+        
         if (eyeSpawned)
         {
             eye.transform.position = mousePos;
         }
+        
     }
     
     private void OnMouseEnter()
@@ -64,6 +80,7 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
 
+        
         if (!eyeSpawned)
         {
             Cursor.visible = false;
@@ -71,8 +88,11 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
             eyeSpawned = true;
         }
         
+
+        //animation.speed = 1f;
+        
         examineTagBox.text = examineTag;
-        examineTagBox.color = Color.black;
+        examineTagBox.color = Color.white;
 
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();
@@ -85,9 +105,12 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
     private void OnMouseExit()
     {
         if (PauseGame.isPaused) return;
+        
         Cursor.visible = true;
         Destroy(eye);
         eyeSpawned = false;
+        
+        //animation.speed = 0f;
         examineTagBox.text = "";
     }
 

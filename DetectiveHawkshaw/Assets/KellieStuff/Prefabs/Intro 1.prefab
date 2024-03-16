@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: INTERROGATION START!
+  m_text: INVESTIGATION START!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84725b1a1ba2b76458c8158e8ff7ca98, type: 2}
   m_sharedMaterial: {fileID: -3881369041199764168, guid: 84725b1a1ba2b76458c8158e8ff7ca98, type: 2}
