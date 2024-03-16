@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: DetectiveHawkshaw
-  defaultCursor: {fileID: 2800000, guid: 86d782670c49173479877e724f0a62d4, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.509434, g: 0.43415952, b: 0.13648984, a: 1}
   m_ShowUnitySplashScreen: 1

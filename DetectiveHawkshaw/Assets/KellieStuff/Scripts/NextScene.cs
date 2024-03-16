@@ -8,13 +8,13 @@ public class NextScene : MonoBehaviour
     // Start is called before the first frame update
     public void next()
     {
-        // VNToInvestLoader.instance.LoadLevel("Initial_Lobby");
-        SceneManager.LoadScene("Initial_Lobby");
+        VNToInvestLoader.instance.LoadLevel("Initial_Lobby");
+        // SceneManager.LoadScene("Initial_Lobby");
     }  
     public void next1()
     {
-        // VNToInvestLoader.instance.LoadLevel("(1) Start");
-        SceneManager.LoadScene("(1) Start");
+        // VNToInvestLoader.instance.LoadLevel("Entrance (Initial)");
+        SceneManager.LoadScene("Entrance (Initial)");
 
     }  
     public void next2()

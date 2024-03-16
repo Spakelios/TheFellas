@@ -23,6 +23,7 @@ public class DialogueManagerA : MonoBehaviour
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
     [SerializeField] private float typingSpeed = 0.04f;
+    public string NextScene;
 
     [SerializeField] private GameObject continueIcon;
 
@@ -35,7 +36,7 @@ public class DialogueManagerA : MonoBehaviour
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
-   
+
 
     public GameObject fmod;
     
@@ -137,10 +138,16 @@ public class DialogueManagerA : MonoBehaviour
        
         else
         {
-            button2.SetActive(true);
+            // button2.SetActive(true);
+            StartCoroutine("waitToLoad");
         }
     }
-    
+
+    IEnumerator waitToLoad()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(NextScene);
+    }
     void HandleTags(List<string> currentTags)
     {
         

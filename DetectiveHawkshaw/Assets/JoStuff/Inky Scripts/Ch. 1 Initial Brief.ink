@@ -72,7 +72,7 @@ EXTERNAL Char32(GreyName)
 {Icon("EmilHappy")}
 {Name("Emil")}"Right, no time to waste then."
 
-{Back("ClockRoom")}
+{Back("Entrance")}
 {MC("transparent")}
 {Char2("transparent")}
 {Icon("EmilNeutral")}
