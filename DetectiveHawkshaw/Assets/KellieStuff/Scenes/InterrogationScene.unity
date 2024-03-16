@@ -1970,7 +1970,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1497742013}
   nameTag: {fileID: 1016981683}
   typingSpeed: 0.04
-  NextScene: 
+  NextScene: Initial Brief Ch. 1
   continueIcon: {fileID: 158002084}
   characterIcon: {fileID: 89634927}
   Icon: {fileID: 181272909}
@@ -15449,8 +15449,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5741123513102949054, guid: 936b6e4bcb966d8479457184b8427285, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4739121887615869426}
   m_SourcePrefab: {fileID: 100100000, guid: 936b6e4bcb966d8479457184b8427285, type: 3}
+--- !u!1 &4739121887615869425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5741123513102949054, guid: 936b6e4bcb966d8479457184b8427285, type: 3}
+  m_PrefabInstance: {fileID: 4739121887615869424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4739121887615869426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739121887615869425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700ddebc0830cc04b84397a50a737e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 4739121887615869425}
 --- !u!1001 &6923065100647828969
 PrefabInstance:
   m_ObjectHideFlags: 0
