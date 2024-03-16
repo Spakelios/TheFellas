@@ -17,7 +17,7 @@ public class GameData
     {
         // default for starting a new game
         currentSceneName = "DemoTest1";
-        Num = 1;
+        
     }
 
 }
