@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91a31a29767b1944b684dceca887012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  eyePrefab: {fileID: 404860225668829422, guid: 472b9f422653e774392ef42235d4e8ce, type: 3}
   dialogueBox: {fileID: 0}
   sceneName: Destroyed Lobby
   examineTagBox: {fileID: 0}

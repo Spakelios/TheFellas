@@ -748,8 +748,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 21.599998, y: 38.399998}
+  m_Offset: {x: -0.0000007947286, y: -0.5034812}
+  m_Size: {x: 9.852077, y: 28.330355}
   m_Direction: 0
 --- !u!114 &362061136
 MonoBehaviour:
@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742ede3d79256d444963323a1685f25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  eyePrefab: {fileID: 404860225668829422, guid: 472b9f422653e774392ef42235d4e8ce, type: 3}
   dialogue:
     name: Katya
     sentences:
@@ -772,6 +772,7 @@ MonoBehaviour:
   dialogueManager: {fileID: 1223913006}
   examineTagBox: {fileID: 0}
   examineTag: Katya
+  animation: {fileID: 0}
 --- !u!1001 &403541293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1109,8 +1110,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 20, y: 40.96}
+  m_Offset: {x: 0.7552242, y: -0.13986869}
+  m_Size: {x: 12.044975, y: 27.44059}
   m_Direction: 0
 --- !u!114 &860282540
 MonoBehaviour:
@@ -1124,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742ede3d79256d444963323a1685f25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  eyePrefab: {fileID: 404860225668829422, guid: 472b9f422653e774392ef42235d4e8ce, type: 3}
   dialogue:
     name: Nicolai
     sentences:
@@ -1136,6 +1137,7 @@ MonoBehaviour:
   dialogueManager: {fileID: 1223913006}
   examineTagBox: {fileID: 0}
   examineTag: Nicolai
+  animation: {fileID: 0}
 --- !u!1 &904172755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,15 +1236,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91a31a29767b1944b684dceca887012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  eyePrefab: {fileID: 404860225668829422, guid: 472b9f422653e774392ef42235d4e8ce, type: 3}
   dialogueBox: {fileID: 196730557}
   sceneName: Lobby
   examineTagBox: {fileID: 0}
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 0}
---- !u!61 &904172759
-BoxCollider2D:
+--- !u!60 &904172759
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1273,7 +1275,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16884041, y: 3.3201332}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1283,9 +1285,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 21.957035, y: 61.078705}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -10.320066, y: -14.613774}
+      - {x: 8.110361, y: -28.11797}
+      - {x: 10.346226, y: 33.511925}
+      - {x: -9.416613, y: 28.882252}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1140081267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87356a31b230b684f9015bcdefd417a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  eyePrefab: {fileID: 404860225668829422, guid: 472b9f422653e774392ef42235d4e8ce, type: 3}
   dialogue:
     name: Emil
     sentences:
@@ -1477,7 +1483,6 @@ MonoBehaviour:
   sandwich: 0
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: 672b32c48ea8b7048ae9ff3596f9259e, type: 2}
-  dialogueLines: {fileID: 0}
 --- !u!61 &1212709018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1633,6 +1638,7 @@ MonoBehaviour:
   toInterrogation: {fileID: 0}
   evidenceStats: {fileID: 0}
   testObject: {fileID: 0}
+  interroCh1: 0
 --- !u!4 &1223913007
 Transform:
   m_ObjectHideFlags: 0

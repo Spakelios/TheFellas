@@ -280,6 +280,7 @@ MonoBehaviour:
   toInterrogation: {fileID: 0}
   evidenceStats: {fileID: 0}
   testObject: {fileID: 0}
+  interroCh1: 0
 --- !u!4 &757933885
 Transform:
   m_ObjectHideFlags: 0
@@ -326,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91a31a29767b1944b684dceca887012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  eyePrefab: {fileID: 404860225668829422, guid: 472b9f422653e774392ef42235d4e8ce, type: 3}
   dialogueBox: {fileID: 1909325576}
   sceneName: Lobby
   examineTagBox: {fileID: 1909325575}
@@ -400,8 +401,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &977468734
-BoxCollider2D:
+--- !u!60 &977468734
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -429,10 +430,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10.980811, y: 1.0590973}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -442,9 +443,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 17.785513, y: 38.479256}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -3.0626054, y: -19.609188}
+      - {x: -2.9787197, y: 20.355282}
+      - {x: -19.913126, y: 15.996025}
+      - {x: -19.576069, y: -14.083418}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1387458149
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1387458152}
   - component: {fileID: 1387458151}
-  - component: {fileID: 1387458150}
+  - component: {fileID: 1387458153}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -463,14 +468,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1387458150
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387458149}
-  m_Enabled: 1
 --- !u!20 &1387458151
 Camera:
   m_ObjectHideFlags: 0
@@ -537,6 +534,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387458153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387458149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1393689243
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87356a31b230b684f9015bcdefd417a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1601012354405254246, guid: e570d3eacd605ba4f949007cc1fb8dfe, type: 3}
+  eyePrefab: {fileID: 404860225668829422, guid: 472b9f422653e774392ef42235d4e8ce, type: 3}
   dialogue:
     name: Emil
     sentences:
@@ -740,7 +750,6 @@ MonoBehaviour:
   sandwich: 1
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: 599e9ccc1be67be4f8b470740f7056f4, type: 2}
-  dialogueLines: {fileID: 0}
 --- !u!61 &1595143406
 BoxCollider2D:
   m_ObjectHideFlags: 0
