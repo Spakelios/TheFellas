@@ -36,16 +36,19 @@ public class DialogueManagerA : MonoBehaviour
     public Image backgroundIcon;
     public GameObject button2;
     public Image Evi;
-
+    public Image textbox;
+    public Image Intro;
 
     public GameObject fmod;
-    
+    public Color Colour;
     public GameObject choiceHold;
+    public TMP_FontAsset Font;
     
     [Header("Animators")]
     public Animator anim;
     public Animator anim2;
 
+    public TMP_Text tex;
 
     public List<Button> choiceButtons = new List<Button>();
     private Coroutine displayLineCoroutine;
@@ -96,6 +99,8 @@ public class DialogueManagerA : MonoBehaviour
         _StoryScript.BindExternalFunction("Greys", (string grey) => Grey(grey));
         _StoryScript.BindExternalFunction("Whites", (string white) => White(white));
         
+        _StoryScript.BindExternalFunction("Sveta", (string PurpleName) => Purple(PurpleName));
+        
         _StoryScript.BindExternalFunction("PlayAnimation", (string playAnimation) => {anim.Play(playAnimation);});     
         _StoryScript.BindExternalFunction("PlayAnimation2", (string playAnimation2) => {anim2.Play(playAnimation2);}); 
         DisplayNextLine();
@@ -145,7 +150,7 @@ public class DialogueManagerA : MonoBehaviour
 
     IEnumerator waitToLoad()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         SceneManager.LoadScene(NextScene);
     }
     void HandleTags(List<string> currentTags)
@@ -382,6 +387,13 @@ public class DialogueManagerA : MonoBehaviour
         Char2.sprite = char2;
     }  
     
+    public void Purple(string name)
+    {
+        textbox.color = Colour;
+        Intro.color = Colour;
+        tex.font = Font;
+    }  
+
     [System.Serializable]
     public class PictureClass
     {
