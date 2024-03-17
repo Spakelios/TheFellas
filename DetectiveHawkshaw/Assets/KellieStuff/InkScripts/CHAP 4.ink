@@ -123,7 +123,9 @@ VAR ShowJournal = 0
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
-#Evidence: 2
+#Evidence: 3
+#Evidence: 4
+#Evidence: 5
 ~canShowEvidence = true
 
 + [ Check Journal ]
@@ -158,7 +160,16 @@ VAR ShowJournal = 0
     ...
     -> five
 
-   
+       -4:
+   "Why did I even think about trying that..!"
+    ...
+    -> openJournal
+    
+    -5:
+    "Are you for real?"
+    ...
+    -> openJournal
+
     
     -else:
     ...
@@ -218,7 +229,9 @@ VAR ShowJournal = 0
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
-#Evidence: 2
+#Evidence: 3
+#Evidence: 4
+#Evidence: 5
 ~canShowEvidence = true
 
 + [ Check Journal ]
@@ -240,7 +253,7 @@ VAR ShowJournal = 0
   "That can't be right."
     ...
     
-    -> openJournal
+    -> checkJournal
 
     
     -2:
@@ -249,16 +262,23 @@ VAR ShowJournal = 0
     -> two
     
     -3:
+    "Try again"
+    ...
+    -> checkJournal
+
+       -4:
     "Why did i even consider this one? Perhaps I need a check up..."
     ...
-    -> openJournal
+    -> checkJournal
 
-   
-    
+    -5:
+    "What was I even thinking..?"
+    ...
+    -> checkJournal
     -else:
     ...
 
-    -> openJournal
+    -> checkJournal
     
     }
     
@@ -438,7 +458,9 @@ VAR ShowJournal = 0
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
-#Evidence: 2
+#Evidence: 3
+#Evidence: 4
+#Evidence: 5
 ~canShowEvidence = true
 
 + [ Check Journal ]
@@ -473,7 +495,15 @@ VAR ShowJournal = 0
     ...
     -> JournalTime
 
-   
+       -4:
+   "No, not that."
+    ...
+    -> JournalTime
+    
+    -5:
+    "Of course not"
+    ...
+    -> JournalTime
     
     -else:
     ...
@@ -489,6 +519,7 @@ VAR ShowJournal = 0
 {Evi("placeholderpolariod")}
 "I'd be lying if I told you I wasn't impressed."
 
+{Evi("transparent")}
 {MCS("greys")}
 {Icon("transparent")}
 {Name("Emil")}
