@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ca25bc90673dd424fb778fc43471ad20, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8fa4b8fecdd42841b04ab9f94df8c52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -201,8 +201,8 @@ Transform:
   m_GameObject: {fileID: 228717192}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0181, y: -0.0184, z: 0}
-  m_LocalScale: {x: 0.926373, y: 0.92958415, z: 1}
+  m_LocalPosition: {x: -0.0061, y: 0.0097, z: 0}
+  m_LocalScale: {x: 0.926184, y: 0.9265848, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -270,10 +270,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.8515291, y: 2.9040105}
-      - {x: -0.82565594, y: -4.963397}
-      - {x: 1.0555301, y: -3.7182431}
-      - {x: 0.7721524, y: 2.6885567}
+    - - {x: -0.8515291, y: 2.729109}
+      - {x: -0.80066967, y: -4.563622}
+      - {x: 1.0555301, y: -3.3684402}
+      - {x: 0.8471103, y: 2.5386412}
   m_UseDelaunayMesh: 0
 --- !u!212 &391519394
 SpriteRenderer:
@@ -618,6 +618,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1795402568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1795402570}
+  - component: {fileID: 1795402569}
+  m_Layer: 0
+  m_Name: Clean Kitchen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1795402569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795402568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21cb80f5e6bbb0a47ace2c0693803481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Emil
+    sentences:
+    - ...
+    - Everything looks... exactly how we left it yesterday?
+    - But how? The footprints in the lobby...
+    - Something doesn't add up!
+  dialogueManager: {fileID: 0}
+  evidenceStats: {fileID: 11400000, guid: 15836635c660ca94c83cefcc8d992196, type: 2}
+--- !u!4 &1795402570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795402568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -628,3 +681,4 @@ SceneRoots:
   - {fileID: 1115079791}
   - {fileID: 391519395}
   - {fileID: 1656910681}
+  - {fileID: 1795402570}

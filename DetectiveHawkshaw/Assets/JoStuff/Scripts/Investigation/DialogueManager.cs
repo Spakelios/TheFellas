@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,12 +43,13 @@ public class DialogueManager : MonoBehaviour
     {
         puzzleDialogue = false;
         sentences = new Queue<string>();
-        
+
         //preparing dialogue placements
         dialogueBox = GameObject.FindWithTag("DialogueBox");
         nameText = dialogueBox.transform.Find("Name").GetComponent<TextMeshProUGUI>();
         dialogueText = dialogueBox.transform.Find("Dialogue").GetComponent<TextMeshProUGUI>();
         dialogueBox.SetActive(false);
+        dialogueText.text = String.Empty;
         
         //evidence pop-up stuff
         evidenceWindow = GameObject.FindWithTag("EvidencePortrait");
@@ -153,6 +155,7 @@ public class DialogueManager : MonoBehaviour
     {
         sentences.Clear();
         dialogueBox.SetActive(false);
+        dialogueText.text = String.Empty;
 
         if (puzzleDialogue)
         {
