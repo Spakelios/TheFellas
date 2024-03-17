@@ -14,25 +14,14 @@ public class DialogueTrigger1 : MonoBehaviour
     private int num;
     [SerializeField] private TextAsset _InkJsonFile;
     private Story _StoryScript;
-
-    public TMP_Text dialogueBox;
     public TMP_Text nameTag;
+    public TMP_Text dialogueBox;
     [SerializeField] private float typingSpeed = 0.04f;
-
+    public string NextScene;
     [SerializeField] private GameObject continueIcon;
-
-    // private Text text;
-
-
-    public Image characterIcon;
-    public Image Icon;
     [SerializeField] private GridLayoutGroup choiceHolder;
     [SerializeField] private Button choiceButtonPrefab;
-    public GameObject butt;
-    public Image backgroundIcon;
-    public GameObject button2;
-    public Image Evi;
-    public GameObject fmod;
+
 
     public GameObject choiceHold;
 
@@ -46,6 +35,7 @@ public class DialogueTrigger1 : MonoBehaviour
     void Start()
     {
         LoadStory();
+        _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
     }
 
     void Update()
@@ -59,14 +49,6 @@ public class DialogueTrigger1 : MonoBehaviour
     void LoadStory()
     {
         _StoryScript = new Story(_InkJsonFile.text);
-
-        _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
-        _StoryScript.BindExternalFunction("Icon", (string charName) => CharacterIcon(charName));
-        _StoryScript.BindExternalFunction("Back", (string charName) => BackIcon(charName));
-        _StoryScript.BindExternalFunction("MC", (string charName) => charactersIcon(charName));
-        _StoryScript.BindExternalFunction("Evi", (string charName) => EviIcon(charName));
-        _StoryScript.BindExternalFunction("Sound", (string soundName) => FModShenanigans(soundName));
-        DisplayNextLine();
 
     }
 
@@ -83,6 +65,7 @@ public class DialogueTrigger1 : MonoBehaviour
 
             // string text = dialogueBox.text;
             displayLineCoroutine = StartCoroutine(DisplayLine(_StoryScript.Continue()));
+            
             string text = dialogueBox.text;
             text = text?.Trim(); //Removes White space from the text
             dialogueBox.text = text; //Displays new text
@@ -95,7 +78,7 @@ public class DialogueTrigger1 : MonoBehaviour
         }
         else
         {
-            button2.SetActive(true);
+            SceneManager.LoadScene(NextScene);
         }
     }
 
@@ -184,41 +167,12 @@ public class DialogueTrigger1 : MonoBehaviour
             }
         }
     }
-
+    
     public void ChangeName(string name)
     {
         string SpeakerName = name;
 
         nameTag.text = SpeakerName;
     }
-
-    public void CharacterIcon(string name)
-    {
-        var charIcon = Resources.Load<Sprite>("characterIcons/" + name);
-        characterIcon.sprite = charIcon;
-    }
-
-    public void BackIcon(string name)
-    {
-        var backIcon = Resources.Load<Sprite>("characterIcons/" + name);
-        backgroundIcon.sprite = backIcon;
-    }
-
-    public void charactersIcon(string name)
-    {
-        var WaterIcon = Resources.Load<Sprite>("characterIcons/" + name);
-        Icon.sprite = WaterIcon;
-    }
-    public void EviIcon(string name)
-    {
-        var EviIcon = Resources.Load<Sprite>("characterIcons/" + name);
-        Evi.sprite = EviIcon;
-    }
-
-    public void FModShenanigans(string name)
-    {
-        fmod.SetActive(true);
-    }
-
     
 }
