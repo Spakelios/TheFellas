@@ -113,10 +113,10 @@ VAR ShowJournal = 0
 {Name("Dectective Maratova")}
 {MC("EmilNeutral")} 
 
-"Ransacked? surely not..."
+"Ransacked? Surely not..."
 "What makes you say that?"
 
-<I> He points to his Journal next to me on the desk.
+<I> He points to his journal next to me on the desk.
 <I> He makes a gesture that suggests I should open it. </I> -> openJournal
 
 ==openJournal ==
@@ -132,7 +132,7 @@ VAR ShowJournal = 0
 
         {someEvidence :
      -0:
-     Please select some evidence before showing evidence
+     Please select some evidence before showing evidence.
     
      -else:
      ~canShowEvidence = false
@@ -238,7 +238,7 @@ VAR ShowJournal = 0
 
         {someEvidence :
      -0:
-     Please select some evidence before showing evidence
+     Please select some evidence before showing evidence.
     
      -else:
      ~canShowEvidence = false
@@ -262,12 +262,12 @@ VAR ShowJournal = 0
     -> two
     
     -3:
-    "Try again"
+    "Try again."
     ...
     -> checkJournal
 
        -4:
-    "Why did i even consider this one? Perhaps I need a check up..."
+    "Why did I even consider this one? Perhaps I need a check up..."
     ...
     -> checkJournal
 
@@ -327,7 +327,7 @@ VAR ShowJournal = 0
 
 <I> I can't help but be angry after hearing him talk like this.
 <I> What had happened to him? Were his conspiracies really so important?
-<I> Even now when his life could be ruined right here and now? </I>
+<I> Even now, when his life could be ruined? </I>
 -> Questions
 == three ==
 
@@ -336,7 +336,7 @@ VAR ShowJournal = 0
 {MC("EmilUpset")}
 
 "Have you no shame!?"
-"Have you really learned <b>nothing</b>?"
+"Have you really learnt <b>nothing</b>?"
 
 <I> Something deep inside my heart forces its way out.
 <I> After all these years, he still can't see what's right in front of him.
@@ -410,18 +410,18 @@ VAR ShowJournal = 0
 {MC("EmilUpset")}
 
 <I> It only takes seeing him look so defeated to realise I've overstepped.
-<I>...here i thought he would be the unprofessional one.
+<I>...Here I thought he would be the unprofessional one.
 {Icon("Irritated")}
 <I> I take a deep breath and calm myself down.
-<I> I had heard many of his apologies, more than I could count.
-<I> This one stung like a knife through the chest.
+<I> I had heard many of his apologies, more than I can count.
+<I> Yet this one stung like a knife through the chest.
 
 "..."
 
-"...No I-I let old feelings get the better of me."
+"...No, I-I let old feelings get the better of me."
 "You weren't the sole reason we fell apart."
 "I had my doubts for a long time, I couldn't find happiness with you anymore."
-"No matter how much I loved you, you and our family."
+"No matter how much I loved you... you and our family."
 "I was miserable, we kept fighting over your god forsaken obsession."
 "I couldn't keep letting Katya see that."
 "I couldn't keep hurting her just to keep up our little fantasy."
@@ -429,25 +429,25 @@ VAR ShowJournal = 0
 {MCS("greys")}
 {Icon("transparent")}
 {Name("Emil")}
-{MC("EmilUpset")} "Lana I..."
+{MC("EmilUpset")} "Lana, I..."
 
 
 {MCS("greys")}
 {Icon("Irritated")}
 {Name("Lana")}
-{MC("EmilUpset")}"but, I strung you along for far longer than I should've."
-"...once you had to step away, I realised how much I was capable of without you."
-"It was nice, freeing in a way." 
-"...So I'm sorry for hurting you."
+{MC("EmilUpset")}"But... I strung you along for far longer than I should've."
+"...Once you had to step away, I realised how much I was capable of without you."
+"It was nice... freeing in a way." 
+"So... I'm sorry for hurting you."
 {Icon("Smiling")}
-"but, thank you for letting me go." 
+"But... thank you for letting me go." 
 
-<I> Theres a moment of silence.
+<I> There's a moment of silence.
 <I> I take a deep breath and relax, leaning back in my chair.
 <I> It was time to give him a chance to fix things. </I> 
 
-"You've done well Emil."
-"Even I have heard of your little agencys achievements."
+"You've done well, Emil."
+"Even I have heard of your little agency's achievements."
 "..." -> JournalTime
 
 ==    JournalTime ==
@@ -467,7 +467,7 @@ VAR ShowJournal = 0
 
         {someEvidence :
      -0:
-     Please select some evidence before showing evidence
+     Please select some evidence before showing evidence.
     
      -else:
      ~canShowEvidence = false
@@ -491,7 +491,7 @@ VAR ShowJournal = 0
     -> JournalTime
     
     -3:
-    "Of course not"
+    "Of course not."
     ...
     -> JournalTime
 
@@ -501,7 +501,7 @@ VAR ShowJournal = 0
     -> JournalTime
     
     -5:
-    "Of course not"
+    "Of course not."
     ...
     -> JournalTime
     
@@ -525,11 +525,11 @@ VAR ShowJournal = 0
 {Name("Emil")}
 {MC("EmilBlush")} 
 
-"O-oh...Well if it wasn't for Nicolai I don't think I'd of pulled it off."
-"He never ceases to amaze really."
-"Katya seems to like it too, least there's been no complaints!"
+"O-oh... Well if it wasn't for Nicolai, I don't think I'd of pulled it off."
+"He never ceases to amaze, really."
+"Katya seems to like it too, at least there's been no complaints!"
 {MC("EmilUpset")}
-"...has there?"
+"... Has there?"
 
 {MCS("greys")}
 {Evi("transparent")}
@@ -537,9 +537,9 @@ VAR ShowJournal = 0
 {Name("Svetlana")}
 {MC("EmilNeutral")}<I> I shake my head as we chat like friends again.
 <I> It's a wonderfully nostalgic feeling.</I>
-{Icon("Smiling")} "Good God no! Every other word is about looking forward to "Working with Dad again"
+{Icon("Smiling")} "Good God, no! Every other word is about looking forward to 'working with Dad again.'
 "I could never forgive myself if I got in the way of that..."
-"Now lets get to buisness."
+"Now, let's get to business."
 {Icon("Confident")}
 
 "...Tell me about this file of yours then."
