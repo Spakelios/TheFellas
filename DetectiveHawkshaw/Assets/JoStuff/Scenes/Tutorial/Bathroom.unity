@@ -445,10 +445,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -3.0626054, y: -19.609188}
-      - {x: -2.9787197, y: 20.355282}
-      - {x: -19.913126, y: 15.996025}
-      - {x: -19.576069, y: -14.083418}
+    - - {x: -17.738451, y: -14.831854}
+      - {x: 1.517622, y: -19.331856}
+      - {x: 1.8166513, y: 19.474499}
+      - {x: -17.715246, y: 14.234462}
   m_UseDelaunayMesh: 0
 --- !u!1 &1387458149
 GameObject:
@@ -605,7 +605,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 86d4cbbbb2070244e87386ce06d1fa94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f6951c6212de844a847e17115396053, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -625,8 +625,8 @@ Transform:
   m_GameObject: {fileID: 1393689243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0162, y: -0.0103, z: 0}
-  m_LocalScale: {x: 0.9300483, y: 0.9275472, z: 1}
+  m_LocalPosition: {x: 0.0035, y: -0.0266, z: 0}
+  m_LocalScale: {x: 0.9267955, y: 0.9306081, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -750,6 +750,7 @@ MonoBehaviour:
   sandwich: 1
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: 599e9ccc1be67be4f8b470740f7056f4, type: 2}
+  puzzle: {fileID: 0}
 --- !u!61 &1595143406
 BoxCollider2D:
   m_ObjectHideFlags: 0
