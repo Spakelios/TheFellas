@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KellieStuff/Scenes/Demo Credits.unity
     guid: 362816cd9280da94d9f8b86efa57ce2b
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Interlude PART 1.unity
+    guid: 19b026fac4968ad40b197f478a38d00a
   m_configObjects: {}
