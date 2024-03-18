@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KellieStuff/Scenes/Interlude PART 1.unity
     guid: 19b026fac4968ad40b197f478a38d00a
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/InterrogationScene 3.unity
+    guid: 49264ae01ea5a0a469f6cdb768b472aa
   m_configObjects: {}

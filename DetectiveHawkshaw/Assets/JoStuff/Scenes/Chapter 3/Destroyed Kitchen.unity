@@ -453,6 +453,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1157887478
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1242608613526755266, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_Name
+      value: InterrogationCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468423948304257732, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: chapterType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468423948304257732, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I think I know what happened here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468423948304257732, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: I've gotta talk to Nicolai.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 451.8376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 326.41327
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.76044226
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824292654405776641, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
 --- !u!1 &1375470896
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +719,6 @@ MonoBehaviour:
   dialogue:
     name: Emil
     sentences:
-    - ...
     - Everything looks... exactly how we left it yesterday?
     - But how? The footprints in the lobby...
     - Something doesn't add up!
@@ -682,3 +750,4 @@ SceneRoots:
   - {fileID: 391519395}
   - {fileID: 1656910681}
   - {fileID: 1795402570}
+  - {fileID: 1157887478}

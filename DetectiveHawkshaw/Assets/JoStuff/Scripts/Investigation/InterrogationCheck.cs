@@ -12,10 +12,19 @@ public class InterrogationCheck : MonoBehaviour
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
     public InitialisationScript initialiser;
+    public ChapterType chapterType;
     
     //public string sceneName;
 
     //private AudioSource music;
+
+    public enum ChapterType
+    {
+        Sandwich,
+        Antique,
+        Break
+    }
+    
 
     private void Start()
     {
@@ -49,6 +58,11 @@ public class InterrogationCheck : MonoBehaviour
         if (dialogueManager.allEvidence) return;
         
         dialogueManager.allEvidence = true;
+        if (chapterType == ChapterType.Break)
+        {
+            dialogueManager.ChapterType = DialogueManager.chapterType.Break;
+        }
+        
         dialogueManager.StartDialogue(dialogue);
 
     }

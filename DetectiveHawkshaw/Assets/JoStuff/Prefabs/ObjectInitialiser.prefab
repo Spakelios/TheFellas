@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1554638708621151520}
   - component: {fileID: 3020199116527677857}
-  - component: {fileID: 5761828024725123676}
   m_Layer: 0
   m_Name: ObjectInitialiser
   m_TagString: Initialiser
@@ -55,15 +54,3 @@ MonoBehaviour:
   dia: {fileID: 0}
   inter: {fileID: 0}
   room: {fileID: 0}
---- !u!114 &5761828024725123676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7596919428184626256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 965c6798a525e7045887a133aab076a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
