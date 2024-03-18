@@ -544,5 +544,10 @@ VAR ShowJournal = 0
 
 "...Tell me about this file of yours then."
 
+<I> His claims aren't completely unfounded, I've done my own snooping about since everything happened.
+<I> It's a matter of proof, something he doesn't have access to. 
+<I> I send him away, he'll be held in custody for a little while to make things more believable.
+<I> All thats left now is to hunt down the evidence and complete the case file. </I>
+
 
 -> END

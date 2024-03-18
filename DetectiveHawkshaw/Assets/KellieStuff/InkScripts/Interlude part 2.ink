@@ -27,7 +27,8 @@ EXTERNAL Name(charName)
 -> OhNo
 == trust ===
 <I> I can't simply refile through my bosses belongings! That's absurd! 
-<I> ...I stare down at them none the less as the title of one of the papers catches my eye.</I>
+<I> ...I stare down at them none the less as the title of one of the papers catches my eye.
+I just can't help myself, It'll just be a quick look. No harm in that. </I>
 -> OhNo
 
 === OhNo ==

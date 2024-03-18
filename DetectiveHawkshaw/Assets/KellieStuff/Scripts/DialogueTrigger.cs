@@ -138,7 +138,7 @@ public class DialogueTrigger : MonoBehaviour
 
     IEnumerator waitToLoad()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(NextScene);
     }
 
