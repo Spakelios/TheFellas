@@ -37,6 +37,16 @@ public class DialogueManager : MonoBehaviour
 
     public bool interroCh1;
 
+    public chapterType ChapterType;
+    
+    public enum chapterType
+    {
+        Default,
+        Sandwich,
+        Antique,
+        Break
+    };
+
 
     // Use this for initialization
     private void Start()
@@ -49,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         nameText = dialogueBox.transform.Find("Name").GetComponent<TextMeshProUGUI>();
         dialogueText = dialogueBox.transform.Find("Dialogue").GetComponent<TextMeshProUGUI>();
         dialogueBox.SetActive(false);
-        dialogueText.text = String.Empty;
+        dialogueText.text = "...";
         
         //evidence pop-up stuff
         evidenceWindow = GameObject.FindWithTag("EvidencePortrait");
@@ -60,10 +70,9 @@ public class DialogueManager : MonoBehaviour
         interrogationCheck = FindObjectOfType<InterrogationCheck>();
         toInterrogation = GameObject.FindWithTag("InterrogationButton");
 
-        if (!allEvidence)
-        {
-            toInterrogation.GetComponent<Button>().interactable = false;
-        }
+        toInterrogation.GetComponent<Button>().interactable = false;
+        ChapterType = chapterType.Default;
+        
         
         evidenceStats = null;
         allEvidence = false;
@@ -179,6 +188,8 @@ public class DialogueManager : MonoBehaviour
             {
                 EvidenceCheck();
             }
+            
+            
         }
         
         else if (otherPuzzleDialogue)
@@ -192,6 +203,12 @@ public class DialogueManager : MonoBehaviour
         {
             var d = FindObjectOfType<ToInterrogationChOne>();
             d.ToInterrogation();
+        }
+        
+        else if (ChapterType == chapterType.Break)
+        {
+            var d = FindObjectOfType<InvestToInterrogation>();
+            d.GoToInterrogation();
         }
 
     }

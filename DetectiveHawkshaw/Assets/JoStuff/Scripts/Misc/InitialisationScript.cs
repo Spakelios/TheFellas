@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 //PUT IN EACH SCENE, MAKING SURE THE CASEDATA ALIGNS WITH THE CORRESPONDING CASE
@@ -21,6 +22,8 @@ public class InitialisationScript : MonoBehaviour
         //checks to see if each object is in the scene & instantiates it if not
         //should be able to load in on scenes that aren't marked as "Initial_*Insert Scene Name*"
         
+        
+
         invest = GameObject.FindWithTag("InvestigationCanvas");
 
         if (invest == null)
@@ -34,6 +37,8 @@ public class InitialisationScript : MonoBehaviour
         {
             dia = Instantiate(dialogueManager);
         }
+    
+        /*
 
         inter = GameObject.FindWithTag("InterrogationCheck");
 
@@ -41,6 +46,7 @@ public class InitialisationScript : MonoBehaviour
         {
             inter = Instantiate(interrogationCheck);
         }
+        */
 
         room = GameObject.FindWithTag("RoomLoader");
 
@@ -51,12 +57,14 @@ public class InitialisationScript : MonoBehaviour
 
     }
 
-    private void DestroyObjects()
+    /*
+    public void DestroyObjects()
     {
         Destroy(invest);
         Destroy(dia);
-        Destroy(inter);
+        //Destroy(inter);
         Destroy(room);
         Destroy(this);
     }
+    */
 }

@@ -36,12 +36,15 @@ public class InvestToInterrogation : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
         
         SceneManager.LoadScene(levelName);
-        DestroyObjects();
+        //initialiser.DestroyObjects();
     }
     
+    
+    /*
     private void DestroyObjects()
     {
         var list = GameObject.FindGameObjectsWithTag("Initialiser");
+        Cursor.visible = true;
         
         Destroy(initialiser.dia);
         Destroy(initialiser.inter);
@@ -50,8 +53,10 @@ public class InvestToInterrogation : MonoBehaviour
         {
             Destroy(g);
         }
-        Destroy(gameObject);
-        Cursor.visible = true;
+        
+        Destroy(initialiser.invest);
+
     }
+    */
     
 }
