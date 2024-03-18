@@ -8,8 +8,8 @@ public class NextScene : MonoBehaviour
     // Start is called before the first frame update
     public void next()
     {
-        VNToInvestLoader.instance.LoadLevel("Initial_Lobby");
-        // SceneManager.LoadScene("Initial_Lobby");
+
+        SceneManager.LoadScene("InterrogationScene 3");
     }  
     public void next1()
     {
@@ -59,7 +59,7 @@ public class NextScene : MonoBehaviour
     
     public void MainMenu()
     {
-        VNToInvestLoader.instance.LoadLevel("StartScreen");
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void booobs()

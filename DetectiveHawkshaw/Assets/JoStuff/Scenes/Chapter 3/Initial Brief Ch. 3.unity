@@ -241,7 +241,7 @@ MonoBehaviour:
   nameTag: {fileID: 1016981683}
   typingSpeed: 0.04
   continueIcon: {fileID: 641808464}
-  NextScene: 
+  NextScene: Destroyed Lobby (Initial)
   characterIcon: {fileID: 89634927}
   Icon: {fileID: 181272909}
   choiceHolder: {fileID: 526447972}
@@ -1121,6 +1121,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -99.90742
       objectReference: {fileID: 0}
+    - target: {fileID: 5308506863911422594, guid: c2529069ce87e6948bd27c5446ec7ed4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5503500738052448866, guid: c2529069ce87e6948bd27c5446ec7ed4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1165,7 +1169,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5308506863911422594, guid: c2529069ce87e6948bd27c5446ec7ed4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

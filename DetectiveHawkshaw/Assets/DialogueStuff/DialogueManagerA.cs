@@ -150,7 +150,7 @@ public class DialogueManagerA : MonoBehaviour
 
     IEnumerator waitToLoad()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene(NextScene);
     }
     void HandleTags(List<string> currentTags)

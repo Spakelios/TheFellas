@@ -172,6 +172,8 @@ public class DataPersistenceManager : MonoBehaviour
             gameData.currentSceneName = scene.name;
         }
         
+        
+        
         // save that data to a file using the data handler
         dataHandler.Save(gameData, selectedProfileId);
     }
