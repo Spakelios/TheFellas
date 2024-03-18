@@ -32,6 +32,8 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
 
     public Animator animation;
     
+    public GameObject puzzle;
+    
     
     //public AudioSource evidenceSound;
     
@@ -73,12 +75,14 @@ public class PeopleInvestigationDialogueTrigger : MonoBehaviour
     {
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
+        if (puzzle != null && puzzle.activeInHierarchy) return;
     }
 
     public void OnMouseOver()
     {
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
+        if (puzzle != null && puzzle.activeInHierarchy) return;
 
         
         if (!eyeSpawned)

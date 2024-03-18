@@ -44,6 +44,8 @@ public class InvestigationDialogueTrigger : MonoBehaviour
 
     public Evidence evidenceStats;
     //public TextAsset dialogueLines;
+    public GameObject puzzle;
+    
     private void Start()
     {
         camera = Camera.main;
@@ -98,6 +100,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     {
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
+        if (puzzle != null && puzzle.activeInHierarchy) return;
         
         
         //examineContainer.SetActive(true);
@@ -107,6 +110,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     {
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
+        if (puzzle != null && puzzle.activeInHierarchy) return;
         
         if (!eyeSpawned)
         {

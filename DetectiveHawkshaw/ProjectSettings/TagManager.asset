@@ -21,6 +21,7 @@ TagManager:
   - InterrogationCheck
   - Initialiser
   - AudioManager
+  - JigsawPiece
   layers:
   - Default
   - TransparentFX

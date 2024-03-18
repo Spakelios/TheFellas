@@ -5471,6 +5471,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1570027151892032547}
+        m_TargetAssemblyTypeName: ChangeSortOrder, Assembly-CSharp
+        m_MethodName: DecreaseSortOrder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2313457695942009875
 GameObject:
   m_ObjectHideFlags: 0
@@ -13726,6 +13738,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1570027151892032547}
+        m_TargetAssemblyTypeName: ChangeSortOrder, Assembly-CSharp
+        m_MethodName: IncreaseSortOrder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &5543027245995778499
 GameObject:
   m_ObjectHideFlags: 0
@@ -15460,6 +15484,7 @@ GameObject:
   - component: {fileID: 5982123384401116760}
   - component: {fileID: 7388441741927394329}
   - component: {fileID: 3767267667000721207}
+  - component: {fileID: 1570027151892032547}
   m_Layer: 5
   m_Name: InvestigationCanvas
   m_TagString: InvestigationCanvas
@@ -15583,6 +15608,19 @@ MonoBehaviour:
   sceneName: InterrogationScene
   transition: {fileID: 0}
   transitionTime: 1
+--- !u!114 &1570027151892032547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474863226835546641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db27f259aa451df4da8527c019030183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 2034943668416802512}
 --- !u!1 &6481896827494646305
 GameObject:
   m_ObjectHideFlags: 0
@@ -22472,7 +22510,6 @@ GameObject:
   - component: {fileID: 5474828059348396761}
   - component: {fileID: 3673489994999858578}
   - component: {fileID: 7309772847255302777}
-  - component: {fileID: 3513047186118172401}
   m_Layer: 5
   m_Name: JournalUI
   m_TagString: Journal
@@ -22575,18 +22612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18cbdd2471eb5b4ea269a2395f4c6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!210 &3513047186118172401
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8989790764688399145}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 11
-  m_SortAtRoot: 0
 --- !u!1 &9007595658136878059
 GameObject:
   m_ObjectHideFlags: 0

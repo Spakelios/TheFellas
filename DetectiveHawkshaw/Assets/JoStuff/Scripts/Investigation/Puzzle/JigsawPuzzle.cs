@@ -16,20 +16,22 @@ public class JigsawPuzzle : MonoBehaviour
     public Transform gameHolder;
     public Transform piecePrefab;
 
-    private Transform draggingPiece = null;
+    public Transform draggingPiece = null;
     private Vector3 offset;
+    private int piecesCorrect;
 
     public void Start()
     {
         pieces = new List<Transform>();
         dimensions = GetDimensions(picture, numberOfPieces);
+        piecesCorrect = 0;
         CreatePieces(picture);
         Scatter();
         UpdateBorder();
 
     }
 
-    private Vector2Int GetDimensions(Texture2D picture, int numberOfPieces)
+    private Vector2Int GetDimensions(Texture picture, int numberOfPieces)
     {
         if (picture.width < picture.height) //e.g. if height is double the width, you'd get twice as many pieces
         {
@@ -45,17 +47,17 @@ public class JigsawPuzzle : MonoBehaviour
         return dimensions;
     }
 
-    private void CreatePieces(Texture2D picture)
+    private void CreatePieces(Texture picture)
     {
         height = 1f / dimensions.y;
         var aspect = (float) picture.width / picture.height;
         width = aspect / dimensions.x;
 
-        for (int row = 0; row < dimensions.y; row++)
+        for (var row = 0; row < dimensions.y; row++)
         {
-            for (int col = 0; col < dimensions.x; col++)
+            for (var col = 0; col < dimensions.x; col++)
             {
-                Transform piece = Instantiate(piecePrefab, gameHolder);
+                var piece = Instantiate(piecePrefab, gameHolder);
                 piece.localPosition = new Vector3(
                 (-width * dimensions.x / 2) + (width * col) + (width / 2),
                 (-height * dimensions.y / 2) + (height * row) + (height / 2),
@@ -65,16 +67,16 @@ public class JigsawPuzzle : MonoBehaviour
                 piece.name = $"Piece {(row * dimensions.x) + col}";
                 pieces.Add(piece);
 
-                float width1 = 1f / dimensions.x;
-                float height1 = 1f / dimensions.y;
+                var width1 = 1f / dimensions.x;
+                var height1 = 1f / dimensions.y;
 
-                Vector2[] uv = new Vector2[4];
+                var uv = new Vector2[4];
                 uv[0] = new Vector2(width1 * col, height1 * row);
                 uv[1] =  new Vector2(width1 * (col + 1), height1 * row);
                 uv[2] =  new Vector2(width1 * col, height1 * (row + 1));
                 uv[3] =  new Vector2(width1 * (col + 1), height1 * (row + 1));
 
-                Mesh mesh = piece.GetComponent<MeshFilter>().mesh;
+                var mesh = piece.GetComponent<MeshFilter>().mesh;
                 mesh.uv = uv;
                 piece.GetComponent<MeshRenderer>().material.SetTexture("_MainTex", picture);
             }
@@ -83,31 +85,31 @@ public class JigsawPuzzle : MonoBehaviour
 
     private void Scatter()
     {
-        float orthoHeight = Camera.main.orthographicSize;
-        float screenAspect = (float) Screen.width / Screen.height;
-        float orthoWidth = (screenAspect * orthoHeight);
+        var orthoHeight = Camera.main.orthographicSize;
+        var screenAspect = (float) Screen.width / Screen.height;
+        var orthoWidth = (screenAspect * orthoHeight);
 
-        float pieceWidth = width * gameHolder.localScale.x;
-        float pieceHeight = height * gameHolder.localScale.y;
+        var pieceWidth = width * gameHolder.localScale.x;
+        var pieceHeight = height * gameHolder.localScale.y;
 
         orthoHeight -= pieceHeight;
         orthoWidth -= pieceWidth;
         
         foreach (var piece in pieces)
         {
-            float x = Random.Range(-orthoWidth, orthoWidth);
-            float y = Random.Range(-orthoHeight, orthoHeight);
+            var x = Random.Range(-orthoWidth, orthoWidth);
+            var y = Random.Range(-orthoHeight, orthoHeight);
             piece.position = new Vector3(x, y, -1f);
         }
     }
 
     private void UpdateBorder()
     {
-        LineRenderer lineRenderer = gameHolder.GetComponent<LineRenderer>();
-        float halfWidth = (width * dimensions.x) / 2f;
-        float halfHeight = (height * dimensions.y) / 2f;
+        var lineRenderer = gameHolder.GetComponent<LineRenderer>();
+        var halfWidth = (width * dimensions.x) / 2f;
+        var halfHeight = (height * dimensions.y) / 2f;
 
-        float borderZ = 0f;
+        const float borderZ = 0f;
         lineRenderer.SetPosition(0, new Vector3(-halfWidth, halfHeight, borderZ));
         lineRenderer.SetPosition(1, new Vector3(halfWidth, halfHeight, borderZ));
         lineRenderer.SetPosition(2, new Vector3(halfWidth, -halfHeight, borderZ));
@@ -121,10 +123,13 @@ public class JigsawPuzzle : MonoBehaviour
 
     private void Update()
     {
+        if (PauseGame.isPaused) return;
+        
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit)
+
+            var hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+            if (hit && hit.transform.CompareTag("JigsawPiece"))
             {
                 draggingPiece = hit.transform;
                 offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -162,6 +167,12 @@ public class JigsawPuzzle : MonoBehaviour
         {
             draggingPiece.localPosition = targetPosition;
             draggingPiece.GetComponent<BoxCollider2D>().enabled = false;
+            piecesCorrect++;
+
+            if (piecesCorrect == pieces.Count)
+            {
+                JigsawSolvedCheck.jigsawDone = true;
+            }
         }
     }
 }
