@@ -70,7 +70,7 @@ EXTERNAL Name(charName)
   
   {Name("2011")}
   
-  <I> I lay my head on the desk, newspapers with potential jobs circled in red lay strewn across the table amidsts the empty cans and bottles.
+  <I> I lay my head on the desk, newspapers with potential jobs circled in red lay strewn across the table amidsts the other rubbish.
   <I> I can't move, I can't think.
   <I> I don't want too. I try to stop thinking, my own thoughts frighten me. I have nothing left...It's over for me.
   <I> I failed everyone, My wife, my daughter and even my self.
@@ -78,28 +78,22 @@ EXTERNAL Name(charName)
   <I> I couldn't save anyone. 
   <I> I never deserved to be happy.
   <I> It was all fake.
-  <I> I want a drink.
   -> Drink 
   
   == Drink == 
   <I> I can hear rustling outside the door of my office. 
   
-   * [ Drink ] -> DrinkMore
+   * [ Not now! ] -> DrinkMore
    
    == DrinkMore == 
    <I> It's quickly followed by footsteps. 
    
-    * [ Drink ] -> DrinkEvenMore
-    * [ Drink ] -> DrinkEvenMore
+    * [ Just go away already! ] -> DrinkEvenMore
          
 == DrinkEvenMore ==
 <I> Why is everything so damn loud!?
    
-   * [ Drink ]  ->Help
-   * [ Drink ]   ->Help
-   * [ Drink ]   -> Help
-   * [ Drink ]   -> Help
-  
+   * [ Shut up! ]  ->Help
   == Help ==
   
   "We're leaving..." "But...i wanna say goodbye to dad! Where are we going? Mama?"
