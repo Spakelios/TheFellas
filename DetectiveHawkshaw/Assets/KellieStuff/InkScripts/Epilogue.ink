@@ -75,7 +75,7 @@ EXTERNAL Char22(GreyName)
  // in another life i redo the jumpscare but not today. 
 "It's good to see you doing so well. How's Mrs. Weaver?"
 
-~Char22("Icon2Grey")
+~MCS("greys")
 {Back("Office")}
 {Char2("Katya_Happy")}
 {Icon("transparent")}
@@ -83,7 +83,7 @@ EXTERNAL Char22(GreyName)
 {Name("Lottie")}
 "Oh, you know Gran, energetic as ever."
 
-~Char22("Icon2Grey") 
+~MCS("greys")
 {Icon("EmilHappy")}
 {Name("Emil")}
 {MC("Char_Neutral")}
@@ -91,7 +91,6 @@ EXTERNAL Char22(GreyName)
 <I> More indistinct chatter can be heard outside the office door. </I> 
 
 ~MCS("greys")
-
 {Back("Lobby")}
 {Char2("Confident")}
 {Icon("transparent")}
