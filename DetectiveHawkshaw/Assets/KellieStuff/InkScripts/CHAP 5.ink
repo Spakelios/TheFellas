@@ -19,15 +19,15 @@ VAR ShowJournal = 0
 {Char2("Depressed")}
 {Name("???")}
 {MC("transparent")}"What brings you to my office today, Sveta?"
-"I must say this is the most horrendos case of deja vu I've ever expierenced."
-"What's the matter dear, cat got your tongue?"
+"I must say... this is the most horrendous case of deja vu I've ever experienced."
+"What's the matter, dear? Cat got your tongue?"
 
 ~Greys("Grey")
 {Char2("Depressed")}
 {Name("Svetlana")}
 {MC("transparent")}
  
- <I> I freeze up dropping whatever is in my hands.
+ <I> I freeze up, dropping whatever is in my hands.
  <I> She's back early, significantly earlier than planned.
  <I> Even if her expression is calm and relaxed, I can almost feel her anger from here.
  <I> Behind that smiling face was a criminal!
@@ -35,9 +35,9 @@ VAR ShowJournal = 0
  <I> She looks at me expectantly, waiting for an answer.</I>
  
  {Char2("Confident")}
- "...Everything is fine Judith, I was simply organising some papers for you."
+ "...Everything is fine, Judith. I was simply organising some papers for you."
  
- <I> I don't know why I lied, She'd hardly believe it. 
+ <I> I don't know why I lied, she'll hardly believe it. 
  <I> It wasn't even a very good lie either.
  <I> I haven't made the mistake of angering her since I was a child.
  <I> I almost feel like one again in this moment. </I>
@@ -48,10 +48,10 @@ VAR ShowJournal = 0
 {Name("Judith")}
 {MC("somethig")}
 
-"Organising papers you say? I see."
-"My apologies for interrupting you, though I don't remember asking you to do so. "
+"Organising papers, you say? I see."
+"My apologies for interrupting you... though I don't remember asking you to do so. "
 "As diligent as ever, Sveta."
-"It's a shame you can't even do nothing right-"
+"It's a shame you can't even do that right-"
 
 ~Greys("Grey")
 {Icon("Depressed")}
@@ -59,9 +59,9 @@ VAR ShowJournal = 0
 {MC("transparent")}
 
 <I> I feel a chill down my spine as her tone shifts.
-<I> I panic a litte, It took all my energy not to apologise.
-<I> To make her stop looking at me like that, but it was too late for that now.
-<I> I knew that this little charade would need to end soon. </I> 
+<I> I panic a little. It took all my strength not to back down...
+<I> To apologise, so she'll stop looking at me like that. It was too late for any of that now.
+<I> I knew that this little charade of hers would need to end soon. </I> 
 
 "Well I-"
 
@@ -73,7 +73,7 @@ VAR ShowJournal = 0
 
 "Don't even bother- I know what you're up to. Listening to that old fool? I thought you knew better than that."
 "You were always a smart and capable girl, Sveta."
-"When you listened to me of course. You always did need a more involved guiding hand."  
+"When you listened to me, of course. You always did need a more involved guiding hand."  
 
 ~Greys("Grey")
 
@@ -81,7 +81,7 @@ VAR ShowJournal = 0
 {Name("Svetlana")}
 {MC("transparent")}
 
-<I> It's hard to speak against her. After all this time I feel like a machine going against it's programming.</I>
+<I> It's hard to speak against her, after all this time. I feel like a machine going against it's programming.</I>
 
 "...and I was fortunate to have your guidance, I'm quite grateful for it. Even now."
 
@@ -91,9 +91,9 @@ VAR ShowJournal = 0
 {Name("Judith")}
 {MC("transparent")}
 
-"Grateful are we? my my...Sveta you do realise that you're not doing the best job of showing it while you're rooting through my things."
-"If you were truly grateful you would understand our position, wouldn't you?"
-"If you were truly grateful you might even consider listening to what I tell you...Not what some useless miscreant claims."
+"Grateful are we? My my, Sveta... you do realise that you're not doing the best job of showing it? You're rooting through my things, after all."
+"If you were truly grateful, you would understand our position, wouldn't you?"
+"If you were truly grateful, you might even consider listening to what I tell you... not what some useless miscreant claims."
 
 ~Greys("Grey")
 {Icon("Depressed")}
@@ -110,8 +110,8 @@ VAR ShowJournal = 0
 {Name("Judith")}
 {MC("transparent")}
 "...Why listen to him now? After all he's cost you?"
-"All he put you through? he almost ruined your career... almost put you out of work giving you that child of yours."
-"He was always rather useless...I can only imagine how terrible a father he makes."
+"All he put you through? He almost ruined your career... almost put you out of work giving you that child of yours."
+"He was always rather useless... I can only imagine how terrible a father he is."
 
 ~Greys("Grey")
 
@@ -119,13 +119,13 @@ VAR ShowJournal = 0
 {Name("Svetlana")}
 {MC("transparent")}
 
-<I> I feel something snap inside, how <B>dare</d> she speak about my family in such a way. 
+<I> I feel something snap inside, how <B>dare</B> she speak about my family in such a way. 
 
 "Excuse me? I'll have you know that child was one of the best things that ever happened to me!
-"The work I've done for you has all been for her! for her future!"
-"It's something a souless creature like you could even fathom."
+"The work I've done for you has all been for her! For her future!"
+"It's something a souless creature like you could never fathom."
 "Not anymore."
-"I've had enough of your mindless chatter, It's about time you answered for what you've done."
+"I've had enough of your mindless chatter. It's about time you answered for what you've done."
 
 ~PlayAnimation("Intro Animation") 
 
@@ -135,7 +135,7 @@ VAR ShowJournal = 0
 {Name("Judith")}
 {MC("transparent")}
 
-"hmph, we'll see about that."
+"Hmph, we'll see about that."
 
 
 ~Greys("Grey")
@@ -144,9 +144,9 @@ VAR ShowJournal = 0
 {Name("Svetlana")}
 {MC("transparent")}
 
-<I> Once I regain my senses, once I remember who all of this was for I remember I am no child.
-<I> As an adult it is my duty to pave the future for the next generation.
-<I> That is where it truly begins.  -> Questions
+<I> Once I regain my senses, I remember who all of this was for. I remember I am no child.
+<I> As an adult, it is my duty to pave the future for the next generation.
+<I> That is where this truly begins.  -> Questions
 
 == Questions ==
 
@@ -221,11 +221,11 @@ VAR ShowJournal = 0
 {Name("Svetlana")}
 {MC("transparent")} 
 
-<I> Her face contorts into something much more sinister than it was previously. 
+<I> Her face contorts into something much more sinister. 
 <I> I don't back down this time, it's simply not an option.
 
-"What you see here appears to be series of bank statements..." "
-"Care to explain, Mrs Payola?"
+"What you see here appears to be series of bank statements..."
+"Care to explain, Chief Payola?"
 
 <I> She crosses her arms and scoffs at me, looking over the statements as I hold them up. </I>
 
@@ -235,9 +235,9 @@ VAR ShowJournal = 0
 {Name("Judith")}
 {MC("transparent")}
 
-"...to put it simply, certain payments didn't need to be accounted for."
-"Not all my accounts are for buisness after all and some of my private investors don't want to be."
-"...Directly tied to the police you see."
+"... to put it simply, certain payments didn't need to be accounted for."
+"Not all my accounts are for business, after all."
+"Some of my... private investors don't want to be directly tied to the police, you see."
 
  ~Greys("Grey")
 {Icon("Confident")}
@@ -246,9 +246,9 @@ VAR ShowJournal = 0
 
 <I> She outright admits to fraud, that saves us some time.
 <I> She's more open to admitting to everything then I anticipated.
-<I> ...perhaps she knows she's cornered? </I>
+<I> ... perhaps she knows she's cornered? </I>
 
-"So fraudelent accounts and dirty money is what's been keeping you in power all the years?"
+"So fraudulent accounts and dirty money is what's been keeping you in power all these years?"
 
  ~Greys("Grey")
 
@@ -256,10 +256,10 @@ VAR ShowJournal = 0
 {Name("Judith")}
 {MC("transparent")}
 
-"There are simply people out there that our simply grateful when you turn a blind eye."
+"There are simply people out there that are grateful when you turn a blind eye."
 "It keeps my officers safe and lines my pockets."
 "I see nothing wrong with that, Sveta."
-"Money makes the world go round after all."
+"Money makes the world go round, after all."
 
 -> Questions
 
@@ -318,8 +318,8 @@ VAR ShowJournal = 0
 {Icon("Neutral")}
 {Name("Svetlana")}
 {MC("transparent")} 
- "You seem to keep quite detailed tabs on everyone" 
- "I've seen just about everyone who's ever worked for you here, not to mention there families."
+ "You seem to keep quite detailed tabs on everyone." 
+ "I've seen just about everyone who's ever worked for you here, not to mention their families."
  
  {Evi("transparent")}
  ~Greys("Grey")
@@ -330,10 +330,10 @@ VAR ShowJournal = 0
 "That ones easy, dear. Control."
 "Everyone makes mistakes every now and then, and those mistakes can hold great value."
 "I simply hold onto them so that others don't find them."
-"Though if they simply step out of line.."
-"Who knows who might find out?" 
-"Smart people wont overstep and idiots will be dealt with."
-"...just like Hawkshaw."
+"Though if they simply step out of line..."
+"Who knows what might get out?" 
+"Smart people know not to overstep, and idiots will be dealt with."
+"... just like Hawkshaw."
 -> Questions 
 
 == ShowEvidence == 
@@ -390,29 +390,28 @@ VAR ShowJournal = 0
 
 {Evi("ziptiebag")}
  "...I see you've got a creative streak."
- "Thought I must admit,"
- "I thought you'd be above witholding evidence or falsifying it yourself."
+ "Though I must admit, I thought you'd be above witholding evidence or falsifying it yourself."
  
- <I> She waves a hand dismissively, her tone is far too casual for something so serious.
+ <I> She waves a hand dismissively; her tone is far too casual for something so serious.
  <I> I must not intimidate her at all.
- <I> That or she suspected this day would be soon. </I> 
+ <I> That, or she suspected this day would come soon enough. </I> 
  
 {Evi("transparent")}
 ~Greys("Grey")
 {Icon("transparent")}
 {Name("Judith")}
-{MC("transparent")}"I just kept it on record Sveta, I'd hardly touch any of it myself."
-"If you look closer you'll find the names of my conspirators as well."
-"They all wanted something, power of some kind."
-"I could give them that, a reccomendation, a promotion, a good contact."
+{MC("transparent")}"I just kept it on record, Sveta. I'd hardly touch any of it myself."
+"If you look closely, you'll find the names of my conspirators as well."
+"They all wanted something... power of some kind."
+"I could give them that. A recommendation, a promotion, a good contact."
 "It was a mutual agreement."
-"I help them and they would support my campaigns, silence anyone who disagreed."
+"I help them and they would support my campaigns... and silence anyone who disagreed."
 "So I could get all the way to the top."
 
 ~Greys("Grey")
 {Icon("Neutral")}
 {Name("Svetlana")}
-{MC("transparent")} "...I don't understand, you've always had the favour of the people! why go to such lengths?" 
+{MC("transparent")} "...I don't understand, you've always had the favour of the people! Why go to such lengths?" 
 
 <I> She scoffs and rolls her eyes, clearly unimpressed by my attitude.</I>
 
@@ -420,8 +419,8 @@ VAR ShowJournal = 0
 ~Greys("Grey")
 {Icon("transparent")}
 {Name("Judith")}
-{MC("transparent")}"You're as naiive as you always were, Sveta."
-"The world isn't as kind as you make it sound, people enjoy novelty, extremes, something new."
+{MC("transparent")}"You're as naïve as you always, Sveta."
+"The world isn't as kind as you make it sound... people enjoy novelty, extremes, something new."
 "Being as I am in this position was only novel for a time."
 "Everything I did was to be used to prove my incompetance, that I didn't belong."
 "I wasn't young enough for them, making big enough changes."
@@ -437,16 +436,17 @@ VAR ShowJournal = 0
 {Icon("Confident")}
 {Name("Svetlana")}
 {MC("transparent")} <I> She had given a similar speech a thousand times. If you can't trust your own you can't trust anyone at all. 
-<I> Yet here she was scamming a cheating her way to the top all these years.
-<I> Using my trust in her to make me play along. I am nothing but a pawn to her.</I>
+<I> Yet here she was, scamming and cheating her way to the top.
+<I> Using my trust in her to make me play along...
+<I> I am nothing but a pawn to her.</I>
 
-"You're most certainly right Judith."
-"We're nothing without trust, something you've lost the right too." 
+"You're most certainly right, Judith."
+"We're nothing without trust, something you've lost the right to." 
 "I will succeed you, but only because you will be stepping down."
 
 <I> Her eyebrow twitches and her indifference becomes something more sinister.
-<I> She still thought after all this I'd follow her without question?
-<I> That I would stand beside her? After everything she's done.
+<I> She still thought after all this that I'd follow her without question?
+<I> That I would stand beside her? After everything she's done?
 
 "Leave. Leave quietly and you can keep your legacy in tact."
 "Leave peacefully and I won't release any of that little history of yours."
@@ -458,7 +458,7 @@ VAR ShowJournal = 0
 {MC("transparent")}"You sound more and more like me everyday, we're cut from the same cloth you and I."
 "If someone as soft as you walks this path alone, you'll be just like me in the end."
 "Then you'll understand."
-"There's no place for us Sveta, they don't want us here."
+"There's no place for us, Sveta, they don't want us here."
 "We have every right to play dirty."
 
  ~Greys("Grey")
