@@ -39,6 +39,8 @@ public class DialogueManager : MonoBehaviour
 
     public chapterType ChapterType;
     
+    public GameObject puzzle;
+    
     public enum chapterType
     {
         Default,
@@ -53,6 +55,12 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         puzzleDialogue = false;
+        puzzle = GameObject.FindWithTag("Puzzle");
+
+        if (puzzle != null)
+        {
+            puzzle.SetActive(false);
+        }
         sentences = new Queue<string>();
 
         //preparing dialogue placements
@@ -71,7 +79,11 @@ public class DialogueManager : MonoBehaviour
         interrogationCheck = FindObjectOfType<InterrogationCheck>();
         toInterrogation = GameObject.FindWithTag("InterrogationButton");
 
-        toInterrogation.GetComponent<Button>().interactable = false;
+        if (toInterrogation != null)
+        {
+            toInterrogation.GetComponent<Button>().interactable = false;
+        }
+        
         ChapterType = chapterType.Default;
         
         
@@ -210,6 +222,11 @@ public class DialogueManager : MonoBehaviour
         {
             var d = FindObjectOfType<InvestToInterrogation>();
             d.GoToInterrogation();
+        }
+        
+        else if (ChapterType == chapterType.Confront)
+        {
+            puzzle.SetActive(true);
         }
 
     }

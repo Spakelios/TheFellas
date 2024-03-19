@@ -25,6 +25,7 @@ TagManager:
   - Embezzlement
   - Blackmail
   - Forgery
+  - Puzzle
   layers:
   - Default
   - TransparentFX

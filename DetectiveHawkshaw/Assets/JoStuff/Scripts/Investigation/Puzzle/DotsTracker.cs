@@ -14,6 +14,7 @@ public class DotsTracker : MonoBehaviour
     public void CheckScore()
     {
         if (score != 3) return;
-        Debug.Log("All matched!");
+        var d = FindObjectOfType<InvestToInterrogation>();
+        d.GoToInterrogation();
     }
 }
