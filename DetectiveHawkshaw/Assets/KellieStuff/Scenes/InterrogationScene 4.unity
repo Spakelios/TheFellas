@@ -2027,7 +2027,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1497742013}
   nameTag: {fileID: 1016981683}
   typingSpeed: 0.04
-  NextScene: Demo credits
+  NextScene: Epilogue
   continueIcon: {fileID: 158002084}
   characterIcon: {fileID: 89634927}
   Icon: {fileID: 181272909}
