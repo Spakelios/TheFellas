@@ -38,6 +38,7 @@ VAR ShowJournal = 0
 "Yes, Madam! One is currently being held in custody."
 "The other is awaiting you in the interrogation room."
 
+{Back("POffice")}
 {Icon("EmilNeutral")}
 {Name("Emil")}
 {MC("transparent")}
@@ -194,7 +195,7 @@ VAR ShowJournal = 0
 
 
 == five == 
-{Evi("placeholder polariod")}
+{Evi("Footprints Polaroid")}
 "...I see, I wasn't aware such extreme measures were used. 
 "Either way that attitude will not get you anywhere with me, Mr. Hawkshaw."
 "Now, what do you think we found?"
@@ -285,7 +286,7 @@ VAR ShowJournal = 0
     -> DONE
   
   ==two==  
-{Evi("placeholderpolariod")}
+{Evi("CaseFile Zoomed")}
 {MCS("greys")}
 {Icon("transparent")}
 {Name("Mr. Hawkshaw")}
@@ -516,7 +517,7 @@ VAR ShowJournal = 0
     
     == seven == 
     
-{Evi("placeholderpolariod")}
+{Evi("OfficePolaroid_1")}
 "I'd be lying if I told you I wasn't impressed."
 
 {Evi("transparent")}
