@@ -5,6 +5,7 @@ EXTERNAL Back(charName)
 EXTERNAL Greys(grey)
 EXTERNAL PlayAnimation(PlayAnimation)
 EXTERNAL Evi(charName)
+EXTERNAL Char2(charName)
 
 VAR canShowEvidence = false
 VAR someEvidence = 0
@@ -13,16 +14,16 @@ VAR ShowJournal = 0
 
 
 {Evi("transparent")}
-{Back("Office")}
+{Back("POffice")}
 {Icon("transparent")}
+{Char2("Depressed")}
 {Name("???")}
 {MC("transparent")}"What brings you to my office today, Sveta?"
 "I must say this is the most horrendos case of deja vu I've ever expierenced."
 "What's the matter dear, cat got your tongue?"
 
 ~Greys("Grey")
-{Back("Office")}
-{Icon("Depressed")}
+{Char2("Depressed")}
 {Name("Svetlana")}
 {MC("transparent")}
  
@@ -33,7 +34,7 @@ VAR ShowJournal = 0
  <I> She's as crooked as Emil said...
  <I> She looks at me expectantly, waiting for an answer.</I>
  
- {Icon("Confident")}
+ {Char2("Confident")}
  "...Everything is fine Judith, I was simply organising some papers for you."
  
  <I> I don't know why I lied, She'd hardly believe it. 
@@ -42,10 +43,10 @@ VAR ShowJournal = 0
  <I> I almost feel like one again in this moment. </I>
  
  ~Greys("Grey")
- {Back("Office")}
+{Char2("transparent")}
 {Icon("transparent")}
 {Name("Judith")}
-{MC("transparent")}
+{MC("somethig")}
 
 "Organising papers you say? I see."
 "My apologies for interrupting you, though I don't remember asking you to do so. "
@@ -53,7 +54,6 @@ VAR ShowJournal = 0
 "It's a shame you can't even do nothing right-"
 
 ~Greys("Grey")
-{Back("Office")}
 {Icon("Depressed")}
 {Name("Svetlana")}
 {MC("transparent")}
@@ -66,7 +66,7 @@ VAR ShowJournal = 0
 "Well I-"
 
  ~Greys("Grey")
- {Back("Office")}
+
 {Icon("transparent")}
 {Name("Judith")}
 {MC("transparent")}
@@ -76,7 +76,7 @@ VAR ShowJournal = 0
 "When you listened to me of course. You always did need a more involved guiding hand."  
 
 ~Greys("Grey")
-{Back("Office")}
+
 {Icon("Irritated")}
 {Name("Svetlana")}
 {MC("transparent")}
@@ -86,7 +86,7 @@ VAR ShowJournal = 0
 "...and I was fortunate to have your guidance, I'm quite grateful for it. Even now."
 
  ~Greys("Grey")
- {Back("Office")}
+
 {Icon("transparent")}
 {Name("Judith")}
 {MC("transparent")}
@@ -96,7 +96,6 @@ VAR ShowJournal = 0
 "If you were truly grateful you might even consider listening to what I tell you...Not what some useless miscreant claims."
 
 ~Greys("Grey")
-{Back("Office")}
 {Icon("Depressed")}
 {Name("Svetlana")}
 {MC("transparent")}
@@ -106,7 +105,7 @@ VAR ShowJournal = 0
 <I> A horrid invader that scrambles my thoughts, that silences my feelings. 
 
  ~Greys("Grey")
- {Back("Office")}
+
 {Icon("transparent")}
 {Name("Judith")}
 {MC("transparent")}
@@ -115,7 +114,7 @@ VAR ShowJournal = 0
 "He was always rather useless...I can only imagine how terrible a father he makes."
 
 ~Greys("Grey")
-{Back("Office")}
+
 {Icon("Neutral")}
 {Name("Svetlana")}
 {MC("transparent")}
@@ -131,7 +130,7 @@ VAR ShowJournal = 0
 ~PlayAnimation("Intro Animation") 
 
  ~Greys("Grey")
- {Back("Office")}
+
 {Icon("transparent")}
 {Name("Judith")}
 {MC("transparent")}
@@ -140,7 +139,7 @@ VAR ShowJournal = 0
 
 
 ~Greys("Grey")
-{Back("Office")}
+
 {Icon("Confident")}
 {Name("Svetlana")}
 {MC("transparent")}
@@ -158,6 +157,10 @@ VAR ShowJournal = 0
 * {ShowStatements && ShowDocs} [ What happened to this evidence? ] -> ShowEvidence
 
 == ShowStatements == 
+~Greys("Grey")
+{Icon("Neutral")}
+{Name("Svetlana")}
+{MC("transparent")}
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
@@ -213,8 +216,7 @@ VAR ShowJournal = 0
 -> DONE
 
 == one == 
-{Evi("Something")}
-{Back("Office")}
+{Evi("Bank Statements")}
 {Icon("Confident")}
 {Name("Svetlana")}
 {MC("transparent")} 
@@ -229,7 +231,6 @@ VAR ShowJournal = 0
 
 {Evi("transparent")}
  ~Greys("Grey")
- {Back("Office")}
 {Icon("transparent")}
 {Name("Judith")}
 {MC("transparent")}
@@ -250,7 +251,7 @@ VAR ShowJournal = 0
 "So fraudelent accounts and dirty money is what's been keeping you in power all the years?"
 
  ~Greys("Grey")
- {Back("Office")}
+
 {Icon("transparent")}
 {Name("Judith")}
 {MC("transparent")}
@@ -263,7 +264,10 @@ VAR ShowJournal = 0
 -> Questions
 
 == ShowDocs == 
-
+~Greys("Grey")
+{Icon("Neutral")}
+{Name("Svetlana")}
+{MC("transparent")}
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
@@ -309,16 +313,16 @@ VAR ShowJournal = 0
     }
     
     == two == 
+{Evi("Blackmail")}
 ~Greys("Grey")
-{Back("Office")}
 {Icon("Neutral")}
 {Name("Svetlana")}
 {MC("transparent")} 
  "You seem to keep quite detailed tabs on everyone" 
  "I've seen just about everyone who's ever worked for you here, not to mention there families."
  
+ {Evi("transparent")}
  ~Greys("Grey")
- {Back("Office")}
 {Icon("transparent")}
 {Name("Judith")}
 {MC("transparent")}
@@ -333,6 +337,10 @@ VAR ShowJournal = 0
 -> Questions 
 
 == ShowEvidence == 
+~Greys("Grey")
+{Icon("Neutral")}
+{Name("Svetlana")}
+{MC("transparent")} 
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
@@ -354,7 +362,7 @@ VAR ShowJournal = 0
     {someEvidence:
     
     -1:
-   <i> Not again..! </I>
+   <i> Not that..! </I>
     ...
     -> ShowEvidence
 
@@ -365,9 +373,11 @@ VAR ShowJournal = 0
     ->  ShowEvidence
     
     -3:
-    <I> It's not time for that. </I>
+   <i> This will do..! </I>
     ...
-    -> ShowEvidence
+    -> three
+
+    
    
     
     -else:
@@ -376,11 +386,97 @@ VAR ShowJournal = 0
     -> ShowDocs
     
     }
-
-
 == three == 
 
+{Evi("ziptiebag")}
+ "...I see you've got a creative streak."
+ "Thought I must admit,"
+ "I thought you'd be above witholding evidence or falsifying it yourself."
+ 
+ <I> She waves a hand dismissively, her tone is far too casual for something so serious.
+ <I> I must not intimidate her at all.
+ <I> That or she suspected this day would be soon. </I> 
+ 
+{Evi("transparent")}
+~Greys("Grey")
+{Icon("transparent")}
+{Name("Judith")}
+{MC("transparent")}"I just kept it on record Sveta, I'd hardly touch any of it myself."
+"If you look closer you'll find the names of my conspirators as well."
+"They all wanted something, power of some kind."
+"I could give them that, a reccomendation, a promotion, a good contact."
+"It was a mutual agreement."
+"I help them and they would support my campaigns, silence anyone who disagreed."
+"So I could get all the way to the top."
 
+~Greys("Grey")
+{Icon("Neutral")}
+{Name("Svetlana")}
+{MC("transparent")} "...I don't understand, you've always had the favour of the people! why go to such lengths?" 
 
+<I> She scoffs and rolls her eyes, clearly unimpressed by my attitude.</I>
+
+{Evi("transparent")}
+~Greys("Grey")
+{Icon("transparent")}
+{Name("Judith")}
+{MC("transparent")}"You're as naiive as you always were, Sveta."
+"The world isn't as kind as you make it sound, people enjoy novelty, extremes, something new."
+"Being as I am in this position was only novel for a time."
+"Everything I did was to be used to prove my incompetance, that I didn't belong."
+"I wasn't young enough for them, making big enough changes."
+"I did what needed to be done, I needed to show that I could control things."
+"I could improve this country."
+"In a way no new extreme could manage."
+"I even paved the way for you- my successor."
+"Someone who I could keep under my wing while I moved forward."
+"Someone I could trust."
+"Trust is something we can't do without after all, especially amongsts our own."
+
+ ~Greys("Grey")
+{Icon("Confident")}
+{Name("Svetlana")}
+{MC("transparent")} <I> She had given a similar speech a thousand times. If you can't trust your own you can't trust anyone at all. 
+<I> Yet here she was scamming a cheating her way to the top all these years.
+<I> Using my trust in her to make me play along. I am nothing but a pawn to her.</I>
+
+"You're most certainly right Judith."
+"We're nothing without trust, something you've lost the right too." 
+"I will succeed you, but only because you will be stepping down."
+
+<I> Her eyebrow twitches and her indifference becomes something more sinister.
+<I> She still thought after all this I'd follow her without question?
+<I> That I would stand beside her? After everything she's done.
+
+"Leave. Leave quietly and you can keep your legacy in tact."
+"Leave peacefully and I won't release any of that little history of yours."
+
+{Evi("transparent")}
+~Greys("Grey")
+{Icon("transparent")}
+{Name("Judith")}
+{MC("transparent")}"You sound more and more like me everyday, we're cut from the same cloth you and I."
+"If someone as soft as you walks this path alone, you'll be just like me in the end."
+"Then you'll understand."
+"There's no place for us Sveta, they don't want us here."
+"We have every right to play dirty."
+
+ ~Greys("Grey")
+{Icon("Confident")}
+{Name("Svetlana")}
+{MC("transparent")}"I said, <b> Leave.</B>"
+
+~Greys("Grey")
+{Icon("transparent")}
+{Name("Judith")}
+{MC("transparent")} "You won't able to keep that goody two shoes act forever."
+"No matter what you think now."
+"Just you wait."
+
+ ~Greys("Grey")
+{Icon("Confident")}
+{Name("Svetlana")}
+{MC("transparent")} "I'm not interested in your nonsense anymore."
+"Get out of my office." 
 
 ->END
