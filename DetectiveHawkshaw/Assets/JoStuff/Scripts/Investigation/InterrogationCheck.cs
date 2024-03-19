@@ -22,7 +22,8 @@ public class InterrogationCheck : MonoBehaviour
     {
         Sandwich,
         Antique,
-        Break
+        Break,
+        Confront
     }
     
 
@@ -61,6 +62,11 @@ public class InterrogationCheck : MonoBehaviour
         if (chapterType == ChapterType.Break)
         {
             dialogueManager.ChapterType = DialogueManager.chapterType.Break;
+        }
+        
+        else if (chapterType == ChapterType.Confront)
+        {
+            dialogueManager.ChapterType = DialogueManager.chapterType.Confront;
         }
         
         dialogueManager.StartDialogue(dialogue);

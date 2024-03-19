@@ -44,7 +44,8 @@ public class DialogueManager : MonoBehaviour
         Default,
         Sandwich,
         Antique,
-        Break
+        Break,
+        Confront
     };
 
 

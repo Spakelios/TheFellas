@@ -22,6 +22,9 @@ TagManager:
   - Initialiser
   - AudioManager
   - JigsawPiece
+  - Embezzlement
+  - Blackmail
+  - Forgery
   layers:
   - Default
   - TransparentFX
