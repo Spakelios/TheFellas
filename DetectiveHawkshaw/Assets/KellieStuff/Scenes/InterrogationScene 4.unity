@@ -512,6 +512,18 @@ PrefabInstance:
       propertyPath: m_text
       value: INTERROGATION START!
       objectReference: {fileID: 0}
+    - target: {fileID: 8295414073604984749, guid: 936b6e4bcb966d8479457184b8427285, type: 3}
+      propertyPath: m_Color.b
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295414073604984749, guid: 936b6e4bcb966d8479457184b8427285, type: 3}
+      propertyPath: m_Color.g
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295414073604984749, guid: 936b6e4bcb966d8479457184b8427285, type: 3}
+      propertyPath: m_Color.r
+      value: 0.60784316
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2039,12 +2051,11 @@ MonoBehaviour:
   pictures:
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   evidenceButtons:
   - {fileID: 1347742206}
   - {fileID: 363800661}
   - {fileID: 583463375}
-  - {fileID: 416442929}
-  - {fileID: 2042876651}
   evidenceSprites:
   - {fileID: 21300000, guid: f4682b3879f6a31479b36df45f72570c, type: 3}
   - {fileID: 21300000, guid: f4682b3879f6a31479b36df45f72570c, type: 3}
@@ -2583,7 +2594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &416442927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9434,7 +9445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9150943, g: 0.3056069, b: 0.3056069, a: 1}
+  m_Color: {r: 0.62352943, g: 0.4745098, b: 0.4745098, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14932,7 +14943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2042876651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16087,15 +16098,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3274060019107668186, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3274060019107668186, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 3274060019107668186, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.60784316
       objectReference: {fileID: 0}
     - target: {fileID: 4221551279957957337, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_SizeDelta.x
@@ -16252,7 +16263,7 @@ PrefabInstance:
     - target: {fileID: 8889537272912518416, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: e92b8b6af916030408d54d8db21cd5d5, type: 2}
+      objectReference: {fileID: 11400000, guid: de68e82d014e67546a216bebbbbdf00a, type: 2}
     - target: {fileID: 8889537272912518416, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -16272,7 +16283,7 @@ PrefabInstance:
     - target: {fileID: 8889537272912518416, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -2940249126032113151, guid: e92b8b6af916030408d54d8db21cd5d5, type: 2}
+      objectReference: {fileID: 7487339486743358911, guid: de68e82d014e67546a216bebbbbdf00a, type: 2}
     - target: {fileID: 8889537272912518416, guid: f112359840062924a9ebd0e07a55271c, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
