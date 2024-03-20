@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KellieStuff/Scenes/InterrogationScene 4.unity
     guid: 784c8b277a76ce54c95c721673073131
+  - enabled: 1
+    path: Assets/KellieStuff/Scenes/Epilogue.unity
+    guid: 5c1c4128787931149902cab3c9c1c869
   m_configObjects: {}
