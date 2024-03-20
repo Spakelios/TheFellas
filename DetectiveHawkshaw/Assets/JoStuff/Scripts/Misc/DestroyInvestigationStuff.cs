@@ -8,7 +8,9 @@ public class DestroyInvestigationStuff : MonoBehaviour
     private void Start()
     {
         Cursor.visible = true;
-        
+        InvestigationDialogueTrigger.isExamined.Clear();
+        OtherPuzzleTrigger.puzzleSolved = false;
+
         var dia = GameObject.FindWithTag("DialogueManager");
         var invest = GameObject.FindWithTag("InvestigationCanvas");
         var room = GameObject.FindWithTag("RoomLoader");

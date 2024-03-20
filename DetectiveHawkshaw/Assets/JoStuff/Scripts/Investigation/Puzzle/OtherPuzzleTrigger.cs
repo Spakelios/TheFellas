@@ -27,7 +27,7 @@ public class OtherPuzzleTrigger : MonoBehaviour
     public Evidence evidenceStats;
 
     public GameObject puzzleScreen;
-    private static bool puzzleSolved;
+    public static bool puzzleSolved;
 
     public TextAsset unsolvedDialogueFile;
     public TextAsset solvedDialogueFile;
@@ -72,7 +72,7 @@ public class OtherPuzzleTrigger : MonoBehaviour
         }
 
         examineTagBox.text = examineTag;
-        examineTagBox.color = Color.black;
+        examineTagBox.color = Color.white;
 
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();

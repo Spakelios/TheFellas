@@ -98,7 +98,7 @@ EXTERNAL Char32(GreyName) //grey out character 3
  <I>Neither of us could've imagined what'd be waiting for us there.<I>
  
  //---At H & C---
- {Back("Lobby")}
+ {Back("FootLobby")}
  {Name("Emil")}
  {Icon("EmilUpset")}
  "..."
