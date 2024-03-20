@@ -181,7 +181,9 @@ public class DialogueManager : MonoBehaviour
 
         if (puzzleDialogue)
         {
-            FindObjectOfType<PuzzleTrigger>().LoadPuzzleScene();
+            //FindObjectOfType<PuzzleTrigger>().LoadPuzzleScene();
+            var g = FindObjectOfType<PuzzleTrigger>();
+            g.puzzleScreen.SetActive(true);
             puzzleDialogue = false;
         }
 
@@ -196,6 +198,7 @@ public class DialogueManager : MonoBehaviour
 
             evidenceWindow.SetActive(false);
             evidenceDialogue = false;
+            sandwichDialogue = false;
 
             if (toInterrogation.GetComponent<Button>().interactable == false && interroCh1 == false)
             {

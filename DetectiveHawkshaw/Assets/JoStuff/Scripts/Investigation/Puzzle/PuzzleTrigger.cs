@@ -24,6 +24,8 @@ public class PuzzleTrigger : MonoBehaviour
     private Camera camera;
     
     private Vector3 textOffset;
+
+    public GameObject puzzleScreen;
     //public AudioSource doorKnock;
     //private AudioSource doorOpen;
 
@@ -51,6 +53,8 @@ public class PuzzleTrigger : MonoBehaviour
     private void OnMouseEnter()
     {
         if (PauseGame.isPaused) return;
+        if (dialogueManager.dialogueBox.activeInHierarchy) return;
+        if (puzzleScreen.activeInHierarchy) return;
 
         FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.doorKnock, transform.position);
     }
@@ -59,6 +63,7 @@ public class PuzzleTrigger : MonoBehaviour
     {
         if (PauseGame.isPaused) return;
         if (dialogueManager.dialogueBox.activeInHierarchy) return;
+        if (puzzleScreen.activeInHierarchy) return;
         
         if (!eyeSpawned)
         {
