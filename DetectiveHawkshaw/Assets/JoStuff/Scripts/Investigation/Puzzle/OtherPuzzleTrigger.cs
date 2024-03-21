@@ -18,7 +18,7 @@ public class OtherPuzzleTrigger : MonoBehaviour
     public string examineTag;
     public string newExamineTag;
     
-    private static int plus = 0;
+    //private static int plus = 0;
     
     private Collider2D collider;
     private Camera camera;
@@ -31,6 +31,8 @@ public class OtherPuzzleTrigger : MonoBehaviour
 
     public TextAsset unsolvedDialogueFile;
     public TextAsset solvedDialogueFile;
+
+    public bool ch3;
     private void Start()
     {
         camera = Camera.main;
@@ -89,7 +91,7 @@ public class OtherPuzzleTrigger : MonoBehaviour
 
         else
         {
-            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
+            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.cameraClick, transform.position);
             var d = solvedDialogueFile.text.Split("\n");
             var di = d.ToList();
         
@@ -120,8 +122,17 @@ public class OtherPuzzleTrigger : MonoBehaviour
         
         dialogue.sentences = di;
         
-        plus++;
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+        InvestigationDialogueTrigger.plus++;
+        
+        if (ch3)
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity2", InvestigationDialogueTrigger.plus);
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", InvestigationDialogueTrigger.plus);
+        }
+
         InvestigationDialogueTrigger.isExamined.Add(evidenceStats);
         
         dialogueManager.evidenceDialogue = true;

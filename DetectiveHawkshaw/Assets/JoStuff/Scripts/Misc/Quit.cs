@@ -15,4 +15,9 @@ public class Quit : MonoBehaviour
     {
         SceneManager.LoadScene("Level Select");
     }
+    
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }

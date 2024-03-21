@@ -15,6 +15,8 @@ public class ConnectTheDots : MonoBehaviour
     private Vector2 mousePos;
     private DotsTracker dots;
 
+    public GameObject explanation;
+
     private void Start()
     {
         camera = Camera.main;
@@ -29,10 +31,12 @@ public class ConnectTheDots : MonoBehaviour
     private void OnMouseOver()
     {
         if (PauseGame.isPaused) return;
+        if (explanation.activeInHierarchy) return;
         
         if (!Input.GetMouseButtonDown(0)) return;
         if (startPin != null) return;
         startPin = Instantiate(pin);
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.lockScroll, transform.position);
         startPin.transform.position = mousePos;
         startPin.tag = tag;
         startPoint = startPin.transform.position;
@@ -53,6 +57,7 @@ public class ConnectTheDots : MonoBehaviour
         if (!Input.GetMouseButtonDown(1)) return;
 
         endPin = Instantiate(pin);
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.lockScroll, transform.position);
         endPin.transform.position = mousePos;
         endPoint = endPin.transform.position;
         rope.SetPosition(1, endPoint);

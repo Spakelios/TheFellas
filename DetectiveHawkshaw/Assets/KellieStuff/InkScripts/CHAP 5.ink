@@ -257,10 +257,9 @@ VAR ShowJournal = 0
 -> Questions
 
 == ShowDocs == 
-~MCS("IconGrey")
 {Icon("Neutral")}
 {Name("Svetlana")}
-{MC("transparent")}
+{MC("Judith_Neutral")}
 #Evidence: 0
 #Evidence: 1
 #Evidence: 2
@@ -319,7 +318,7 @@ VAR ShowJournal = 0
 {Name("Judith")}
 {MC("Judith_Neutral")}
 
-"That ones easy, dear. Control."
+"That one's easy, dear. Control."
 "Everyone makes mistakes every now and then, and those mistakes can hold great value."
 "I simply hold onto them so that others don't find them."
 "Though if they simply step out of line..."

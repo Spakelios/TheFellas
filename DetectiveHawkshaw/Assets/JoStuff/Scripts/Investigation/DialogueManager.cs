@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -200,10 +201,12 @@ public class DialogueManager : MonoBehaviour
             evidenceDialogue = false;
             sandwichDialogue = false;
 
+            /*
             if (toInterrogation.GetComponent<Button>().interactable == false && interroCh1 == false)
             {
                 EvidenceCheck();
             }
+            */
             
             
         }
@@ -230,6 +233,17 @@ public class DialogueManager : MonoBehaviour
         else if (ChapterType == chapterType.Confront)
         {
             puzzle.SetActive(true);
+        }
+        
+        else if (ChapterType == chapterType.Sandwich)
+        {
+            toInterrogation.GetComponent<Button>().interactable = true;
+            toInterrogation.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "->";
+        }
+
+        if (!allEvidence)
+        {
+            interrogationCheck.CheckEvidence();
         }
 
     }

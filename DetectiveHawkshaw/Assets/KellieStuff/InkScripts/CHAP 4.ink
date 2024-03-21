@@ -7,6 +7,7 @@ EXTERNAL PlayAnimation(PlayAnimation)
 EXTERNAL PlayAnimation2(PlayAnimation2)
 EXTERNAL Sveta(PurpleName)
 EXTERNAL Evi(charName)
+EXTERNAL Sound (soundName)
 
 VAR canShowEvidence = false
 VAR someEvidence = 0
@@ -54,6 +55,7 @@ VAR ShowJournal = 0
 {Icon("transparent")}
 {Name("Detective Maratova")}
 {MC("Neutral")}
+~Sound("Woman")
 
 "Mr. Hawkshaw, I'm here to ask you some questions."
 "I ask that we keep things professional."
@@ -299,7 +301,7 @@ VAR ShowJournal = 0
 {Evi("transparent")}
 {MCS("greys")}
 {Icon("Depressed")}
-{Name("Svetlana")}
+{Name("Detective Maratova")}
 {MC("EmilNeutral")} 
 
 <I> This was all too much, had he lost his mind?
@@ -315,7 +317,7 @@ VAR ShowJournal = 0
 
 {MCS("greys")}
 {Icon("transparent")}
-{Name("Emil")}
+{Name("Mr. Hawkshaw")}
 {MC("EmilUpset")} 
 
 "Lana, please, you have to listen to me..."
@@ -323,7 +325,7 @@ VAR ShowJournal = 0
 
 {MCS("greys")}
 {Icon("Irritated")}
-{Name("Svetlana")}
+{Name("Detective Maratova")}
 {MC("EmilUpset")}
 
 <I> I can't help but be angry after hearing him talk like this.
@@ -454,7 +456,7 @@ VAR ShowJournal = 0
 ==    JournalTime ==
 {Evi("transparent")}
 {Icon("Confident")}
-{Name("Svetlana")}
+{Name("Lana")}
 {MC("EmilNeutral")}
 #Evidence: 0
 #Evidence: 1
@@ -535,7 +537,7 @@ VAR ShowJournal = 0
 {MCS("greys")}
 {Evi("transparent")}
 {Icon("Irritated")}
-{Name("Svetlana")}
+{Name("Lana")}
 {MC("EmilNeutral")}<I> I shake my head as we chat like friends again.
 <I> It's a wonderfully nostalgic feeling.</I>
 {Icon("Smiling")} "Good God, no! Every other word is about looking forward to 'working with Dad again.'
@@ -548,7 +550,7 @@ VAR ShowJournal = 0
 <I> His claims aren't completely unfounded, I've done my own snooping about since everything happened.
 <I> It's a matter of proof, something he doesn't have access to. 
 <I> I send him away, he'll be held in custody for a little while to make things more believable.
-<I> All thats left now is to hunt down the evidence and complete the case file. </I>
+<I> All that's left now is to hunt down the evidence and complete the case file. </I>
 
 
 -> END

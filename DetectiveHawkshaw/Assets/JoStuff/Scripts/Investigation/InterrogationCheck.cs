@@ -69,6 +69,11 @@ public class InterrogationCheck : MonoBehaviour
             dialogueManager.ChapterType = DialogueManager.chapterType.Confront;
         }
         
+        else if (chapterType == ChapterType.Sandwich)
+        {
+            dialogueManager.ChapterType = DialogueManager.chapterType.Sandwich;
+        }
+        
         dialogueManager.StartDialogue(dialogue);
 
     }

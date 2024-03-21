@@ -19,9 +19,13 @@ public class FMODEvents : MonoBehaviour
     
     [field: SerializeField] public EventReference lockOpen { get; private set; }
     
-    [field: Header("Music")] 
-    [field: SerializeField] public EventReference investigationMusic { get; private set; }
-    [field: SerializeField] public EventReference HappyMusic { get; private set; }
+    [field: SerializeField] public EventReference cameraClick { get; private set; }
+    
+    [field: SerializeField] public EventReference differenceFound { get; private set; }
+    
+    [field: Header("Music")] //MUSIC WAS FUNKY WITH THE AUDIO MANAGER SO COME BACK TO IT
+    //[field: SerializeField] public EventReference investigationMusic { get; private set; }
+    //[field: SerializeField] public EventReference HappyMusic { get; private set; }
     
     //field makes it so that this shows up in the editor even though it's a public get and private set
     

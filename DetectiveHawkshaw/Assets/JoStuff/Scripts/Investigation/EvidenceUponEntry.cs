@@ -6,7 +6,7 @@ public class EvidenceUponEntry : MonoBehaviour
 {
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
-    private static int plus = 0;
+    //private static int plus = 0;
 
     public Evidence evidenceStats;
     
@@ -21,8 +21,8 @@ public class EvidenceUponEntry : MonoBehaviour
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
         dialogueManager.evidenceDialogue = true;
-        plus++;
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+        InvestigationDialogueTrigger.plus++;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity2", InvestigationDialogueTrigger.plus);
         InvestigationDialogueTrigger.isExamined.Add(evidenceStats);
         
         dialogueManager.evidenceStats = evidenceStats;

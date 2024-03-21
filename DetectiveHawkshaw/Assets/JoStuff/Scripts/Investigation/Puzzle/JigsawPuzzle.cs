@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.UI;
-using UnityEngine.UI;
 
 public class JigsawPuzzle : MonoBehaviour
 {
@@ -19,6 +17,7 @@ public class JigsawPuzzle : MonoBehaviour
     public Transform draggingPiece = null;
     private Vector3 offset;
     private int piecesCorrect;
+    public GameObject explanation;
 
     public void Start()
     {
@@ -124,6 +123,7 @@ public class JigsawPuzzle : MonoBehaviour
     private void Update()
     {
         if (PauseGame.isPaused) return;
+        if (explanation.activeInHierarchy) return;
         
         if (Input.GetMouseButtonDown(0))
         {
@@ -131,6 +131,7 @@ public class JigsawPuzzle : MonoBehaviour
             var hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit && hit.transform.CompareTag("JigsawPiece"))
             {
+                FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.journalFlick, transform.position);
                 draggingPiece = hit.transform;
                 offset = draggingPiece.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 offset += Vector3.back;

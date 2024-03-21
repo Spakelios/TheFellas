@@ -10,6 +10,7 @@ public class DifferencesFoundCheck : MonoBehaviour
     {
         if (SpotTheDifferencePuzzle.found == 3)
         {
+            SpotTheDifferencePuzzle.found = 0;
             puzzle.PuzzleSolved();
         }
     }

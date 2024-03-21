@@ -333,9 +333,14 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - ENIDNG
+  - Interlude
+  - Interrogation
   - Investigation Portion
   - Main Theme
   - Puzzle Section
+  - SFX
+  - TitleScreen
   - VFX
   - VN Portion
   BanksToLoad: []

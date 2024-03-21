@@ -9,11 +9,16 @@ public class DestroyInvestigationStuff : MonoBehaviour
     {
         Cursor.visible = true;
         InvestigationDialogueTrigger.isExamined.Clear();
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", -InvestigationDialogueTrigger.plus);
+        InvestigationDialogueTrigger.plus = 0;
+
+        PuzzleTrigger.puzzleSolved = false;
         OtherPuzzleTrigger.puzzleSolved = false;
 
         var dia = GameObject.FindWithTag("DialogueManager");
         var invest = GameObject.FindWithTag("InvestigationCanvas");
         var room = GameObject.FindWithTag("RoomLoader");
+        var music = GameObject.FindWithTag("InvestigationMusic");
         
         /*
         var list = GameObject.FindGameObjectsWithTag("Initialiser");
@@ -31,6 +36,7 @@ public class DestroyInvestigationStuff : MonoBehaviour
         Destroy(dia);
         Destroy(invest);
         Destroy(room);
+        Destroy(music);
         
     }
 }

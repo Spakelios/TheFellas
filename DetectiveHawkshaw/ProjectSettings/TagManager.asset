@@ -26,6 +26,7 @@ TagManager:
   - Blackmail
   - Forgery
   - Puzzle
+  - InvestigationMusic
   layers:
   - Default
   - TransparentFX

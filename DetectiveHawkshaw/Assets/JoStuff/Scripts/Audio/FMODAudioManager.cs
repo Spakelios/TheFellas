@@ -30,12 +30,17 @@ public class FMODAudioManager : MonoBehaviour
 
     private void Start()
     {
-        InitialiseMusic(FMODEvents.instance.investigationMusic);
+        //InitialiseMusic(FMODEvents.instance.investigationMusic);
     }
 
     private void InitialiseMusic(EventReference musicReference)
     {
         musicEventInstance = RuntimeManager.CreateInstance(musicReference);
         musicEventInstance.start();
+    }
+
+    public void SwitchMusic(EventReference musicReference)
+    {
+        
     }
 }

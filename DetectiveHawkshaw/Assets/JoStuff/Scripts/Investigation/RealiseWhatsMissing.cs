@@ -95,7 +95,7 @@ public class RealiseWhatsMissing : MonoBehaviour
         }
         
         examineTagBox.text = examineTag;
-        examineTagBox.color = Color.black;
+        examineTagBox.color = Color.white;
         
         if (!Input.GetMouseButtonDown(0)) return;
         OnMouseExit();

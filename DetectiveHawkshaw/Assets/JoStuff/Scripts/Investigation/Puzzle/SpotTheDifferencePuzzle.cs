@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class SpotTheDifferencePuzzle : MonoBehaviour
 {
-    public List<int> differences;
+    //public List<int> differences;
     public TextMeshProUGUI text;
     public static int found = 0;
     public TextMeshProUGUI total;
@@ -15,17 +15,22 @@ public class SpotTheDifferencePuzzle : MonoBehaviour
 
     private void Start()
     {
+        /*
         differences = new List<int>
         {
             1, 2, 3
         };
+        */
         print(found);
     }
 
     private void OnMouseOver()
     {
         if (!Input.GetMouseButtonDown(0)) return;
+        
         if (found >= 3) return;
+        
+        FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.differenceFound, transform.position);
 
         if (cloak)
         {

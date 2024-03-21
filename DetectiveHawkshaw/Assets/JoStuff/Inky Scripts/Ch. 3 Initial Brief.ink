@@ -15,6 +15,7 @@ EXTERNAL PopOut(popName)
 EXTERNAL MCS(GreyName) //grey out character 1
 EXTERNAL Char22(GreyName) //grey out character 2
 EXTERNAL Char32(GreyName) //grey out character 3
+EXTERNAL Sound (soundName)
 
 //---Before going to H & C---
 {Back("Hawkshaw_Kitchen")}
@@ -95,6 +96,7 @@ EXTERNAL Char32(GreyName) //grey out character 3
  {Name("Emil")}
  {Back("Black_BG")}
  {Icon("transparent")}
+ ~Sound("NO")
  <I>Neither of us could've imagined what'd be waiting for us there.<I>
  
  //---At H & C---

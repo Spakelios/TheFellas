@@ -42,7 +42,7 @@ EXTERNAL MCS(GreyName)
 
 <I> First, all I felt was shock.
 
-<I> Soon after by pain akin to that of a grieving widow. </I>
+<I> Followed soon after by pain akin to that of a grieving widow. </I>
 
 "My sandwich..." 
 
@@ -100,8 +100,8 @@ EXTERNAL MCS(GreyName)
 "...Right, thank you." 
 
 {Icon("EmilNeutral")}
-I can't help but sigh.
-I need better staff. -> two
+<I>I can't help but sigh. I need better staff. </I>
+-> two
 
 == two == 
 {MC("transparent")} {Back("Office")} <I>I slowly open the door and the chattering voices of my daughter and co-worker fill my ears. </I>
@@ -132,7 +132,8 @@ I need better staff. -> two
 {Icon("EmilHappy")}
 
 "Oh, that's enough outta you, buddy!"
-"I've got work to do, unlike a certain someone who likes to waste his time idling and then blames his lack of productivity on little children!"
+"I've got work to do, unlike a certain someone who likes to waste his time idling..."
+"And then blames his lack of productivity on little children!"
  ~MCS("IconGrey")
  {Name("Nicolai")}
  {MC("Nicolai_Annoyed")}
@@ -189,8 +190,9 @@ I need better staff. -> two
 "Jesus Christ!"
  ~MCS("IconGrey")
 {Name("Emil")}
+{Icon("EmilNeutral")}
 
-<I>He looks at me confused, almost a little rattled as I begin to explain my predicament.</I>
+<I>He looks at me confusedly, almost a little rattled as I begin to explain my predicament.</I>
 
 "My lunch has mysteriously disappeared." 
 
@@ -201,6 +203,6 @@ I need better staff. -> two
 <I>Neither reacts very strongly. </I>
 <I>It appears our perpetrator isn't so easily intimidated. </I>
 
-"...and I will find out one way or another who is responsible. "
+"...and I will find out who is responsible... one way, or another. "
 
 -> END

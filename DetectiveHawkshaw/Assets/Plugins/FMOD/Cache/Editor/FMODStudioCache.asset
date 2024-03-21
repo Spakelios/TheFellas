@@ -80,6 +80,58 @@ MonoBehaviour:
   - Regular
   - Reverb
   Exists: 1
+--- !u!114 &-7895620892085304658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Ch3 Invest 1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Ch3 Invest 1
+  Guid:
+    Data1: -287546409
+    Data2: 1223442497
+    Data3: -1946553966
+    Data4: 1965453731
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7259716118969967755}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12800
+--- !u!114 &-7259716118969967755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ch3 Invest 1/Intensity2
+  m_EditorClassIdentifier: 
+  Name: Intensity2
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 260523124
+    data2: 1872236040
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-7174958112699467597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +211,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5063770143477842448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Title Screen
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Title Screen
+  Guid:
+    Data1: 1158386315
+    Data2: 1098465777
+    Data3: 1860338839
+    Data4: -1909236019
+  Banks:
+  - {fileID: 3512000383724558134}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12800
 --- !u!114 &-5023097390691646582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +345,26 @@ MonoBehaviour:
   - Regular
   - Reverb
   Exists: 1
+--- !u!114 &-3670842665617776064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638465024677938462
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
 --- !u!114 &-3670116732617442085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,6 +446,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1656382977494538090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interrogation.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Interrogation.bank
+  Name: Interrogation
+  StudioPath: bank:/Interrogation
+  lastModified: 638465081932083112
+  FileSizes:
+  - Name: Desktop
+    Value: 366176
+  Exists: 1
 --- !u!114 &-990517631269458255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +564,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-238148877811338243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intensity2
+  m_EditorClassIdentifier: 
+  Name: Intensity2
+  StudioPath: parameter:/Intensity2
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 260523124
+    data2: 1872236040
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +608,11 @@ MonoBehaviour:
   - {fileID: -605378829472524536}
   - {fileID: 8653868148023825174}
   - {fileID: 748880558791156802}
+  - {fileID: 3512000383724558134}
+  - {fileID: -3670842665617776064}
+  - {fileID: 7378359689977902607}
+  - {fileID: -1656382977494538090}
+  - {fileID: 4964810721438093314}
   EditorEvents:
   - {fileID: 6676937886049046890}
   - {fileID: 4896895885178369064}
@@ -482,17 +630,26 @@ MonoBehaviour:
   - {fileID: -4580143984478729531}
   - {fileID: 5988083926627759402}
   - {fileID: -4577865214390751162}
+  - {fileID: -5063770143477842448}
+  - {fileID: 3281895559904600668}
+  - {fileID: 5438774215131955864}
+  - {fileID: 325851587567808161}
+  - {fileID: 1345996685817396119}
+  - {fileID: -7895620892085304658}
+  - {fileID: 1779889285119232823}
+  - {fileID: 3848772778587402321}
   EditorParameters:
   - {fileID: 19813913119169695}
   - {fileID: -8188354005512971461}
   - {fileID: 5070169421881388489}
   - {fileID: -4422102344229584850}
   - {fileID: -433139021900996646}
+  - {fileID: -238148877811338243}
   MasterBanks:
   - {fileID: 4481593516728349603}
   StringsBanks:
   - {fileID: 3607472290051113618}
-  cacheTime: 638442333460162761
+  cacheTime: 638465123145959568
   cacheVersion: 131616
 --- !u!114 &19813913119169695
 MonoBehaviour:
@@ -520,6 +677,33 @@ MonoBehaviour:
   - Regular
   - Reverb
   Exists: 1
+--- !u!114 &325851587567808161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Regular_Interrogation
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Regular_Interrogation
+  Guid:
+    Data1: -1087330659
+    Data2: 1083253729
+    Data3: -455022717
+    Data4: -1800710387
+  Banks:
+  - {fileID: -1656382977494538090}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32621
 --- !u!114 &748880558791156802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +724,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 218912
   Exists: 1
+--- !u!114 &1345996685817396119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Svetlana_Interrogation
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Svetlana_Interrogation
+  Guid:
+    Data1: -662320710
+    Data2: 1250637321
+    Data3: 842017162
+    Data4: -295266333
+  Banks:
+  - {fileID: -1656382977494538090}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12857
+--- !u!114 &1779889285119232823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/END
+  m_EditorClassIdentifier: 
+  Path: event:/Music/END
+  Guid:
+    Data1: -262798769
+    Data2: 1121309066
+    Data3: 887828649
+    Data4: -1683581343
+  Banks:
+  - {fileID: 4964810721438093314}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12972
 --- !u!114 &2137744298211113154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,6 +822,53 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2196576
   Exists: 1
+--- !u!114 &3281895559904600668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Camera_Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Camera_Click
+  Guid:
+    Data1: -1646131844
+    Data2: 1094130571
+    Data3: -1514708037
+    Data4: 718440851
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3512000383724558134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/TitleScreen.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/TitleScreen.bank
+  Name: TitleScreen
+  StudioPath: bank:/TitleScreen
+  lastModified: 638464997106802116
+  FileSizes:
+  - Name: Desktop
+    Value: 171712
+  Exists: 1
 --- !u!114 &3607472290051113618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,11 +884,38 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638442333460162761
+  lastModified: 638465123145959568
   FileSizes:
   - Name: Desktop
-    Value: 2062
+    Value: 2672
   Exists: 1
+--- !u!114 &3848772778587402321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Spot
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Spot
+  Guid:
+    Data1: 761038713
+    Data2: 1246355077
+    Data3: 660303759
+    Data4: 62129126
+  Banks:
+  - {fileID: 6498244219364827859}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4481593516728349603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,10 +931,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638442333460132848
+  lastModified: 638465123145919662
   FileSizes:
   - Name: Desktop
-    Value: 1934
+    Value: 2096
   Exists: 1
 --- !u!114 &4896895885178369064
 MonoBehaviour:
@@ -653,6 +965,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 42666
+--- !u!114 &4964810721438093314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ENIDNG.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/ENIDNG.bank
+  Name: ENIDNG
+  StudioPath: bank:/ENIDNG
+  lastModified: 638465114880094999
+  FileSizes:
+  - Name: Desktop
+    Value: 165152
+  Exists: 1
 --- !u!114 &5070169421881388489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,6 +1009,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5438774215131955864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Interlude
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Interlude
+  Guid:
+    Data1: 981982808
+    Data2: 1120073239
+    Data3: 881825720
+    Data4: -1840892508
+  Banks:
+  - {fileID: 7378359689977902607}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21333
 --- !u!114 &5988083926627759402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,10 +1079,10 @@ MonoBehaviour:
     Portion.bank
   Name: Investigation Portion
   StudioPath: bank:/Investigation Portion
-  lastModified: 638442333459952946
+  lastModified: 638465123145700216
   FileSizes:
   - Name: Desktop
-    Value: 2266112
+    Value: 2555104
   Exists: 1
 --- !u!114 &6676937886049046890
 MonoBehaviour:
@@ -782,6 +1141,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 15071
+--- !u!114 &7378359689977902607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interlude.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/Sound Design Assignment/Build/Desktop/Interlude.bank
+  Name: Interlude
+  StudioPath: bank:/Interlude
+  lastModified: 638465044202788944
+  FileSizes:
+  - Name: Desktop
+    Value: 183328
+  Exists: 1
 --- !u!114 &7543925157299599174
 MonoBehaviour:
   m_ObjectHideFlags: 0

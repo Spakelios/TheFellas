@@ -690,7 +690,7 @@ VAR ShowJournal = 0
 {Char2("Char_Neutral")}
 {Icon("transparent")}
 {Name("Charlotte")} "...Gran isn't the only one I owe an apology to."
-"I'm sorry for being so disrespectful to both you and Detective Koslov"
+"I'm sorry for being so disrespectful to both you and Detective Koslov."
 "I put too much stock in rumours and gossip and I just..."
 
 ~Char22("Icon2Grey")

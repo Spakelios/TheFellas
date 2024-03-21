@@ -10,6 +10,7 @@ public class JigsawSolvedCheck : MonoBehaviour
     public void CheckJigsaw()
     {
         if (!jigsawDone) return;
+        jigsawDone = false;
         puzzle.PuzzleSolved();
     }
 }

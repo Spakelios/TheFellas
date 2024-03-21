@@ -4890,6 +4890,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 886828806042752144, guid: 50a51c76bffc4c54c92048f7dff99238, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 930924891538025118, guid: 50a51c76bffc4c54c92048f7dff99238, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -5533,6 +5537,10 @@ PrefabInstance:
     - target: {fileID: 8461089211203220200, guid: 50a51c76bffc4c54c92048f7dff99238, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510502611912298529, guid: 50a51c76bffc4c54c92048f7dff99238, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8722400268123184868, guid: 50a51c76bffc4c54c92048f7dff99238, type: 3}
       propertyPath: m_Enabled

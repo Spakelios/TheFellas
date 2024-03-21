@@ -1746,6 +1746,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 941668562}
+        m_TargetAssemblyTypeName: JournalSFX, Assembly-CSharp
+        m_MethodName: FlickThroughJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 308574226}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1844,6 +1856,7 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: 520bad4f5686d3c4e97f8fa1e7ceba73, type: 2}
   puzzle: {fileID: 941668559}
+  chap3: 0
 --- !u!212 &764994090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2220,6 +2233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941668561}
   - component: {fileID: 941668560}
+  - component: {fileID: 941668562}
   m_Layer: 0
   m_Name: Puzzle Screen LOL
   m_TagString: Untagged
@@ -2259,6 +2273,18 @@ Transform:
   - {fileID: 766177041}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941668562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941668559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18cbdd2471eb5b4ea269a2395f4c6f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1011641517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3030,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 941668562}
+        m_TargetAssemblyTypeName: JournalSFX, Assembly-CSharp
+        m_MethodName: FlickThroughJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 941668559}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -3090,6 +3128,10 @@ PrefabInstance:
     - target: {fileID: 1242608613526755266, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
       propertyPath: m_Name
       value: InterrogationCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468423948304257732, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: chapterType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1468423948304257732, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
@@ -3796,6 +3838,7 @@ MonoBehaviour:
   puzzleScreen: {fileID: 941668559}
   unsolvedDialogueFile: {fileID: 4900000, guid: 9668bcea9a0a506439012d5f9ef7c041, type: 3}
   solvedDialogueFile: {fileID: 4900000, guid: f07286990d396fe41bc47dba179a493d, type: 3}
+  ch3: 0
 --- !u!60 &1851928154
 PolygonCollider2D:
   m_ObjectHideFlags: 0

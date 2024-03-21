@@ -33,7 +33,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public bool sandwich;
 
     //public bool wasChecked;
-    private static int plus = 0;
+    public static int plus = 0;
 
     private Collider2D collider;
     private Camera camera;
@@ -45,6 +45,8 @@ public class InvestigationDialogueTrigger : MonoBehaviour
     public Evidence evidenceStats;
     //public TextAsset dialogueLines;
     public GameObject puzzle;
+
+    public bool chap3;
     
     private void Start()
     {
@@ -133,7 +135,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         if (evidence)
         {
             //evidenceSound.Play();
-            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
+            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.cameraClick, transform.position);
             dialogueManager.evidenceDialogue = true;
 
             /*
@@ -149,7 +151,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         if (calendar)
         {
             //evidenceSound.Play();
-            //FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
+            //FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.cameraClick, transform.position);
             dialogueManager.calendarDialogue = true;
             
             /*
@@ -165,7 +167,7 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         if (sandwich)
         {
             //evidenceSound.Play();
-            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.evidence, transform.position);
+            FMODAudioManager.instance.PlayOneShot(FMODEvents.instance.cameraClick, transform.position);
             dialogueManager.sandwichDialogue = true;
             
             /*
@@ -183,7 +185,16 @@ public class InvestigationDialogueTrigger : MonoBehaviour
         if (!isExamined.Contains(evidenceStats))
         {
             plus++;
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+            
+            if (chap3)
+            {
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity2", plus);
+            }
+            else
+            {
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Intensity", plus);
+            }
+            
             isExamined.Add(evidenceStats);
         }
 

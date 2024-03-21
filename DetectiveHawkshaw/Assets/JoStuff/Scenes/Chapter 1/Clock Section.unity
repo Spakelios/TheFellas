@@ -500,6 +500,8 @@ MonoBehaviour:
   sandwich: 0
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: 8e9599e5e2e545f478672fa525b8ac64, type: 2}
+  puzzle: {fileID: 0}
+  chap3: 0
 --- !u!212 &1060481834
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -722,6 +724,7 @@ MonoBehaviour:
   examineTagBox: {fileID: 0}
   examineTag: Nicolai
   animation: {fileID: 0}
+  puzzle: {fileID: 0}
 --- !u!70 &1068909854
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -768,6 +771,10 @@ PrefabInstance:
     - target: {fileID: 1242608613526755266, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
       propertyPath: m_Name
       value: InterrogationCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468423948304257732, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
+      propertyPath: chapterType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1468423948304257732, guid: e4b60eabaeb9e924ea9aa6631300cd34, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
@@ -1249,6 +1256,8 @@ MonoBehaviour:
   sandwich: 0
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: f7af946a7c49cc6419b6702dc35f35d9, type: 2}
+  puzzle: {fileID: 0}
+  chap3: 0
 --- !u!212 &1709956097
 SpriteRenderer:
   m_ObjectHideFlags: 0
