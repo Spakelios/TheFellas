@@ -508,7 +508,7 @@ MonoBehaviour:
   examineTagBox: {fileID: 0}
   dm: {fileID: 0}
   navType: 0
-  puzzle: {fileID: 818361563}
+  puzzle: {fileID: 1421431725}
 --- !u!60 &592534864
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -636,7 +636,8 @@ MonoBehaviour:
   sandwich: 0
   textOffset: {x: 0, y: 20, z: 0}
   evidenceStats: {fileID: 11400000, guid: 10fa9fe7a40114947b228a28b2fdaaf6, type: 2}
-  puzzle: {fileID: 818361563}
+  puzzle: {fileID: 1421431725}
+  chap3: 0
 --- !u!212 &607960267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -843,7 +844,7 @@ MonoBehaviour:
   examineTagBox: {fileID: 0}
   dm: {fileID: 0}
   navType: 0
-  puzzle: {fileID: 818361563}
+  puzzle: {fileID: 1421431725}
 --- !u!60 &608411122
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -893,6 +894,90 @@ PolygonCollider2D:
       - {x: -10.903358, y: -27.401476}
       - {x: -10.228033, y: 20.227161}
   m_UseDelaunayMesh: 0
+--- !u!1 &796750547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 796750548}
+  - component: {fileID: 796750549}
+  m_Layer: 0
+  m_Name: '"Panel"'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &796750548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796750547}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0763, y: -0.0458, z: 0}
+  m_LocalScale: {x: 17.940279, y: 10.18756, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1421431726}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &796750549
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796750547}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &811817002
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,30 +1028,54 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1421431726}
     m_Modifications:
     - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 818361563}
+      objectReference: {fileID: 818361565}
+    - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1421431725}
+    - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FlickThroughJournal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: JournalSFX, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661268173188239195, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3355859474072769333, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
@@ -1103,7 +1212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7255351253218706092, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8631217440518516600, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       propertyPath: m_IsActive
@@ -1115,7 +1224,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4222529701697794711, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1040244867}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7255351253218706092, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 818361565}
   m_SourcePrefab: {fileID: 100100000, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
 --- !u!1 &818361563 stripped
 GameObject:
@@ -1127,6 +1239,18 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4222529701697794711, guid: 792420c2651e0c34abf21481abf27a26, type: 3}
   m_PrefabInstance: {fileID: 818361562}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &818361565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818361563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18cbdd2471eb5b4ea269a2395f4c6f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &833649591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,7 +1352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1040244867
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1533,7 +1657,7 @@ MonoBehaviour:
   examineTagBox: {fileID: 0}
   examineTag: Plant
   animation: {fileID: 0}
-  puzzle: {fileID: 818361563}
+  puzzle: {fileID: 1421431725}
 --- !u!212 &1202050667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1700,6 +1824,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1421431725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421431726}
+  m_Layer: 0
+  m_Name: PuzzleScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1421431726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421431725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 818361564}
+  - {fileID: 796750548}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1556332971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,7 +1965,7 @@ MonoBehaviour:
   dialogueManager: {fileID: 0}
   sceneName: Bathroom
   examineTagBox: {fileID: 0}
-  puzzleScreen: {fileID: 818361563}
+  puzzleScreen: {fileID: 1421431725}
 --- !u!60 &1556332976
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2423,4 +2580,4 @@ SceneRoots:
   - {fileID: 1280994326}
   - {fileID: 604090271}
   - {fileID: 1202050668}
-  - {fileID: 818361562}
+  - {fileID: 1421431726}
