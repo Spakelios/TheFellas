@@ -1311,9 +1311,9 @@ MonoBehaviour:
   typingSpeed: 0.07
   NextScene: Initial Brief Ch. 3
   continueIcon: {fileID: 1497387248}
-  choiceHolder: {fileID: 1015814411}
+  choiceHolder: {fileID: 1665727644}
   choiceButtonPrefab: {fileID: 1942700258}
-  choiceHold: {fileID: 1015814409}
+  choiceHold: {fileID: 1665727643}
 --- !u!1 &1497387248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +1476,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1665727643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8537856900407323331, guid: b748134446c2554439fa036518ea5f63, type: 3}
+  m_PrefabInstance: {fileID: 408877041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1665727644 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7512512518512933, guid: b748134446c2554439fa036518ea5f63, type: 3}
+  m_PrefabInstance: {fileID: 408877041}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665727643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1771120533 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4192529056845215558, guid: b748134446c2554439fa036518ea5f63, type: 3}
