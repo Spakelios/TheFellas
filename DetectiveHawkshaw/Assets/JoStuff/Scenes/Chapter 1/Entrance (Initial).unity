@@ -307,6 +307,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 1
   puzzle: {fileID: 0}
+  hoverTag: Main Room
 --- !u!212 &667141432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -525,6 +526,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 1
   puzzle: {fileID: 0}
+  hoverTag: Clock Room
 --- !u!212 &1236110666
 SpriteRenderer:
   m_ObjectHideFlags: 0

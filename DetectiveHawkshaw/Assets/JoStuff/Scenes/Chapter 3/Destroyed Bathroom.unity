@@ -623,6 +623,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 0}
+  hoverTag: Lobby
 --- !u!60 &1729277834
 PolygonCollider2D:
   m_ObjectHideFlags: 0

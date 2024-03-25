@@ -30,6 +30,8 @@ public class GoToRoom : MonoBehaviour
 
     public GameObject puzzle;
 
+    public string hoverTag;
+
 
 
 
@@ -99,7 +101,7 @@ public class GoToRoom : MonoBehaviour
             eyeSpawned = true;
         }
 
-        examineTagBox.text = sceneName;
+        examineTagBox.text = hoverTag;
         examineTagBox.color = Color.white;
         
         if (!Input.GetMouseButtonDown(0)) return;

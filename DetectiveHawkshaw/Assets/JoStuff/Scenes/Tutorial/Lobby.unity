@@ -509,6 +509,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 1421431725}
+  hoverTag: Kitchen
 --- !u!60 &592534864
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -845,6 +846,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 1421431725}
+  hoverTag: Office
 --- !u!60 &608411122
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1966,6 +1968,7 @@ MonoBehaviour:
   sceneName: Bathroom
   examineTagBox: {fileID: 0}
   puzzleScreen: {fileID: 1421431725}
+  hoverTag: Bathroom
 --- !u!60 &1556332976
 PolygonCollider2D:
   m_ObjectHideFlags: 0

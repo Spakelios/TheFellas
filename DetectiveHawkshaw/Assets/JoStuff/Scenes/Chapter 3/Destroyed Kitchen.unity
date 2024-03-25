@@ -361,6 +361,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 0}
+  hoverTag: Lobby
 --- !u!1001 &906251420
 PrefabInstance:
   m_ObjectHideFlags: 0

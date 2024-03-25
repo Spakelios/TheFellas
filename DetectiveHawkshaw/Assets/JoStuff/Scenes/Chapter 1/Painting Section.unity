@@ -1251,6 +1251,7 @@ MonoBehaviour:
   puzzle: {fileID: 941668559}
   notAllEvidenceFile: {fileID: 4900000, guid: eb63b5c323e2ab746b106f3409ed43bd, type: 3}
   allEvidenceFile: {fileID: 4900000, guid: 9f4fddf2e09c67249b995580bc4d1658, type: 3}
+  hoverTag: Storage Room
 --- !u!61 &523158488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1548,6 +1549,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 1
   puzzle: {fileID: 941668559}
+  hoverTag: Jewellry Room
 --- !u!212 &667141432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2829,6 +2831,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 1
   puzzle: {fileID: 941668559}
+  hoverTag: Clock Room
 --- !u!212 &1236110666
 SpriteRenderer:
   m_ObjectHideFlags: 0

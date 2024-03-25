@@ -259,6 +259,7 @@ MonoBehaviour:
   textOffset: {x: 0, y: 0, z: 0}
   evidenceStats: {fileID: 11400000, guid: a4aa3b62848c2eb4e8d6b844befe1592, type: 2}
   puzzle: {fileID: 0}
+  chap3: 0
 --- !u!58 &208667686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1096,6 +1097,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 0}
+  hoverTag: Lobby
 --- !u!60 &1601999862
 PolygonCollider2D:
   m_ObjectHideFlags: 0

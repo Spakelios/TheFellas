@@ -26,6 +26,8 @@ public class PuzzleTrigger : MonoBehaviour
     private Vector3 textOffset;
 
     public GameObject puzzleScreen;
+
+    public string hoverTag;
     //public AudioSource doorKnock;
     //private AudioSource doorOpen;
 
@@ -72,7 +74,7 @@ public class PuzzleTrigger : MonoBehaviour
             eyeSpawned = true;
         }
 
-        examineTagBox.text = sceneName;
+        examineTagBox.text = hoverTag;
         examineTagBox.color = Color.white;
         
         if (!Input.GetMouseButtonDown(0)) return;

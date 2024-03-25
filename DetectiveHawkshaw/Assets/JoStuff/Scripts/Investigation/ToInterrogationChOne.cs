@@ -26,6 +26,7 @@ public class ToInterrogationChOne : MonoBehaviour
     public TextAsset notAllEvidenceFile;
     public TextAsset allEvidenceFile;
     private InitialisationScript initialiser;
+    public string hoverTag;
     
     private void Start()
     {
@@ -72,7 +73,7 @@ public class ToInterrogationChOne : MonoBehaviour
             eyeSpawned = true;
         }
 
-        examineTagBox.text = sceneName;
+        examineTagBox.text = hoverTag;
         examineTagBox.color = Color.white;
         
         if (!Input.GetMouseButtonDown(0)) return;

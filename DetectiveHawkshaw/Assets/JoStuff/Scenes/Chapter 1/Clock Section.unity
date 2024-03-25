@@ -307,6 +307,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 1
   puzzle: {fileID: 0}
+  hoverTag: Main Room
 --- !u!212 &667141432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -935,6 +936,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 1
   puzzle: {fileID: 0}
+  hoverTag: Jewellry Room
 --- !u!212 &1236110666
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1034,7 +1036,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2108674, y: -0.11772537}
+  m_Offset: {x: 0.21086693, y: -3.5140543}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1045,7 +1047,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.99757, y: 32.190544}
+  m_Size: {x: 20.99757, y: 25.397886}
   m_EdgeRadius: 0
 --- !u!1001 &1497930391
 PrefabInstance:

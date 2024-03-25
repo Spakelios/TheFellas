@@ -277,6 +277,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 0}
+  hoverTag: Lobby
 --- !u!1 &130793010
 GameObject:
   m_ObjectHideFlags: 0

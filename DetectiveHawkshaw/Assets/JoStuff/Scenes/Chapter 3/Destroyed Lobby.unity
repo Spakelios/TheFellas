@@ -774,6 +774,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 242698}
+  hoverTag: Kitchen
 --- !u!212 &505361993
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2195,6 +2196,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 242698}
+  hoverTag: Bathroom
 --- !u!212 &1159967779
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2667,6 +2669,7 @@ MonoBehaviour:
   dm: {fileID: 0}
   navType: 0
   puzzle: {fileID: 242698}
+  hoverTag: Office
 --- !u!212 &1771688214
 SpriteRenderer:
   m_ObjectHideFlags: 0
